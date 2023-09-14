@@ -1,10 +1,12 @@
-use crate::{board::Board, hand::Hand, hero::Hero};
+use crate::{board::Board, hand::Hand, hero::Hero, MinionInstanceId};
 
 #[derive(Default)]
 pub struct Player {
     hero: Hero,
     hand: Hand,
     pub board: Board,
+    pub last_attack_position: u8,
+    pub last_attacking_minion: MinionInstanceId,
 }
 
 #[derive(Clone, Copy)]
@@ -28,6 +30,8 @@ impl Player {
             hero,
             hand,
             board,
+            last_attack_position: 0,
+            last_attacking_minion: MinionInstanceId::default(),
         }
     }
 }

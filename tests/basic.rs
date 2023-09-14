@@ -1,7 +1,6 @@
 extern crate hsbgsim;
 
 use hsbgsim::*;
-use tinyvec::array_vec;
 
 #[test]
 pub fn empty() {

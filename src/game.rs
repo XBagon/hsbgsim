@@ -74,14 +74,15 @@ impl Game {
                 (true, false) => End::TopWin.into(),
                 (false, true) => End::BottomWin.into(),
                 (false, false) => {
-                    let attacking_player = self.attacking_player.unwrap();
-                    let next_player = attacking_player.oppsite();
+                    let attacking_player_id = self.attacking_player.unwrap();
+                    let next_player_id = attacking_player_id.oppsite();
                     let event = ProposeAttack::new(
-                        self.random_target(attacking_player),
-                        self.random_target(next_player),
+                        self.determine_next_attacker(attacking_player_id),
+                        self.random_target(next_player_id),
                     )
                     .into();
-                    self.attacking_player = Some(next_player);
+
+                    self.attacking_player = Some(next_player_id);
                     event
                 }
             }
@@ -283,6 +284,38 @@ impl Game {
     //        board.valid_target_map.set(i, !minion.abilities.stealth());
     //    }
     //}
+
+    pub fn determine_next_attacker(&mut self, player_id: PlayerId) -> MinionInstanceId {
+        let attacking_player = self.battleground.player_mut(player_id);
+        let cycling =
+            attacking_player.last_attack_position >= attacking_player.board.minions.len() as u8;
+        if cycling {
+            attacking_player.last_attack_position = 0;
+        } else {
+            let minion_at_last_attack_position = attacking_player
+                .board
+                .minions
+                .get(
+                    attacking_player
+                        .last_attack_position
+                        .min(attacking_player.board.minions.len() as u8 - 1)
+                        as usize,
+                )
+                .unwrap();
+            if *minion_at_last_attack_position == attacking_player.last_attacking_minion {
+                attacking_player.last_attack_position += 1;
+                attacking_player.last_attack_position %= attacking_player.board.minions.len() as u8;
+            }
+        }
+
+        let attacking_minion = *attacking_player
+            .board
+            .minions
+            .get(attacking_player.last_attack_position as usize)
+            .unwrap();
+        attacking_player.last_attacking_minion = attacking_minion;
+        attacking_minion
+    }
 
     pub fn random_target(&self, player_id: PlayerId) -> MinionInstanceId {
         let mut taunted_not_stealthed = Vec::new();
