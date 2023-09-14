@@ -4,7 +4,7 @@ use std::{fmt::format, os::windows::prelude::OsStringExt};
 use crate::{
     events::{
         AssociatedEventHandler, Attack, Death, DeathCheck, End, Event, EventHandler,
-        EventHandlerManager, Events, ProposeAttack,
+        EventHandlerManager, Events, ProposeAttack, TakeDamage,
     },
     minions::MinionInstanceId,
     minions::MinionVariant,
@@ -22,8 +22,9 @@ use tinyvec::ArrayVec;
 pub struct Game {
     pub battleground: Battleground,
     pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
-    pub events: Events,
+    events: Events,
     event_handler_manager: EventHandlerManager,
+    just_checked_deaths: bool,
 }
 
 struct GameBuilder {}
@@ -47,21 +48,18 @@ impl Game {
         let next_event = if let Some(next_event) = next_event {
             next_event
         } else {
-            //TODO: check if round is over
+            //Check if game is over
             let bottom_empty = self.battleground.player(PlayerId::Bottom).board.minions.is_empty();
             let top_empty = self.battleground.player(PlayerId::Top).board.minions.is_empty();
             match (bottom_empty, top_empty) {
                 (true, true) => End::Draw.into(),
                 (true, false) => End::TopWin.into(),
                 (false, true) => End::BottomWin.into(),
-                (false, false) => {
-                    //self.recalculate_valid_target_maps();
-                    ProposeAttack::new(
-                        self.random_target(PlayerId::Bottom),
-                        self.random_target(PlayerId::Top),
-                    )
-                    .into()
-                }
+                (false, false) => ProposeAttack::new(
+                    self.random_target(PlayerId::Bottom),
+                    self.random_target(PlayerId::Top),
+                )
+                .into(),
             }
         };
 
@@ -69,34 +67,34 @@ impl Game {
             Event::Invalid => todo!(),
             Event::End(end) => {}
             &Event::ProposeAttack(propose_attack) => {
-                self.events.push(Event::Attack(propose_attack.into()));
-                self.events.push(DeathCheck.into());
+                self.push_event(Event::Attack(propose_attack.into()));
                 for i in 0..self.event_handler_manager.propose_attack.len() {
                     let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.propose_attack[i];
                     handler(mi_id, propose_attack, self)
                 }
             }
             &Event::Attack(attack) => {
+                self.push_event(Event::AfterAttack(attack.into()));
                 let [attacker, defender] = self
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
-                if attacker.attack > 0 {
-                    if defender.abilities.shield() {
-                        defender.abilities.set_shield(false);
-                    } else {
-                        defender.health -= attacker.attack;
-                    }
-                }
                 if defender.attack > 0 {
                     if attacker.abilities.shield() {
                         attacker.abilities.set_shield(false);
                     } else {
-                        attacker.health -= defender.attack;
+                        let event = TakeDamage::new(attack.attacker, defender.attack).into();
+                        self.push_event(event);
                     }
                 }
-                self.events.push(Event::AfterAttack(attack.into()));
-                self.events.push(DeathCheck.into());
+                if attacker.attack > 0 {
+                    if defender.abilities.shield() {
+                        defender.abilities.set_shield(false);
+                    } else {
+                        let event = TakeDamage::new(attack.defender, attacker.attack).into();
+                        self.push_event(event);
+                    }
+                }
                 //for i in 0..self.event_handler_manager.attack.len() {
                 //    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.attack[i];
                 //    handler(mi_id, attack, self)
@@ -107,10 +105,8 @@ impl Game {
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
-                self.events.push(DeathCheck.into());
             }
             &Event::DeathCheck(_death_check) => {
-                self.events.push(DeathCheck.into());
                 let event_count = self.events.len();
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
@@ -131,6 +127,13 @@ impl Game {
                 target.attack += stat_buff.attack;
                 target.health += stat_buff.health;
             }
+            &Event::TakeDamage(take_damage) => {
+                self.minion_instances.get_mut(take_damage.target).unwrap().health -= take_damage.amount;
+                for i in 0..self.event_handler_manager.take_damage.len() {
+                    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.take_damage[i];
+                    handler(mi_id, take_damage, self)
+                }
+            }
             //Event::TauntMinionAdded(_) => todo!(),
             //Event::TauntMinionRemoved(_) => todo!(),
             //Event::StealthAdded(_) => todo!(),
@@ -140,6 +143,14 @@ impl Game {
         }
 
         next_event
+    }
+
+    pub fn push_event(&mut self, event: Event) {
+        self.events.push(event);
+        if self.events.len() == 1 {
+            //OUTER PHASE: Check Deaths here
+            self.events.push(DeathCheck.into());
+        }
     }
 
     pub fn run_and_print(&mut self) {

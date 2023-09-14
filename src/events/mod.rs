@@ -8,6 +8,7 @@ mod death_check;
 mod end;
 mod propose_attack;
 mod stat_buff;
+mod take_damage;
 
 pub use after_attack::AfterAttack;
 pub use attack::Attack;
@@ -16,6 +17,7 @@ pub use death_check::DeathCheck;
 pub use end::End;
 pub use propose_attack::ProposeAttack;
 pub use stat_buff::StatBuff;
+pub use take_damage::TakeDamage;
 
 #[derive(Default)]
 pub struct Events {
@@ -71,7 +73,7 @@ macro_rules! event_variants {
     };
 }
 
-event_variants!(Attack, ProposeAttack, AfterAttack, DeathCheck, Death, End, StatBuff);
+event_variants!(Attack, ProposeAttack, AfterAttack, DeathCheck, Death, End, StatBuff, TakeDamage);
 
 impl Events {
     pub fn push(&mut self, event: Event) {
