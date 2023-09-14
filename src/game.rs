@@ -18,13 +18,14 @@ use slotmap::{Key, SlotMap};
 use thiserror::Error;
 use tinyvec::ArrayVec;
 
+///Needs to be run once before [`Self::step`] is called
 #[derive(Default)]
 pub struct Game {
     pub battleground: Battleground,
     pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
+    attacking_player: Option<PlayerId>,
     events: Events,
     event_handler_manager: EventHandlerManager,
-    just_checked_deaths: bool,
 }
 
 struct GameBuilder {}
@@ -36,6 +37,23 @@ impl GameBuilder {
 }
 
 impl Game {
+    pub fn initialize(&mut self) {
+        let bottom_minion_count = self.battleground.player(PlayerId::Bottom).board.minions.len();
+        let top_minion_count = self.battleground.player(PlayerId::Top).board.minions.len();
+        let starting_player = match bottom_minion_count.cmp(&top_minion_count) {
+            std::cmp::Ordering::Less => PlayerId::Top,
+            std::cmp::Ordering::Equal => {
+                if rand::random() {
+                    PlayerId::Top
+                } else {
+                    PlayerId::Bottom
+                }
+            }
+            std::cmp::Ordering::Greater => PlayerId::Bottom,
+        };
+        self.attacking_player = Some(starting_player);
+    }
+
     pub fn instantiate_minion(&mut self, variant: MinionVariant) -> MinionInstanceId {
         let minion_instance = variant.into_instance();
         let mi_id = self.minion_instances.insert(minion_instance);
@@ -55,16 +73,22 @@ impl Game {
                 (true, true) => End::Draw.into(),
                 (true, false) => End::TopWin.into(),
                 (false, true) => End::BottomWin.into(),
-                (false, false) => ProposeAttack::new(
-                    self.random_target(PlayerId::Bottom),
-                    self.random_target(PlayerId::Top),
-                )
-                .into(),
+                (false, false) => {
+                    let attacking_player = self.attacking_player.unwrap();
+                    let next_player = attacking_player.oppsite();
+                    let event = ProposeAttack::new(
+                        self.random_target(attacking_player),
+                        self.random_target(next_player),
+                    )
+                    .into();
+                    self.attacking_player = Some(next_player);
+                    event
+                }
             }
         };
 
         match &next_event {
-            Event::Invalid => todo!(),
+            Event::Invalid => unreachable!(),
             Event::End(end) => {}
             &Event::ProposeAttack(propose_attack) => {
                 self.push_event(Event::Attack(propose_attack.into()));

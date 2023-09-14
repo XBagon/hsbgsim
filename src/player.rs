@@ -13,6 +13,15 @@ pub enum PlayerId {
     Bottom,
 }
 
+impl PlayerId {
+    pub fn oppsite(&self) -> Self {
+        match self {
+            PlayerId::Top => PlayerId::Bottom,
+            PlayerId::Bottom => PlayerId::Top,
+        }
+    }
+}
+
 impl Player {
     pub fn new(hero: Hero, hand: Hand, board: Board) -> Self {
         Self {

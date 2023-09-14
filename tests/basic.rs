@@ -5,10 +5,9 @@ use tinyvec::array_vec;
 
 #[test]
 pub fn empty() {
-    let player1 = Player::new(Hero::default(), Hand::default(), Board::default());
-    let player2 = Player::new(Hero::default(), Hand::default(), Board::default());
-
-    let battleground = Battleground::new(player1, player2);
+    let mut game = Game::default();
+    game.initialize();
+    game.run_and_print();
 }
 
 #[test]
@@ -20,6 +19,8 @@ pub fn single_annoy_o_trons() {
 
     let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
     game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
+
+    game.initialize();
 
     game.run_and_print();
 }
@@ -35,6 +36,8 @@ pub fn full_annoy_o_trons() {
         let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
         game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
+
+    game.initialize();
 
     game.run_and_print();
 }
@@ -53,6 +56,8 @@ pub fn two_vs_five_annoy_o_trons() {
         game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
 
+    game.initialize();
+
     game.run_and_print();
 }
 
@@ -67,6 +72,8 @@ pub fn full_random() {
         let minion = game.instantiate_minion(MinionVariant::random());
         game.position_minion(minion, PlayerId::Top).unwrap();
     }
+
+    game.initialize();
 
     game.run_and_print();
 }
