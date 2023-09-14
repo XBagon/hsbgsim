@@ -79,12 +79,13 @@ impl Game {
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
+                let mut events = ArrayVec::<[Event; 2]>::new();
                 if defender.attack > 0 {
                     if attacker.abilities.shield() {
                         attacker.abilities.set_shield(false);
                     } else {
                         let event = TakeDamage::new(attack.attacker, defender.attack).into();
-                        self.push_event(event);
+                        events.push(event);
                     }
                 }
                 if attacker.attack > 0 {
@@ -92,9 +93,10 @@ impl Game {
                         defender.abilities.set_shield(false);
                     } else {
                         let event = TakeDamage::new(attack.defender, attacker.attack).into();
-                        self.push_event(event);
+                        events.push(event);
                     }
                 }
+                events.into_iter().for_each(|event| self.push_event(event));
                 //for i in 0..self.event_handler_manager.attack.len() {
                 //    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.attack[i];
                 //    handler(mi_id, attack, self)
@@ -113,10 +115,6 @@ impl Game {
                     if minion.health <= 0 {
                         self.events.push(Death::new(mi_id).into());
                     }
-                }
-                if self.events.len() == event_count {
-                    //if no deaths, remove DeathCheck
-                    self.events.next().unwrap();
                 }
             }
             &Event::Death(death) => {
@@ -146,11 +144,11 @@ impl Game {
     }
 
     pub fn push_event(&mut self, event: Event) {
-        self.events.push(event);
-        if self.events.len() == 1 {
+        if self.events.len() == 0 {
             //OUTER PHASE: Check Deaths here
             self.events.push(DeathCheck.into());
         }
+        self.events.push(event);
     }
 
     pub fn run_and_print(&mut self) {

@@ -40,8 +40,9 @@ impl<H> AssociatedEventHandler<H> {
 
 macro_rules! event_variants {
     ($($vars:ident),*) => {
-        #[derive(Debug)]
+        #[derive(Debug, Default)]
         pub enum Event {
+            #[default]
             Invalid,
             $($vars($vars)),*
         }
