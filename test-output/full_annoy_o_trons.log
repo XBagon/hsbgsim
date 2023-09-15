@@ -1,391 +1,391 @@
 
 running 1 test
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(8v1) })----------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(14v1) })---------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
           1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]            1/[(2)]      
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
           1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]      
-----------------------Attack(Attack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(8v1) })-----------------------
+----------------------Attack(Attack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(14v1) })----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-          1/[(2)]           1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]            1/[(2)]      
+          1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[2]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
            1/[2]            1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]      
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(8v1) })------------------
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(14v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(1v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(1v1) })-----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(9v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(9v1) })-----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]            1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]            1/[(2)]      
+           1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[2]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[2]            1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]      
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(1v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]            1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]            1/[(2)]      
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]            1/[(2)]           1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]      
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(1v1) })------------------
+           1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(9v1) })------------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
 ---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(14v1) })---------------
 ----------------------Attack(Attack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(14v1) })----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]            1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[2]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]      
+           1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]      
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(14v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
+           1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[2]             1/[(2)]            1/[(2)]      
 -----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(14v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(11v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(11v1) })----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]            1/[(2)]            1/[2]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]            1/[(2)]           1/[(2)]           1/[(2)]            1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })-----------------
+           1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[2]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(11v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(8v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(8v1) })-----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(2v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(2v1) })-----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]            1/[(2)]            1/[2]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[(2)]             1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(8v1), amount: 1 })-------------------------------
+           1/[2]             1/[2]             1/[2]            1/[(2)]            1/[2]              1/[2]             1/[(2)]      
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(2v1), amount: 1 })-------------------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]            1/[(2)]            1/[1]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[1]             1/[2]            1/[(2)]           1/[(2)]            1/[(2)]            1/[(2)]             1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]            1/[(2)]           1/[(2)]            1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(8v1) })------------------
+           1/[2]             1/[2]             1/[2]            1/[(2)]            1/[2]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(2v1) })------------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })-----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(7v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(7v1) })-----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[1]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[1]             1/[2]             1/[2]            1/[(2)]            1/[(2)]            1/[(2)]             1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]            1/[(2)]            1/[2]             1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })------------------
+           1/[2]             1/[2]             1/[2]             1/[2]             1/[2]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(7v1) })------------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(14v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(14v1) })----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(12v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(12v1) })----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[1]             1/[(2)]            1/[(2)]             1/[2]       
+           1/[1]             1/[2]             1/[2]            1/[(2)]            1/[(2)]             1/[2]              1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(14v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[1]             1/[(2)]            1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(14v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(7v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(7v1) })-----------------------
+           1/[2]             1/[2]             1/[2]             1/[2]             1/[2]              1/[2]             1/[(2)]      
 ------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(7v1), amount: 1 })-------------------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[1]             1/[(2)]            1/[(2)]             1/[1]       
+           1/[1]             1/[2]             1/[2]            1/[(2)]            1/[(2)]             1/[2]              1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[2]             1/[(2)]             1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(8v1), amount: 1 })-------------------------------
+           1/[2]             1/[2]             1/[2]             1/[1]             1/[2]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(7v1), defender: MinionInstanceId(12v1) })-----------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(3v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(3v1) })-----------------------
 TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[0]             1/[(2)]            1/[(2)]             1/[1]       
+           1/[1]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]              1/[1]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[2]             1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(7v1) })------------------
+           1/[2]             1/[2]             1/[2]             1/[1]             1/[2]              1/[2]             1/[(2)]      
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(3v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
+           1/[1]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[2]             1/[1]             1/[2]             1/[1]             1/[2]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(8v1), defender: MinionInstanceId(3v1) })------------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(8v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]             1/[(2)]            1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[2]             1/[(2)]             1/[2]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(10v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(10v1) })----------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[2]             1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[2]             1/[(2)]             1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(9v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[2]             1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]             1/[(2)]             1/[2]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(10v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(11v1) })---------------
----------------------Attack(Attack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(11v1) })----------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[2]             1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[2]              1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(10v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[1]             1/[(2)]             1/[1]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[2]              1/[2]       
-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(11v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(14v1) })---------------
----------------------Attack(Attack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(14v1) })----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(14v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(14v1) })----------------------
 ------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(14v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[1]             1/[(2)]             1/[0]       
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
+           1/[1]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]              1/[0]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[2]              1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(11v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
-           1/[2]             1/[2]             1/[2]              1/[1]             1/[(2)]             1/[0]       
+           1/[2]             1/[1]             1/[2]             1/[1]             1/[2]              1/[2]             1/[(2)]      
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(9v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1  Annoy-o-Tron|14v1 
+           1/[1]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]              1/[0]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(14v1) })-----------------
+           1/[2]             1/[1]             1/[2]             1/[1]             1/[1]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(14v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
 ----------------------------------------Death(Death { minion: MinionInstanceId(14v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[2]              1/[1]             1/[(2)]      
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[2]             1/[(2)]             1/[2]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(11v1) })---------------
----------------------Attack(Attack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(11v1) })----------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[2]              1/[1]              1/[2]       
+           1/[2]             1/[1]             1/[2]             1/[1]             1/[1]              1/[2]             1/[(2)]      
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(1v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(1v1) })----------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[2]              1/[2]              1/[2]       
 
 BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(11v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[2]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[0]              1/[2]       
-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(11v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
-----------------------------------------Death(Death { minion: MinionInstanceId(11v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[2]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[2]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(6v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(6v1) })----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(6v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[2]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(13v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]             1/[1]              1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(6v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(7v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(7v1) })-----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(7v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[2]             1/[2]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[0]             1/[1]              1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(2v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[2]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[0]             1/[1]              1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(2v1), defender: MinionInstanceId(7v1) })------------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(7v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[2]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]              1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(4v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(4v1) })-----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(4v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[1]             1/[2]             1/[2]             1/[1]              1/[1]       
+           1/[2]             1/[1]             1/[2]             1/[1]             1/[1]              1/[2]             1/[(2)]      
 ------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(1v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]             1/[1]              1/[1]              1/[2]       
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[2]              1/[2]              1/[2]       
 
-BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[0]             1/[2]             1/[2]             1/[1]              1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(4v1) })------------------
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[2]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(1v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(1v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]             1/[1]              1/[1]              1/[2]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(8v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(8v1) })----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(8v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[1]              1/[2]              1/[2]       
 
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[2]             1/[2]             1/[1]              1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(13v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]             1/[1]              1/[1]              1/[2]       
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[2]             1/[(2)]      
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(11v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[1]              1/[2]              1/[2]       
 
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[2]             1/[2]             1/[1]              1/[0]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(4v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[0]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[2]             1/[2]             1/[1]              1/[0]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(13v1) })-----------------
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]             1/[(2)]      
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(8v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(4v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[1]              1/[2]       
+--------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(13v1) })---------------
+---------------------Attack(Attack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(13v1) })----------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[1]              1/[2]              1/[2]       
 
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|13v1 
-           1/[2]             1/[2]             1/[1]              1/[0]       
-----------------------------------------Death(Death { minion: MinionInstanceId(13v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[2]             1/[2]             1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(10v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(10v1) })----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(10v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[0]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[2]             1/[2]             1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(3v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[0]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[2]             1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(10v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
-----------------------------------------Death(Death { minion: MinionInstanceId(10v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[2]             1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(5v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(5v1) })-----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(5v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[1]             1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(6v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|6v1  Annoy-o-Tron|12v1 
-           1/[1]             1/[0]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[1]             1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(5v1) })------------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(6v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[2]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[1]             1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(12v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(12v1) })----------------------
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
 ------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(12v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[1]       
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[2]             1/[1]              1/[2]              1/[1]       
 
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[1]             1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(5v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[1]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[0]             1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(12v1) })-----------------
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
+----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(13v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
------------------------------------------Death(Death { minion: MinionInstanceId(5v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[1]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|9v1 
-           1/[1]             1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(3v1) })---------------
-----------------------Attack(Attack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(3v1) })----------------------
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(3v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[1]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|9v1 
-           1/[0]             1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(12v1), amount: 1 })------------------------------
-TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|12v1 
-           1/[1]              1/[0]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|9v1 
-           1/[0]             1/[1]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(3v1) })-----------------
------------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
-----------------------------------------Death(Death { minion: MinionInstanceId(12v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1 
-           1/[1]       
-
-BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|9v1 
-           1/[0]             1/[1]       
------------------------------------------Death(Death { minion: MinionInstanceId(3v1) })-----------------------------------------
-TOP:  Annoy-o-Tron|2v1 
-           1/[1]       
-
-BOT:  Annoy-o-Tron|9v1 
-           1/[1]       
----------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(2v1) })----------------
-----------------------Attack(Attack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(2v1) })-----------------------
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(2v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(2v1) })----------------------
 ------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(2v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1 
-           1/[0]       
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[0]             1/[2]             1/[2]             1/[1]              1/[2]              1/[1]       
 
-BOT:  Annoy-o-Tron|9v1 
-           1/[1]       
-------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(9v1), amount: 1 })-------------------------------
-TOP:  Annoy-o-Tron|2v1 
-           1/[0]       
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]              1/[2]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(13v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|2v1  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[0]             1/[2]             1/[2]             1/[1]              1/[2]              1/[1]       
 
-BOT:  Annoy-o-Tron|9v1 
-           1/[0]       
------------------AfterAttack(AfterAttack { attacker: MinionInstanceId(9v1), defender: MinionInstanceId(2v1) })------------------
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(13v1), defender: MinionInstanceId(2v1) })-----------------
 -----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
 -----------------------------------------Death(Death { minion: MinionInstanceId(2v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[2]             1/[2]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]             1/[1]              1/[1]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(7v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(7v1) })-----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(7v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[2]             1/[2]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[0]             1/[1]              1/[1]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(4v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|7v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[0]             1/[1]              1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(4v1), defender: MinionInstanceId(7v1) })------------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+-----------------------------------------Death(Death { minion: MinionInstanceId(7v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[2]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]              1/[1]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(6v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(6v1) })-----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(6v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[1]             1/[2]             1/[1]              1/[1]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(1v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|1v1  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[0]             1/[1]             1/[2]             1/[1]              1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(1v1), defender: MinionInstanceId(6v1) })------------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+-----------------------------------------Death(Death { minion: MinionInstanceId(1v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]             1/[1]              1/[1]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })-----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(9v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]             1/[0]              1/[1]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(6v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|6v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[0]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]             1/[0]              1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(6v1), defender: MinionInstanceId(9v1) })------------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+-----------------------------------------Death(Death { minion: MinionInstanceId(6v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|9v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]             1/[0]              1/[1]              1/[1]       
+-----------------------------------------Death(Death { minion: MinionInstanceId(9v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]              1/[1]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(8v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(8v1) })-----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(8v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[0]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[1]             1/[2]              1/[1]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(3v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|8v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]             1/[0]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[0]             1/[2]              1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(3v1), defender: MinionInstanceId(8v1) })------------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+-----------------------------------------Death(Death { minion: MinionInstanceId(8v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|3v1  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[0]             1/[2]              1/[1]              1/[1]       
+-----------------------------------------Death(Death { minion: MinionInstanceId(3v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[2]              1/[1]              1/[1]       
+--------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(13v1) })---------------
+---------------------Attack(Attack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(13v1) })----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(13v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]              1/[2]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[2]              1/[1]              1/[0]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(10v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]              1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1  Annoy-o-Tron|13v1 
+           1/[2]              1/[1]              1/[0]       
+----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(10v1), defender: MinionInstanceId(13v1) })-----------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+----------------------------------------Death(Death { minion: MinionInstanceId(13v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[1]              1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[2]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(4v1) })----------------
+----------------------Attack(Attack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(4v1) })-----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(4v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[0]              1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[2]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(5v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|4v1  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+           1/[0]              1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[1]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(5v1), defender: MinionInstanceId(4v1) })------------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+-----------------------------------------Death(Death { minion: MinionInstanceId(4v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+            1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[1]              1/[1]       
+---------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(5v1) })---------------
+----------------------Attack(Attack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(5v1) })----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(5v1), amount: 1 })-------------------------------
+TOP:  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+            1/[1]              1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[0]              1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(12v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|10v1  Annoy-o-Tron|12v1 
+            1/[1]              1/[0]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[0]              1/[1]       
+-----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(12v1), defender: MinionInstanceId(5v1) })-----------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+----------------------------------------Death(Death { minion: MinionInstanceId(12v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|10v1 
+            1/[1]       
+
+BOT:  Annoy-o-Tron|5v1  Annoy-o-Tron|11v1 
+           1/[0]              1/[1]       
+-----------------------------------------Death(Death { minion: MinionInstanceId(5v1) })-----------------------------------------
+TOP:  Annoy-o-Tron|10v1 
+            1/[1]       
+
+BOT:  Annoy-o-Tron|11v1 
+            1/[1]       
+--------------ProposeAttack(ProposeAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(10v1) })---------------
+---------------------Attack(Attack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(10v1) })----------------------
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(10v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|10v1 
+            1/[0]       
+
+BOT:  Annoy-o-Tron|11v1 
+            1/[1]       
+------------------------------TakeDamage(TakeDamage { target: MinionInstanceId(11v1), amount: 1 })------------------------------
+TOP:  Annoy-o-Tron|10v1 
+            1/[0]       
+
+BOT:  Annoy-o-Tron|11v1 
+            1/[0]       
+----------------AfterAttack(AfterAttack { attacker: MinionInstanceId(11v1), defender: MinionInstanceId(10v1) })-----------------
+-----------------------------------------------------DeathCheck(DeathCheck)-----------------------------------------------------
+----------------------------------------Death(Death { minion: MinionInstanceId(10v1) })-----------------------------------------
 TOP: 
      
 
-BOT:  Annoy-o-Tron|9v1 
-           1/[0]       
------------------------------------------Death(Death { minion: MinionInstanceId(9v1) })-----------------------------------------
+BOT:  Annoy-o-Tron|11v1 
+            1/[0]       
+----------------------------------------Death(Death { minion: MinionInstanceId(11v1) })-----------------------------------------
 TOP: 
      
 
