@@ -89,22 +89,3 @@ impl Events {
         self.queue.len()
     }
 }
-
-//TODO: each event has own datatype, make same information convertible, make a macro for all event variants
-//#[derive(Debug)]
-//pub enum Event {
-//    Invalid,
-//    Attack(Attack),
-//    ProposeAttack(Attack),
-//    AfterAttack(Attack),
-//    DeathCheck,
-//    Death(MinionInstanceId),
-//    End(End),
-//
-//    TauntMinionAdded(MinionInstanceId), //Taunt (minion) added to board
-//    TauntMinionRemoved(MinionInstanceId), //Taunt (minion) removed from board
-//    StealthAdded(MinionInstanceId),     //Stealth added to minion
-//    StealthRemoved(MinionInstanceId),   //Stealth removed from minion
-//    MinionAdded(MinionInstanceId),      //Minion added from board
-//    MinionRemoved(MinionInstanceId),    //Minion removed from board
-//}
