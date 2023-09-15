@@ -1,10 +1,7 @@
-
-
-
 use crate::{
     events::{
-        AssociatedEventHandler, Death, DeathCheck, End, Event,
-        EventHandlerManager, Events, ProposeAttack, TakeDamage,
+        AssociatedEventHandler, Death, DeathCheck, End, Event, EventHandlerManager, Events,
+        ProposeAttack, TakeDamage,
     },
     minions::MinionInstanceId,
     minions::MinionVariant,
@@ -94,7 +91,10 @@ impl Game {
             &Event::ProposeAttack(propose_attack) => {
                 self.push_event(Event::Attack(propose_attack.into()));
                 for i in 0..self.event_handler_manager.propose_attack.len() {
-                    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.propose_attack[i];
+                    let AssociatedEventHandler {
+                        minion: mi_id,
+                        handler,
+                    } = self.event_handler_manager.propose_attack[i];
                     handler(mi_id, propose_attack, self)
                 }
             }
@@ -151,18 +151,16 @@ impl Game {
                 target.health += stat_buff.health;
             }
             &Event::TakeDamage(take_damage) => {
-                self.minion_instances.get_mut(take_damage.target).unwrap().health -= take_damage.amount;
+                self.minion_instances.get_mut(take_damage.target).unwrap().health -=
+                    take_damage.amount;
                 for i in 0..self.event_handler_manager.take_damage.len() {
-                    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.take_damage[i];
+                    let AssociatedEventHandler {
+                        minion: mi_id,
+                        handler,
+                    } = self.event_handler_manager.take_damage[i];
                     handler(mi_id, take_damage, self)
                 }
             }
-            //Event::TauntMinionAdded(_) => todo!(),
-            //Event::TauntMinionRemoved(_) => todo!(),
-            //Event::StealthAdded(_) => todo!(),
-            //Event::StealthRemoved(_) => todo!(),
-            //Event::MinionAdded(_) => todo!(),
-            //Event::MinionRemoved(_) => todo!(),
         }
 
         next_event
@@ -194,96 +192,6 @@ impl Game {
             }
         }
     }
-    //fn process_next_event(&mut self) {
-    //    let next_event = self.events.next().unwrap_or(Event::Invalid);
-    //    match next_event {
-    //        Event::Attack {
-    //            attacker,
-    //            defender,
-    //        } => todo!(),
-    //        Event::TauntMinionAdded(id) => {
-    //            let minion = &self.minion_instances[id];
-    //            let another_taunt = self.has_taunt_up(minion.position.player_id);
-    //            let board = &mut self.battleground.player_mut(minion.position.player_id).board;
-    //            if another_taunt {
-    //                board.valid_target_map.set(minion.position.index as usize, true);
-    //            } else {
-    //                board.valid_target_map = Bitmap::new();
-    //                board.valid_target_map.set(minion.position.index as usize, true);
-    //            }
-    //        }
-    //        Event::TauntMinionRemoved(id) => {
-    //            let minion = &self.minion_instances[id];
-    //            let board = &mut self.battleground.player_mut(minion.position.player_id).board;
-    //            board.valid_target_map.set(minion.position.index as usize, false);
-    //            if board.valid_target_map.is_empty() {
-    //                //no taunts anymore
-    //                self.recalculate_valid_target_map(minion.position.player_id);
-    //            }
-    //        }
-    //        Event::StealthAdded(id) => {
-    //            let minion = &self.minion_instances[id];
-    //            let board = &mut self.battleground.player_mut(minion.position.player_id).board;
-    //            board.valid_target_map.set(minion.position.index as usize, false);
-    //            if minion.abilities.taunt() {
-    //                self.events.push(Event::TauntMinionRemoved(id));
-    //            }
-    //        }
-    //        Event::StealthRemoved(id) => {
-    //            let minion = &self.minion_instances[id];
-    //            if minion.abilities.taunt() {
-    //                self.events.push(Event::TauntMinionAdded(id));
-    //            } else if !self.has_taunt_up(minion.position.player_id) {
-    //                let board = &mut self.battleground.player_mut(minion.position.player_id).board;
-    //                board.valid_target_map.set(minion.position.index as usize, true);
-    //            }
-    //        }
-    //        Event::MinionAdded(id) => {
-    //            todo!()
-    //        }
-    //        Event::MinionRemoved(id) => {
-    //            let minion = &self.minion_instances[id];
-    //            let board = &mut self.battleground.player_mut(minion.position.player_id).board;
-    //            let bitmap = board.valid_target_map.into_value();
-    //            board.valid_target_map =
-    //                Bitmap::from_value((bitmap & (1 << minion.position.index - 1)) | bitmap >> 1);
-    //            todo!()
-    //        }
-    //        Event::Invalid => panic!("Invalid Event"),
-    //    }
-    //}
-
-    //pub fn valid_targets(&self, player_id: PlayerId) -> Vec<MinionInstanceId> {
-    //    let board = &self.battleground.player(player_id).board;
-    //    board.valid_target_map.into_iter().map(|i| board.minions[i]).collect()
-    //}
-    //
-    //pub fn has_taunt_up(&self, player_id: PlayerId) -> bool {
-    //    let board = &self.battleground.player(player_id).board;
-    //    board
-    //        .valid_target_map
-    //        .first_index()
-    //        .map(|i| self.minion_instances[board.minions[i]].abilities.taunt())
-    //        .unwrap_or(false)
-    //}
-
-    //pub fn recalculate_valid_target_maps(&mut self) {
-    //    for player in self.battleground.players_mut() {
-    //        let board = &mut player.board;
-    //        for (i, &minion_id) in board.minions.iter().enumerate() {
-    //            let minion = &self.minion_instances[minion_id];
-    //            board.valid_target_map.set(i, !minion.abilities.stealth());
-    //        }
-    //    }
-    //}
-
-    //pub fn recalculate_valid_target_map(&mut self, player_id: PlayerId) {
-    //    let board = &mut self.battleground.player_mut(player_id).board;
-    //    for (i, &minion_id) in board.minions.iter().enumerate() {
-    //        let minion = &self.minion_instances[minion_id];
-    //        board.valid_target_map.set(i, !minion.abilities.stealth());
-    //    }
-    //}
 
     pub fn determine_next_attacker(&mut self, player_id: PlayerId) -> MinionInstanceId {
         let attacking_player = self.battleground.player_mut(player_id);
