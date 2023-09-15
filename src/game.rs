@@ -1,9 +1,9 @@
-use core::panic;
-use std::{fmt::format, os::windows::prelude::OsStringExt};
+
+
 
 use crate::{
     events::{
-        AssociatedEventHandler, Attack, Death, DeathCheck, End, Event, EventHandler,
+        AssociatedEventHandler, Death, DeathCheck, End, Event,
         EventHandlerManager, Events, ProposeAttack, TakeDamage,
     },
     minions::MinionInstanceId,
@@ -12,7 +12,7 @@ use crate::{
     player::PlayerId,
     Battleground, MinionInstance,
 };
-use bitmaps::Bitmap;
+
 use rand::seq::SliceRandom;
 use slotmap::{Key, SlotMap};
 use thiserror::Error;
@@ -90,7 +90,7 @@ impl Game {
 
         match &next_event {
             Event::Invalid => unreachable!(),
-            Event::End(end) => {}
+            Event::End(_end) => {}
             &Event::ProposeAttack(propose_attack) => {
                 self.push_event(Event::Attack(propose_attack.into()));
                 for i in 0..self.event_handler_manager.propose_attack.len() {
@@ -128,13 +128,13 @@ impl Game {
                 //}
             }
             &Event::AfterAttack(attack) => {
-                let [attacker, defender] = self
+                let [_attacker, _defender] = self
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
             }
             &Event::DeathCheck(_death_check) => {
-                let event_count = self.events.len();
+                let _event_count = self.events.len();
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
                     if minion.health <= 0 {
@@ -345,7 +345,7 @@ impl Game {
             let minion = &self.minion_instances[minion_id];
             let mut name = minion.variant.data().name;
             name.push_str(&format!("|{:?}", minion_id.data()));
-            let mut stats = minion.stats_print();
+            let stats = minion.stats_print();
             let width = name.len().max(stats.len()) + 2;
             top_names.push_str(&format!("{:^width$}", name));
             top_stats.push_str(&format!("{:^width$}", stats));
@@ -357,7 +357,7 @@ impl Game {
             let minion = &self.minion_instances[minion_id];
             let mut name = minion.variant.data().name;
             name.push_str(&format!("|{:?}", minion_id.data()));
-            let mut stats = minion.stats_print();
+            let stats = minion.stats_print();
             let width = name.len().max(stats.len()) + 2;
             bottom_names.push_str(&format!("{:^width$}", name));
             bottom_stats.push_str(&format!("{:^width$}", stats));
@@ -391,7 +391,7 @@ impl Game {
         mi_id: MinionInstanceId,
         player_id: PlayerId,
     ) -> Result<(), Error> {
-        let mut minions = &mut self.battleground.player_mut(player_id).board.minions;
+        let minions = &mut self.battleground.player_mut(player_id).board.minions;
         let next_index = minions.len() as u8;
         minions.try_push(mi_id).map_or(Ok(()), |_| Err(Error::FullBoard))?;
         self.minion_instances.get_mut(mi_id).unwrap().position =

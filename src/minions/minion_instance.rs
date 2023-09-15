@@ -7,6 +7,7 @@ new_key_type! {
     pub struct MinionInstanceId;
 }
 
+#[derive(Default)]
 pub struct MinionInstance {
     pub variant: MinionVariant,
     pub health: i32,
@@ -50,15 +51,4 @@ impl Position {
     }
 }
 
-impl Default for MinionInstance {
-    fn default() -> Self {
-        Self {
-            variant: Default::default(),
-            health: Default::default(),
-            attack: Default::default(),
-            position: None,
-            abilities: Default::default(),
-            event_handler: EventHandler::default(),
-        }
-    }
-}
+

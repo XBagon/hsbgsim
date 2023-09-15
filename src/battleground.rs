@@ -1,4 +1,4 @@
-use std::fmt::Display;
+
 
 use crate::{
     minions::MinionInstanceId,
@@ -33,15 +33,15 @@ impl Battleground {
         }
     }
 
-    pub fn players<'a>(&'a self) -> [&'a Player; 2] {
+    pub fn players(&self) -> [&Player; 2] {
         [&self.bottom_player, &self.top_player]
     }
 
-    pub fn players_mut<'a>(&'a mut self) -> [&'a mut Player; 2] {
+    pub fn players_mut(&mut self) -> [&mut Player; 2] {
         [&mut self.bottom_player, &mut self.top_player]
     }
 
-    pub fn all_minions<'a>(&'a self) -> impl Iterator<Item = MinionInstanceId> + 'a {
+    pub fn all_minions(&self) -> impl Iterator<Item = MinionInstanceId> + '_ {
         self.bottom_player
             .board
             .minions

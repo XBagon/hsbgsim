@@ -21,6 +21,7 @@ pub struct AbilitiesInit {
 }
 
 impl AbilitiesInit {
+    #[allow(clippy::identity_op)]
     pub fn init(self) -> Abilities {
         Abilities {
             bitmap: Bitmap::from_value(

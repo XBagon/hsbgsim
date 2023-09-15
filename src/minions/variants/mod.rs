@@ -411,13 +411,9 @@ impl MinionVariant {
         }
     }
 }
-impl Default for MinionVariant {
-    fn default() -> Self {
-        MinionVariant::Invalid
-    }
-}
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Default)]
 pub enum MinionVariant {
+    #[default]
     Invalid,
     Alleycat,
     AnnoyOTron,

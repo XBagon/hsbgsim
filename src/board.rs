@@ -1,5 +1,5 @@
 use crate::minions::MinionInstanceId;
-use bitmaps::Bitmap;
+
 use tinyvec::ArrayVec;
 
 #[derive(Default)]
