@@ -1,0 +1,1 @@
+`cargo run -p hsbgsim_codegen` creates `event_handler()` stubs and `data()` definitions for all minions extracted from https://bgknowhow.com/bgjson/output/bg_entities_all.json.

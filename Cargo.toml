@@ -1,3 +1,6 @@
+[workspace]
+members = ["hsbgsim_codegen"]
+
 [package]
 name = "hsbgsim"
 version = "0.1.0"
