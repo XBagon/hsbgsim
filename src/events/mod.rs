@@ -3,6 +3,7 @@ use paste::paste;
 
 mod after_attack;
 mod attack;
+pub mod common_effects;
 mod death;
 mod death_check;
 mod end;

@@ -109,7 +109,9 @@ impl Game {
                     if attacker.abilities.shield() {
                         attacker.abilities.set_shield(false);
                     } else {
-                        let event = TakeDamage::new(attack.attacker, defender.attack).into();
+                        let event =
+                            TakeDamage::new(attack.attacker, defender.attack, attack.defender)
+                                .into();
                         events.push(event);
                     }
                 }
@@ -117,7 +119,9 @@ impl Game {
                     if defender.abilities.shield() {
                         defender.abilities.set_shield(false);
                     } else {
-                        let event = TakeDamage::new(attack.defender, attacker.attack).into();
+                        let event =
+                            TakeDamage::new(attack.defender, attacker.attack, attack.attacker)
+                                .into();
                         events.push(event);
                     }
                 }
@@ -172,6 +176,16 @@ impl Game {
             self.events.push(DeathCheck.into());
         }
         self.events.push(event);
+    }
+
+    pub fn run(&mut self) -> End {
+        loop {
+            let current_event = self.step();
+
+            if let Event::End(result) = current_event {
+                return result;
+            }
+        }
     }
 
     pub fn run_and_print(&mut self) {

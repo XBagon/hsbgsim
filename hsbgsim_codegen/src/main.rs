@@ -171,10 +171,11 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     let mod_code = quote! {
-        use rand::seq::SliceRandom;
-
         use super::{Abilities, MinionInstance};
         use crate::events::EventHandler;
+
+        use rand::seq::SliceRandom;
+        use strum::EnumString;
 
         mod data;
         #(pub mod #modules;)*
@@ -200,7 +201,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
 
-        #[derive(Clone, Copy, Default)]
+        #[derive(Clone, Copy, Default, EnumString)]
         pub enum MinionVariant {
             #[default]
             Invalid,

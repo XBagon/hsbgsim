@@ -1,5 +1,7 @@
 extern crate hsbgsim;
 
+use std::{env, str::FromStr};
+
 use hsbgsim::*;
 
 #[test]
@@ -61,18 +63,20 @@ pub fn two_vs_five_annoy_o_trons() {
 }
 
 #[test]
-pub fn full_random() {
+pub fn full_maexxna() {
     let mut game = Game::default();
 
     for _ in 0..7 {
-        let minion = game.instantiate_minion(MinionVariant::random());
-        game.position_minion(minion, PlayerId::Bottom).unwrap();
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::Maexxna);
+        game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
+    }
 
-        let minion = game.instantiate_minion(MinionVariant::random());
-        game.position_minion(minion, PlayerId::Top).unwrap();
+    for _ in 0..7 {
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::Maexxna);
+        game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
 
     game.initialize();
 
-    game.run_and_print();
+    assert_eq!(game.run(), End::Draw);
 }

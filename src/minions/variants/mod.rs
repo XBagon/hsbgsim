@@ -1,6 +1,7 @@
-use rand::seq::SliceRandom;
 use super::{Abilities, MinionInstance};
 use crate::events::EventHandler;
+use rand::seq::SliceRandom;
+use strum::EnumString;
 mod data;
 pub mod alleycat;
 pub mod annoy_o_tron;
@@ -411,7 +412,7 @@ impl MinionVariant {
         }
     }
 }
-#[derive(Clone, Copy, Default)]
+#[derive(Clone, Copy, Default, EnumString)]
 pub enum MinionVariant {
     #[default]
     Invalid,
