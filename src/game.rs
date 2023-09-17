@@ -59,6 +59,9 @@ impl Game {
     }
 
     pub fn step(&mut self) -> Event {
+        #[cfg(any(debug_assertions, test))]
+        self.assert_all_positions_are_correct();
+
         let next_event = self.events.next();
         let next_event = if let Some(next_event) = next_event {
             next_event
@@ -76,7 +79,8 @@ impl Game {
                     let attacker = self.determine_next_attacker(attacking_player_id);
                     if let Some(attacker) = attacker {
                         let event =
-                            ProposeAttack::new(attacker, self.random_target(next_player_id)).into();
+                            ProposeAttack::new(attacker, self.random_defender(next_player_id))
+                                .into();
                         self.attacking_player = Some(next_player_id);
                         event
                     } else {
@@ -149,6 +153,13 @@ impl Game {
             }
             &Event::Death(death) => {
                 self.remove_minion(death.minion).unwrap();
+                for i in 0..self.event_handler_manager.death.len() {
+                    let AssociatedEventHandler {
+                        minion: mi_id,
+                        handler,
+                    } = self.event_handler_manager.death[i];
+                    handler(mi_id, death, self)
+                }
             }
             &Event::StatBuff(stat_buff) => {
                 let target = self.minion_instances.get_mut(stat_buff.target).unwrap();
@@ -165,6 +176,9 @@ impl Game {
                     } = self.event_handler_manager.take_damage[i];
                     handler(mi_id, take_damage, self)
                 }
+            }
+            Event::Summon(summon) => {
+                _ = self.position_minion_at(summon.minion, summon.position);
             }
         }
 
@@ -225,7 +239,7 @@ impl Game {
         None
     }
 
-    pub fn random_target(&self, player_id: PlayerId) -> MinionInstanceId {
+    pub fn random_defender(&self, player_id: PlayerId) -> MinionInstanceId {
         let mut taunted_not_stealthed = Vec::new();
         let mut not_taunted_not_stealthed = Vec::new();
         for mi_id in self.battleground.player(player_id).board.minions {
@@ -282,20 +296,23 @@ impl Game {
         mi_id: MinionInstanceId,
         position: Position,
     ) -> Result<(), Error> {
+        if position.index >= 7 {
+            return Err(Error::FullBoard);
+        }
         let player = self.battleground.player_mut(position.player_id);
         let minions = &mut player.board.minions;
-        let res = minions
+        minions
             .try_insert(position.index as usize, mi_id)
-            .map_or(Ok(()), |_| Err(Error::FullBoard));
+            .map_or(Ok(()), |_| Err(Error::FullBoard))?;
         self.minion_instances.get_mut(mi_id).unwrap().position = Some(position);
         let index = position.index as usize;
-        for &mi_id in minions[index..].iter() {
+        for &mi_id in minions[(index + 1)..].iter() {
             self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index += 1;
         }
         if position.index < player.next_attack_position {
-            player.next_attack_position -= 1;
+            player.next_attack_position += 1;
         }
-        res
+        Ok(())
     }
 
     pub fn position_minion(
@@ -329,6 +346,21 @@ impl Game {
 
         Ok(())
     }
+
+    fn assert_all_positions_are_correct(&self) {
+        for mi_id in self.battleground.all_minions() {
+            let position = self.minion_instances.get(mi_id).unwrap().position.unwrap();
+            if let Some(mi_id_from_pos) = self
+                .battleground
+                .player(position.player_id)
+                .board
+                .minions
+                .get(position.index as usize)
+            {
+                debug_assert_eq!(mi_id, *mi_id_from_pos);
+            }
+        }
+    }
 }
 
 #[derive(Error, Debug)]
@@ -337,4 +369,28 @@ pub enum Error {
     FullBoard,
     #[error("Tried to remove minion which is not on the board.")]
     MinionNotOnBoard,
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn deathrattle_summon_token_positions() {
+        let mut game = Game::default();
+
+        for _ in 0..7 {
+            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp);
+            game.position_minion(icky_imp, PlayerId::Bottom).unwrap();
+        }
+
+        for _ in 0..7 {
+            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp);
+            game.position_minion(icky_imp, PlayerId::Top).unwrap();
+        }
+
+        game.initialize();
+
+        game.run();
+    }
 }

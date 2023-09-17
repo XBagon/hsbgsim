@@ -9,7 +9,7 @@ pub struct Player {
     pub last_attacking_minion: MinionInstanceId,
 }
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub enum PlayerId {
     Top,
     Bottom,

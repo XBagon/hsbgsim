@@ -67,13 +67,13 @@ pub fn full_maexxna() {
     let mut game = Game::default();
 
     for _ in 0..7 {
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::Maexxna);
-        game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        game.position_minion(maexxna, PlayerId::Bottom).unwrap();
     }
 
     for _ in 0..7 {
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::Maexxna);
-        game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        game.position_minion(maexxna, PlayerId::Top).unwrap();
     }
 
     game.initialize();

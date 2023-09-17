@@ -35,7 +35,7 @@ impl MinionInstance {
     }
 }
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub struct Position {
     pub player_id: PlayerId,
     pub index: u8,
