@@ -2,397 +2,397 @@ use super::{Abilities, MinionInstance};
 use crate::events::EventHandler;
 use rand::seq::SliceRandom;
 use strum::EnumString;
-mod data;
-pub mod alleycat;
-pub mod annoy_o_tron;
-pub mod bubblette;
-pub mod deck_swabbie;
-pub mod dozy_whelp;
-pub mod evolving_chromawing;
-pub mod icky_imp;
-pub mod imprisoner;
-pub mod incorporeal_corporal;
-pub mod manasaber;
-pub mod micro_mummy;
-pub mod mini_myrmidon;
-pub mod mistake;
-pub mod picky_eater;
-pub mod pupbot;
-pub mod razorfen_geomancer;
-pub mod red_whelp;
-pub mod refreshing_anomaly;
-pub mod risen_rider;
-pub mod rockpool_hunter;
-pub mod rot_hide_gnoll;
-pub mod scallywag;
-pub mod scavenging_hyena;
-pub mod sellemental;
-pub mod shell_collector;
-pub mod silverback_patriarch;
-pub mod southsea_busker;
-pub mod sun_bacon_relaxer;
-pub mod surf_n_surf;
-pub mod swampstriker;
-pub mod tavern_tipper;
-pub mod thorncaptain;
-pub mod upbeat_frontdrake;
-pub mod wrath_weaver;
-pub mod acolyte_of_c_thun;
-pub mod backstage_security;
-pub mod bejeweled_duelist;
-pub mod blazing_skyfin;
-pub mod briarback_bookie;
-pub mod cogwork_copter;
-pub mod corpse_refiner;
-pub mod deep_sea_angler;
-pub mod eternal_knight;
-pub mod flourishing_frostling;
-pub mod freedealing_gambler;
-pub mod glyph_guardian;
-pub mod harvest_golem;
-pub mod humming_bird;
-pub mod hungry_snapjaw;
-pub mod impulsive_trickster;
-pub mod invent_o_matic;
-pub mod kaboom_bot;
-pub mod kooky_chemist;
-pub mod lava_lurker;
-pub mod leapfrogger;
-pub mod low_flier;
-pub mod lullabot;
-pub mod menagerie_mug;
-pub mod metaltooth_leaper;
-pub mod mind_muck;
-pub mod molten_rock;
-pub mod murcules;
-pub mod murloc_warleader;
-pub mod nathrezim_overseer;
-pub mod nerubian_deathswarmer;
-pub mod oozeling_gladiator;
-pub mod patient_scout;
-pub mod piggyback_imp;
-pub mod poetic_pen_pal;
-pub mod prophet_of_the_boar;
-pub mod rabid_saurolisk;
-pub mod reef_riffer;
-pub mod ripsnarl_captain;
-pub mod roadboar;
-pub mod saltscale_honcho;
-pub mod scarlet_skull;
-pub mod seaborn_summoner;
-pub mod selfless_hero;
-pub mod sewer_rat;
-pub mod snail_cavalry;
-pub mod soul_rewinder;
-pub mod southsea_captain;
-pub mod sparring_partner;
-pub mod spawn_of_n_zoth;
-pub mod steward_of_time;
-pub mod tad;
-pub mod thorncaller;
-pub mod tough_tusk;
-pub mod twilight_emissary;
-pub mod unstable_ghoul;
-pub mod upbeat_flutist;
-pub mod whelp_smuggler;
-pub mod yo_ho_ogre;
-pub mod yrel;
 pub mod accord_o_tron;
-pub mod amber_guardian;
-pub mod arm_of_the_empire;
-pub mod bird_buddy;
-pub mod bloodsail_cannoneer;
-pub mod briny_bootlegger;
-pub mod bristleback_brute;
-pub mod bristlemane_scrapsmith;
-pub mod bronze_warden;
-pub mod budding_greenthumb;
-pub mod coldlight_seer;
-pub mod crackling_cyclone;
-pub mod daggerspine_thrasher;
-pub mod deflect_o_bot;
-pub mod dreadbeard;
-pub mod eventide_brute;
-pub mod faceless_disciple;
-pub mod felemental;
-pub mod felfin_navigator;
-pub mod first_mate_pip;
-pub mod free_flying_feathermane;
-pub mod gemsplitter;
-pub mod ghoul_of_the_feast;
-pub mod gunpowder_courier;
-pub mod handless_forsaken;
-pub mod houndmaster;
-pub mod iron_groundskeeper;
-pub mod iron_sensei;
-pub mod jelly_belly;
-pub mod kathra_natir;
-pub mod keyboard_igniter;
-pub mod khadgar;
-pub mod leeching_felhound;
-pub mod legion_overseer;
-pub mod lich_doctor;
-pub mod living_constellation;
-pub mod monstrous_macaw;
-pub mod moon_bacon_jazzer;
-pub mod nether_drake;
-pub mod nightmare_amalgam;
-pub mod party_elemental;
-pub mod pashmar_the_vengeful;
-pub mod prickly_piper;
-pub mod pufferquil;
-pub mod radio_star;
-pub mod rat_pack;
-pub mod recycling_wraith;
-pub mod relentless_sentry;
-pub mod replicating_menace;
-pub mod salty_looter;
-pub mod scourfin;
-pub mod screwjank_clunker;
-pub mod shifter_zerus;
-pub mod shoal_commander;
-pub mod smogger;
-pub mod sore_loser;
-pub mod soul_devourer;
-pub mod soul_juggler;
-pub mod southsea_strongarm;
-pub mod spark_ling;
-pub mod stasis_elemental;
-pub mod swolefin;
-pub mod tarecgosa;
-pub mod the_glad_iator;
-pub mod time_saver;
-pub mod warden_of_old;
-pub mod withered_spearhide;
-pub mod zesty_shaker;
-pub mod annihilan_battlemaster;
-pub mod annoy_o_module;
-pub mod anub_arak_nerubian_king;
-pub mod atramedes;
-pub mod ball_of_minions;
-pub mod banana_slamma;
-pub mod bannerboar;
-pub mod bassgill;
-pub mod bigfernal;
-pub mod blade_collector;
-pub mod bonker;
-pub mod bream_counter;
-pub mod carbonic_copy;
-pub mod cave_hydra;
-pub mod champion_of_y_shaarj;
-pub mod cobalt_scalebane;
-pub mod dancing_barnstormer;
-pub mod dazzling_lightspawn;
-pub mod deep_blue_crooner;
-pub mod defender_of_argus;
-pub mod drakonid_enforcer;
-pub mod dynamic_duo;
-pub mod eelbound_archer;
-pub mod electric_synthesizer;
-pub mod emergent_flame;
-pub mod fairy_tale_caroler;
-pub mod fireworks_fanatic;
-pub mod floating_watcher;
-pub mod gem_smuggler;
-pub mod goldgrubber;
-pub mod groundshaker;
-pub mod impatient_doomsayer;
-pub mod lovesick_balladist;
-pub mod majordomo_executus;
-pub mod malchezaar_prince_of_dance;
-pub mod master_of_realities;
-pub mod mechano_egg;
-pub mod mechano_tank;
-pub mod menagerie_jug;
-pub mod necrolyte;
-pub mod peckish_feldrake;
-pub mod peggy_brittlebone;
-pub mod peggy_sturdybone;
-pub mod plagued_tidewalker;
-pub mod possessive_banshee;
-pub mod prestor_s_pyrospawn;
-pub mod primalfin_lookout;
-pub mod prized_promo_drake;
-pub mod qiraji_harbinger;
-pub mod reanimating_rattler;
-pub mod reef_explorer;
-pub mod rendle_the_mistermind;
-pub mod ring_matron;
-pub mod rylak_metalhead;
-pub mod savannah_highmane;
-pub mod scrap_scraper;
-pub mod silent_swimmer;
-pub mod sin_dorei_straight_shot;
-pub mod sly_raptor;
-pub mod soulsplitter;
-pub mod stormbringer;
-pub mod strongshell_scavenger;
-pub mod treasure_seeker_elise;
-pub mod tunnel_blaster;
-pub mod upbeat_upstart;
-pub mod vigilant_stoneborn;
-pub mod wargear;
-pub mod waverider;
-pub mod wildfire_elemental;
-pub mod witchwing_nestmatron;
-pub mod xylo_bones;
+pub mod acolyte_of_c_thun;
 pub mod adaptable_barricade;
 pub mod agamaggan_the_great_boar;
 pub mod aggem_thorncurse;
+pub mod alleycat;
+pub mod amalgadon;
+pub mod amalgam;
+pub mod amber_guardian;
+pub mod annihilan_battlemaster;
+pub mod annoy_o_module;
+pub mod annoy_o_spawn;
+pub mod annoy_o_tron;
 pub mod annoy_o_troupe;
+pub mod anub_arak_nerubian_king;
+pub mod archdruid_hamuul;
+pub mod argent_braggart;
+pub mod arm_of_the_empire;
+pub mod atramedes;
 pub mod baby_krush;
+pub mod backpiggy_imp;
+pub mod backstage_security;
+pub mod ball_of_minions;
+pub mod baltharak;
+pub mod banana_slamma;
+pub mod bannerboar;
 pub mod baron_rivendare;
+pub mod bassgill;
+pub mod bejeweled_duelist;
+pub mod bigfernal;
+pub mod bird_buddy;
+pub mod blade_collector;
+pub mod blazing_skyfin;
+pub mod bloodsail_cannoneer;
 pub mod bonemare;
 pub mod bongo_bopper;
+pub mod bonker;
 pub mod brann_bronzebeard;
+pub mod bream_counter;
+pub mod briarback_bookie;
+pub mod briny_bootlegger;
+pub mod bristlebach;
+pub mod bristleback_brute;
 pub mod bristleback_knight;
+pub mod bristlemane_scrapsmith;
+pub mod bronze_warden;
+pub mod bubblette;
+pub mod budding_greenthumb;
 pub mod cap_n_hoggarr;
+pub mod captain_flat_tusk;
+pub mod captain_sanders;
+pub mod carbonic_copy;
+pub mod cave_hydra;
+pub mod champion_of_sargeras;
 pub mod champion_of_the_primus;
+pub mod champion_of_y_shaarj;
+pub mod charlga;
+pub mod choral_mrrrglr;
 pub mod chronormu;
+pub mod cobalt_scalebane;
+pub mod cogwork_copter;
+pub mod coldlight_seer;
+pub mod colossus_of_the_sun;
+pub mod corpse_refiner;
 pub mod corrupted_myrmidon;
+pub mod crab;
+pub mod crackling_cyclone;
 pub mod critter_wrangler;
+pub mod cubling;
 pub mod cyborg_drake;
+pub mod daggerspine_thrasher;
+pub mod damaged_golem;
+pub mod dancing_barnstormer;
+pub mod darkgaze_elder;
+mod data;
+pub mod dazzling_lightspawn;
 pub mod deadly_spore;
+pub mod deck_swabbie;
+pub mod deep_blue_crooner;
+pub mod deep_sea_angler;
+pub mod defender_of_argus;
+pub mod deflect_o_bot;
+pub mod devilsaur;
+pub mod diablo_lord_of_terror;
 pub mod disco_shuffler;
+pub mod dozy_whelp;
 pub mod dr_boombox;
 pub mod drakkari_enchanter;
+pub mod drakonid_enforcer;
+pub mod dread_admiral_eliza;
+pub mod dreadbeard;
+pub mod dynamic_duo;
+pub mod eelbound_archer;
+pub mod electric_synthesizer;
+pub mod elemental_of_surprise;
+pub mod emergent_flame;
+pub mod emperor_cobra;
+pub mod eternal_knight;
+pub mod eternal_summoner;
+pub mod eventide_brute;
+pub mod evolving_chromawing;
+pub mod faceless_disciple;
+pub mod fairy_tale_caroler;
+pub mod famished_felbat;
+pub mod felemental;
+pub mod felfin_navigator;
+pub mod felstomper;
+pub mod fiery_imp;
+pub mod fireworks_fanatic;
+pub mod first_mate_pip;
+pub mod fish_of_n_zoth;
+pub mod fleet_admiral_tethys;
+pub mod floating_watcher;
+pub mod flourishing_frostling;
+pub mod foe_reaper_4000;
+pub mod free_flying_feathermane;
+pub mod freedealing_gambler;
 pub mod friend_of_a_friend;
+pub mod gem_smuggler;
+pub mod gemsplitter;
 pub mod general_drakkisath;
+pub mod gentle_djinni;
+pub mod ghastcoiler;
+pub mod ghoul_of_the_feast;
 pub mod glowscale;
+pub mod glyph_guardian;
+pub mod golden_monkey;
+pub mod goldgrubber;
+pub mod goldrinn_the_great_wolf;
+pub mod granite_guardian;
+pub mod grease_bot;
+pub mod greta_gold_gun;
+pub mod groundshaker;
+pub mod gunpowder_courier;
 pub mod gusty_trumpeter;
+pub mod half_shell;
+pub mod handless_forsaken;
+pub mod harvest_golem;
+pub mod helping_hand;
 pub mod holy_mecherel;
+pub mod houndmaster;
+pub mod humming_bird;
 pub mod hungering_abomination;
+pub mod hungry_snapjaw;
 pub mod hunter_of_gatherers;
+pub mod hyena;
+pub mod icky_imp;
+pub mod imp;
+pub mod imp_mama;
+pub mod impatient_doomsayer;
 pub mod imposing_percussionist;
+pub mod imprisoner;
+pub mod impulsive_trickster;
+pub mod incorporeal_corporal;
 pub mod insatiable_ur_zul;
 pub mod interrogator_whitemane;
+pub mod invent_o_matic;
+pub mod iron_groundskeeper;
+pub mod iron_sensei;
+pub mod jelly_belly;
+pub mod kaboom_bot;
+pub mod kalecgos_arcane_aspect;
 pub mod kangor_s_apprentice;
+pub mod kathra_natir;
+pub mod keyboard_igniter;
+pub mod khadgar;
 pub mod king_bagurgle;
+pub mod king_varian;
+pub mod kooky_chemist;
+pub mod lava_lurker;
+pub mod leapfrogger;
+pub mod leeching_felhound;
 pub mod leeroy_the_reckless;
+pub mod legion_overseer;
+pub mod lich_doctor;
+pub mod lieutenant_garr;
 pub mod lightfang_enforcer;
 pub mod lil_rag;
+pub mod living_constellation;
+pub mod lovesick_balladist;
+pub mod low_flier;
+pub mod lullabot;
+pub mod maexxna;
 pub mod magmaloc;
+pub mod magtheridon_prime;
+pub mod majordomo_executus;
+pub mod malchezaar_prince_of_dance;
 pub mod mama_bear;
+pub mod manasaber;
 pub mod mannoroth;
+pub mod mantid_queen;
+pub mod master_of_realities;
+pub mod mecha_jaraxxus;
 pub mod mechanized_gift_horse;
+pub mod mechano_egg;
+pub mod mechano_tank;
+pub mod mechapony;
+pub mod mechorse;
+pub mod menagerie_jug;
+pub mod menagerie_mug;
+pub mod metaltooth_leaper;
+pub mod micro_mummy;
+pub mod microbot;
+pub mod mind_muck;
+pub mod mini_myrmidon;
+pub mod mistake;
+pub mod moira_bronzebeard;
+pub mod molten_rock;
+pub mod monstrous_macaw;
+pub mod moon_bacon_jazzer;
+pub mod murcules;
+pub mod murky;
+pub mod murloc_warleader;
 pub mod murozond;
 pub mod mythrax_the_unraveler;
+pub mod nadina_the_red;
+pub mod nathrezim_overseer;
+pub mod necrolyte;
+pub mod nerubian_deathswarmer;
+pub mod nether_drake;
+pub mod nightmare_amalgam;
 pub mod niuzao;
 pub mod nomi_kitchen_nightmare;
+pub mod nosy_looter;
+pub mod obsidian_ravager;
+pub mod octosari_wrap_god;
+pub mod omega_buster;
+pub mod onyxian_whelp;
+pub mod oozeling_gladiator;
 pub mod operatic_belcher;
+pub mod orgozoa_the_tender;
+pub mod ozumat_s_tentacle;
 pub mod palescale_crocolisk;
+pub mod papa_bear;
+pub mod party_elemental;
+pub mod pashmar_the_vengeful;
+pub mod patient_scout;
+pub mod peckish_feldrake;
+pub mod peggy_brittlebone;
+pub mod peggy_sturdybone;
+pub mod picky_eater;
+pub mod piggyback_imp;
+pub mod plagued_tidewalker;
+pub mod plant;
+pub mod poetic_pen_pal;
+pub mod polarizing_beatboxer;
+pub mod possessive_banshee;
+pub mod prestor_s_pyrospawn;
+pub mod prickly_piper;
+pub mod primalfin_lookout;
+pub mod prized_promo_drake;
+pub mod prophet_of_the_boar;
+pub mod pufferquil;
+pub mod pupbot;
+pub mod qiraji_harbinger;
+pub mod rabid_saurolisk;
+pub mod radio_star;
+pub mod rat;
+pub mod rat_pack;
+pub mod razorfen_geomancer;
 pub mod razorgore_the_untamed;
+pub mod reanimating_rattler;
 pub mod record_smuggler;
+pub mod recurring_nightmare;
+pub mod recycling_wraith;
+pub mod red_whelp;
+pub mod reef_explorer;
+pub mod reef_riffer;
+pub mod refreshing_anomaly;
+pub mod relentless_mur_ghoul;
+pub mod relentless_sentry;
+pub mod rendle_the_mistermind;
+pub mod replicating_menace;
+pub mod ring_matron;
+pub mod ripsnarl_captain;
+pub mod risen_rider;
+pub mod roadboar;
+pub mod robosaur;
+pub mod rock_rock;
+pub mod rockpool_hunter;
+pub mod rot_hide_gnoll;
+pub mod rusted_reggie;
+pub mod rylak_metalhead;
+pub mod saltscale_honcho;
+pub mod salty_looter;
 pub mod sanctum_rester;
+pub mod sanguine_champion;
+pub mod savannah_highmane;
+pub mod scallywag;
+pub mod scarlet_skull;
+pub mod scavenging_hyena;
+pub mod scourfin;
+pub mod scrap_scraper;
+pub mod screwjank_clunker;
+pub mod sea_witch_zar_jira;
+pub mod seaborn_summoner;
+pub mod seafood_slinger;
+pub mod selfless_hero;
+pub mod sellemental;
+pub mod sewer_rat;
+pub mod shell_collector;
+pub mod shifter_zerus;
+pub mod shoal_commander;
+pub mod shudderling;
 pub mod si_sefin;
+pub mod silent_swimmer;
+pub mod silverback_patriarch;
+pub mod sin_dorei_straight_shot;
 pub mod sinrunner_blanchy;
+pub mod sister_deathwhisper;
+pub mod sky_pirate;
+pub mod sly_raptor;
+pub mod smogger;
+pub mod smolderwing;
+pub mod snail_cavalry;
+pub mod snake;
+pub mod sore_loser;
+pub mod soul_devourer;
+pub mod soul_juggler;
+pub mod soul_rewinder;
+pub mod soulsplitter;
+pub mod southsea_busker;
+pub mod southsea_captain;
+pub mod southsea_strongarm;
+pub mod spark_ling;
+pub mod sparring_partner;
+pub mod spawn_of_n_zoth;
+pub mod stasis_elemental;
+pub mod steward_of_time;
+pub mod stone_elemental;
+pub mod stormbringer;
 pub mod stormscale_siren;
+pub mod strongshell_scavenger;
+pub mod sun_bacon_relaxer;
+pub mod surf_n_surf;
+pub mod swampstriker;
+pub mod swolefin;
+pub mod tabbycat;
+pub mod tad;
+pub mod tarecgosa;
 pub mod tavern_tempest;
+pub mod tavern_tipper;
+pub mod tea_master_theotar;
+pub mod tentacle_of_octosari;
+pub mod the_boogie_monster;
+pub mod the_boommobile;
+pub mod the_glad_iator;
+pub mod the_walking_fort;
+pub mod thorncaller;
+pub mod thorncaptain;
 pub mod tichondrius;
+pub mod tide_oracle_morgl;
+pub mod tidemistress_athissa;
+pub mod time_saver;
 pub mod titus_rivendare;
 pub mod tony_two_tusk;
 pub mod tortollan_blue_shell;
+pub mod tough_tusk;
 pub mod toxfin;
 pub mod transmuted_bramblewitch;
+pub mod treasure_seeker_elise;
+pub mod tunnel_blaster;
+pub mod twilight_emissary;
 pub mod underhanded_dealer;
+pub mod unstable_ghoul;
 pub mod upbeat_duo;
+pub mod upbeat_flutist;
+pub mod upbeat_frontdrake;
 pub mod upbeat_impressionist;
+pub mod upbeat_upstart;
+pub mod uther_the_lightbringer;
 pub mod utility_drone;
 pub mod vanessa_van_cleef;
+pub mod vigilant_stoneborn;
 pub mod voidlord;
-pub mod archdruid_hamuul;
-pub mod bristlebach;
-pub mod captain_flat_tusk;
-pub mod charlga;
-pub mod choral_mrrrglr;
-pub mod colossus_of_the_sun;
-pub mod darkgaze_elder;
-pub mod dread_admiral_eliza;
-pub mod elemental_of_surprise;
-pub mod eternal_summoner;
-pub mod famished_felbat;
-pub mod felstomper;
-pub mod fleet_admiral_tethys;
-pub mod foe_reaper_4000;
-pub mod gentle_djinni;
-pub mod ghastcoiler;
-pub mod goldrinn_the_great_wolf;
-pub mod grease_bot;
-pub mod greta_gold_gun;
-pub mod imp_mama;
-pub mod kalecgos_arcane_aspect;
-pub mod lieutenant_garr;
-pub mod maexxna;
-pub mod mantid_queen;
-pub mod mecha_jaraxxus;
-pub mod murky;
-pub mod nadina_the_red;
-pub mod nosy_looter;
-pub mod octosari_wrap_god;
-pub mod omega_buster;
-pub mod orgozoa_the_tender;
-pub mod polarizing_beatboxer;
-pub mod relentless_mur_ghoul;
-pub mod rock_rock;
-pub mod seafood_slinger;
-pub mod sister_deathwhisper;
-pub mod tea_master_theotar;
-pub mod the_boogie_monster;
-pub mod the_walking_fort;
-pub mod tidemistress_athissa;
-pub mod uther_the_lightbringer;
+pub mod warden_of_old;
+pub mod wargear;
 pub mod warpwing;
-pub mod young_murk_eye;
-pub mod zapp_slywick;
-pub mod amalgadon;
-pub mod argent_braggart;
-pub mod captain_sanders;
-pub mod champion_of_sargeras;
-pub mod granite_guardian;
-pub mod king_varian;
-pub mod moira_bronzebeard;
-pub mod obsidian_ravager;
-pub mod papa_bear;
-pub mod recurring_nightmare;
-pub mod sanguine_champion;
-pub mod sea_witch_zar_jira;
-pub mod the_boommobile;
-pub mod tide_oracle_morgl;
-pub mod amalgam;
-pub mod annoy_o_spawn;
-pub mod backpiggy_imp;
-pub mod baltharak;
-pub mod crab;
-pub mod cubling;
-pub mod damaged_golem;
-pub mod devilsaur;
-pub mod diablo_lord_of_terror;
-pub mod emperor_cobra;
-pub mod fiery_imp;
-pub mod fish_of_n_zoth;
-pub mod golden_monkey;
-pub mod half_shell;
-pub mod helping_hand;
-pub mod hyena;
-pub mod imp;
-pub mod magtheridon_prime;
-pub mod mechapony;
-pub mod mechorse;
-pub mod microbot;
-pub mod onyxian_whelp;
-pub mod ozumat_s_tentacle;
-pub mod plant;
-pub mod rat;
-pub mod robosaur;
-pub mod rusted_reggie;
-pub mod shudderling;
-pub mod sky_pirate;
-pub mod smolderwing;
-pub mod snake;
-pub mod stone_elemental;
-pub mod tabbycat;
-pub mod tentacle_of_octosari;
 pub mod water_droplet;
+pub mod waverider;
+pub mod whelp_smuggler;
+pub mod wildfire_elemental;
+pub mod witchwing_nestmatron;
+pub mod withered_spearhide;
+pub mod wrath_weaver;
+pub mod xylo_bones;
+pub mod yo_ho_ogre;
+pub mod young_murk_eye;
+pub mod yrel;
+pub mod zapp_slywick;
+pub mod zesty_shaker;
 pub struct MinionVariantData {
     pub name: String,
     pub health: u8,
@@ -1007,9 +1007,7 @@ impl MinionVariant {
             MinionVariant::ImpatientDoomsayer => data::impatient_doomsayer::data(),
             MinionVariant::LovesickBalladist => data::lovesick_balladist::data(),
             MinionVariant::MajordomoExecutus => data::majordomo_executus::data(),
-            MinionVariant::MalchezaarPrinceOfDance => {
-                data::malchezaar_prince_of_dance::data()
-            }
+            MinionVariant::MalchezaarPrinceOfDance => data::malchezaar_prince_of_dance::data(),
             MinionVariant::MasterOfRealities => data::master_of_realities::data(),
             MinionVariant::MechanoEgg => data::mechano_egg::data(),
             MinionVariant::MechanoTank => data::mechano_tank::data(),
@@ -1047,9 +1045,7 @@ impl MinionVariant {
             MinionVariant::WitchwingNestmatron => data::witchwing_nestmatron::data(),
             MinionVariant::XyloBones => data::xylo_bones::data(),
             MinionVariant::AdaptableBarricade => data::adaptable_barricade::data(),
-            MinionVariant::AgamagganTheGreatBoar => {
-                data::agamaggan_the_great_boar::data()
-            }
+            MinionVariant::AgamagganTheGreatBoar => data::agamaggan_the_great_boar::data(),
             MinionVariant::AggemThorncurse => data::aggem_thorncurse::data(),
             MinionVariant::AnnoyOTroupe => data::annoy_o_troupe::data(),
             MinionVariant::BabyKrush => data::baby_krush::data(),
@@ -1105,9 +1101,7 @@ impl MinionVariant {
             MinionVariant::TonyTwoTusk => data::tony_two_tusk::data(),
             MinionVariant::TortollanBlueShell => data::tortollan_blue_shell::data(),
             MinionVariant::Toxfin => data::toxfin::data(),
-            MinionVariant::TransmutedBramblewitch => {
-                data::transmuted_bramblewitch::data()
-            }
+            MinionVariant::TransmutedBramblewitch => data::transmuted_bramblewitch::data(),
             MinionVariant::UnderhandedDealer => data::underhanded_dealer::data(),
             MinionVariant::UpbeatDuo => data::upbeat_duo::data(),
             MinionVariant::UpbeatImpressionist => data::upbeat_impressionist::data(),
@@ -1313,9 +1307,7 @@ impl MinionVariant {
             MinionVariant::BloodsailCannoneer => bloodsail_cannoneer::event_handler(),
             MinionVariant::BrinyBootlegger => briny_bootlegger::event_handler(),
             MinionVariant::BristlebackBrute => bristleback_brute::event_handler(),
-            MinionVariant::BristlemaneScrapsmith => {
-                bristlemane_scrapsmith::event_handler()
-            }
+            MinionVariant::BristlemaneScrapsmith => bristlemane_scrapsmith::event_handler(),
             MinionVariant::BronzeWarden => bronze_warden::event_handler(),
             MinionVariant::BuddingGreenthumb => budding_greenthumb::event_handler(),
             MinionVariant::ColdlightSeer => coldlight_seer::event_handler(),
@@ -1328,9 +1320,7 @@ impl MinionVariant {
             MinionVariant::Felemental => felemental::event_handler(),
             MinionVariant::FelfinNavigator => felfin_navigator::event_handler(),
             MinionVariant::FirstMatePip => first_mate_pip::event_handler(),
-            MinionVariant::FreeFlyingFeathermane => {
-                free_flying_feathermane::event_handler()
-            }
+            MinionVariant::FreeFlyingFeathermane => free_flying_feathermane::event_handler(),
             MinionVariant::Gemsplitter => gemsplitter::event_handler(),
             MinionVariant::GhoulOfTheFeast => ghoul_of_the_feast::event_handler(),
             MinionVariant::GunpowderCourier => gunpowder_courier::event_handler(),
@@ -1378,13 +1368,9 @@ impl MinionVariant {
             MinionVariant::WardenOfOld => warden_of_old::event_handler(),
             MinionVariant::WitheredSpearhide => withered_spearhide::event_handler(),
             MinionVariant::ZestyShaker => zesty_shaker::event_handler(),
-            MinionVariant::AnnihilanBattlemaster => {
-                annihilan_battlemaster::event_handler()
-            }
+            MinionVariant::AnnihilanBattlemaster => annihilan_battlemaster::event_handler(),
             MinionVariant::AnnoyOModule => annoy_o_module::event_handler(),
-            MinionVariant::AnubArakNerubianKing => {
-                anub_arak_nerubian_king::event_handler()
-            }
+            MinionVariant::AnubArakNerubianKing => anub_arak_nerubian_king::event_handler(),
             MinionVariant::Atramedes => atramedes::event_handler(),
             MinionVariant::BallOfMinions => ball_of_minions::event_handler(),
             MinionVariant::BananaSlamma => banana_slamma::event_handler(),
@@ -1416,9 +1402,7 @@ impl MinionVariant {
             MinionVariant::ImpatientDoomsayer => impatient_doomsayer::event_handler(),
             MinionVariant::LovesickBalladist => lovesick_balladist::event_handler(),
             MinionVariant::MajordomoExecutus => majordomo_executus::event_handler(),
-            MinionVariant::MalchezaarPrinceOfDance => {
-                malchezaar_prince_of_dance::event_handler()
-            }
+            MinionVariant::MalchezaarPrinceOfDance => malchezaar_prince_of_dance::event_handler(),
             MinionVariant::MasterOfRealities => master_of_realities::event_handler(),
             MinionVariant::MechanoEgg => mechano_egg::event_handler(),
             MinionVariant::MechanoTank => mechano_tank::event_handler(),
@@ -1441,9 +1425,7 @@ impl MinionVariant {
             MinionVariant::SavannahHighmane => savannah_highmane::event_handler(),
             MinionVariant::ScrapScraper => scrap_scraper::event_handler(),
             MinionVariant::SilentSwimmer => silent_swimmer::event_handler(),
-            MinionVariant::SinDoreiStraightShot => {
-                sin_dorei_straight_shot::event_handler()
-            }
+            MinionVariant::SinDoreiStraightShot => sin_dorei_straight_shot::event_handler(),
             MinionVariant::SlyRaptor => sly_raptor::event_handler(),
             MinionVariant::Soulsplitter => soulsplitter::event_handler(),
             MinionVariant::Stormbringer => stormbringer::event_handler(),
@@ -1458,9 +1440,7 @@ impl MinionVariant {
             MinionVariant::WitchwingNestmatron => witchwing_nestmatron::event_handler(),
             MinionVariant::XyloBones => xylo_bones::event_handler(),
             MinionVariant::AdaptableBarricade => adaptable_barricade::event_handler(),
-            MinionVariant::AgamagganTheGreatBoar => {
-                agamaggan_the_great_boar::event_handler()
-            }
+            MinionVariant::AgamagganTheGreatBoar => agamaggan_the_great_boar::event_handler(),
             MinionVariant::AggemThorncurse => aggem_thorncurse::event_handler(),
             MinionVariant::AnnoyOTroupe => annoy_o_troupe::event_handler(),
             MinionVariant::BabyKrush => baby_krush::event_handler(),
@@ -1486,13 +1466,9 @@ impl MinionVariant {
             MinionVariant::HolyMecherel => holy_mecherel::event_handler(),
             MinionVariant::HungeringAbomination => hungering_abomination::event_handler(),
             MinionVariant::HunterOfGatherers => hunter_of_gatherers::event_handler(),
-            MinionVariant::ImposingPercussionist => {
-                imposing_percussionist::event_handler()
-            }
+            MinionVariant::ImposingPercussionist => imposing_percussionist::event_handler(),
             MinionVariant::InsatiableUrZul => insatiable_ur_zul::event_handler(),
-            MinionVariant::InterrogatorWhitemane => {
-                interrogator_whitemane::event_handler()
-            }
+            MinionVariant::InterrogatorWhitemane => interrogator_whitemane::event_handler(),
             MinionVariant::KangorSApprentice => kangor_s_apprentice::event_handler(),
             MinionVariant::KingBagurgle => king_bagurgle::event_handler(),
             MinionVariant::LeeroyTheReckless => leeroy_the_reckless::event_handler(),
@@ -1505,9 +1481,7 @@ impl MinionVariant {
             MinionVariant::Murozond => murozond::event_handler(),
             MinionVariant::MythraxTheUnraveler => mythrax_the_unraveler::event_handler(),
             MinionVariant::Niuzao => niuzao::event_handler(),
-            MinionVariant::NomiKitchenNightmare => {
-                nomi_kitchen_nightmare::event_handler()
-            }
+            MinionVariant::NomiKitchenNightmare => nomi_kitchen_nightmare::event_handler(),
             MinionVariant::OperaticBelcher => operatic_belcher::event_handler(),
             MinionVariant::PalescaleCrocolisk => palescale_crocolisk::event_handler(),
             MinionVariant::RazorgoreTheUntamed => razorgore_the_untamed::event_handler(),
@@ -1522,9 +1496,7 @@ impl MinionVariant {
             MinionVariant::TonyTwoTusk => tony_two_tusk::event_handler(),
             MinionVariant::TortollanBlueShell => tortollan_blue_shell::event_handler(),
             MinionVariant::Toxfin => toxfin::event_handler(),
-            MinionVariant::TransmutedBramblewitch => {
-                transmuted_bramblewitch::event_handler()
-            }
+            MinionVariant::TransmutedBramblewitch => transmuted_bramblewitch::event_handler(),
             MinionVariant::UnderhandedDealer => underhanded_dealer::event_handler(),
             MinionVariant::UpbeatDuo => upbeat_duo::event_handler(),
             MinionVariant::UpbeatImpressionist => upbeat_impressionist::event_handler(),
@@ -1547,15 +1519,11 @@ impl MinionVariant {
             MinionVariant::FoeReaper4000 => foe_reaper_4000::event_handler(),
             MinionVariant::GentleDjinni => gentle_djinni::event_handler(),
             MinionVariant::Ghastcoiler => ghastcoiler::event_handler(),
-            MinionVariant::GoldrinnTheGreatWolf => {
-                goldrinn_the_great_wolf::event_handler()
-            }
+            MinionVariant::GoldrinnTheGreatWolf => goldrinn_the_great_wolf::event_handler(),
             MinionVariant::GreaseBot => grease_bot::event_handler(),
             MinionVariant::GretaGoldGun => greta_gold_gun::event_handler(),
             MinionVariant::ImpMama => imp_mama::event_handler(),
-            MinionVariant::KalecgosArcaneAspect => {
-                kalecgos_arcane_aspect::event_handler()
-            }
+            MinionVariant::KalecgosArcaneAspect => kalecgos_arcane_aspect::event_handler(),
             MinionVariant::LieutenantGarr => lieutenant_garr::event_handler(),
             MinionVariant::Maexxna => maexxna::event_handler(),
             MinionVariant::MantidQueen => mantid_queen::event_handler(),
@@ -1575,9 +1543,7 @@ impl MinionVariant {
             MinionVariant::TheBoogieMonster => the_boogie_monster::event_handler(),
             MinionVariant::TheWalkingFort => the_walking_fort::event_handler(),
             MinionVariant::TidemistressAthissa => tidemistress_athissa::event_handler(),
-            MinionVariant::UtherTheLightbringer => {
-                uther_the_lightbringer::event_handler()
-            }
+            MinionVariant::UtherTheLightbringer => uther_the_lightbringer::event_handler(),
             MinionVariant::Warpwing => warpwing::event_handler(),
             MinionVariant::YoungMurkEye => young_murk_eye::event_handler(),
             MinionVariant::ZappSlywick => zapp_slywick::event_handler(),
@@ -2025,7 +1991,7 @@ impl MinionVariant {
             MinionVariant::TentacleOfOctosari,
             MinionVariant::WaterDroplet,
         ]
-            .choose(&mut rand::thread_rng())
-            .unwrap()
+        .choose(&mut rand::thread_rng())
+        .unwrap()
     }
 }

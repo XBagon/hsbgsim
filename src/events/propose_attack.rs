@@ -1,7 +1,5 @@
 use crate::MinionInstanceId;
 
-
-
 #[derive(Clone, Copy, Debug)]
 pub struct ProposeAttack {
     pub attacker: MinionInstanceId,

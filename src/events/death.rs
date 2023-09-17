@@ -1,7 +1,5 @@
 use crate::MinionInstanceId;
 
-
-
 #[derive(Clone, Copy, Debug)]
 pub struct Death {
     pub minion: MinionInstanceId,
