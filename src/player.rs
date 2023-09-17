@@ -5,7 +5,7 @@ pub struct Player {
     hero: Hero,
     hand: Hand,
     pub board: Board,
-    pub last_attack_position: u8,
+    pub next_attack_position: u8,
     pub last_attacking_minion: MinionInstanceId,
 }
 
@@ -30,7 +30,7 @@ impl Player {
             hero,
             hand,
             board,
-            last_attack_position: 0,
+            next_attack_position: 0,
             last_attacking_minion: MinionInstanceId::default(),
         }
     }

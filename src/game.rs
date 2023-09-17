@@ -73,14 +73,15 @@ impl Game {
                 (false, false) => {
                     let attacking_player_id = self.attacking_player.unwrap();
                     let next_player_id = attacking_player_id.oppsite();
-                    let event = ProposeAttack::new(
-                        self.determine_next_attacker(attacking_player_id),
-                        self.random_target(next_player_id),
-                    )
-                    .into();
-
-                    self.attacking_player = Some(next_player_id);
-                    event
+                    let attacker = self.determine_next_attacker(attacking_player_id);
+                    if let Some(attacker) = attacker {
+                        let event =
+                            ProposeAttack::new(attacker, self.random_target(next_player_id)).into();
+                        self.attacking_player = Some(next_player_id);
+                        event
+                    } else {
+                        End::Draw.into()
+                    }
                 }
             }
         };
@@ -207,36 +208,21 @@ impl Game {
         }
     }
 
-    pub fn determine_next_attacker(&mut self, player_id: PlayerId) -> MinionInstanceId {
+    pub fn determine_next_attacker(&mut self, player_id: PlayerId) -> Option<MinionInstanceId> {
         let attacking_player = self.battleground.player_mut(player_id);
-        let cycling =
-            attacking_player.last_attack_position >= attacking_player.board.minions.len() as u8;
-        if cycling {
-            attacking_player.last_attack_position = 0;
-        } else {
-            let minion_at_last_attack_position = attacking_player
-                .board
-                .minions
-                .get(
-                    attacking_player
-                        .last_attack_position
-                        .min(attacking_player.board.minions.len() as u8 - 1)
-                        as usize,
-                )
-                .unwrap();
-            if *minion_at_last_attack_position == attacking_player.last_attacking_minion {
-                attacking_player.last_attack_position += 1;
-                attacking_player.last_attack_position %= attacking_player.board.minions.len() as u8;
+        let minion_count = attacking_player.board.minions.len();
+
+        for i in 0..minion_count {
+            let next_position = (attacking_player.next_attack_position as usize + i) % minion_count;
+            let next_mi_id = attacking_player.board.minions[next_position];
+            let next_minion = self.minion_instances.get(next_mi_id).unwrap();
+            if next_minion.attack > 0 {
+                attacking_player.next_attack_position = i as u8 + 1;
+                return Some(next_mi_id);
             }
         }
 
-        let attacking_minion = *attacking_player
-            .board
-            .minions
-            .get(attacking_player.last_attack_position as usize)
-            .unwrap();
-        attacking_player.last_attacking_minion = attacking_minion;
-        attacking_minion
+        None
     }
 
     pub fn random_target(&self, player_id: PlayerId) -> MinionInstanceId {
@@ -296,15 +282,19 @@ impl Game {
         mi_id: MinionInstanceId,
         position: Position,
     ) -> Result<(), Error> {
-        let res = self
-            .battleground
-            .player_mut(position.player_id)
-            .board
-            .minions
+        let player = self.battleground.player_mut(position.player_id);
+        let minions = &mut player.board.minions;
+        let res = minions
             .try_insert(position.index as usize, mi_id)
             .map_or(Ok(()), |_| Err(Error::FullBoard));
         self.minion_instances.get_mut(mi_id).unwrap().position = Some(position);
-        //TODO: modify position of shifted minions accordingly
+        let index = position.index as usize;
+        for &mi_id in minions[index..].iter() {
+            self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index += 1;
+        }
+        if position.index < player.next_attack_position {
+            player.next_attack_position -= 1;
+        }
         res
     }
 
@@ -318,19 +308,24 @@ impl Game {
         minions.try_push(mi_id).map_or(Ok(()), |_| Err(Error::FullBoard))?;
         self.minion_instances.get_mut(mi_id).unwrap().position =
             Some(Position::new(player_id, next_index));
+        //No need to update player.next_attack_position as minions positioned last don't impact that.
         Ok(())
     }
 
     fn remove_minion(&mut self, mi_id: MinionInstanceId) -> Result<(), Error> {
         let minion = self.minion_instances.get(mi_id).unwrap();
         let position = minion.position.ok_or(Error::MinionNotOnBoard)?;
-        let minions = &mut self.battleground.player_mut(position.player_id).board.minions;
+        let player = self.battleground.player_mut(position.player_id);
+        let minions = &mut player.board.minions;
         let index = position.index as usize;
         let removed = minions.remove(index);
+        debug_assert_eq!(mi_id, removed);
         for &mi_id in minions[index..].iter() {
             self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index -= 1;
         }
-        debug_assert_eq!(mi_id, removed);
+        if position.index < player.next_attack_position {
+            player.next_attack_position -= 1;
+        }
 
         Ok(())
     }
