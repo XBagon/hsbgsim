@@ -76,28 +76,31 @@ impl Game {
                 (false, false) => {
                     let attacking_player_id = self.attacking_player.unwrap();
                     let next_player_id = attacking_player_id.oppsite();
-                    let attacker = self.determine_next_attacker(attacking_player_id);
+
+                    let attacker =
+                        if let Some(attacker) = self.determine_next_attacker(attacking_player_id) {
+                            Some(attacker)
+                        } else {
+                            //Switch attacker
+                            if let Some(attacker) = self.determine_next_attacker(next_player_id) {
+                                Some(attacker)
+                            } else {
+                                None
+                            }
+                        };
+
                     if let Some(attacker) = attacker {
-                        let event =
-                            ProposeAttack::new(attacker, self.random_defender(next_player_id))
-                                .into();
+                        let event = ProposeAttack::new(
+                            attacker,
+                            self.random_defender(next_player_id),
+                            true,
+                        )
+                        .into();
                         self.attacking_player = Some(next_player_id);
                         event
                     } else {
-                        //Switch attacker
-                        let (next_player_id, attacking_player_id) =
-                            (attacking_player_id, next_player_id);
-                        let attacker = self.determine_next_attacker(attacking_player_id);
-                        if let Some(attacker) = attacker {
-                            let event =
-                                ProposeAttack::new(attacker, self.random_defender(next_player_id))
-                                    .into();
-                            self.attacking_player = Some(next_player_id);
-                            event
-                        } else {
-                            //Noone has minions that can attack
-                            End::Draw.into()
-                        }
+                        //Noone has minions that can attack
+                        End::Draw.into()
                     }
                 }
             }
@@ -108,6 +111,9 @@ impl Game {
             Event::End(_end) => {}
             &Event::ProposeAttack(propose_attack) => {
                 self.push_event(Event::Attack(propose_attack.into()));
+                if propose_attack.is_outer_phase {
+                    self.push_event(DeathCheck.into());
+                }
                 for i in 0..self.event_handler_manager.propose_attack.len() {
                     let AssociatedEventHandler {
                         minion: mi_id,
@@ -118,6 +124,9 @@ impl Game {
             }
             &Event::Attack(attack) => {
                 self.push_event(Event::AfterAttack(attack.into()));
+                if attack.is_outer_phase {
+                    self.push_event(DeathCheck.into());
+                }
                 let [attacker, defender] = self
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
@@ -157,11 +166,14 @@ impl Game {
                 //    handler(mi_id, attack, self)
                 //}
             }
-            &Event::AfterAttack(attack) => {
+            &Event::AfterAttack(after_attack) => {
                 let [_attacker, _defender] = self
                     .minion_instances
-                    .get_disjoint_mut([attack.attacker, attack.defender])
+                    .get_disjoint_mut([after_attack.attacker, after_attack.defender])
                     .unwrap();
+                if after_attack.is_outer_phase {
+                    self.push_event(DeathCheck.into());
+                }
             }
             &Event::DeathCheck(_death_check) => {
                 let _event_count = self.events.len();
@@ -207,10 +219,10 @@ impl Game {
     }
 
     pub fn push_event(&mut self, event: Event) {
-        if self.events.len() == 0 {
-            //OUTER PHASE: Check Deaths here
-            self.events.push(DeathCheck.into());
-        }
+        //if self.events.len() == 0 {
+        //    //OUTER PHASE: Check Deaths here
+        //    self.events.push(DeathCheck.into());
+        //}
         self.events.push(event);
     }
 

@@ -6,13 +6,15 @@ use super::ProposeAttack;
 pub struct Attack {
     pub attacker: MinionInstanceId,
     pub defender: MinionInstanceId,
+    pub is_outer_phase: bool,
 }
 
 impl Attack {
-    pub fn new(attacker: MinionInstanceId, defender: MinionInstanceId) -> Self {
+    pub fn new(attacker: MinionInstanceId, defender: MinionInstanceId, outer_phase: bool) -> Self {
         Self {
             attacker,
             defender,
+            is_outer_phase: outer_phase,
         }
     }
 }
@@ -22,6 +24,7 @@ impl From<ProposeAttack> for Attack {
         Self {
             attacker: value.attacker,
             defender: value.defender,
+            is_outer_phase: value.is_outer_phase,
         }
     }
 }

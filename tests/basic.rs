@@ -99,3 +99,5 @@ pub fn full_maexxna_vs_amalgam() {
 
     assert_eq!(game.run(), End::Draw);
 }
+
+//TODO: tests with same random seed for reproducability & regression tests
