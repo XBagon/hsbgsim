@@ -84,7 +84,20 @@ impl Game {
                         self.attacking_player = Some(next_player_id);
                         event
                     } else {
-                        End::Draw.into()
+                        //Switch attacker
+                        let (next_player_id, attacking_player_id) =
+                            (attacking_player_id, next_player_id);
+                        let attacker = self.determine_next_attacker(attacking_player_id);
+                        if let Some(attacker) = attacker {
+                            let event =
+                                ProposeAttack::new(attacker, self.random_defender(next_player_id))
+                                    .into();
+                            self.attacking_player = Some(next_player_id);
+                            event
+                        } else {
+                            //Noone has minions that can attack
+                            End::Draw.into()
+                        }
                     }
                 }
             }
@@ -119,6 +132,10 @@ impl Game {
                                 .into();
                         events.push(event);
                     }
+                    if attacker.abilities.venomous() {
+                        attacker.abilities.set_venomous(false);
+                        defender.pending_destroy = true;
+                    }
                 }
                 if attacker.attack > 0 {
                     if defender.abilities.shield() {
@@ -128,6 +145,10 @@ impl Game {
                             TakeDamage::new(attack.defender, attacker.attack, attack.attacker)
                                 .into();
                         events.push(event);
+                    }
+                    if defender.abilities.venomous() {
+                        defender.abilities.set_venomous(false);
+                        attacker.pending_destroy = true;
                     }
                 }
                 events.into_iter().for_each(|event| self.push_event(event));
@@ -146,7 +167,7 @@ impl Game {
                 let _event_count = self.events.len();
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
-                    if minion.health <= 0 {
+                    if minion.health <= 0 || minion.pending_destroy {
                         self.events.push(Death::new(mi_id).into());
                     }
                 }

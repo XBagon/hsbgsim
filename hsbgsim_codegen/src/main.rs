@@ -196,6 +196,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                     attack: data.attack as i32,
                     abilities: data.abilities,
                     position: None,
+                    pending_destroy: false,
                     event_handler: self.event_handler(),
                 }
             }

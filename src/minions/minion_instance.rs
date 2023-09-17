@@ -14,6 +14,7 @@ pub struct MinionInstance {
     pub attack: i32,
     pub position: Option<Position>,
     pub abilities: Abilities,
+    pub pending_destroy: bool,
     pub event_handler: EventHandler,
 }
 

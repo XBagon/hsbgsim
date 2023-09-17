@@ -80,3 +80,22 @@ pub fn full_maexxna() {
 
     assert_eq!(game.run(), End::Draw);
 }
+
+#[test]
+pub fn full_maexxna_vs_amalgam() {
+    let mut game = Game::default();
+
+    for _ in 0..7 {
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        game.position_minion(maexxna, PlayerId::Bottom).unwrap();
+    }
+
+    for _ in 0..7 {
+        let amalgam = game.instantiate_minion(MinionVariant::Amalgam);
+        game.position_minion(amalgam, PlayerId::Top).unwrap();
+    }
+
+    game.initialize();
+
+    assert_eq!(game.run(), End::Draw);
+}
