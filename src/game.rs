@@ -24,7 +24,7 @@ pub struct Game {
     additional_attacks: u8,
     events: Events,
     event_handler_manager: EventHandlerManager,
-    rng: Xoshiro256PlusPlus,
+    pub(crate) rng: Xoshiro256PlusPlus,
 }
 
 impl Default for Game {

@@ -24,6 +24,12 @@ impl MinionInstance {
         if self.abilities.venomous() {
             attack = format!("v{}", attack);
         }
+        if self.abilities.venomous() {
+            attack = format!("v{}", attack);
+        }
+        if self.abilities.windfury() {
+            attack = format!("w{}", attack);
+        }
         let mut health = format!("{}", self.health);
         if self.abilities.shield() {
             health = format!("({})", health);
