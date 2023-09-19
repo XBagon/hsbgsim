@@ -11,7 +11,6 @@ pub struct AbilitiesInit {
     pub(crate) deathrattle: bool,
     pub(crate) taunt: bool,
     pub(crate) shield: bool,
-    //TODO: implement functionality
     pub(crate) windfury: bool,
     pub(crate) venomous: bool,
     //TODO: implement functionality

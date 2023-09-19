@@ -21,6 +21,8 @@ pub struct Game {
     pub battleground: Battleground,
     pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
     attacking_player: Option<PlayerId>,
+    last_attacker: MinionInstanceId,
+    additional_attacks: u8,
     events: Events,
     event_handler_manager: EventHandlerManager,
 }
@@ -77,7 +79,13 @@ impl Game {
                     let attacking_player_id = self.attacking_player.unwrap();
                     let next_player_id = attacking_player_id.oppsite();
 
-                    let attacker =
+                    let attacker = if self.additional_attacks > 0 && {
+                        self.additional_attacks -= 1;
+                        let minion = self.minion_instances.get(self.last_attacker).unwrap();
+                        minion.position.is_some() && minion.attack > 0
+                    } {
+                        Some(self.last_attacker)
+                    } else {
                         if let Some(attacker) = self.determine_next_attacker(attacking_player_id) {
                             Some(attacker)
                         } else {
@@ -87,15 +95,21 @@ impl Game {
                             } else {
                                 None
                             }
-                        };
+                        }
+                    };
 
                     if let Some(attacker) = attacker {
+                        let minion = self.minion_instances.get(attacker).unwrap();
+                        if attacker != self.last_attacker && minion.abilities.windfury() {
+                            self.additional_attacks = 1;
+                        }
                         let event = ProposeAttack::new(
                             attacker,
                             self.random_defender(next_player_id),
                             true,
                         )
                         .into();
+                        self.last_attacker = attacker;
                         self.attacking_player = Some(next_player_id);
                         event
                     } else {
