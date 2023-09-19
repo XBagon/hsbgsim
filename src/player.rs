@@ -1,4 +1,5 @@
 use crate::{board::Board, hand::Hand, hero::Hero, MinionInstanceId};
+use serde::{Deserialize, Serialize};
 
 #[derive(Default)]
 pub struct Player {
@@ -9,7 +10,7 @@ pub struct Player {
     pub last_attacking_minion: MinionInstanceId,
 }
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub enum PlayerId {
     Top,
     Bottom,

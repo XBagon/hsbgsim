@@ -1,6 +1,7 @@
 use crate::MinionInstanceId;
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct TakeDamage {
     pub target: MinionInstanceId,
     pub amount: i32,

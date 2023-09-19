@@ -1,6 +1,7 @@
 use crate::{minions::Position, MinionInstanceId};
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct Summon {
     pub minion: MinionInstanceId,
     pub position: Position,

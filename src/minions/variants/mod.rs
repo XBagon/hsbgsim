@@ -1599,7 +1599,7 @@ impl MinionVariant {
             MinionVariant::WaterDroplet => water_droplet::event_handler(),
         }
     }
-    pub fn random() -> Self {
+    pub fn random<R: rand::Rng + ?Sized>(rng: &mut R) -> Self {
         *[
             MinionVariant::Alleycat,
             MinionVariant::AnnoyOTron,
@@ -1992,7 +1992,7 @@ impl MinionVariant {
             MinionVariant::TentacleOfOctosari,
             MinionVariant::WaterDroplet,
         ]
-        .choose(&mut rand::thread_rng())
+        .choose(rng)
         .unwrap()
     }
 }

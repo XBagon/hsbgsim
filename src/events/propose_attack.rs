@@ -1,6 +1,7 @@
 use crate::MinionInstanceId;
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct ProposeAttack {
     pub attacker: MinionInstanceId,
     pub defender: MinionInstanceId,

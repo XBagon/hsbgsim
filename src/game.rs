@@ -10,13 +10,12 @@ use crate::{
     Battleground, MinionInstance,
 };
 
-use rand::seq::SliceRandom;
+use rand::prelude::*;
+use rand_xoshiro::Xoshiro256PlusPlus;
 use slotmap::{Key, SlotMap};
 use thiserror::Error;
 use tinyvec::ArrayVec;
 
-///Needs to be run once before [`Self::step`] is called
-#[derive(Default)]
 pub struct Game {
     pub battleground: Battleground,
     pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
@@ -25,6 +24,22 @@ pub struct Game {
     additional_attacks: u8,
     events: Events,
     event_handler_manager: EventHandlerManager,
+    rng: Xoshiro256PlusPlus,
+}
+
+impl Default for Game {
+    fn default() -> Self {
+        Self {
+            battleground: Default::default(),
+            minion_instances: Default::default(),
+            attacking_player: Default::default(),
+            last_attacker: Default::default(),
+            additional_attacks: Default::default(),
+            events: Default::default(),
+            event_handler_manager: Default::default(),
+            rng: Xoshiro256PlusPlus::from_entropy(),
+        }
+    }
 }
 
 struct GameBuilder {}
@@ -36,13 +51,27 @@ impl GameBuilder {
 }
 
 impl Game {
+    pub fn with_seed(seed: u64) -> Self {
+        Self {
+            battleground: Default::default(),
+            minion_instances: Default::default(),
+            attacking_player: Default::default(),
+            last_attacker: Default::default(),
+            additional_attacks: Default::default(),
+            events: Default::default(),
+            event_handler_manager: Default::default(),
+            rng: Xoshiro256PlusPlus::seed_from_u64(seed),
+        }
+    }
+
+    ///Needs to be run once before [`Self::step`] is called
     pub fn initialize(&mut self) {
         let bottom_minion_count = self.battleground.player(PlayerId::Bottom).board.minions.len();
         let top_minion_count = self.battleground.player(PlayerId::Top).board.minions.len();
         let starting_player = match bottom_minion_count.cmp(&top_minion_count) {
             std::cmp::Ordering::Less => PlayerId::Top,
             std::cmp::Ordering::Equal => {
-                if rand::random() {
+                if self.rng.gen() {
                     PlayerId::Top
                 } else {
                     PlayerId::Bottom
@@ -79,26 +108,27 @@ impl Game {
                     let attacking_player_id = self.attacking_player.unwrap();
                     let next_player_id = attacking_player_id.oppsite();
 
-                    let attacker = if self.additional_attacks > 0 && {
+                    let attack_info = if self.additional_attacks > 0 && {
                         self.additional_attacks -= 1;
                         let minion = self.minion_instances.get(self.last_attacker).unwrap();
                         minion.position.is_some() && minion.attack > 0
                     } {
-                        Some(self.last_attacker)
+                        //Last minion attacks again
+                        Some((self.last_attacker, attacking_player_id))
                     } else {
                         if let Some(attacker) = self.determine_next_attacker(attacking_player_id) {
-                            Some(attacker)
+                            Some((attacker, next_player_id))
                         } else {
                             //Switch attacker
                             if let Some(attacker) = self.determine_next_attacker(next_player_id) {
-                                Some(attacker)
+                                Some((attacker, attacking_player_id))
                             } else {
                                 None
                             }
                         }
                     };
 
-                    if let Some(attacker) = attacker {
+                    if let Some((attacker, next_player_id)) = attack_info {
                         let minion = self.minion_instances.get(attacker).unwrap();
                         if attacker != self.last_attacker && minion.abilities.windfury() {
                             self.additional_attacks = 1;
@@ -145,6 +175,10 @@ impl Game {
                     .minion_instances
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
+                debug_assert_ne!(
+                    attacker.position.unwrap().player_id,
+                    defender.position.unwrap().player_id
+                );
                 let mut events = ArrayVec::<[Event; 2]>::new();
                 if defender.attack > 0 {
                     if attacker.abilities.shield() {
@@ -250,6 +284,21 @@ impl Game {
         }
     }
 
+    pub fn run_and_record_events(&mut self) -> Vec<Event> {
+        let mut recording = Vec::new();
+
+        loop {
+            let current_event = self.step();
+
+            if let Event::End(_) = current_event {
+                recording.push(current_event);
+                return recording;
+            }
+
+            recording.push(current_event);
+        }
+    }
+
     pub fn run_and_print(&mut self) {
         let mut last_print = String::new();
 
@@ -286,7 +335,7 @@ impl Game {
         None
     }
 
-    pub fn random_defender(&self, player_id: PlayerId) -> MinionInstanceId {
+    pub fn random_defender(&mut self, player_id: PlayerId) -> MinionInstanceId {
         let mut taunted_not_stealthed = Vec::new();
         let mut not_taunted_not_stealthed = Vec::new();
         for mi_id in self.battleground.player(player_id).board.minions {
@@ -304,7 +353,7 @@ impl Game {
         } else {
             taunted_not_stealthed
         };
-        *valid_targets.choose(&mut rand::thread_rng()).unwrap()
+        *valid_targets.choose(&mut self.rng).unwrap()
     }
 
     pub fn game_print(&self) -> String {

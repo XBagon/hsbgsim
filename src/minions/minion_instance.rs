@@ -1,7 +1,7 @@
-use slotmap::new_key_type;
-
 use super::MinionVariant;
 use crate::{events::EventHandler, minions::Abilities, player::PlayerId};
+use serde::{Deserialize, Serialize};
+use slotmap::new_key_type;
 
 new_key_type! {
     pub struct MinionInstanceId;
@@ -36,7 +36,7 @@ impl MinionInstance {
     }
 }
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct Position {
     pub player_id: PlayerId,
     pub index: u8,

@@ -43,7 +43,7 @@ impl<H> AssociatedEventHandler<H> {
 
 macro_rules! event_variants {
     ($($vars:ident),*) => {
-        #[derive(Debug, Default)]
+        #[derive(Debug, Default, serde::Serialize, serde::Deserialize)]
         pub enum Event {
             #[default]
             Invalid,

@@ -1,8 +1,8 @@
-use crate::MinionInstanceId;
-
 use super::Attack;
+use crate::MinionInstanceId;
+use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
 pub struct AfterAttack {
     pub attacker: MinionInstanceId,
     pub defender: MinionInstanceId,

@@ -224,8 +224,8 @@ fn main() -> Result<(), Box<dyn Error>> {
                 }
             }
 
-            pub fn random() -> Self {
-                *[#(MinionVariant::#variants),*].choose(&mut rand::thread_rng()).unwrap()
+            pub fn random<R: rand::Rng + ?Sized>(rng: &mut R) -> Self {
+                *[#(MinionVariant::#variants),*].choose(rng).unwrap()
             }
         }
     };
