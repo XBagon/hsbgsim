@@ -2,6 +2,7 @@ use hsbgsim::*;
 use insta::assert_yaml_snapshot;
 use rand::SeedableRng;
 use rand_xoshiro::Xoshiro256PlusPlus;
+use std::collections::BTreeMap;
 use test_case::test_matrix;
 
 #[test_matrix(
@@ -23,6 +24,9 @@ pub fn random_board_snapshot(seed: u64) {
     game.initialize();
 
     let recording = game.run_and_record_events();
+    let mut minions: BTreeMap<_, _> =
+        game.minion_instances.iter().map(|(mi_id, minion)| (mi_id, minion.variant)).collect();
 
-    assert_yaml_snapshot!(format!("random_board_snapshot_{}", seed), recording);
+    //TODO: better replay format
+    assert_yaml_snapshot!(format!("random_board_snapshot_{}", seed), (minions, recording));
 }

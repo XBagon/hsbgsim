@@ -202,7 +202,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
 
-        #[derive(Clone, Copy, Default, EnumString)]
+        #[derive(Clone, Copy, Default, EnumString, serde::Serialize, serde::Deserialize)]
         pub enum MinionVariant {
             #[default]
             Invalid,
