@@ -1,7 +1,7 @@
-use crate::events::{EventHandler, Summon};
+use crate::events::{EventHandlers, Summon};
 
-pub fn event_handler() -> EventHandler {
-    EventHandler {
+pub fn event_handlers() -> EventHandlers {
+    EventHandlers {
         death: Some(|this, death, game| {
             if death.minion == this {
                 let position = game.minion_instances.get(this).unwrap().position.unwrap();

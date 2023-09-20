@@ -1,7 +1,7 @@
 use crate::{
     events::{
-        AssociatedEventHandler, Death, DeathCheck, End, Event, EventHandlerManager, Events,
-        ProposeAttack, TakeDamage,
+        Death, DeathCheck, End, Event, EventHandlerManager, Events, ProposeAttack,
+        RawActivateEffect, Remove, TakeDamage,
     },
     minions::MinionInstanceId,
     minions::MinionVariant,
@@ -85,7 +85,7 @@ impl Game {
     pub fn instantiate_minion(&mut self, variant: MinionVariant) -> MinionInstanceId {
         let minion_instance = variant.into_instance();
         let mi_id = self.minion_instances.insert(minion_instance);
-        self.event_handler_manager.append_event_handler(mi_id, &variant.event_handler());
+        self.event_handler_manager.append_event_handler(mi_id, &variant.event_handlers());
         mi_id
     }
 
@@ -159,11 +159,13 @@ impl Game {
                     self.push_event(DeathCheck.into());
                 }
                 for i in 0..self.event_handler_manager.propose_attack.len() {
-                    let AssociatedEventHandler {
-                        minion: mi_id,
-                        handler,
-                    } = self.event_handler_manager.propose_attack[i];
-                    handler(mi_id, propose_attack, self)
+                    self.push_event(
+                        RawActivateEffect::from_event_and_handler(
+                            propose_attack,
+                            self.event_handler_manager.propose_attack[i],
+                        )
+                        .into(),
+                    );
                 }
             }
             &Event::Attack(attack) => {
@@ -228,19 +230,25 @@ impl Game {
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
                     if minion.health <= 0 || minion.pending_destroy {
-                        self.events.push(Death::new(mi_id).into());
+                        //TODO: replace `MinionInstanceId::null()` with actual sensible source. Maybe look at PastEvents
+                        self.events.push(Death::new(mi_id, MinionInstanceId::null()).into());
                     }
                 }
             }
             &Event::Death(death) => {
-                self.remove_minion(death.minion).unwrap();
+                self.push_event(Remove::new(death.minion).into());
                 for i in 0..self.event_handler_manager.death.len() {
-                    let AssociatedEventHandler {
-                        minion: mi_id,
-                        handler,
-                    } = self.event_handler_manager.death[i];
-                    handler(mi_id, death, self)
+                    self.push_event(
+                        RawActivateEffect::from_event_and_handler(
+                            death,
+                            self.event_handler_manager.death[i],
+                        )
+                        .into(),
+                    );
                 }
+            }
+            &Event::Remove(remove) => {
+                self.remove_minion(remove.minion).unwrap();
             }
             &Event::StatBuff(stat_buff) => {
                 let target = self.minion_instances.get_mut(stat_buff.target).unwrap();
@@ -251,15 +259,20 @@ impl Game {
                 self.minion_instances.get_mut(take_damage.target).unwrap().health -=
                     take_damage.amount;
                 for i in 0..self.event_handler_manager.take_damage.len() {
-                    let AssociatedEventHandler {
-                        minion: mi_id,
-                        handler,
-                    } = self.event_handler_manager.take_damage[i];
-                    handler(mi_id, take_damage, self)
+                    self.push_event(
+                        RawActivateEffect::from_event_and_handler(
+                            take_damage,
+                            self.event_handler_manager.take_damage[i],
+                        )
+                        .into(),
+                    );
                 }
             }
             Event::Summon(summon) => {
                 _ = self.position_minion_at(summon.minion, summon.position);
+            }
+            Event::ActivateEffect(activate_effect) => {
+                activate_effect.generic_associated_event_handler.handle(self);
             }
         }
 
@@ -400,6 +413,8 @@ impl Game {
         minions
             .try_insert(position.index as usize, mi_id)
             .map_or(Ok(()), |_| Err(Error::FullBoard))?;
+
+        //Update positions
         self.minion_instances.get_mut(mi_id).unwrap().position = Some(position);
         let index = position.index as usize;
         for &mi_id in minions[(index + 1)..].iter() {
@@ -419,6 +434,8 @@ impl Game {
         let minions = &mut self.battleground.player_mut(player_id).board.minions;
         let next_index = minions.len() as u8;
         minions.try_push(mi_id).map_or(Ok(()), |_| Err(Error::FullBoard))?;
+
+        //Update positions
         self.minion_instances.get_mut(mi_id).unwrap().position =
             Some(Position::new(player_id, next_index));
         //No need to update player.next_attack_position as minions positioned last don't impact that.
@@ -433,6 +450,9 @@ impl Game {
         let index = position.index as usize;
         let removed = minions.remove(index);
         debug_assert_eq!(mi_id, removed);
+        //self.event_handler_manager.clean_up(mi_id);
+
+        //Update positions
         for &mi_id in minions[index..].iter() {
             self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index -= 1;
         }

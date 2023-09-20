@@ -1,4 +1,4 @@
-use crate::events::EventHandler;
-pub fn event_handler() -> EventHandler {
-    EventHandler::default()
+use crate::events::EventHandlers;
+pub fn event_handlers() -> EventHandlers {
+    EventHandlers::default()
 }

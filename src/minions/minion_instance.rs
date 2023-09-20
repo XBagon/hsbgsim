@@ -1,5 +1,5 @@
 use super::MinionVariant;
-use crate::{events::EventHandler, minions::Abilities, player::PlayerId};
+use crate::{events::EventHandlers, minions::Abilities, player::PlayerId};
 use serde::{Deserialize, Serialize};
 use slotmap::new_key_type;
 
@@ -15,7 +15,7 @@ pub struct MinionInstance {
     pub position: Option<Position>,
     pub abilities: Abilities,
     pub pending_destroy: bool,
-    pub event_handler: EventHandler,
+    pub event_handlers: EventHandlers,
 }
 
 impl MinionInstance {

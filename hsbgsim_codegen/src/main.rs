@@ -106,10 +106,10 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
             Ok(file) => {
                 let variant_code = quote! {
-                    use crate::events::EventHandler;
+                    use crate::events::EventHandlers;
 
-                    pub fn event_handler() -> EventHandler {
-                        EventHandler::default()
+                    pub fn event_handlers() -> EventHandlers {
+                        EventHandlers::default()
                     }
                 };
                 let variant_file: syn::File = syn::parse2(variant_code)?;
@@ -170,9 +170,11 @@ fn main() -> Result<(), Box<dyn Error>> {
         file.write_all(data_file_string.as_bytes())?;
     }
 
+    let num_variants = variants.len();
+
     let mod_code = quote! {
         use super::{Abilities, MinionInstance};
-        use crate::events::EventHandler;
+        use crate::events::EventHandlers;
 
         use rand::seq::SliceRandom;
         use strum::EnumString;
@@ -197,7 +199,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                     abilities: data.abilities,
                     position: None,
                     pending_destroy: false,
-                    event_handler: self.event_handler(),
+                    event_handlers: self.event_handlers(),
                 }
             }
         }
@@ -210,6 +212,8 @@ fn main() -> Result<(), Box<dyn Error>> {
         }
 
         impl MinionVariant {
+            pub const ALL: [MinionVariant; #num_variants] = [#(MinionVariant::#variants),*];
+
             pub fn data(self) -> MinionVariantData {
                 match self {
                     MinionVariant::Invalid => panic!("Invalid MinionVariant"),
@@ -217,15 +221,15 @@ fn main() -> Result<(), Box<dyn Error>> {
                 }
             }
 
-            pub fn event_handler(self) -> EventHandler {
+            pub fn event_handlers(self) -> EventHandlers {
                 match self {
                     MinionVariant::Invalid => panic!("Invalid MinionVariant"),
-                    #(MinionVariant::#variants => #modules::event_handler()),*
+                    #(MinionVariant::#variants => #modules::event_handlers()),*
                 }
             }
 
             pub fn random<R: rand::Rng + ?Sized>(rng: &mut R) -> Self {
-                *[#(MinionVariant::#variants),*].choose(rng).unwrap()
+                *Self::ALL.choose(rng).unwrap()
             }
         }
     };

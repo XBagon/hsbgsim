@@ -82,6 +82,13 @@ expression: "(minions, recording)"
       minion:
         idx: 4
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 4
+        version: 1
   - AfterAttack:
       attacker:
         idx: 1
@@ -129,7 +136,21 @@ expression: "(minions, recording)"
       minion:
         idx: 2
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 2
+        version: 1
   - Death:
+      minion:
+        idx: 1
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
       minion:
         idx: 1
         version: 1
@@ -180,6 +201,13 @@ expression: "(minions, recording)"
       minion:
         idx: 12
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 12
+        version: 1
   - AfterAttack:
       attacker:
         idx: 3
@@ -227,6 +255,13 @@ expression: "(minions, recording)"
       minion:
         idx: 13
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 13
+        version: 1
   - AfterAttack:
       attacker:
         idx: 6
@@ -271,6 +306,13 @@ expression: "(minions, recording)"
         version: 1
   - DeathCheck: ~
   - Death:
+      minion:
+        idx: 5
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
       minion:
         idx: 5
         version: 1
@@ -321,7 +363,21 @@ expression: "(minions, recording)"
       minion:
         idx: 8
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 8
+        version: 1
   - Death:
+      minion:
+        idx: 7
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
       minion:
         idx: 7
         version: 1
@@ -415,6 +471,13 @@ expression: "(minions, recording)"
       minion:
         idx: 10
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 10
+        version: 1
   - AfterAttack:
       attacker:
         idx: 10
@@ -462,7 +525,21 @@ expression: "(minions, recording)"
       minion:
         idx: 14
         version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 14
+        version: 1
   - Death:
+      minion:
+        idx: 9
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
       minion:
         idx: 9
         version: 1
@@ -510,6 +587,13 @@ expression: "(minions, recording)"
         version: 1
   - DeathCheck: ~
   - Death:
+      minion:
+        idx: 6
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
       minion:
         idx: 6
         version: 1

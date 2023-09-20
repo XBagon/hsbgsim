@@ -1,8 +1,8 @@
-use crate::events::EventHandler;
+use crate::events::EventHandlers;
 use rand::seq::SliceRandom;
 
-pub fn event_handler() -> EventHandler {
-    EventHandler {
+pub fn event_handlers() -> EventHandlers {
+    EventHandlers {
         death: Some(|this, death, game| {
             if death.minion == this {
                 let this_minion = game.minion_instances.get(this).unwrap();

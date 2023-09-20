@@ -1,8 +1,8 @@
 use crate::events::common_effects::poisonous;
-use crate::events::EventHandler;
+use crate::events::EventHandlers;
 
-pub fn event_handler() -> EventHandler {
-    EventHandler {
+pub fn event_handlers() -> EventHandlers {
+    EventHandlers {
         take_damage: Some(poisonous),
         ..Default::default()
     }
