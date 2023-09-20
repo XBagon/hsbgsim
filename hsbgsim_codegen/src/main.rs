@@ -1,13 +1,8 @@
-use heck::ToSnakeCase;
-use heck::ToUpperCamelCase;
-use quote::format_ident;
-use quote::quote;
-use serde::Deserialize;
-use serde::Serialize;
-use std::error::Error;
-use std::fs::File;
-use std::io::ErrorKind;
-use std::io::Write;
+use heck::{ToSnakeCase, ToUpperCamelCase};
+use quote::{format_ident, quote};
+use serde::{Deserialize, Serialize};
+use std::io::{ErrorKind, Write};
+use std::{error::Error, fs::File};
 
 #[derive(Serialize, Deserialize)]
 struct Entities {
@@ -204,7 +199,18 @@ fn main() -> Result<(), Box<dyn Error>> {
             }
         }
 
-        #[derive(Clone, Copy, Default, EnumString, serde::Serialize, serde::Deserialize)]
+        #[derive(
+            Clone,
+            Copy,
+            Default,
+            PartialEq,
+            Eq,
+            PartialOrd,
+            Ord,
+            EnumString,
+            serde::Serialize,
+            serde::Deserialize,
+        )]
         pub enum MinionVariant {
             #[default]
             Invalid,
