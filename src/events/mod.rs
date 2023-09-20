@@ -15,6 +15,7 @@ mod remove;
 mod stat_buff;
 mod summon;
 mod take_damage;
+//TODO: AfterEffect;
 
 pub use activate_effect::ActivateEffect as RawActivateEffect;
 pub use after_attack::AfterAttack;
@@ -130,7 +131,7 @@ macro_rules! event_variants {
                }
 
                pub fn clean_up(&mut self, mi_id: MinionInstanceId) {
-                $(self.[<$vars:snake>].retain(|ass_ev_handler| ass_ev_handler.minion == mi_id);)*
+                $(self.[<$vars:snake>].retain(|ass_ev_handler| ass_ev_handler.minion != mi_id);)*
                }
             }
 

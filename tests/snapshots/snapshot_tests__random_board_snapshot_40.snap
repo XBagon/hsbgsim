@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -500,21 +501,6 @@ expression: "(minions, recording)"
       source:
         idx: 9
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 6
-              version: 1
-            amount: 5
-            source:
-              idx: 9
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - DeathCheck: ~
   - Death:
       minion:
@@ -561,21 +547,6 @@ expression: "(minions, recording)"
       source:
         idx: 7
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 10
-              version: 1
-            amount: 1
-            source:
-              idx: 7
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - TakeDamage:
       target:
         idx: 7
@@ -584,21 +555,6 @@ expression: "(minions, recording)"
       source:
         idx: 10
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 7
-              version: 1
-            amount: 6
-            source:
-              idx: 10
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - DeathCheck: ~
   - Death:
       minion:
@@ -645,21 +601,6 @@ expression: "(minions, recording)"
       source:
         idx: 10
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 11
-              version: 1
-            amount: 6
-            source:
-              idx: 10
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - TakeDamage:
       target:
         idx: 10
@@ -668,21 +609,6 @@ expression: "(minions, recording)"
       source:
         idx: 11
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 10
-              version: 1
-            amount: 3
-            source:
-              idx: 11
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - DeathCheck: ~
   - Death:
       minion:
@@ -740,21 +666,6 @@ expression: "(minions, recording)"
       source:
         idx: 1
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 4
-              version: 1
-            amount: 3
-            source:
-              idx: 1
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - TakeDamage:
       target:
         idx: 1
@@ -763,21 +674,6 @@ expression: "(minions, recording)"
       source:
         idx: 4
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 1
-              version: 1
-            amount: 2
-            source:
-              idx: 4
-              version: 1
-          ass_handler:
-            minion:
-              idx: 9
-              version: 1
   - DeathCheck: ~
   - Death:
       minion:

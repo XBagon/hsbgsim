@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -674,20 +675,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 15
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - Remove:
       minion:
         idx: 15
@@ -742,20 +729,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 8
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - Remove:
       minion:
         idx: 8
@@ -767,20 +740,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 7
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - Remove:
       minion:
         idx: 7
@@ -835,20 +794,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 16
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - Remove:
       minion:
         idx: 16

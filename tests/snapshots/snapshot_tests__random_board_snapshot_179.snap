@@ -265,21 +265,6 @@ expression: "(minions, recording)"
         idx: 2
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 5
-              version: 1
-            defender:
-              idx: 2
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -345,21 +330,6 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 6
-              version: 1
-            defender:
-              idx: 9
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -403,21 +373,6 @@ expression: "(minions, recording)"
         idx: 8
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 7
-              version: 1
-            defender:
-              idx: 8
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -461,21 +416,6 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 8
-              version: 1
-            defender:
-              idx: 9
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -541,21 +481,6 @@ expression: "(minions, recording)"
         idx: 6
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 11
-              version: 1
-            defender:
-              idx: 6
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -610,21 +535,6 @@ expression: "(minions, recording)"
         idx: 7
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 10
-              version: 1
-            defender:
-              idx: 7
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -668,21 +578,6 @@ expression: "(minions, recording)"
         idx: 12
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 11
-              version: 1
-            defender:
-              idx: 12
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -737,21 +632,6 @@ expression: "(minions, recording)"
         idx: 11
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 14
-              version: 1
-            defender:
-              idx: 11
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -806,21 +686,6 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 13
-              version: 1
-            defender:
-              idx: 10
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -886,21 +751,6 @@ expression: "(minions, recording)"
         idx: 7
         version: 1
       is_outer_phase: true
-  - ActivateEffect:
-      generic_associated_event_handler:
-        ProposeAttack:
-          event:
-            attacker:
-              idx: 14
-              version: 1
-            defender:
-              idx: 7
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 1
-              version: 1
   - DeathCheck: ~
   - Attack:
       attacker:

@@ -58,3 +58,5 @@ fn coverage() {
 
     assert!(variants_left.len() == 0, "{}/{} not covered.", variants_left.len(), variant_count)
 }
+
+//TODO: test implemented minions more targeted to reduce the unnecessary hight amount of tests in this state

@@ -779,21 +779,6 @@ expression: "(minions, recording)"
             minion:
               idx: 14
               version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 7
-              version: 1
-            amount: 2
-            source:
-              idx: 8
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
-              version: 1
   - TakeDamage:
       target:
         idx: 8
@@ -816,21 +801,6 @@ expression: "(minions, recording)"
           ass_handler:
             minion:
               idx: 14
-              version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 8
-              version: 1
-            amount: 2
-            source:
-              idx: 7
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
               version: 1
   - DeathCheck: ~
   - AfterAttack:
@@ -882,21 +852,6 @@ expression: "(minions, recording)"
             minion:
               idx: 14
               version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 12
-              version: 1
-            amount: 1
-            source:
-              idx: 9
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
-              version: 1
   - TakeDamage:
       target:
         idx: 9
@@ -919,21 +874,6 @@ expression: "(minions, recording)"
           ass_handler:
             minion:
               idx: 14
-              version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 9
-              version: 1
-            amount: 3
-            source:
-              idx: 12
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
               version: 1
   - DeathCheck: ~
   - Death:
@@ -996,21 +936,6 @@ expression: "(minions, recording)"
             minion:
               idx: 14
               version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 7
-              version: 1
-            amount: 18
-            source:
-              idx: 10
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
-              version: 1
   - TakeDamage:
       target:
         idx: 10
@@ -1033,21 +958,6 @@ expression: "(minions, recording)"
           ass_handler:
             minion:
               idx: 14
-              version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 10
-              version: 1
-            amount: 2
-            source:
-              idx: 7
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
               version: 1
   - DeathCheck: ~
   - Death:
@@ -1121,21 +1031,6 @@ expression: "(minions, recording)"
             minion:
               idx: 14
               version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 14
-              version: 1
-            amount: 4
-            source:
-              idx: 13
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
-              version: 1
   - TakeDamage:
       target:
         idx: 13
@@ -1158,21 +1053,6 @@ expression: "(minions, recording)"
           ass_handler:
             minion:
               idx: 14
-              version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        TakeDamage:
-          event:
-            target:
-              idx: 13
-              version: 1
-            amount: 2
-            source:
-              idx: 14
-              version: 1
-          ass_handler:
-            minion:
-              idx: 6
               version: 1
   - DeathCheck: ~
   - Death:

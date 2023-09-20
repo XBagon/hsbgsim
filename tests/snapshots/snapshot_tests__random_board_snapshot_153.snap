@@ -402,20 +402,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 16
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 16
@@ -470,20 +456,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 12
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 12
@@ -538,20 +510,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 8
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 8
@@ -563,20 +521,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 7
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 7
@@ -666,20 +610,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 9
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 9
@@ -734,20 +664,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 10
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 10
@@ -759,20 +675,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 5
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 5
@@ -819,20 +721,6 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 2
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 3
-              version: 1
   - Remove:
       minion:
         idx: 2

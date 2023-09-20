@@ -450,7 +450,7 @@ impl Game {
         let index = position.index as usize;
         let removed = minions.remove(index);
         debug_assert_eq!(mi_id, removed);
-        //self.event_handler_manager.clean_up(mi_id);
+        self.event_handler_manager.clean_up(mi_id);
 
         //Update positions
         for &mi_id in minions[index..].iter() {
