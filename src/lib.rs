@@ -17,3 +17,5 @@ pub use minions::{MinionInstance, MinionInstanceId, MinionVariant};
 pub use player::{Player, PlayerId};
 //https://bgknowhow.com/bgjson/
 //https://bgknowhow.com/bgjson/output/bg_entities_active.json
+
+//TODO: set up CI

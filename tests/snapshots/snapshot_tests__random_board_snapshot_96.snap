@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -85,6 +86,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 1
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 1
@@ -139,6 +154,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 2
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 2
@@ -150,6 +179,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 11
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 11
@@ -204,6 +247,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 4
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 4
@@ -258,6 +315,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 6
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 6
@@ -269,6 +340,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 9
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 9
@@ -323,6 +408,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 12
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 12
@@ -377,6 +476,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 8
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 8
@@ -388,6 +501,20 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 7
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
   - Remove:
       minion:
         idx: 7
@@ -442,6 +569,28 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 10
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
+  - TakeDamage:
+      target:
+        idx: 13
+        version: 1
+      amount: 4
+      source:
+        idx: 10
+        version: 1
   - Remove:
       minion:
         idx: 10
@@ -471,7 +620,7 @@ expression: "(minions, recording)"
         idx: 14
         version: 1
       defender:
-        idx: 13
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -480,12 +629,12 @@ expression: "(minions, recording)"
         idx: 14
         version: 1
       defender:
-        idx: 13
+        idx: 3
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 13
+        idx: 3
         version: 1
       amount: 4
       source:
@@ -495,9 +644,9 @@ expression: "(minions, recording)"
       target:
         idx: 14
         version: 1
-      amount: 4
+      amount: 6
       source:
-        idx: 13
+        idx: 3
         version: 1
   - DeathCheck: ~
   - Death:
@@ -511,12 +660,23 @@ expression: "(minions, recording)"
       minion:
         idx: 14
         version: 1
+  - Death:
+      minion:
+        idx: 3
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 3
+        version: 1
   - AfterAttack:
       attacker:
         idx: 14
         version: 1
       defender:
-        idx: 13
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
