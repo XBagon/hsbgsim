@@ -37,7 +37,7 @@ expression: "(minions, recording)"
   : ReplicatingMenace
   ? idx: 12
     version: 1
-  : Soulsplitter
+  : SlyRaptor
   ? idx: 13
     version: 1
   : DreadAdmiralEliza
@@ -73,7 +73,7 @@ expression: "(minions, recording)"
       target:
         idx: 1
         version: 1
-      amount: 4
+      amount: 1
       source:
         idx: 12
         version: 1

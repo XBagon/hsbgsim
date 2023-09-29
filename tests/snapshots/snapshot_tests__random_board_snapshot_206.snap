@@ -10,7 +10,7 @@ expression: "(minions, recording)"
   : AmberGuardian
   ? idx: 3
     version: 1
-  : DiscoShuffler
+  : DeadlySpore
   ? idx: 4
     version: 1
   : DreadAdmiralEliza
@@ -31,7 +31,7 @@ expression: "(minions, recording)"
   : FishOfNZoth
   ? idx: 10
     version: 1
-  : AgamagganTheGreatBoar
+  : AdaptableBarricade
   ? idx: 11
     version: 1
   : DeckSwabbie
@@ -40,7 +40,7 @@ expression: "(minions, recording)"
   : SoulDevourer
   ? idx: 13
     version: 1
-  : ReanimatingRattler
+  : QirajiHarbinger
   ? idx: 14
     version: 1
   : Gemsplitter
@@ -114,7 +114,7 @@ expression: "(minions, recording)"
         idx: 3
         version: 1
       defender:
-        idx: 8
+        idx: 10
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -123,14 +123,14 @@ expression: "(minions, recording)"
         idx: 3
         version: 1
       defender:
-        idx: 8
+        idx: 10
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 8
+        idx: 10
         version: 1
-      amount: 4
+      amount: 1
       source:
         idx: 3
         version: 1
@@ -138,11 +138,22 @@ expression: "(minions, recording)"
       target:
         idx: 3
         version: 1
-      amount: 6
+      amount: 18
       source:
-        idx: 8
+        idx: 10
         version: 1
   - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 10
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 10
+        version: 1
   - Death:
       minion:
         idx: 3
@@ -159,7 +170,7 @@ expression: "(minions, recording)"
         idx: 3
         version: 1
       defender:
-        idx: 8
+        idx: 10
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -330,7 +341,7 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       defender:
-        idx: 4
+        idx: 8
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -339,12 +350,12 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       defender:
-        idx: 4
+        idx: 8
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 4
+        idx: 8
         version: 1
       amount: 2
       source:
@@ -356,20 +367,9 @@ expression: "(minions, recording)"
         version: 1
       amount: 6
       source:
-        idx: 4
+        idx: 8
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 4
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 4
-        version: 1
   - Death:
       minion:
         idx: 9
@@ -386,7 +386,7 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       defender:
-        idx: 4
+        idx: 8
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -419,7 +419,7 @@ expression: "(minions, recording)"
       target:
         idx: 6
         version: 1
-      amount: 4
+      amount: 5
       source:
         idx: 13
         version: 1

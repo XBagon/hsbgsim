@@ -25,7 +25,7 @@ expression: "(minions, recording)"
   : SnailCavalry
   ? idx: 8
     version: 1
-  : XyloBones
+  : WitchwingNestmatron
   ? idx: 9
     version: 1
   : PickyEater
@@ -616,22 +616,11 @@ expression: "(minions, recording)"
       target:
         idx: 3
         version: 1
-      amount: 6
+      amount: 3
       source:
         idx: 8
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 8
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 8
-        version: 1
   - Death:
       minion:
         idx: 3

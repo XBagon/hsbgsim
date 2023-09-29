@@ -43,7 +43,7 @@ expression: "(minions, recording)"
   : AnnihilanBattlemaster
   ? idx: 14
     version: 1
-  : MalchezaarPrinceOfDance
+  : MajordomoExecutus
 - - ProposeAttack:
       attacker:
         idx: 2

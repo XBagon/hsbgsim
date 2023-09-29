@@ -1,6 +1,5 @@
 ---
 source: tests/snapshot_tests.rs
-assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -38,13 +37,13 @@ expression: "(minions, recording)"
   : HummingBird
   ? idx: 12
     version: 1
-  : BaronRivendare
+  : BabyKrush
   ? idx: 13
     version: 1
   : ShifterZerus
   ? idx: 14
     version: 1
-  : MechanoTank
+  : MechanoEgg
 - - ProposeAttack:
       attacker:
         idx: 2
@@ -163,14 +162,6 @@ expression: "(minions, recording)"
       source:
         idx: 1
         version: 1
-  - TakeDamage:
-      target:
-        idx: 1
-        version: 1
-      amount: 5
-      source:
-        idx: 14
-        version: 1
   - DeathCheck: ~
   - Death:
       minion:
@@ -197,31 +188,6 @@ expression: "(minions, recording)"
             minion:
               idx: 10
               version: 1
-  - Death:
-      minion:
-        idx: 1
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 1
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 1
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
         idx: 1
@@ -236,7 +202,7 @@ expression: "(minions, recording)"
         idx: 4
         version: 1
       defender:
-        idx: 7
+        idx: 9
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -245,12 +211,12 @@ expression: "(minions, recording)"
         idx: 4
         version: 1
       defender:
-        idx: 7
+        idx: 9
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 7
+        idx: 9
         version: 1
       amount: 4
       source:
@@ -260,9 +226,9 @@ expression: "(minions, recording)"
       target:
         idx: 4
         version: 1
-      amount: 4
+      amount: 2
       source:
-        idx: 7
+        idx: 9
         version: 1
   - DeathCheck: ~
   - Death:
@@ -290,37 +256,12 @@ expression: "(minions, recording)"
             minion:
               idx: 10
               version: 1
-  - Death:
-      minion:
-        idx: 7
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 7
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 7
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
         idx: 4
         version: 1
       defender:
-        idx: 7
+        idx: 9
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -329,7 +270,7 @@ expression: "(minions, recording)"
         idx: 3
         version: 1
       defender:
-        idx: 8
+        idx: 10
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -338,12 +279,12 @@ expression: "(minions, recording)"
         idx: 3
         version: 1
       defender:
-        idx: 8
+        idx: 10
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 8
+        idx: 10
         version: 1
       amount: 6
       source:
@@ -353,6 +294,131 @@ expression: "(minions, recording)"
       target:
         idx: 3
         version: 1
+      amount: 2
+      source:
+        idx: 10
+        version: 1
+  - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 10
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 10
+        version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 10
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 10
+              version: 1
+  - AfterAttack:
+      attacker:
+        idx: 3
+        version: 1
+      defender:
+        idx: 10
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - ProposeAttack:
+      attacker:
+        idx: 6
+        version: 1
+      defender:
+        idx: 1
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - Attack:
+      attacker:
+        idx: 6
+        version: 1
+      defender:
+        idx: 1
+        version: 1
+      is_outer_phase: true
+  - TakeDamage:
+      target:
+        idx: 1
+        version: 1
+      amount: 8
+      source:
+        idx: 6
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 6
+        version: 1
+      amount: 6
+      source:
+        idx: 1
+        version: 1
+  - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 6
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 6
+        version: 1
+  - Death:
+      minion:
+        idx: 1
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 1
+        version: 1
+  - AfterAttack:
+      attacker:
+        idx: 6
+        version: 1
+      defender:
+        idx: 1
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - ProposeAttack:
+      attacker:
+        idx: 3
+        version: 1
+      defender:
+        idx: 8
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - Attack:
+      attacker:
+        idx: 3
+        version: 1
+      defender:
+        idx: 8
+        version: 1
+      is_outer_phase: true
+  - TakeDamage:
+      target:
+        idx: 3
+        version: 1
       amount: 7
       source:
         idx: 8
@@ -369,20 +435,6 @@ expression: "(minions, recording)"
       minion:
         idx: 3
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 3
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
         idx: 3
@@ -394,61 +446,55 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
-        idx: 11
+        idx: 7
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
-        idx: 11
+        idx: 7
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 11
+        idx: 7
         version: 1
-      amount: 8
+      amount: 7
       source:
-        idx: 6
+        idx: 8
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 8
+        version: 1
+      amount: 4
+      source:
+        idx: 7
         version: 1
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 11
+        idx: 7
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 11
+        idx: 7
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 11
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
-        idx: 11
+        idx: 7
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -457,7 +503,7 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       defender:
-        idx: 6
+        idx: 8
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -466,12 +512,12 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       defender:
-        idx: 6
+        idx: 8
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 6
+        idx: 8
         version: 1
       amount: 2
       source:
@@ -481,9 +527,9 @@ expression: "(minions, recording)"
       target:
         idx: 9
         version: 1
-      amount: 8
+      amount: 7
       source:
-        idx: 6
+        idx: 8
         version: 1
   - DeathCheck: ~
   - Death:
@@ -497,90 +543,97 @@ expression: "(minions, recording)"
       minion:
         idx: 9
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 9
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
         idx: 9
         version: 1
       defender:
-        idx: 6
+        idx: 8
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 8
+        idx: 12
         version: 1
       defender:
-        idx: 13
+        idx: 11
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 8
+        idx: 12
         version: 1
       defender:
-        idx: 13
+        idx: 11
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
+        idx: 11
+        version: 1
+      amount: 6
+      source:
+        idx: 12
+        version: 1
+  - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 11
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 11
+        version: 1
+  - AfterAttack:
+      attacker:
+        idx: 12
+        version: 1
+      defender:
+        idx: 11
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - ProposeAttack:
+      attacker:
         idx: 13
         version: 1
-      amount: 7
-      source:
-        idx: 8
+      defender:
+        idx: 12
         version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - Attack:
+      attacker:
+        idx: 13
+        version: 1
+      defender:
+        idx: 12
+        version: 1
+      is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 8
+        idx: 12
         version: 1
       amount: 1
       source:
         idx: 13
         version: 1
+  - TakeDamage:
+      target:
+        idx: 13
+        version: 1
+      amount: 6
+      source:
+        idx: 12
+        version: 1
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 8
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 8
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 8
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
-  - Death:
-      minion:
         idx: 13
         version: 1
       source:
@@ -590,26 +643,12 @@ expression: "(minions, recording)"
       minion:
         idx: 13
         version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Death:
-          event:
-            minion:
-              idx: 13
-              version: 1
-            source:
-              idx: 4294967295
-              version: 1
-          ass_handler:
-            minion:
-              idx: 10
-              version: 1
   - AfterAttack:
       attacker:
-        idx: 8
+        idx: 13
         version: 1
       defender:
-        idx: 13
+        idx: 12
         version: 1
       is_outer_phase: true
   - DeathCheck: ~

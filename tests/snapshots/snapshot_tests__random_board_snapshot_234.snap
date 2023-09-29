@@ -7,7 +7,7 @@ expression: "(minions, recording)"
   : TheWalkingFort
   ? idx: 2
     version: 1
-  : LovesickBalladist
+  : ImposingPercussionist
   ? idx: 3
     version: 1
   : InventOMatic
@@ -16,7 +16,7 @@ expression: "(minions, recording)"
   : DynamicDuo
   ? idx: 5
     version: 1
-  : PossessiveBanshee
+  : PlaguedTidewalker
   ? idx: 6
     version: 1
   : Felstomper
@@ -65,7 +65,7 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 3
+      amount: 4
       source:
         idx: 2
         version: 1

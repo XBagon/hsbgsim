@@ -1,11 +1,10 @@
 ---
 source: tests/snapshot_tests.rs
-assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
     version: 1
-  : LovesickBalladist
+  : ImposingPercussionist
   ? idx: 2
     version: 1
   : Charlga
@@ -44,7 +43,7 @@ expression: "(minions, recording)"
   : SisterDeathwhisper
   ? idx: 14
     version: 1
-  : HolyMecherel
+  : GustyTrumpeter
   ? idx: 15
     version: 1
   : Imp
@@ -140,7 +139,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 3
+      amount: 4
       source:
         idx: 1
         version: 1

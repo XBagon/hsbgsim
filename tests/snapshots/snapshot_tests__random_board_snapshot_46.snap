@@ -10,7 +10,7 @@ expression: "(minions, recording)"
   : PapaBear
   ? idx: 3
     version: 1
-  : DrBoombox
+  : DiscoShuffler
   ? idx: 4
     version: 1
   : SurfNSurf
@@ -34,7 +34,7 @@ expression: "(minions, recording)"
   : DaggerspineThrasher
   ? idx: 11
     version: 1
-  : Bonemare
+  : BaronRivendare
   ? idx: 12
     version: 1
   : ImpulsiveTrickster
@@ -200,7 +200,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 7
+      amount: 4
       source:
         idx: 3
         version: 1
@@ -513,7 +513,7 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 5
+      amount: 1
       source:
         idx: 11
         version: 1
@@ -526,17 +526,6 @@ expression: "(minions, recording)"
         idx: 12
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 12
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 12
-        version: 1
   - AfterAttack:
       attacker:
         idx: 11
@@ -632,7 +621,7 @@ expression: "(minions, recording)"
       target:
         idx: 14
         version: 1
-      amount: 5
+      amount: 1
       source:
         idx: 11
         version: 1
@@ -645,17 +634,6 @@ expression: "(minions, recording)"
         idx: 14
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 14
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 14
-        version: 1
   - AfterAttack:
       attacker:
         idx: 11
@@ -694,22 +672,11 @@ expression: "(minions, recording)"
       target:
         idx: 10
         version: 1
-      amount: 5
+      amount: 1
       source:
         idx: 11
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 10
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 10
-        version: 1
   - Death:
       minion:
         idx: 11

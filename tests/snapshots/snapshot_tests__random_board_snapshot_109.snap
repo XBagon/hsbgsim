@@ -31,7 +31,7 @@ expression: "(minions, recording)"
   : KangorSApprentice
   ? idx: 10
     version: 1
-  : LovesickBalladist
+  : ImposingPercussionist
   ? idx: 11
     version: 1
   : EternalSummoner
@@ -513,7 +513,7 @@ expression: "(minions, recording)"
       target:
         idx: 9
         version: 1
-      amount: 3
+      amount: 4
       source:
         idx: 10
         version: 1
@@ -559,7 +559,7 @@ expression: "(minions, recording)"
       target:
         idx: 11
         version: 1
-      amount: 3
+      amount: 4
       source:
         idx: 10
         version: 1

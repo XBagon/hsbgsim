@@ -16,7 +16,7 @@ expression: "(minions, recording)"
   : LowFlier
   ? idx: 5
     version: 1
-  : ImposingPercussionist
+  : HunterOfGatherers
   ? idx: 6
     version: 1
   : PricklyPiper
@@ -40,7 +40,7 @@ expression: "(minions, recording)"
   : ArchdruidHamuul
   ? idx: 13
     version: 1
-  : WitchwingNestmatron
+  : WildfireElemental
   ? idx: 14
     version: 1
   : TidemistressAthissa
@@ -73,7 +73,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 6
+      amount: 3
       source:
         idx: 5
         version: 1
@@ -357,7 +357,7 @@ expression: "(minions, recording)"
       target:
         idx: 8
         version: 1
-      amount: 6
+      amount: 3
       source:
         idx: 5
         version: 1
@@ -549,7 +549,7 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 3
+      amount: 7
       source:
         idx: 13
         version: 1
@@ -565,6 +565,17 @@ expression: "(minions, recording)"
       minion:
         idx: 12
         version: 1
+  - Death:
+      minion:
+        idx: 13
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 13
+        version: 1
   - AfterAttack:
       attacker:
         idx: 12
@@ -574,5 +585,5 @@ expression: "(minions, recording)"
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
-  - End: BottomWin
+  - End: Draw
 

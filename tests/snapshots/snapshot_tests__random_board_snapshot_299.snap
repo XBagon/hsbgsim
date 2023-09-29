@@ -40,7 +40,7 @@ expression: "(minions, recording)"
   : KathraNatir
   ? idx: 13
     version: 1
-  : Chronormu
+  : ChampionOfThePrimus
   ? idx: 14
     version: 1
   : SouthseaStrongarm
@@ -581,7 +581,7 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 6
+      amount: 2
       source:
         idx: 13
         version: 1

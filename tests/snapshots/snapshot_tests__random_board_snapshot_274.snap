@@ -25,10 +25,10 @@ expression: "(minions, recording)"
   : NetherDrake
   ? idx: 8
     version: 1
-  : PrestorSPyrospawn
+  : PossessiveBanshee
   ? idx: 9
     version: 1
-  : CritterWrangler
+  : CorruptedMyrmidon
   ? idx: 10
     version: 1
   : ImpMama
@@ -127,7 +127,7 @@ expression: "(minions, recording)"
       target:
         idx: 1
         version: 1
-      amount: 3
+      amount: 2
       source:
         idx: 8
         version: 1

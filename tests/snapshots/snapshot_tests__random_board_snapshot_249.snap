@@ -43,7 +43,7 @@ expression: "(minions, recording)"
   : Leapfrogger
   ? idx: 14
     version: 1
-  : Wargear
+  : VigilantStoneborn
 - - ProposeAttack:
       attacker:
         idx: 1
@@ -389,7 +389,7 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      amount: 6
+      amount: 2
       source:
         idx: 14
         version: 1

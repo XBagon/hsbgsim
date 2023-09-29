@@ -4,7 +4,7 @@ expression: "(minions, recording)"
 ---
 - ? idx: 1
     version: 1
-  : Waverider
+  : Wargear
   ? idx: 2
     version: 1
   : Imp
@@ -16,7 +16,7 @@ expression: "(minions, recording)"
   : Manasaber
   ? idx: 5
     version: 1
-  : Soulsplitter
+  : SlyRaptor
   ? idx: 6
     version: 1
   : GoldrinnTheGreatWolf
@@ -65,7 +65,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 2
+      amount: 6
       source:
         idx: 1
         version: 1
@@ -76,7 +76,7 @@ expression: "(minions, recording)"
             target:
               idx: 2
               version: 1
-            amount: 2
+            amount: 6
             source:
               idx: 1
               version: 1
@@ -172,7 +172,7 @@ expression: "(minions, recording)"
       target:
         idx: 4
         version: 1
-      amount: 4
+      amount: 1
       source:
         idx: 5
         version: 1
@@ -183,7 +183,7 @@ expression: "(minions, recording)"
             target:
               idx: 4
               version: 1
-            amount: 4
+            amount: 1
             source:
               idx: 5
               version: 1
@@ -421,7 +421,7 @@ expression: "(minions, recording)"
       target:
         idx: 8
         version: 1
-      amount: 2
+      amount: 6
       source:
         idx: 1
         version: 1
@@ -540,7 +540,7 @@ expression: "(minions, recording)"
       target:
         idx: 14
         version: 1
-      amount: 2
+      amount: 6
       source:
         idx: 1
         version: 1

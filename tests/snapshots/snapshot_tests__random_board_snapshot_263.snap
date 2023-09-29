@@ -16,7 +16,7 @@ expression: "(minions, recording)"
   : EventideBrute
   ? idx: 5
     version: 1
-  : Wargear
+  : VigilantStoneborn
   ? idx: 6
     version: 1
   : Bonker
@@ -34,7 +34,7 @@ expression: "(minions, recording)"
   : PickyEater
   ? idx: 11
     version: 1
-  : CritterWrangler
+  : CorruptedMyrmidon
   ? idx: 12
     version: 1
   : FieryImp
@@ -138,7 +138,7 @@ expression: "(minions, recording)"
       target:
         idx: 4
         version: 1
-      amount: 5
+      amount: 3
       source:
         idx: 11
         version: 1
@@ -154,6 +154,17 @@ expression: "(minions, recording)"
       minion:
         idx: 4
         version: 1
+  - Death:
+      minion:
+        idx: 11
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 11
+        version: 1
   - AfterAttack:
       attacker:
         idx: 4
@@ -246,22 +257,11 @@ expression: "(minions, recording)"
       target:
         idx: 6
         version: 1
-      amount: 6
+      amount: 2
       source:
         idx: 5
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 6
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 6
-        version: 1
   - AfterAttack:
       attacker:
         idx: 6
@@ -300,11 +300,22 @@ expression: "(minions, recording)"
       target:
         idx: 6
         version: 1
-      amount: 6
+      amount: 2
       source:
         idx: 5
         version: 1
   - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 6
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 6
+        version: 1
   - Death:
       minion:
         idx: 5
@@ -503,7 +514,7 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       defender:
-        idx: 13
+        idx: 7
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -512,12 +523,12 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       defender:
-        idx: 13
+        idx: 7
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 13
+        idx: 7
         version: 1
       amount: 1
       source:
@@ -527,9 +538,9 @@ expression: "(minions, recording)"
       target:
         idx: 10
         version: 1
-      amount: 8
+      amount: 2
       source:
-        idx: 13
+        idx: 7
         version: 1
   - DeathCheck: ~
   - Death:
@@ -548,7 +559,7 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       defender:
-        idx: 13
+        idx: 7
         version: 1
       is_outer_phase: true
   - DeathCheck: ~

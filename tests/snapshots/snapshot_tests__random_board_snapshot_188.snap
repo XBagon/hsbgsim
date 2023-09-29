@@ -37,7 +37,7 @@ expression: "(minions, recording)"
   : Swampstriker
   ? idx: 12
     version: 1
-  : PeckishFeldrake
+  : Necrolyte
   ? idx: 13
     version: 1
   : Smogger
@@ -457,6 +457,49 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
+        idx: 12
+        version: 1
+      defender:
+        idx: 11
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - Attack:
+      attacker:
+        idx: 12
+        version: 1
+      defender:
+        idx: 11
+        version: 1
+      is_outer_phase: true
+  - TakeDamage:
+      target:
+        idx: 11
+        version: 1
+      amount: 3
+      source:
+        idx: 12
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 12
+        version: 1
+      amount: 1
+      source:
+        idx: 11
+        version: 1
+  - DeathCheck: ~
+  - AfterAttack:
+      attacker:
+        idx: 12
+        version: 1
+      defender:
+        idx: 11
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - ProposeAttack:
+      attacker:
         idx: 7
         version: 1
       defender:
@@ -479,6 +522,14 @@ expression: "(minions, recording)"
       amount: 4
       source:
         idx: 7
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 7
+        version: 1
+      amount: 3
+      source:
+        idx: 12
         version: 1
   - DeathCheck: ~
   - Death:

@@ -31,7 +31,7 @@ expression: "(minions, recording)"
   : CarbonicCopy
   ? idx: 10
     version: 1
-  : BrannBronzebeard
+  : BongoBopper
   ? idx: 11
     version: 1
   : MicroMummy
@@ -400,7 +400,7 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 2
+      amount: 4
       source:
         idx: 10
         version: 1

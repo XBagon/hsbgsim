@@ -7,7 +7,7 @@ expression: "(minions, recording)"
   : DeckSwabbie
   ? idx: 2
     version: 1
-  : PrimalfinLookout
+  : PrestorSPyrospawn
   ? idx: 3
     version: 1
   : IckyImp

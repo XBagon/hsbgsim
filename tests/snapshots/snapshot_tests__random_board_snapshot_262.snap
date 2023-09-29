@@ -28,7 +28,7 @@ expression: "(minions, recording)"
   : Smolderwing
   ? idx: 9
     version: 1
-  : ReanimatingRattler
+  : QirajiHarbinger
   ? idx: 10
     version: 1
   : FelfinNavigator
@@ -419,7 +419,7 @@ expression: "(minions, recording)"
       target:
         idx: 8
         version: 1
-      amount: 4
+      amount: 5
       source:
         idx: 9
         version: 1
@@ -465,7 +465,7 @@ expression: "(minions, recording)"
       target:
         idx: 14
         version: 1
-      amount: 4
+      amount: 5
       source:
         idx: 9
         version: 1

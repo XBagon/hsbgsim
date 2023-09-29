@@ -25,7 +25,7 @@ expression: "(minions, recording)"
   : TonyTwoTusk
   ? idx: 8
     version: 1
-  : FriendOfAFriend
+  : DrakkariEnchanter
   ? idx: 9
     version: 1
   : Swolefin
@@ -34,7 +34,7 @@ expression: "(minions, recording)"
   : WhelpSmuggler
   ? idx: 11
     version: 1
-  : DiscoShuffler
+  : DeadlySpore
   ? idx: 12
     version: 1
   : SanguineChampion
@@ -43,7 +43,7 @@ expression: "(minions, recording)"
   : ColossusOfTheSun
   ? idx: 14
     version: 1
-  : SinDoreiStraightShot
+  : SilentSwimmer
 - - ProposeAttack:
       attacker:
         idx: 1
@@ -330,7 +330,7 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 5
+      amount: 1
       source:
         idx: 8
         version: 1
@@ -449,9 +449,17 @@ expression: "(minions, recording)"
       target:
         idx: 11
         version: 1
-      amount: 3
+      amount: 5
       source:
         idx: 14
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 14
+        version: 1
+      amount: 1
+      source:
+        idx: 11
         version: 1
   - DeathCheck: ~
   - Death:
@@ -476,36 +484,36 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 14
+        idx: 7
         version: 1
       defender:
-        idx: 3
+        idx: 14
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 14
+        idx: 7
         version: 1
       defender:
-        idx: 3
+        idx: 14
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 3
-        version: 1
-      amount: 3
-      source:
         idx: 14
+        version: 1
+      amount: 4
+      source:
+        idx: 7
         version: 1
   - TakeDamage:
       target:
-        idx: 14
+        idx: 7
         version: 1
       amount: 5
       source:
-        idx: 3
+        idx: 14
         version: 1
   - DeathCheck: ~
   - Death:
@@ -521,10 +529,10 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 14
+        idx: 7
         version: 1
       defender:
-        idx: 3
+        idx: 14
         version: 1
       is_outer_phase: true
   - DeathCheck: ~

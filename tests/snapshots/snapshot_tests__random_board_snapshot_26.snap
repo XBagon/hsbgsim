@@ -10,7 +10,7 @@ expression: "(minions, recording)"
   : SaltyLooter
   ? idx: 3
     version: 1
-  : CritterWrangler
+  : CorruptedMyrmidon
   ? idx: 4
     version: 1
   : SparringPartner
@@ -184,7 +184,7 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 5
+      amount: 3
       source:
         idx: 3
         version: 1
@@ -581,7 +581,7 @@ expression: "(minions, recording)"
       target:
         idx: 6
         version: 1
-      amount: 5
+      amount: 3
       source:
         idx: 3
         version: 1
@@ -596,6 +596,17 @@ expression: "(minions, recording)"
   - Remove:
       minion:
         idx: 6
+        version: 1
+  - Death:
+      minion:
+        idx: 3
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 3
         version: 1
   - AfterAttack:
       attacker:

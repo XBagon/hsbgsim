@@ -25,7 +25,7 @@ expression: "(minions, recording)"
   : Pupbot
   ? idx: 8
     version: 1
-  : WitchwingNestmatron
+  : WildfireElemental
   ? idx: 9
     version: 1
   : ProphetOfTheBoar

@@ -28,7 +28,7 @@ expression: "(minions, recording)"
   : VanessaVanCleef
   ? idx: 9
     version: 1
-  : Waverider
+  : Wargear
   ? idx: 10
     version: 1
   : MindMuck
@@ -259,7 +259,7 @@ expression: "(minions, recording)"
       target:
         idx: 6
         version: 1
-      amount: 2
+      amount: 6
       source:
         idx: 9
         version: 1
@@ -640,7 +640,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 2
+      amount: 6
       source:
         idx: 9
         version: 1
@@ -653,6 +653,17 @@ expression: "(minions, recording)"
         idx: 2
         version: 1
   - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 2
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 2
+        version: 1
   - Death:
       minion:
         idx: 9
@@ -738,5 +749,5 @@ expression: "(minions, recording)"
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
-  - End: TopWin
+  - End: Draw
 

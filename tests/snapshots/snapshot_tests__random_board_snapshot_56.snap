@@ -4,7 +4,7 @@ expression: "(minions, recording)"
 ---
 - ? idx: 1
     version: 1
-  : WildfireElemental
+  : Waverider
   ? idx: 2
     version: 1
   : TitusRivendare
@@ -22,7 +22,7 @@ expression: "(minions, recording)"
   : RelentlessSentry
   ? idx: 7
     version: 1
-  : PeggyBrittlebone
+  : PeckishFeldrake
   ? idx: 8
     version: 1
   : Tabbycat

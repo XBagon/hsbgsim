@@ -25,7 +25,7 @@ expression: "(minions, recording)"
   : WaterDroplet
   ? idx: 8
     version: 1
-  : XyloBones
+  : WitchwingNestmatron
   ? idx: 9
     version: 1
   : SilverbackPatriarch
@@ -457,7 +457,7 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 6
+      amount: 3
       source:
         idx: 8
         version: 1
@@ -470,17 +470,6 @@ expression: "(minions, recording)"
         idx: 13
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 8
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 8
-        version: 1
   - Death:
       minion:
         idx: 13
@@ -498,6 +487,71 @@ expression: "(minions, recording)"
         version: 1
       defender:
         idx: 13
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - ProposeAttack:
+      attacker:
+        idx: 5
+        version: 1
+      defender:
+        idx: 8
+        version: 1
+      is_outer_phase: true
+  - DeathCheck: ~
+  - Attack:
+      attacker:
+        idx: 5
+        version: 1
+      defender:
+        idx: 8
+        version: 1
+      is_outer_phase: true
+  - TakeDamage:
+      target:
+        idx: 8
+        version: 1
+      amount: 5
+      source:
+        idx: 5
+        version: 1
+  - TakeDamage:
+      target:
+        idx: 5
+        version: 1
+      amount: 3
+      source:
+        idx: 8
+        version: 1
+  - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 8
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 8
+        version: 1
+  - Death:
+      minion:
+        idx: 5
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 5
+        version: 1
+  - AfterAttack:
+      attacker:
+        idx: 5
+        version: 1
+      defender:
+        idx: 8
         version: 1
       is_outer_phase: true
   - DeathCheck: ~

@@ -43,7 +43,7 @@ expression: "(minions, recording)"
   : MoltenRock
   ? idx: 14
     version: 1
-  : PrestorSPyrospawn
+  : PossessiveBanshee
 - - ProposeAttack:
       attacker:
         idx: 1
@@ -386,7 +386,7 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      amount: 3
+      amount: 2
       source:
         idx: 14
         version: 1

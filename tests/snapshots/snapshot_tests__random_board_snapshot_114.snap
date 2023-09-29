@@ -7,7 +7,7 @@ expression: "(minions, recording)"
   : AnnoyOSpawn
   ? idx: 2
     version: 1
-  : HolyMecherel
+  : GustyTrumpeter
   ? idx: 3
     version: 1
   : CorpseRefiner

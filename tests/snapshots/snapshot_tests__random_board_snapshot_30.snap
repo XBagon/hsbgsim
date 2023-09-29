@@ -43,7 +43,7 @@ expression: "(minions, recording)"
   : UpbeatDuo
   ? idx: 14
     version: 1
-  : SilentSwimmer
+  : ScrapScraper
 - - ProposeAttack:
       attacker:
         idx: 1
@@ -613,22 +613,11 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 5
+      amount: 4
       source:
         idx: 14
         version: 1
   - DeathCheck: ~
-  - Death:
-      minion:
-        idx: 14
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 14
-        version: 1
   - Death:
       minion:
         idx: 13

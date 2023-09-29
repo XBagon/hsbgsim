@@ -40,7 +40,7 @@ expression: "(minions, recording)"
   : Houndmaster
   ? idx: 13
     version: 1
-  : Necrolyte
+  : MenagerieJug
   ? idx: 14
     version: 1
   : MantidQueen
