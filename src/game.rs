@@ -236,7 +236,7 @@ impl Game {
             }
             &Event::DeathCheck(_death_check) => {
                 let _event_count = self.events.len();
-                //TODO: DeathCheck order is not clear. it might be random? see https://old.reddit.com/r/hearthstone/comments/l49xao/battlegrounds_how_does_deathrattle_ordering_work/
+                //TODO: DeathCheck order is not clear. it might be random? (see https://old.reddit.com/r/hearthstone/comments/l49xao/battlegrounds_how_does_deathrattle_ordering_work/) But on one side of the board should work left to right!
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
                     if minion.health <= 0 || minion.pending_destroy {
