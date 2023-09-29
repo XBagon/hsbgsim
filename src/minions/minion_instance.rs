@@ -12,7 +12,7 @@ pub struct MinionInstance {
     pub variant: MinionVariant,
     pub health: i32,
     pub attack: i32,
-    pub position: Option<Position>,
+    pub position: Position,
     pub abilities: Abilities,
     pub pending_destroy: bool,
     pub event_handlers: EventHandlers,
@@ -43,17 +43,73 @@ impl MinionInstance {
 }
 
 #[derive(Clone, Copy, Debug, Serialize, Deserialize)]
-pub struct Position {
+pub struct BoardPosition {
     pub player_id: PlayerId,
     pub index: u8,
 }
 
-impl Position {
+impl BoardPosition {
     pub fn new(player_id: PlayerId, index: u8) -> Self {
-        debug_assert!(index < 7);
         Self {
             player_id,
             index,
         }
+    }
+}
+
+#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
+pub enum Position {
+    BoardPosition(BoardPosition),
+    LastPosition(Option<BoardPosition>),
+}
+
+impl Position {
+    pub fn new_on_board(player_id: PlayerId, index: u8) -> Self {
+        Position::BoardPosition(BoardPosition::new(player_id, index))
+    }
+
+    pub fn is_on_board(&self) -> bool {
+        match self {
+            Position::BoardPosition(_) => true,
+            Position::LastPosition(_) => false,
+        }
+    }
+
+    pub fn unwrap_board(&self) -> &BoardPosition {
+        match self {
+            Position::BoardPosition(pos) => pos,
+            Position::LastPosition(_) => {
+                panic!("called `Position::unwrap_board()` on a `LastPosition` value")
+            }
+        }
+    }
+
+    pub fn unwrap_board_mut(&mut self) -> &mut BoardPosition {
+        match self {
+            Position::BoardPosition(pos) => pos,
+            Position::LastPosition(_) => {
+                panic!("called `Position::unwrap_board_mut()` on a `LastPosition` value")
+            }
+        }
+    }
+
+    pub fn unwrap(&self) -> &BoardPosition {
+        match self {
+            Position::BoardPosition(pos) => pos,
+            Position::LastPosition(pos) => pos.as_ref().unwrap(),
+        }
+    }
+
+    pub fn unwrap_mut(&mut self) -> &mut BoardPosition {
+        match self {
+            Position::BoardPosition(pos) => pos,
+            Position::LastPosition(pos) => pos.as_mut().unwrap(),
+        }
+    }
+}
+
+impl Default for Position {
+    fn default() -> Self {
+        Position::LastPosition(None)
     }
 }

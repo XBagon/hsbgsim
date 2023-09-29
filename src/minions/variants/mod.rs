@@ -1,4 +1,4 @@
-use super::{Abilities, MinionInstance};
+use super::{Abilities, MinionInstance, Position};
 use crate::events::EventHandlers;
 use rand::seq::SliceRandom;
 use strum::EnumString;
@@ -407,7 +407,7 @@ impl MinionVariant {
             health: data.health as i32,
             attack: data.attack as i32,
             abilities: data.abilities,
-            position: None,
+            position: Position::default(),
             pending_destroy: false,
             event_handlers: self.event_handlers(),
         }

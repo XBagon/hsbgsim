@@ -3,22 +3,22 @@ use crate::{
         Death, DeathCheck, End, Event, EventHandlerManager, Events, ProposeAttack,
         RawActivateEffect, Remove, TakeDamage,
     },
-    minions::MinionInstanceId,
-    minions::MinionVariant,
-    minions::Position,
+    minions::{BoardPosition, MinionInstanceId, MinionVariant, Position},
     player::PlayerId,
     Battleground, MinionInstance,
 };
 
 use rand::prelude::*;
 use rand_xoshiro::Xoshiro256PlusPlus;
-use slotmap::{Key, SlotMap};
+use slotmap::{Key, SecondaryMap, SlotMap};
 use thiserror::Error;
 use tinyvec::ArrayVec;
 
 pub struct Game {
     pub battleground: Battleground,
     pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
+    //TODO: minion_datas: SecondarySlotMap<MinionInstanceId, MinionData>,
+    minion_summon_shift: SecondaryMap<MinionInstanceId, u8>,
     attacking_player: Option<PlayerId>,
     last_attacker: MinionInstanceId,
     additional_attacks: u8,
@@ -32,6 +32,7 @@ impl Default for Game {
         Self {
             battleground: Default::default(),
             minion_instances: Default::default(),
+            minion_summon_shift: SecondaryMap::new(),
             attacking_player: Default::default(),
             last_attacker: Default::default(),
             additional_attacks: Default::default(),
@@ -55,6 +56,7 @@ impl Game {
         Self {
             battleground: Default::default(),
             minion_instances: Default::default(),
+            minion_summon_shift: SecondaryMap::new(),
             attacking_player: Default::default(),
             last_attacker: Default::default(),
             additional_attacks: Default::default(),
@@ -105,27 +107,26 @@ impl Game {
                 (true, false) => End::TopWin.into(),
                 (false, true) => End::BottomWin.into(),
                 (false, false) => {
+                    //Cleanup for next attack:
+                    self.minion_summon_shift.clear();
+
                     let attacking_player_id = self.attacking_player.unwrap();
                     let next_player_id = attacking_player_id.oppsite();
 
                     let attack_info = if self.additional_attacks > 0 && {
                         self.additional_attacks -= 1;
                         let minion = self.minion_instances.get(self.last_attacker).unwrap();
-                        minion.position.is_some() && minion.attack > 0
+                        minion.position.is_on_board() && minion.attack > 0
                     } {
                         //Last minion attacks again
                         Some((self.last_attacker, attacking_player_id))
+                    } else if let Some(attacker) = self.determine_next_attacker(attacking_player_id)
+                    {
+                        Some((attacker, next_player_id))
                     } else {
-                        if let Some(attacker) = self.determine_next_attacker(attacking_player_id) {
-                            Some((attacker, next_player_id))
-                        } else {
-                            //Switch attacker
-                            if let Some(attacker) = self.determine_next_attacker(next_player_id) {
-                                Some((attacker, attacking_player_id))
-                            } else {
-                                None
-                            }
-                        }
+                        //Switch attacker
+                        self.determine_next_attacker(next_player_id)
+                            .map(|attacker| (attacker, attacking_player_id))
                     };
 
                     if let Some((attacker, next_player_id)) = attack_info {
@@ -150,6 +151,22 @@ impl Game {
             }
         };
 
+        //macro instead of function because of `Game` mut + immut borrow
+
+        macro_rules! handle_events {
+            ($event:ident) => {
+                for i in (0..self.event_handler_manager.$event.len()).rev() {
+                    self.push_event(
+                        RawActivateEffect::from_event_and_handler(
+                            $event,
+                            self.event_handler_manager.$event[i],
+                        )
+                        .into(),
+                    );
+                }
+            };
+        }
+
         match &next_event {
             Event::Invalid => unreachable!(),
             Event::End(_end) => {}
@@ -158,15 +175,7 @@ impl Game {
                 if propose_attack.is_outer_phase {
                     self.push_event(DeathCheck.into());
                 }
-                for i in 0..self.event_handler_manager.propose_attack.len() {
-                    self.push_event(
-                        RawActivateEffect::from_event_and_handler(
-                            propose_attack,
-                            self.event_handler_manager.propose_attack[i],
-                        )
-                        .into(),
-                    );
-                }
+                handle_events!(propose_attack);
             }
             &Event::Attack(attack) => {
                 self.push_event(Event::AfterAttack(attack.into()));
@@ -178,8 +187,8 @@ impl Game {
                     .get_disjoint_mut([attack.attacker, attack.defender])
                     .unwrap();
                 debug_assert_ne!(
-                    attacker.position.unwrap().player_id,
-                    defender.position.unwrap().player_id
+                    attacker.position.unwrap_board().player_id,
+                    defender.position.unwrap_board().player_id
                 );
                 let mut events = ArrayVec::<[Event; 2]>::new();
                 if defender.attack > 0 {
@@ -227,6 +236,7 @@ impl Game {
             }
             &Event::DeathCheck(_death_check) => {
                 let _event_count = self.events.len();
+                //TODO: DeathCheck order is not clear. it might be random? see https://old.reddit.com/r/hearthstone/comments/l49xao/battlegrounds_how_does_deathrattle_ordering_work/
                 for mi_id in self.battleground.all_minions() {
                     let minion = self.minion_instances.get(mi_id).unwrap();
                     if minion.health <= 0 || minion.pending_destroy {
@@ -236,16 +246,10 @@ impl Game {
                 }
             }
             &Event::Death(death) => {
+                handle_events!(death);
+                //let minion = self.minion_instances.get(death.minion).unwrap();
+                // if minion.abilities.reborn() {self.push_event(Summon::new(death.minion, minion.position));}
                 self.push_event(Remove::new(death.minion).into());
-                for i in 0..self.event_handler_manager.death.len() {
-                    self.push_event(
-                        RawActivateEffect::from_event_and_handler(
-                            death,
-                            self.event_handler_manager.death[i],
-                        )
-                        .into(),
-                    );
-                }
             }
             &Event::Remove(remove) => {
                 self.remove_minion(remove.minion).unwrap();
@@ -258,18 +262,14 @@ impl Game {
             &Event::TakeDamage(take_damage) => {
                 self.minion_instances.get_mut(take_damage.target).unwrap().health -=
                     take_damage.amount;
-                for i in 0..self.event_handler_manager.take_damage.len() {
-                    self.push_event(
-                        RawActivateEffect::from_event_and_handler(
-                            take_damage,
-                            self.event_handler_manager.take_damage[i],
-                        )
-                        .into(),
-                    );
-                }
+                handle_events!(take_damage);
             }
             Event::Summon(summon) => {
-                _ = self.position_minion_at(summon.minion, summon.position);
+                let shift = self.minion_summon_shift.entry(summon.source).unwrap().or_insert(0);
+                *shift += 1;
+                let mut position = summon.position;
+                position.index += *shift - 1; //-1 to increase after summon
+                _ = self.position_minion_at(summon.minion, position);
             }
             Event::ActivateEffect(activate_effect) => {
                 activate_effect.generic_associated_event_handler.handle(self);
@@ -280,11 +280,13 @@ impl Game {
     }
 
     pub fn push_event(&mut self, event: Event) {
-        //if self.events.len() == 0 {
-        //    //OUTER PHASE: Check Deaths here
-        //    self.events.push(DeathCheck.into());
-        //}
         self.events.push(event);
+    }
+
+    pub fn push_events(&mut self, events: &[Event]) {
+        for event in events.iter().cloned().rev() {
+            self.events.push(event);
+        }
     }
 
     pub fn run(&mut self) -> End {
@@ -376,6 +378,9 @@ impl Game {
             let minion = &self.minion_instances[minion_id];
             let mut name = minion.variant.data().name;
             name.push_str(&format!("|{:?}", minion_id.data()));
+            if minion_id == self.last_attacker {
+                name = format!("*{}*", name);
+            }
             let stats = minion.stats_print();
             let width = name.len().max(stats.len()) + 2;
             top_names.push_str(&format!("{:^width$}", name));
@@ -388,6 +393,9 @@ impl Game {
             let minion = &self.minion_instances[minion_id];
             let mut name = minion.variant.data().name;
             name.push_str(&format!("|{:?}", minion_id.data()));
+            if minion_id == self.last_attacker {
+                name = format!("*{}*", name);
+            }
             let stats = minion.stats_print();
             let width = name.len().max(stats.len()) + 2;
             bottom_names.push_str(&format!("{:^width$}", name));
@@ -403,7 +411,7 @@ impl Game {
     pub fn position_minion_at(
         &mut self,
         mi_id: MinionInstanceId,
-        position: Position,
+        position: BoardPosition,
     ) -> Result<(), Error> {
         if position.index >= 7 {
             return Err(Error::FullBoard);
@@ -415,10 +423,10 @@ impl Game {
             .map_or(Ok(()), |_| Err(Error::FullBoard))?;
 
         //Update positions
-        self.minion_instances.get_mut(mi_id).unwrap().position = Some(position);
+        self.minion_instances.get_mut(mi_id).unwrap().position = Position::BoardPosition(position);
         let index = position.index as usize;
         for &mi_id in minions[(index + 1)..].iter() {
-            self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index += 1;
+            self.minion_instances.get_mut(mi_id).unwrap().position.unwrap_board_mut().index += 1;
         }
         if position.index < player.next_attack_position {
             player.next_attack_position += 1;
@@ -437,14 +445,17 @@ impl Game {
 
         //Update positions
         self.minion_instances.get_mut(mi_id).unwrap().position =
-            Some(Position::new(player_id, next_index));
+            Position::new_on_board(player_id, next_index);
         //No need to update player.next_attack_position as minions positioned last don't impact that.
         Ok(())
     }
 
     fn remove_minion(&mut self, mi_id: MinionInstanceId) -> Result<(), Error> {
         let minion = self.minion_instances.get(mi_id).unwrap();
-        let position = minion.position.ok_or(Error::MinionNotOnBoard)?;
+        let position = match minion.position {
+            Position::BoardPosition(pos) => pos,
+            Position::LastPosition(_) => return Err(Error::MinionNotOnBoard),
+        };
         let player = self.battleground.player_mut(position.player_id);
         let minions = &mut player.board.minions;
         let index = position.index as usize;
@@ -454,7 +465,7 @@ impl Game {
 
         //Update positions
         for &mi_id in minions[index..].iter() {
-            self.minion_instances.get_mut(mi_id).unwrap().position.as_mut().unwrap().index -= 1;
+            self.minion_instances.get_mut(mi_id).unwrap().position.unwrap_board_mut().index -= 1;
         }
         if position.index < player.next_attack_position {
             player.next_attack_position -= 1;
@@ -465,7 +476,7 @@ impl Game {
 
     fn assert_all_positions_are_correct(&self) {
         for mi_id in self.battleground.all_minions() {
-            let position = self.minion_instances.get(mi_id).unwrap().position.unwrap();
+            let position = self.minion_instances.get(mi_id).unwrap().position.unwrap_board();
             if let Some(mi_id_from_pos) = self
                 .battleground
                 .player(position.player_id)

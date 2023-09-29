@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -85,6 +86,10 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - Remove:
+      minion:
+        idx: 3
+        version: 1
   - ActivateEffect:
       generic_associated_event_handler:
         Death:
@@ -99,10 +104,6 @@ expression: "(minions, recording)"
             minion:
               idx: 8
               version: 1
-  - Remove:
-      minion:
-        idx: 3
-        version: 1
   - AfterAttack:
       attacker:
         idx: 2
@@ -153,6 +154,10 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - Remove:
+      minion:
+        idx: 6
+        version: 1
   - ActivateEffect:
       generic_associated_event_handler:
         Death:
@@ -167,10 +172,6 @@ expression: "(minions, recording)"
             minion:
               idx: 8
               version: 1
-  - Remove:
-      minion:
-        idx: 6
-        version: 1
   - AfterAttack:
       attacker:
         idx: 1
@@ -221,6 +222,10 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - Remove:
+      minion:
+        idx: 4
+        version: 1
   - ActivateEffect:
       generic_associated_event_handler:
         Death:
@@ -235,16 +240,16 @@ expression: "(minions, recording)"
             minion:
               idx: 8
               version: 1
-  - Remove:
-      minion:
-        idx: 4
-        version: 1
   - Death:
       minion:
         idx: 13
         version: 1
       source:
         idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 13
         version: 1
   - ActivateEffect:
       generic_associated_event_handler:
@@ -260,10 +265,6 @@ expression: "(minions, recording)"
             minion:
               idx: 8
               version: 1
-  - Remove:
-      minion:
-        idx: 13
-        version: 1
   - AfterAttack:
       attacker:
         idx: 4
@@ -314,6 +315,10 @@ expression: "(minions, recording)"
       source:
         idx: 4294967295
         version: 1
+  - Remove:
+      minion:
+        idx: 8
+        version: 1
   - ActivateEffect:
       generic_associated_event_handler:
         Death:
@@ -328,10 +333,6 @@ expression: "(minions, recording)"
             minion:
               idx: 8
               version: 1
-  - Remove:
-      minion:
-        idx: 8
-        version: 1
   - Death:
       minion:
         idx: 5

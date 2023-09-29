@@ -168,7 +168,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let num_variants = variants.len();
 
     let mod_code = quote! {
-        use super::{Abilities, MinionInstance};
+        use super::{Abilities, MinionInstance, Position};
         use crate::events::EventHandlers;
 
         use rand::seq::SliceRandom;
@@ -192,7 +192,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                     health: data.health as i32,
                     attack: data.attack as i32,
                     abilities: data.abilities,
-                    position: None,
+                    position: Position::default(),
                     pending_destroy: false,
                     event_handlers: self.event_handlers(),
                 }

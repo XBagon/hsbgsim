@@ -107,7 +107,7 @@ macro_rules! event_variants {
                 }
             })*
 
-            #[derive(Debug, Default, Serialize, Deserialize)]
+            #[derive(Debug, Default, Clone, Serialize, Deserialize)]
             pub enum Event {
                 #[default]
                 Invalid,

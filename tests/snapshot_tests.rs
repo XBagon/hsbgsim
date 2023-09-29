@@ -25,7 +25,7 @@ pub fn random_board_snapshot(seed: u64) {
     game.initialize();
 
     let recording = game.run_and_record_events();
-    let mut minions: BTreeMap<_, _> =
+    let minions: BTreeMap<_, _> =
         game.minion_instances.iter().map(|(mi_id, minion)| (mi_id, minion.variant)).collect();
 
     //TODO: better replay format
