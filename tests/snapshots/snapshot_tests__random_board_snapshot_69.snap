@@ -44,6 +44,9 @@ expression: "(minions, recording)"
   ? idx: 14
     version: 1
   : Murcules
+  ? idx: 15
+    version: 1
+  : DamagedGolem
 - - ProposeAttack:
       attacker:
         idx: 2
@@ -89,6 +92,20 @@ expression: "(minions, recording)"
       minion:
         idx: 2
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 2
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 2
@@ -143,6 +160,20 @@ expression: "(minions, recording)"
       minion:
         idx: 1
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 1
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 1
@@ -197,6 +228,20 @@ expression: "(minions, recording)"
       minion:
         idx: 9
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 9
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 4
@@ -251,6 +296,20 @@ expression: "(minions, recording)"
       minion:
         idx: 4
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 4
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - Death:
       minion:
         idx: 3
@@ -262,6 +321,20 @@ expression: "(minions, recording)"
       minion:
         idx: 3
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 3
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 3
@@ -316,6 +389,20 @@ expression: "(minions, recording)"
       minion:
         idx: 6
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 6
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 6
@@ -370,6 +457,20 @@ expression: "(minions, recording)"
       minion:
         idx: 10
         version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 10
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
   - AfterAttack:
       attacker:
         idx: 5
@@ -422,6 +523,30 @@ expression: "(minions, recording)"
         version: 1
   - Remove:
       minion:
+        idx: 11
+        version: 1
+  - ActivateEffect:
+      generic_associated_event_handler:
+        Death:
+          event:
+            minion:
+              idx: 11
+              version: 1
+            source:
+              idx: 4294967295
+              version: 1
+          ass_handler:
+            minion:
+              idx: 11
+              version: 1
+  - Summon:
+      minion:
+        idx: 15
+        version: 1
+      position:
+        player_id: Bottom
+        index: 2
+      source:
         idx: 11
         version: 1
   - AfterAttack:
@@ -554,7 +679,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 13
+        idx: 15
         version: 1
       defender:
         idx: 8
@@ -563,7 +688,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 13
+        idx: 15
         version: 1
       defender:
         idx: 8
@@ -573,13 +698,13 @@ expression: "(minions, recording)"
       target:
         idx: 8
         version: 1
-      amount: 6
+      amount: 2
       source:
-        idx: 13
+        idx: 15
         version: 1
   - TakeDamage:
       target:
-        idx: 13
+        idx: 15
         version: 1
       amount: 7
       source:
@@ -599,18 +724,18 @@ expression: "(minions, recording)"
         version: 1
   - Death:
       minion:
-        idx: 13
+        idx: 15
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 13
+        idx: 15
         version: 1
   - AfterAttack:
       attacker:
-        idx: 13
+        idx: 15
         version: 1
       defender:
         idx: 8
