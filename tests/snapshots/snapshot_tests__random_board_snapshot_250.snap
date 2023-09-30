@@ -481,7 +481,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 8
+        idx: 10
         version: 1
       defender:
         idx: 5
@@ -490,7 +490,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 8
+        idx: 10
         version: 1
       defender:
         idx: 5
@@ -500,13 +500,13 @@ expression: "(minions, recording)"
       target:
         idx: 5
         version: 1
-      amount: 2
+      amount: 1
       source:
-        idx: 8
+        idx: 10
         version: 1
   - TakeDamage:
       target:
-        idx: 8
+        idx: 10
         version: 1
       amount: 4
       source:
@@ -515,18 +515,18 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 8
+        idx: 10
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 8
+        idx: 10
         version: 1
   - AfterAttack:
       attacker:
-        idx: 8
+        idx: 10
         version: 1
       defender:
         idx: 5

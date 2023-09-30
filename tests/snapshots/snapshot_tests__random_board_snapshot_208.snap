@@ -1,6 +1,5 @@
 ---
 source: tests/snapshot_tests.rs
-assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -591,7 +590,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 12
@@ -600,7 +599,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 12
@@ -610,166 +609,16 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 1
+      amount: 4
       source:
-        idx: 7
+        idx: 9
         version: 1
   - ActivateEffect:
       generic_associated_event_handler:
         Attack:
           event:
             attacker:
-              idx: 7
-              version: 1
-            defender:
-              idx: 12
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 11
-              version: 1
-  - DeathCheck: ~
-  - AfterAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - ProposeAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - Attack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - TakeDamage:
-      target:
-        idx: 12
-        version: 1
-      amount: 1
-      source:
-        idx: 7
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Attack:
-          event:
-            attacker:
-              idx: 7
-              version: 1
-            defender:
-              idx: 12
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 11
-              version: 1
-  - DeathCheck: ~
-  - AfterAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - ProposeAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - Attack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - TakeDamage:
-      target:
-        idx: 12
-        version: 1
-      amount: 1
-      source:
-        idx: 7
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Attack:
-          event:
-            attacker:
-              idx: 7
-              version: 1
-            defender:
-              idx: 12
-              version: 1
-            is_outer_phase: true
-          ass_handler:
-            minion:
-              idx: 11
-              version: 1
-  - DeathCheck: ~
-  - AfterAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - ProposeAttack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - Attack:
-      attacker:
-        idx: 7
-        version: 1
-      defender:
-        idx: 12
-        version: 1
-      is_outer_phase: true
-  - TakeDamage:
-      target:
-        idx: 12
-        version: 1
-      amount: 1
-      source:
-        idx: 7
-        version: 1
-  - ActivateEffect:
-      generic_associated_event_handler:
-        Attack:
-          event:
-            attacker:
-              idx: 7
+              idx: 9
               version: 1
             defender:
               idx: 12
@@ -793,7 +642,7 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 12

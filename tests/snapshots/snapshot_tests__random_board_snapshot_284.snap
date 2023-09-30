@@ -470,7 +470,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 8
+        idx: 14
         version: 1
       defender:
         idx: 7
@@ -479,7 +479,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 8
+        idx: 14
         version: 1
       defender:
         idx: 7
@@ -489,13 +489,13 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      amount: 5
+      amount: 3
       source:
-        idx: 8
+        idx: 14
         version: 1
   - TakeDamage:
       target:
-        idx: 8
+        idx: 14
         version: 1
       amount: 4
       source:
@@ -504,14 +504,14 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 8
+        idx: 14
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 8
+        idx: 14
         version: 1
   - Death:
       minion:
@@ -526,7 +526,7 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 8
+        idx: 14
         version: 1
       defender:
         idx: 7
@@ -600,7 +600,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 14
+        idx: 8
         version: 1
       defender:
         idx: 13
@@ -609,7 +609,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 14
+        idx: 8
         version: 1
       defender:
         idx: 13
@@ -619,13 +619,13 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 3
+      amount: 5
       source:
-        idx: 14
+        idx: 8
         version: 1
   - TakeDamage:
       target:
-        idx: 14
+        idx: 8
         version: 1
       amount: 3
       source:
@@ -634,23 +634,34 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 14
+        idx: 8
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 14
+        idx: 8
+        version: 1
+  - Death:
+      minion:
+        idx: 13
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 13
         version: 1
   - AfterAttack:
       attacker:
-        idx: 14
+        idx: 8
         version: 1
       defender:
         idx: 13
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
-  - End: BottomWin
+  - End: Draw
 

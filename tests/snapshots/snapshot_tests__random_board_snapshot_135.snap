@@ -308,7 +308,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 8
@@ -317,7 +317,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 8
@@ -329,11 +329,11 @@ expression: "(minions, recording)"
         version: 1
       amount: 2
       source:
-        idx: 3
+        idx: 5
         version: 1
   - TakeDamage:
       target:
-        idx: 3
+        idx: 5
         version: 1
       amount: 4
       source:
@@ -342,18 +342,18 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 3
+        idx: 5
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 3
+        idx: 5
         version: 1
   - AfterAttack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 8
@@ -365,7 +365,7 @@ expression: "(minions, recording)"
         idx: 8
         version: 1
       defender:
-        idx: 5
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -374,12 +374,12 @@ expression: "(minions, recording)"
         idx: 8
         version: 1
       defender:
-        idx: 5
+        idx: 3
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 5
+        idx: 3
         version: 1
       amount: 4
       source:
@@ -391,26 +391,26 @@ expression: "(minions, recording)"
         version: 1
       amount: 2
       source:
-        idx: 5
+        idx: 3
         version: 1
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 5
+        idx: 3
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 5
+        idx: 3
         version: 1
   - AfterAttack:
       attacker:
         idx: 8
         version: 1
       defender:
-        idx: 5
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~

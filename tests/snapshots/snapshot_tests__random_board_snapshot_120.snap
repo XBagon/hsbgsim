@@ -485,7 +485,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 3
+        idx: 7
         version: 1
       defender:
         idx: 12
@@ -494,7 +494,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 3
+        idx: 7
         version: 1
       defender:
         idx: 12
@@ -504,9 +504,9 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 4
+      amount: 6
       source:
-        idx: 3
+        idx: 7
         version: 1
   - ActivateEffect:
       generic_associated_event_handler:
@@ -515,9 +515,9 @@ expression: "(minions, recording)"
             target:
               idx: 12
               version: 1
-            amount: 4
+            amount: 6
             source:
-              idx: 3
+              idx: 7
               version: 1
           ass_handler:
             minion:
@@ -525,7 +525,7 @@ expression: "(minions, recording)"
               version: 1
   - TakeDamage:
       target:
-        idx: 3
+        idx: 7
         version: 1
       amount: 2
       source:
@@ -536,7 +536,7 @@ expression: "(minions, recording)"
         TakeDamage:
           event:
             target:
-              idx: 3
+              idx: 7
               version: 1
             amount: 2
             source:
@@ -560,7 +560,7 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 3
+        idx: 7
         version: 1
       defender:
         idx: 12
@@ -653,7 +653,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 3
+        idx: 9
         version: 1
       defender:
         idx: 14
@@ -662,7 +662,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 3
+        idx: 9
         version: 1
       defender:
         idx: 14
@@ -672,9 +672,9 @@ expression: "(minions, recording)"
       target:
         idx: 14
         version: 1
-      amount: 4
+      amount: 3
       source:
-        idx: 3
+        idx: 9
         version: 1
   - ActivateEffect:
       generic_associated_event_handler:
@@ -683,9 +683,9 @@ expression: "(minions, recording)"
             target:
               idx: 14
               version: 1
-            amount: 4
+            amount: 3
             source:
-              idx: 3
+              idx: 9
               version: 1
           ass_handler:
             minion:
@@ -693,7 +693,7 @@ expression: "(minions, recording)"
               version: 1
   - TakeDamage:
       target:
-        idx: 3
+        idx: 9
         version: 1
       amount: 2
       source:
@@ -704,7 +704,7 @@ expression: "(minions, recording)"
         TakeDamage:
           event:
             target:
-              idx: 3
+              idx: 9
               version: 1
             amount: 2
             source:
@@ -728,7 +728,7 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 3
+        idx: 9
         version: 1
       defender:
         idx: 14

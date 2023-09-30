@@ -373,7 +373,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 12
@@ -382,7 +382,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 12
@@ -392,13 +392,13 @@ expression: "(minions, recording)"
       target:
         idx: 12
         version: 1
-      amount: 3
+      amount: 2
       source:
-        idx: 3
+        idx: 5
         version: 1
   - TakeDamage:
       target:
-        idx: 3
+        idx: 5
         version: 1
       amount: 6
       source:
@@ -407,18 +407,18 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 3
+        idx: 12
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 3
+        idx: 12
         version: 1
   - AfterAttack:
       attacker:
-        idx: 3
+        idx: 5
         version: 1
       defender:
         idx: 12
@@ -427,29 +427,21 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 3
+        idx: 10
         version: 1
       defender:
-        idx: 10
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 3
+        idx: 10
         version: 1
       defender:
-        idx: 10
-        version: 1
-      is_outer_phase: true
-  - TakeDamage:
-      target:
-        idx: 10
-        version: 1
-      amount: 3
-      source:
         idx: 3
         version: 1
+      is_outer_phase: true
   - TakeDamage:
       target:
         idx: 3
@@ -458,73 +450,38 @@ expression: "(minions, recording)"
       source:
         idx: 10
         version: 1
-  - DeathCheck: ~
-  - AfterAttack:
-      attacker:
-        idx: 3
-        version: 1
-      defender:
+  - TakeDamage:
+      target:
         idx: 10
         version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - ProposeAttack:
-      attacker:
-        idx: 12
-        version: 1
-      defender:
-        idx: 5
-        version: 1
-      is_outer_phase: true
-  - DeathCheck: ~
-  - Attack:
-      attacker:
-        idx: 12
-        version: 1
-      defender:
-        idx: 5
-        version: 1
-      is_outer_phase: true
-  - TakeDamage:
-      target:
-        idx: 5
-        version: 1
-      amount: 6
+      amount: 3
       source:
-        idx: 12
-        version: 1
-  - TakeDamage:
-      target:
-        idx: 12
-        version: 1
-      amount: 2
-      source:
-        idx: 5
+        idx: 3
         version: 1
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 12
+        idx: 3
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 12
+        idx: 3
         version: 1
   - AfterAttack:
       attacker:
-        idx: 12
+        idx: 10
         version: 1
       defender:
-        idx: 5
+        idx: 3
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 5
+        idx: 11
         version: 1
       defender:
         idx: 10
@@ -533,7 +490,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 5
+        idx: 11
         version: 1
       defender:
         idx: 10
@@ -543,13 +500,13 @@ expression: "(minions, recording)"
       target:
         idx: 10
         version: 1
-      amount: 2
+      amount: 5
       source:
-        idx: 5
+        idx: 11
         version: 1
   - TakeDamage:
       target:
-        idx: 5
+        idx: 11
         version: 1
       amount: 4
       source:
@@ -567,20 +524,9 @@ expression: "(minions, recording)"
       minion:
         idx: 10
         version: 1
-  - Death:
-      minion:
-        idx: 5
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 5
-        version: 1
   - AfterAttack:
       attacker:
-        idx: 5
+        idx: 11
         version: 1
       defender:
         idx: 10

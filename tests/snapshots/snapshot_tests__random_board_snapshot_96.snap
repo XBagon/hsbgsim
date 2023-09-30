@@ -1,6 +1,5 @@
 ---
 source: tests/snapshot_tests.rs
-assertion_line: 32
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -530,7 +529,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 5
+        idx: 13
         version: 1
       defender:
         idx: 10
@@ -539,7 +538,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 5
+        idx: 13
         version: 1
       defender:
         idx: 10
@@ -551,11 +550,11 @@ expression: "(minions, recording)"
         version: 1
       amount: 4
       source:
-        idx: 5
+        idx: 13
         version: 1
   - TakeDamage:
       target:
-        idx: 5
+        idx: 13
         version: 1
       amount: 2
       source:
@@ -595,26 +594,26 @@ expression: "(minions, recording)"
       source:
         idx: 10
         version: 1
-  - Death:
-      minion:
-        idx: 5
-        version: 1
-      source:
-        idx: 4294967295
-        version: 1
-  - Remove:
-      minion:
-        idx: 5
-        version: 1
   - AfterAttack:
       attacker:
-        idx: 5
+        idx: 13
         version: 1
       defender:
         idx: 10
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
+  - Death:
+      minion:
+        idx: 13
+        version: 1
+      source:
+        idx: 4294967295
+        version: 1
+  - Remove:
+      minion:
+        idx: 13
+        version: 1
   - ProposeAttack:
       attacker:
         idx: 14

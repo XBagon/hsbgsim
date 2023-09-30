@@ -446,7 +446,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 14
@@ -455,7 +455,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 14
@@ -467,11 +467,11 @@ expression: "(minions, recording)"
         version: 1
       amount: 2
       source:
-        idx: 7
+        idx: 9
         version: 1
   - TakeDamage:
       target:
-        idx: 7
+        idx: 9
         version: 1
       amount: 6
       source:
@@ -491,18 +491,18 @@ expression: "(minions, recording)"
         version: 1
   - Death:
       minion:
-        idx: 7
+        idx: 9
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 7
+        idx: 9
         version: 1
   - AfterAttack:
       attacker:
-        idx: 7
+        idx: 9
         version: 1
       defender:
         idx: 14
@@ -565,7 +565,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 9
+        idx: 7
         version: 1
       defender:
         idx: 12
@@ -574,7 +574,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 9
+        idx: 7
         version: 1
       defender:
         idx: 12
@@ -586,11 +586,11 @@ expression: "(minions, recording)"
         version: 1
       amount: 2
       source:
-        idx: 9
+        idx: 7
         version: 1
   - TakeDamage:
       target:
-        idx: 9
+        idx: 7
         version: 1
       amount: 9
       source:
@@ -610,18 +610,18 @@ expression: "(minions, recording)"
         version: 1
   - Death:
       minion:
-        idx: 9
+        idx: 7
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 9
+        idx: 7
         version: 1
   - AfterAttack:
       attacker:
-        idx: 9
+        idx: 7
         version: 1
       defender:
         idx: 12

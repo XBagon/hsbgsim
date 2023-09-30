@@ -381,7 +381,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
         idx: 13
@@ -390,7 +390,7 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Attack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
         idx: 13
@@ -400,13 +400,13 @@ expression: "(minions, recording)"
       target:
         idx: 13
         version: 1
-      amount: 3
+      amount: 5
       source:
-        idx: 6
+        idx: 8
         version: 1
   - TakeDamage:
       target:
-        idx: 6
+        idx: 8
         version: 1
       amount: 3
       source:
@@ -415,14 +415,14 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 6
+        idx: 8
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 6
+        idx: 8
         version: 1
   - Death:
       minion:
@@ -437,7 +437,7 @@ expression: "(minions, recording)"
         version: 1
   - AfterAttack:
       attacker:
-        idx: 6
+        idx: 8
         version: 1
       defender:
         idx: 13
@@ -449,7 +449,7 @@ expression: "(minions, recording)"
         idx: 11
         version: 1
       defender:
-        idx: 8
+        idx: 6
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
@@ -458,12 +458,12 @@ expression: "(minions, recording)"
         idx: 11
         version: 1
       defender:
-        idx: 8
+        idx: 6
         version: 1
       is_outer_phase: true
   - TakeDamage:
       target:
-        idx: 8
+        idx: 6
         version: 1
       amount: 3
       source:
@@ -472,21 +472,21 @@ expression: "(minions, recording)"
   - DeathCheck: ~
   - Death:
       minion:
-        idx: 8
+        idx: 6
         version: 1
       source:
         idx: 4294967295
         version: 1
   - Remove:
       minion:
-        idx: 8
+        idx: 6
         version: 1
   - AfterAttack:
       attacker:
         idx: 11
         version: 1
       defender:
-        idx: 8
+        idx: 6
         version: 1
       is_outer_phase: true
   - DeathCheck: ~
