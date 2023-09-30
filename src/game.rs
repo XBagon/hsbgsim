@@ -219,6 +219,7 @@ impl Game {
                         attacker.pending_destroy = true;
                     }
                 }
+                handle_events!(attack);
                 events.into_iter().for_each(|event| self.push_event(event));
                 //for i in 0..self.event_handler_manager.attack.len() {
                 //    let AssociatedEventHandler {minion: mi_id, handler} = self.event_handler_manager.attack[i];

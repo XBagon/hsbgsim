@@ -1,5 +1,5 @@
 use crate::{
-    minions::MinionInstanceId,
+    minions::{BoardPosition, MinionInstanceId},
     player::{Player, PlayerId},
 };
 
@@ -37,6 +37,11 @@ impl Battleground {
 
     pub fn players_mut(&mut self) -> [&mut Player; 2] {
         [&mut self.bottom_player, &mut self.top_player]
+    }
+
+    //TODO: replace player(player_id) -> minions[index] calls with this
+    pub fn minion_at(&self, position: BoardPosition) -> Option<MinionInstanceId> {
+        self.player(position.player_id).board.minions.get(position.index as usize).copied()
     }
 
     pub fn all_minions(&self) -> impl Iterator<Item = MinionInstanceId> + '_ {

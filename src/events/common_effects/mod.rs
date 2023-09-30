@@ -1,3 +1,5 @@
-pub mod poisonous;
+mod cleave;
+mod poisonous;
 
+pub use cleave::cleave;
 pub use poisonous::poisonous;

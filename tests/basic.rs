@@ -105,6 +105,7 @@ pub fn top_bottom_fair() {
     let mut top_wins = 0;
     let mut bottom_wins = 0;
 
+    //TODO: instead of random boards simulate flipped and unflipped versions of the same board
     for _ in 0..10000 {
         let mut game = Game::default();
 
