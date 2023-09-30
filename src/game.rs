@@ -343,7 +343,7 @@ impl Game {
             let next_mi_id = attacking_player.board.minions[next_position];
             let next_minion = self.minion_instances.get(next_mi_id).unwrap();
             if next_minion.attack > 0 {
-                attacking_player.next_attack_position = i as u8 + 1;
+                attacking_player.next_attack_position = next_position as u8 + 1;
                 return Some(next_mi_id);
             }
         }
