@@ -1,7 +1,5 @@
 extern crate hsbgsim;
 
-use std::{env, str::FromStr};
-
 use hsbgsim::*;
 
 #[test]
