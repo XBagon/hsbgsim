@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pre_commit_checks
+        name: pre_commit_checks
+        entry: cargo run -q -p pre_commit_checks --release
+        language: rust
+        require_serial: true
+        fail_fast: true
