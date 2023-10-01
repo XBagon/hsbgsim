@@ -1,4 +1,8 @@
-use crate::events::EventHandlers;
+use crate::events::{common_effects::cleave, EventHandlers};
+
 pub fn event_handlers() -> EventHandlers {
-    EventHandlers::default()
+    EventHandlers {
+        attack: Some(cleave),
+        ..Default::default()
+    }
 }
