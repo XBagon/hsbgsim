@@ -9,5 +9,9 @@ pub fn event_handlers() -> EventHandlers {
 }
 
 pub fn golden_event_handlers() -> EventHandlers {
-    EventHandlers::default()
+    EventHandlers {
+        implemented: true,
+        attack: Some(cleave),
+        ..Default::default()
+    }
 }

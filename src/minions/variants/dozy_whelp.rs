@@ -13,5 +13,13 @@ pub fn event_handlers() -> EventHandlers {
 }
 
 pub fn golden_event_handlers() -> EventHandlers {
-    EventHandlers::default()
+    EventHandlers {
+        implemented: true,
+        propose_attack: Some(|this, attack, game| {
+            if attack.defender == this {
+                game.push_event(StatBuff::new(this, 2, 0).into());
+            }
+        }),
+        ..Default::default()
+    }
 }

@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 44
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -46,10 +47,10 @@ expression: "(minions, recording)"
   : Golden Stasis Elemental
   ? idx: 15
     version: 1
-  : Imp
+  : Golden Imp
   ? idx: 16
     version: 1
-  : Imp
+  : Golden Imp
 - - ProposeAttack:
       attacker:
         idx: 1
@@ -248,7 +249,7 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      amount: 1
+      amount: 2
       source:
         idx: 15
         version: 1

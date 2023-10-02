@@ -10,5 +10,9 @@ pub fn event_handlers() -> EventHandlers {
 }
 
 pub fn golden_event_handlers() -> EventHandlers {
-    EventHandlers::default()
+    EventHandlers {
+        implemented: true,
+        take_damage: Some(poisonous),
+        ..Default::default()
+    }
 }

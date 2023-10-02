@@ -1,5 +1,6 @@
 ---
 source: tests/snapshot_tests.rs
+assertion_line: 44
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -140,7 +141,7 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      attack: 1
+      attack: 2
       health: 0
   - DeathCheck: ~
   - Attack:
@@ -163,7 +164,7 @@ expression: "(minions, recording)"
       target:
         idx: 2
         version: 1
-      amount: 1
+      amount: 2
       source:
         idx: 7
         version: 1
@@ -345,7 +346,7 @@ expression: "(minions, recording)"
       target:
         idx: 7
         version: 1
-      attack: 1
+      attack: 2
       health: 0
   - DeathCheck: ~
   - Attack:
@@ -368,7 +369,7 @@ expression: "(minions, recording)"
       target:
         idx: 8
         version: 1
-      amount: 2
+      amount: 4
       source:
         idx: 7
         version: 1

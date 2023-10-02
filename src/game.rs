@@ -87,7 +87,12 @@ impl Game {
     pub fn instantiate_minion(&mut self, variant: MinionVariant, golden: bool) -> MinionInstanceId {
         let minion_instance = variant.into_instance(golden);
         let mi_id = self.minion_instances.insert(minion_instance);
-        self.event_handler_manager.append_event_handler(mi_id, &variant.event_handlers());
+        let event_handlers = if golden {
+            variant.golden_event_handlers()
+        } else {
+            variant.event_handlers()
+        };
+        self.event_handler_manager.append_event_handler(mi_id, &event_handlers);
         mi_id
     }
 

@@ -13,5 +13,13 @@ pub fn event_handlers() -> EventHandlers {
 }
 
 pub fn golden_event_handlers() -> EventHandlers {
-    EventHandlers::default()
+    EventHandlers {
+        implemented: true,
+        take_damage: Some(|this, take_damage, game| {
+            if take_damage.target == this && take_damage.amount == 2 {
+                game.push_event(Death::new(this, this).into());
+            }
+        }),
+        ..Default::default()
+    }
 }
