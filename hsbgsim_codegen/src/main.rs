@@ -93,6 +93,38 @@ fn main() -> Result<(), Box<dyn Error>> {
             .write(true)
             .create_new(true)
             .open(&format!("src/minions/variants/{}.rs", module_name));
+
+        fn remove_keywords(text: &str) -> String {
+            text.replace("Taunt", "")
+                .replace("Divine Shield", "")
+                .replace("Windfury", "")
+                .replace("Venomous", "")
+                .replace("Reborn", "")
+                .replace(|c: char| !c.is_ascii_alphanumeric(), "")
+        }
+
+        let event_handlers =
+            if remove_keywords(minion.text.as_deref().unwrap_or_default()).is_empty() {
+                quote! {
+                    EventHandlers {
+                        implemented: true,
+                        ..Default::default()
+                    }
+                }
+            } else {
+                quote! {EventHandlers::default()}
+            };
+        let golden_event_handlers =
+            if remove_keywords(minion.text_golden.as_deref().unwrap_or_default()).is_empty() {
+                quote! {
+                    EventHandlers {
+                        implemented: true,
+                        ..Default::default()
+                    }
+                }
+            } else {
+                quote! {EventHandlers::default()}
+            };
         match &mut res {
             Err(err) => {
                 if err.kind() != ErrorKind::AlreadyExists {
@@ -104,7 +136,11 @@ fn main() -> Result<(), Box<dyn Error>> {
                     use crate::events::EventHandlers;
 
                     pub fn event_handlers() -> EventHandlers {
-                        EventHandlers::default()
+                        #event_handlers
+                    }
+
+                    pub fn golden_event_handlers() -> EventHandlers {
+                        #golden_event_handlers
                     }
                 };
                 let variant_file: syn::File = syn::parse2(variant_code)?;
@@ -251,6 +287,13 @@ fn main() -> Result<(), Box<dyn Error>> {
                 match self {
                     MinionVariant::Invalid => panic!("Invalid MinionVariant"),
                     #(MinionVariant::#variants => #modules::event_handlers()),*
+                }
+            }
+
+            pub fn golden_event_handlers(self) -> EventHandlers {
+                match self {
+                    MinionVariant::Invalid => panic!("Invalid MinionVariant"),
+                    #(MinionVariant::#variants => #modules::golden_event_handlers()),*
                 }
             }
 

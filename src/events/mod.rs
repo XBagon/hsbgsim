@@ -137,6 +137,7 @@ macro_rules! event_variants {
 
             #[derive(Default)]
             pub struct EventHandlers {
+                pub implemented: bool,
                 $(pub [<$vars:snake>]: Option<fn(MinionInstanceId, $vars, &mut Game)>),*
             }
 

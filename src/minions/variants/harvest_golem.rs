@@ -2,6 +2,7 @@ use crate::events::{EventHandlers, Summon};
 
 pub fn event_handlers() -> EventHandlers {
     EventHandlers {
+        implemented: true,
         death: Some(|this, death, game| {
             if death.minion == this {
                 let position = game.minion_instances.get(this).unwrap().position;
@@ -12,4 +13,8 @@ pub fn event_handlers() -> EventHandlers {
         }),
         ..Default::default()
     }
+}
+
+pub fn golden_event_handlers() -> EventHandlers {
+    EventHandlers::default()
 }
