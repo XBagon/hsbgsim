@@ -407,6 +407,7 @@ impl MinionVariant {
         if golden {
             MinionInstance {
                 variant: self,
+                golden,
                 health: data.health_golden as i32,
                 attack: data.attack_golden as i32,
                 abilities: data.abilities,
@@ -417,6 +418,7 @@ impl MinionVariant {
         } else {
             MinionInstance {
                 variant: self,
+                golden,
                 health: data.health as i32,
                 attack: data.attack as i32,
                 abilities: data.abilities,

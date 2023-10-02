@@ -377,8 +377,12 @@ impl Game {
         let mut top_stats = String::new();
         for minion_id in self.battleground.player(PlayerId::Top).board.minions {
             let minion = &self.minion_instances[minion_id];
-            let mut name = minion.variant.data().name;
-            name.push_str(&format!("|{:?}", minion_id.data()));
+            let mut name = format!(
+                "{}{}|{:?}",
+                minion.golden.then_some(String::from("G-")).unwrap_or_default(),
+                minion.variant.data().name,
+                minion_id.data()
+            );
             if minion_id == self.last_attacker {
                 name = format!("*{}*", name);
             }
@@ -392,8 +396,12 @@ impl Game {
         let mut bottom_stats = String::new();
         for minion_id in self.battleground.player(PlayerId::Bottom).board.minions {
             let minion = &self.minion_instances[minion_id];
-            let mut name = minion.variant.data().name;
-            name.push_str(&format!("|{:?}", minion_id.data()));
+            let mut name = format!(
+                "{}{}|{:?}",
+                minion.golden.then_some(String::from("G-")).unwrap_or_default(),
+                minion.variant.data().name,
+                minion_id.data()
+            );
             if minion_id == self.last_attacker {
                 name = format!("*{}*", name);
             }

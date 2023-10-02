@@ -196,6 +196,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 if golden {
                     MinionInstance {
                         variant: self,
+                        golden,
                         health: data.health_golden as i32,
                         attack: data.attack_golden as i32,
                         abilities: data.abilities,
@@ -206,6 +207,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                 } else {
                     MinionInstance {
                         variant: self,
+                        golden,
                         health: data.health as i32,
                         attack: data.attack as i32,
                         abilities: data.abilities,
