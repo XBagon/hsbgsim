@@ -3,8 +3,10 @@ use crate::minions::AbilitiesInit;
 pub fn data() -> MinionVariantData {
     MinionVariantData {
         name: String::from("Tunnel Blaster"),
-        health: 7u8,
         attack: 3u8,
+        health: 7u8,
+        attack_golden: 6u8,
+        health_golden: 14u8,
         abilities: AbilitiesInit {
             taunt: true,
             ..Default::default()

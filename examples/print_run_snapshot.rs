@@ -12,10 +12,10 @@ pub fn main() {
     let mut rng = Xoshiro256PlusPlus::seed_from_u64(!seed);
 
     for _ in 0..7 {
-        let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+        let minion = game.instantiate_minion(MinionVariant::random(&mut rng), false);
         game.position_minion(minion, PlayerId::Bottom).unwrap();
 
-        let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+        let minion = game.instantiate_minion(MinionVariant::random(&mut rng), false);
         game.position_minion(minion, PlayerId::Top).unwrap();
     }
 

@@ -3,8 +3,10 @@ use crate::minions::AbilitiesInit;
 pub fn data() -> MinionVariantData {
     MinionVariantData {
         name: String::from("Cap'n Hoggarr"),
-        health: 6u8,
         attack: 6u8,
+        health: 6u8,
+        attack_golden: 12u8,
+        health_golden: 12u8,
         abilities: AbilitiesInit {
             ..Default::default()
         }

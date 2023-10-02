@@ -1,4 +1,5 @@
 use hsbgsim::*;
+use rand::Rng;
 
 pub fn main() {
     let mut game = Game::default();
@@ -6,10 +7,10 @@ pub fn main() {
     let mut rng = rand::thread_rng();
 
     for _ in 0..7 {
-        let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+        let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
         game.position_minion(minion, PlayerId::Bottom).unwrap();
 
-        let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+        let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
         game.position_minion(minion, PlayerId::Top).unwrap();
     }
 

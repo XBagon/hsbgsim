@@ -84,8 +84,8 @@ impl Game {
         self.attacking_player = Some(starting_player);
     }
 
-    pub fn instantiate_minion(&mut self, variant: MinionVariant) -> MinionInstanceId {
-        let minion_instance = variant.into_instance();
+    pub fn instantiate_minion(&mut self, variant: MinionVariant, golden: bool) -> MinionInstanceId {
+        let minion_instance = variant.into_instance(golden);
         let mi_id = self.minion_instances.insert(minion_instance);
         self.event_handler_manager.append_event_handler(mi_id, &variant.event_handlers());
         mi_id
@@ -508,12 +508,12 @@ mod test {
         let mut game = Game::default();
 
         for _ in 0..7 {
-            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp);
+            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp, false);
             game.position_minion(icky_imp, PlayerId::Bottom).unwrap();
         }
 
         for _ in 0..7 {
-            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp);
+            let icky_imp = game.instantiate_minion(MinionVariant::IckyImp, false);
             game.position_minion(icky_imp, PlayerId::Top).unwrap();
         }
 

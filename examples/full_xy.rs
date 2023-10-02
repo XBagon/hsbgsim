@@ -15,10 +15,10 @@ fn main() {
         .unwrap_or(bottom_minion);
 
     for _ in 0..7 {
-        let annoy_o_tron = game.instantiate_minion(bottom_minion);
+        let annoy_o_tron = game.instantiate_minion(bottom_minion, false);
         game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
 
-        let annoy_o_tron = game.instantiate_minion(top_minion);
+        let annoy_o_tron = game.instantiate_minion(top_minion, false);
         game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
 

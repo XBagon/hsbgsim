@@ -116,6 +116,8 @@ fn main() -> Result<(), Box<dyn Error>> {
             name,
             attack,
             health,
+            attack_golden,
+            health_golden,
             abilities,
             ..
         } = minion;
@@ -137,8 +139,10 @@ fn main() -> Result<(), Box<dyn Error>> {
             pub fn data() -> MinionVariantData {
                 MinionVariantData {
                     name: String::from(#name),
-                    health: #health,
                     attack: #attack,
+                    health: #health,
+                    attack_golden: #attack_golden,
+                    health_golden: #health_golden,
                     abilities: AbilitiesInit {
                         #(battlecry: #battlecry,)*
                         #(deathrattle: #deathrattle,)*
@@ -179,22 +183,36 @@ fn main() -> Result<(), Box<dyn Error>> {
 
         pub struct MinionVariantData {
             pub name: String,
-            pub health: u8,
             pub attack: u8,
+            pub health: u8,
+            pub attack_golden: u8,
+            pub health_golden: u8,
             pub abilities: Abilities,
         }
 
         impl MinionVariant {
-            pub fn into_instance(self) -> MinionInstance {
+            pub fn into_instance(self, golden: bool) -> MinionInstance {
                 let data = self.data();
-                MinionInstance {
-                    variant: self,
-                    health: data.health as i32,
-                    attack: data.attack as i32,
-                    abilities: data.abilities,
-                    position: Position::default(),
-                    pending_destroy: false,
-                    event_handlers: self.event_handlers(),
+                if golden {
+                    MinionInstance {
+                        variant: self,
+                        health: data.health_golden as i32,
+                        attack: data.attack_golden as i32,
+                        abilities: data.abilities,
+                        position: Position::default(),
+                        pending_destroy: false,
+                        event_handlers: self.event_handlers(),
+                    }
+                } else {
+                    MinionInstance {
+                        variant: self,
+                        health: data.health as i32,
+                        attack: data.attack as i32,
+                        abilities: data.abilities,
+                        position: Position::default(),
+                        pending_destroy: false,
+                        event_handlers: self.event_handlers(),
+                    }
                 }
             }
         }

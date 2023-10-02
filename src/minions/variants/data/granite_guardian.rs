@@ -3,8 +3,10 @@ use crate::minions::AbilitiesInit;
 pub fn data() -> MinionVariantData {
     MinionVariantData {
         name: String::from("Granite Guardian"),
-        health: 28u8,
         attack: 1u8,
+        health: 28u8,
+        attack_golden: 2u8,
+        health_golden: 56u8,
         abilities: AbilitiesInit {
             taunt: true,
             ..Default::default()

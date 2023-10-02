@@ -10,8 +10,8 @@ new_key_type! {
 #[derive(Default)]
 pub struct MinionInstance {
     pub variant: MinionVariant,
-    pub health: i32,
     pub attack: i32,
+    pub health: i32,
     pub position: Position,
     pub abilities: Abilities,
     pub pending_destroy: bool,

@@ -1,6 +1,7 @@
 extern crate hsbgsim;
 
 use hsbgsim::*;
+use rand::Rng;
 
 #[test]
 pub fn empty() {
@@ -13,10 +14,10 @@ pub fn empty() {
 pub fn single_annoy_o_trons() {
     let mut game = Game::default();
 
-    let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+    let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
     game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
 
-    let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+    let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
     game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
 
     game.initialize();
@@ -29,10 +30,10 @@ pub fn full_annoy_o_trons() {
     let mut game = Game::default();
 
     for _ in 0..7 {
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
         game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
 
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
         game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
 
@@ -46,12 +47,12 @@ pub fn two_vs_five_annoy_o_trons() {
     let mut game = Game::default();
 
     for _ in 0..2 {
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
         game.position_minion(annoy_o_tron, PlayerId::Bottom).unwrap();
     }
 
     for _ in 0..5 {
-        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron);
+        let annoy_o_tron = game.instantiate_minion(MinionVariant::AnnoyOTron, false);
         game.position_minion(annoy_o_tron, PlayerId::Top).unwrap();
     }
 
@@ -65,12 +66,12 @@ pub fn full_maexxna() {
     let mut game = Game::default();
 
     for _ in 0..7 {
-        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna, false);
         game.position_minion(maexxna, PlayerId::Bottom).unwrap();
     }
 
     for _ in 0..7 {
-        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna, false);
         game.position_minion(maexxna, PlayerId::Top).unwrap();
     }
 
@@ -84,12 +85,12 @@ pub fn full_maexxna_vs_amalgam() {
     let mut game = Game::default();
 
     for _ in 0..7 {
-        let maexxna = game.instantiate_minion(MinionVariant::Maexxna);
+        let maexxna = game.instantiate_minion(MinionVariant::Maexxna, false);
         game.position_minion(maexxna, PlayerId::Bottom).unwrap();
     }
 
     for _ in 0..7 {
-        let amalgam = game.instantiate_minion(MinionVariant::Amalgam);
+        let amalgam = game.instantiate_minion(MinionVariant::Amalgam, false);
         game.position_minion(amalgam, PlayerId::Top).unwrap();
     }
 
@@ -110,10 +111,10 @@ pub fn top_bottom_fair() {
         let mut rng = rand::thread_rng();
 
         for _ in 0..7 {
-            let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
             game.position_minion(minion, PlayerId::Bottom).unwrap();
 
-            let minion = game.instantiate_minion(MinionVariant::random(&mut rng));
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
             game.position_minion(minion, PlayerId::Top).unwrap();
         }
 
