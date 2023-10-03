@@ -1,5 +1,5 @@
 use std::{
-    env,
+    env, fs,
     process::{Command, ExitCode},
 };
 
@@ -19,6 +19,15 @@ fn main() -> ExitCode {
                 "Don't commit `.new` snapshots. Review/accept them before with `cargo insta`."
             );
             return ExitCode::FAILURE;
+        } else if changed_file.starts_with("src/minions/variants/data") {
+        } else if changed_file.starts_with("src/minions/variants") {
+            //implemented should be set to true
+            if !fs::read_to_string(changed_file).unwrap().contains("implemented: true") {
+                println!(
+                    "Changed variants without marking them as implemented. Could be unintended."
+                );
+                return ExitCode::FAILURE;
+            }
         }
     }
     if codegen_files == 1 {

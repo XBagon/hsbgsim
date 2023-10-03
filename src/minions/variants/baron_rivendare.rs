@@ -2,6 +2,7 @@ use crate::events::EventHandlers;
 //Note: This implementation will interact weirdly with `TitusRivendare`
 pub fn event_handlers() -> EventHandlers {
     EventHandlers {
+        implemented: true,
         aura_update: Some(|this, _, game| {
             let player_id =
                 game.minion_instances.get(this).unwrap().position.unwrap_board().player_id;
@@ -12,6 +13,7 @@ pub fn event_handlers() -> EventHandlers {
 }
 pub fn golden_event_handlers() -> EventHandlers {
     EventHandlers {
+        implemented: true,
         aura_update: Some(|this, _, game| {
             let player_id =
                 game.minion_instances.get(this).unwrap().position.unwrap_board().player_id;
