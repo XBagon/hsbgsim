@@ -11,8 +11,10 @@ new_key_type! {
 pub struct MinionInstance {
     pub variant: MinionVariant,
     pub golden: bool,
-    pub attack: i32,
-    pub health: i32,
+    pub base_attack: i32,
+    pub base_health: i32,
+    pub aura_attack: i32,
+    pub aura_health: i32,
     pub position: Position,
     pub abilities: Abilities,
     pub pending_destroy: bool,
@@ -20,8 +22,16 @@ pub struct MinionInstance {
 }
 
 impl MinionInstance {
+    pub fn attack(&self) -> i32 {
+        self.base_attack + self.aura_attack
+    }
+
+    pub fn health(&self) -> i32 {
+        self.base_health + self.aura_health
+    }
+
     pub fn stats_print(&self) -> String {
-        let mut attack = format!("{}", self.attack);
+        let mut attack = format!("{}", self.attack());
         if self.abilities.venomous() {
             attack = format!("v{}", attack);
         }
@@ -31,7 +41,7 @@ impl MinionInstance {
         if self.abilities.windfury() {
             attack = format!("w{}", attack);
         }
-        let mut health = format!("{}", self.health);
+        let mut health = format!("{}", self.health());
         if self.abilities.shield() {
             health = format!("({})", health);
         };

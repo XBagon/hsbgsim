@@ -5,7 +5,7 @@ use crate::{
 
 pub fn cleave(this: MinionInstanceId, attack: Attack, game: &mut Game) {
     if attack.attacker == this {
-        let attack_stat = game.minion_instances.get(attack.attacker).unwrap().attack;
+        let attack_stat = game.minion_instances.get(attack.attacker).unwrap().attack();
         let defender = game.minion_instances.get(attack.defender).unwrap();
         let position = defender.position.unwrap_board();
 

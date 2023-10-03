@@ -6,6 +6,7 @@ use std::fmt::Debug;
 mod activate_effect;
 mod after_attack;
 mod attack;
+mod aura_update;
 pub mod common_effects;
 mod death;
 mod death_check;
@@ -20,6 +21,7 @@ mod take_damage;
 pub use activate_effect::ActivateEffect as RawActivateEffect;
 pub use after_attack::AfterAttack;
 pub use attack::Attack;
+pub use aura_update::AuraUpdate;
 pub use death::Death;
 pub use death_check::DeathCheck;
 pub use end::End;
@@ -156,7 +158,8 @@ event_variants!(
     StatBuff,
     TakeDamage,
     Summon,
-    ActivateEffect
+    ActivateEffect,
+    AuraUpdate
 );
 
 impl Events {

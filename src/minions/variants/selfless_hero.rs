@@ -16,7 +16,7 @@ pub fn event_handlers() -> EventHandlers {
                     .iter()
                     .filter(|&&minion| {
                         let minion = game.minion_instances.get(minion).unwrap();
-                        !minion.pending_destroy && minion.health > 0 && !minion.abilities.shield()
+                        !minion.pending_destroy && minion.health() > 0 && !minion.abilities.shield()
                     })
                     .collect();
                 if let Some(&&minion) = pool.choose(&mut game.rng) {
@@ -43,7 +43,7 @@ pub fn golden_event_handlers() -> EventHandlers {
                     .iter()
                     .filter(|&&minion| {
                         let minion = game.minion_instances.get(minion).unwrap();
-                        !minion.pending_destroy && minion.health > 0 && !minion.abilities.shield()
+                        !minion.pending_destroy && minion.health() > 0 && !minion.abilities.shield()
                     })
                     .collect();
                 for &&minion in pool.choose_multiple(&mut game.rng, 2) {

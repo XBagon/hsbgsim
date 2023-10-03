@@ -1,5 +1,7 @@
 use super::super::MinionVariantData;
-use crate::minions::AbilitiesInit;
+#[allow(unused_imports)]
+use crate::minions::{AbilitiesInit, MinionType};
+use tinyvec::array_vec;
 pub fn data() -> MinionVariantData {
     MinionVariantData {
         name: String::from("Fairy Tale Caroler"),
@@ -12,5 +14,6 @@ pub fn data() -> MinionVariantData {
             ..Default::default()
         }
             .init(),
+        minion_types: array_vec![_ =>],
     }
 }

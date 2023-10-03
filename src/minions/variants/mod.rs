@@ -1,7 +1,8 @@
-use super::{Abilities, MinionInstance, Position};
+use super::{Abilities, MinionInstance, MinionType, Position};
 use crate::events::EventHandlers;
 use rand::seq::SliceRandom;
 use strum::EnumString;
+use tinyvec::ArrayVec;
 pub mod accord_o_tron;
 pub mod acolyte_of_c_thun;
 pub mod adaptable_barricade;
@@ -400,32 +401,27 @@ pub struct MinionVariantData {
     pub attack_golden: u8,
     pub health_golden: u8,
     pub abilities: Abilities,
+    pub minion_types: ArrayVec<[MinionType; 2]>,
 }
 impl MinionVariant {
     pub fn into_instance(self, golden: bool) -> MinionInstance {
         let data = self.data();
-        if golden {
-            MinionInstance {
-                variant: self,
-                golden,
-                health: data.health_golden as i32,
-                attack: data.attack_golden as i32,
-                abilities: data.abilities,
-                position: Position::default(),
-                pending_destroy: false,
-                event_handlers: self.event_handlers(),
-            }
+        let (base_health, base_attack) = if golden {
+            (data.health_golden as i32, data.attack_golden as i32)
         } else {
-            MinionInstance {
-                variant: self,
-                golden,
-                health: data.health as i32,
-                attack: data.attack as i32,
-                abilities: data.abilities,
-                position: Position::default(),
-                pending_destroy: false,
-                event_handlers: self.event_handlers(),
-            }
+            (data.health as i32, data.attack as i32)
+        };
+        MinionInstance {
+            variant: self,
+            golden,
+            base_health,
+            base_attack,
+            aura_health: 0,
+            aura_attack: 0,
+            abilities: data.abilities,
+            position: Position::default(),
+            pending_destroy: false,
+            event_handlers: self.event_handlers(),
         }
     }
 }

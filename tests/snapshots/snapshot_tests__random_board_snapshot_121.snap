@@ -1,6 +1,5 @@
 ---
 source: tests/snapshot_tests.rs
-assertion_line: 44
 expression: "(minions, recording)"
 ---
 - ? idx: 1
@@ -45,7 +44,9 @@ expression: "(minions, recording)"
   ? idx: 14
     version: 1
   : Molten Rock
-- - ProposeAttack:
+- - AuraUpdate: ~
+  - DeathCheck: ~
+  - ProposeAttack:
       attacker:
         idx: 2
         version: 1
@@ -74,6 +75,7 @@ expression: "(minions, recording)"
         version: 1
       attack: 2
       health: 0
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -99,6 +101,7 @@ expression: "(minions, recording)"
       source:
         idx: 13
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - AfterAttack:
       attacker:
@@ -108,6 +111,7 @@ expression: "(minions, recording)"
         idx: 13
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -132,6 +136,7 @@ expression: "(minions, recording)"
             minion:
               idx: 13
               version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -157,6 +162,7 @@ expression: "(minions, recording)"
       source:
         idx: 14
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -177,6 +183,7 @@ expression: "(minions, recording)"
         idx: 14
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -207,6 +214,7 @@ expression: "(minions, recording)"
         version: 1
       attack: 2
       health: 0
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -224,6 +232,7 @@ expression: "(minions, recording)"
       source:
         idx: 4
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -244,6 +253,7 @@ expression: "(minions, recording)"
         idx: 13
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -253,6 +263,7 @@ expression: "(minions, recording)"
         idx: 5
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -278,6 +289,7 @@ expression: "(minions, recording)"
       source:
         idx: 5
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -298,6 +310,7 @@ expression: "(minions, recording)"
         idx: 5
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -307,6 +320,7 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -332,6 +346,7 @@ expression: "(minions, recording)"
       source:
         idx: 10
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -352,6 +367,7 @@ expression: "(minions, recording)"
         idx: 10
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -361,6 +377,7 @@ expression: "(minions, recording)"
         idx: 1
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -386,6 +403,7 @@ expression: "(minions, recording)"
       source:
         idx: 1
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -406,6 +424,7 @@ expression: "(minions, recording)"
         idx: 1
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -415,6 +434,7 @@ expression: "(minions, recording)"
         idx: 12
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -440,6 +460,7 @@ expression: "(minions, recording)"
       source:
         idx: 12
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -460,6 +481,7 @@ expression: "(minions, recording)"
         idx: 12
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -469,6 +491,7 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -494,6 +517,7 @@ expression: "(minions, recording)"
       source:
         idx: 9
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -514,6 +538,7 @@ expression: "(minions, recording)"
         idx: 9
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - ProposeAttack:
       attacker:
@@ -523,6 +548,7 @@ expression: "(minions, recording)"
         idx: 11
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Attack:
       attacker:
@@ -548,6 +574,7 @@ expression: "(minions, recording)"
       source:
         idx: 11
         version: 1
+  - AuraUpdate: ~
   - DeathCheck: ~
   - Death:
       minion:
@@ -568,6 +595,7 @@ expression: "(minions, recording)"
         idx: 11
         version: 1
       is_outer_phase: true
+  - AuraUpdate: ~
   - DeathCheck: ~
   - End: TopWin
 

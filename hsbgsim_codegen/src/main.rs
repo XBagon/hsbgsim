@@ -155,6 +155,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             attack_golden,
             health_golden,
             abilities,
+            types,
             ..
         } = minion;
         let battlecry = abilities.has_battlecry.then_some(true).into_iter();
@@ -168,9 +169,14 @@ fn main() -> Result<(), Box<dyn Error>> {
         let magnetic = abilities.has_magnetic.then_some(true).into_iter();
         let spellcraft = abilities.has_spellcraft.then_some(true).into_iter();
 
+        let minion_types = types.into_iter().flatten().map(|s| format_ident!("{}", s));
+
         let data_code = quote! {
             use super::super::MinionVariantData;
-            use crate::minions::AbilitiesInit;
+            #[allow(unused_imports)]
+            use crate::minions::{AbilitiesInit, MinionType};
+
+            use tinyvec::array_vec;
 
             pub fn data() -> MinionVariantData {
                 MinionVariantData {
@@ -194,6 +200,7 @@ fn main() -> Result<(), Box<dyn Error>> {
                         ..Default::default()
                     }
                     .init(),
+                    minion_types: array_vec![_ => #(MinionType::#minion_types,)*],
                 }
             }
 
@@ -208,11 +215,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     let num_variants = variants.len();
 
     let mod_code = quote! {
-        use super::{Abilities, MinionInstance, Position};
+        use super::{Abilities, MinionInstance, MinionType, Position};
         use crate::events::EventHandlers;
 
         use rand::seq::SliceRandom;
         use strum::EnumString;
+        use tinyvec::ArrayVec;
 
         mod data;
         #(pub mod #modules;)*
@@ -224,33 +232,31 @@ fn main() -> Result<(), Box<dyn Error>> {
             pub attack_golden: u8,
             pub health_golden: u8,
             pub abilities: Abilities,
+            pub minion_types: ArrayVec<[MinionType; 2]>,
         }
 
         impl MinionVariant {
             pub fn into_instance(self, golden: bool) -> MinionInstance {
                 let data = self.data();
+
+                let (base_health, base_attack) =
                 if golden {
-                    MinionInstance {
-                        variant: self,
-                        golden,
-                        health: data.health_golden as i32,
-                        attack: data.attack_golden as i32,
-                        abilities: data.abilities,
-                        position: Position::default(),
-                        pending_destroy: false,
-                        event_handlers: self.event_handlers(),
-                    }
+                    (data.health_golden as i32, data.attack_golden as i32)
                 } else {
-                    MinionInstance {
-                        variant: self,
-                        golden,
-                        health: data.health as i32,
-                        attack: data.attack as i32,
-                        abilities: data.abilities,
-                        position: Position::default(),
-                        pending_destroy: false,
-                        event_handlers: self.event_handlers(),
-                    }
+                    (data.health as i32, data.attack as i32)
+                };
+
+                MinionInstance {
+                    variant: self,
+                    golden,
+                    base_health,
+                    base_attack,
+                    aura_health: 0,
+                    aura_attack: 0,
+                    abilities: data.abilities,
+                    position: Position::default(),
+                    pending_destroy: false,
+                    event_handlers: self.event_handlers(),
                 }
             }
         }

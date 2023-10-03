@@ -2,6 +2,7 @@ use hsbgsim::*;
 use insta::assert_yaml_snapshot;
 use rand::{Rng, SeedableRng};
 use rand_xoshiro::Xoshiro256PlusPlus;
+use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
 use test_case::test_matrix;
 
@@ -69,6 +70,87 @@ fn coverage() {
     }
 
     assert!(variants_left.len() == 0, "{}/{} not covered.", variants_left.len(), variant_count)
+}
+
+#[test]
+pub fn random_board_outcomes() {
+    let mut outcomes = Vec::new();
+
+    for seed in 0..1000 {
+        let mut game = Game::with_seed(seed);
+
+        let mut rng = Xoshiro256PlusPlus::seed_from_u64(!seed);
+
+        for _ in 0..7 {
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
+            game.position_minion(minion, PlayerId::Bottom).unwrap();
+
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), rng.gen());
+            game.position_minion(minion, PlayerId::Top).unwrap();
+        }
+
+        game.initialize();
+
+        let result = game.run();
+
+        #[derive(Serialize, Deserialize)]
+        enum Outcome {
+            Draw,
+            BottomWin(FinalBoard),
+            TopWin(FinalBoard),
+        }
+
+        #[derive(Serialize, Deserialize)]
+        struct FinalBoard {
+            minions: Vec<Minion>,
+        }
+
+        #[derive(Serialize, Deserialize)]
+        struct Minion {
+            name: String,
+            attack: i32,
+            health: i32,
+        }
+
+        fn minions_from_player(game: &Game, player_id: PlayerId) -> Vec<Minion> {
+            let minions = game
+                .battleground
+                .player(player_id)
+                .board
+                .minions
+                .iter()
+                .map(|mi_id| {
+                    let minion = game.minion_instances.get(*mi_id).unwrap();
+                    Minion {
+                        name: minion.variant.data().name,
+                        attack: minion.attack(),
+                        health: minion.health(),
+                    }
+                })
+                .collect();
+            minions
+        }
+
+        let outcome = match result {
+            End::Draw => Outcome::Draw,
+            End::BottomWin => {
+                let minions = minions_from_player(&game, PlayerId::Bottom);
+                Outcome::BottomWin(FinalBoard {
+                    minions,
+                })
+            }
+            End::TopWin => {
+                let minions = minions_from_player(&game, PlayerId::Top);
+                Outcome::TopWin(FinalBoard {
+                    minions,
+                })
+            }
+        };
+        outcomes.push((seed, outcome));
+    }
+
+    let results_map: BTreeMap<_, _> = outcomes.into_iter().collect();
+    assert_yaml_snapshot!("random_board_outcomes", (results_map));
 }
 
 //TODO: test implemented minions more targeted to reduce the unnecessary hight amount of tests in this state

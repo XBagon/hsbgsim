@@ -1,0 +1,9795 @@
+---
+source: tests/snapshot_tests.rs
+expression: (results_map)
+---
+0:
+  TopWin:
+    minions:
+      - name: Moira Bronzebeard
+        attack: 3
+        health: 1
+      - name: Champion of Sargeras
+        attack: 10
+        health: 5
+      - name: Deflect-o-Bot
+        attack: 3
+        health: 2
+1:
+  BottomWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 8
+      - name: Bloodsail Cannoneer
+        attack: 8
+        health: 6
+      - name: Nadina the Red
+        attack: 8
+        health: 1
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 12
+2:
+  TopWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 2
+      - name: Devilsaur
+        attack: 8
+        health: 2
+      - name: Primalfin Lookout
+        attack: 6
+        health: 4
+      - name: Thorncaptain
+        attack: 8
+        health: 4
+3:
+  BottomWin:
+    minions:
+      - name: Young Murk-Eye
+        attack: 16
+        health: 6
+4:
+  TopWin:
+    minions:
+      - name: Cave Hydra
+        attack: 4
+        health: 4
+      - name: Hungering Abomination
+        attack: 3
+        health: 4
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 8
+      - name: Shudderling
+        attack: 1
+        health: 1
+5:
+  BottomWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 12
+6:
+  BottomWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 8
+7:
+  TopWin:
+    minions:
+      - name: Whelp Smuggler
+        attack: 2
+        health: 1
+      - name: Obsidian Ravager
+        attack: 7
+        health: 3
+      - name: Captain Flat Tusk
+        attack: 18
+        health: 10
+      - name: Peggy Sturdybone
+        attack: 8
+        health: 4
+8:
+  BottomWin:
+    minions:
+      - name: Electric Synthesizer
+        attack: 3
+        health: 4
+      - name: Yrel
+        attack: 1
+        health: 3
+9:
+  BottomWin:
+    minions:
+      - name: Murozond
+        attack: 5
+        health: 2
+10:
+  TopWin:
+    minions:
+      - name: Utility Drone
+        attack: 6
+        health: 4
+      - name: Iron Groundskeeper
+        attack: 5
+        health: 2
+      - name: Ghastcoiler
+        attack: 14
+        health: 6
+      - name: Thorncaller
+        attack: 6
+        health: 4
+11:
+  TopWin:
+    minions:
+      - name: Monstrous Macaw
+        attack: 10
+        health: 3
+12:
+  TopWin:
+    minions:
+      - name: Yrel
+        attack: 2
+        health: 6
+      - name: Holy Mecherel
+        attack: 6
+        health: 1
+      - name: "Spawn of N'Zoth"
+        attack: 2
+        health: 2
+13:
+  TopWin:
+    minions:
+      - name: Backstage Security
+        attack: 4
+        health: 6
+14:
+  TopWin:
+    minions:
+      - name: Bigfernal
+        attack: 12
+        health: 3
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 7
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+15:
+  TopWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 10
+16:
+  BottomWin:
+    minions:
+      - name: Screwjank Clunker
+        attack: 4
+        health: 10
+      - name: Southsea Captain
+        attack: 6
+        health: 2
+      - name: Defender of Argus
+        attack: 3
+        health: 3
+17:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 3
+        health: 3
+      - name: Waverider
+        attack: 4
+        health: 12
+      - name: Nether Drake
+        attack: 2
+        health: 8
+      - name: Nosy Looter
+        attack: 9
+        health: 6
+      - name: Uther the Lightbringer
+        attack: 5
+        health: 4
+18:
+  TopWin:
+    minions:
+      - name: Tough Tusk
+        attack: 10
+        health: 1
+      - name: Baby Krush
+        attack: 12
+        health: 8
+      - name: Hungering Abomination
+        attack: 3
+        health: 2
+      - name: Humming Bird
+        attack: 0
+        health: 4
+19:
+  BottomWin:
+    minions:
+      - name: Bongo Bopper
+        attack: 8
+        health: 6
+      - name: Briny Bootlegger
+        attack: 4
+        health: 2
+      - name: Red Whelp
+        attack: 4
+        health: 2
+20: Draw
+21:
+  BottomWin:
+    minions:
+      - name: Sanctum Rester
+        attack: 10
+        health: 3
+      - name: Budding Greenthumb
+        attack: 1
+        health: 2
+      - name: Champion of the Primus
+        attack: 2
+        health: 9
+22:
+  TopWin:
+    minions:
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+      - name: Grease Bot
+        attack: 1
+        health: 4
+      - name: Backpiggy Imp
+        attack: 8
+        health: 2
+23:
+  TopWin:
+    minions:
+      - name: The Glad-iator
+        attack: 1
+        health: 1
+      - name: Papa Bear
+        attack: 12
+        health: 9
+24: Draw
+25:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 3
+26:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 6
+27:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 7
+      - name: General Drakkisath
+        attack: 2
+        health: 1
+      - name: Nadina the Red
+        attack: 16
+        health: 1
+28:
+  BottomWin:
+    minions:
+      - name: Deck Swabbie
+        attack: 4
+        health: 2
+      - name: Eelbound Archer
+        attack: 8
+        health: 1
+      - name: Micro Mummy
+        attack: 2
+        health: 2
+      - name: Warden of Old
+        attack: 6
+        health: 4
+29: Draw
+30:
+  TopWin:
+    minions:
+      - name: Dreadbeard
+        attack: 4
+        health: 2
+      - name: Upbeat Duo
+        attack: 12
+        health: 8
+31:
+  BottomWin:
+    minions:
+      - name: Invent-o-Matic
+        attack: 2
+        health: 1
+      - name: Ball of Minions
+        attack: 10
+        health: 8
+      - name: Saltscale Honcho
+        attack: 6
+        health: 2
+      - name: Floating Watcher
+        attack: 8
+        health: 1
+      - name: Blade Collector
+        attack: 3
+        health: 1
+32:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 12
+      - name: "Kangor's Apprentice"
+        attack: 3
+        health: 6
+      - name: Ghastcoiler
+        attack: 14
+        health: 7
+33:
+  BottomWin:
+    minions:
+      - name: King Varian
+        attack: 9
+        health: 5
+      - name: Fleet Admiral Tethys
+        attack: 5
+        health: 5
+      - name: Darkgaze Elder
+        attack: 12
+        health: 8
+34:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 12
+      - name: Obsidian Ravager
+        attack: 7
+        health: 1
+35:
+  BottomWin:
+    minions:
+      - name: Bigfernal
+        attack: 12
+        health: 10
+      - name: Eventide Brute
+        attack: 8
+        health: 3
+      - name: Baltharak
+        attack: 20
+        health: 2
+36:
+  TopWin:
+    minions:
+      - name: Warpwing
+        attack: 12
+        health: 2
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 10
+      - name: Imp
+        attack: 2
+        health: 2
+      - name: Imp
+        attack: 2
+        health: 2
+37:
+  BottomWin:
+    minions:
+      - name: Atramedes
+        attack: 6
+        health: 7
+38:
+  BottomWin:
+    minions:
+      - name: Stormbringer
+        attack: 1
+        health: 5
+      - name: "Cap'n Hoggarr"
+        attack: 6
+        health: 3
+      - name: Pashmar the Vengeful
+        attack: 8
+        health: 9
+      - name: Tea Master Theotar
+        attack: 12
+        health: 2
+39:
+  BottomWin:
+    minions:
+      - name: Jelly Belly
+        attack: 6
+        health: 10
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 6
+      - name: Drakkari Enchanter
+        attack: 1
+        health: 5
+      - name: Smogger
+        attack: 6
+        health: 3
+40:
+  TopWin:
+    minions:
+      - name: Darkgaze Elder
+        attack: 12
+        health: 6
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 2
+41:
+  BottomWin:
+    minions:
+      - name: Lightfang Enforcer
+        attack: 8
+        health: 5
+      - name: Obsidian Ravager
+        attack: 14
+        health: 4
+      - name: Stormbringer
+        attack: 2
+        health: 14
+42:
+  BottomWin:
+    minions:
+      - name: Baron Rivendare
+        attack: 2
+        health: 2
+      - name: Nadina the Red
+        attack: 16
+        health: 1
+      - name: "Kathra'natir"
+        attack: 5
+        health: 2
+43:
+  TopWin:
+    minions:
+      - name: Tea Master Theotar
+        attack: 12
+        health: 9
+      - name: Friend of a Friend
+        attack: 5
+        health: 1
+      - name: Dazzling Lightspawn
+        attack: 2
+        health: 5
+      - name: Recurring Nightmare
+        attack: 8
+        health: 3
+44:
+  BottomWin:
+    minions:
+      - name: Bonker
+        attack: 3
+        health: 2
+      - name: Sly Raptor
+        attack: 2
+        health: 4
+      - name: Sore Loser
+        attack: 4
+        health: 7
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+45:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 11
+      - name: Chronormu
+        attack: 12
+        health: 6
+      - name: Bannerboar
+        attack: 3
+        health: 3
+      - name: Felstomper
+        attack: 6
+        health: 7
+      - name: Blade Collector
+        attack: 6
+        health: 4
+      - name: Carbonic Copy
+        attack: 3
+        health: 3
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 8
+46:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 10
+47:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 4
+        health: 1
+      - name: Bonker
+        attack: 6
+        health: 6
+      - name: Selfless Hero
+        attack: 4
+        health: 2
+48:
+  BottomWin:
+    minions:
+      - name: Imposing Percussionist
+        attack: 8
+        health: 1
+49:
+  TopWin:
+    minions:
+      - name: Seafood Slinger
+        attack: 10
+        health: 4
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 4
+      - name: Stormbringer
+        attack: 2
+        health: 6
+      - name: Scarlet Skull
+        attack: 4
+        health: 2
+50:
+  BottomWin:
+    minions:
+      - name: Granite Guardian
+        attack: 2
+        health: 25
+      - name: Tony Two-Tusk
+        attack: 4
+        health: 5
+51:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 20
+      - name: Mantid Queen
+        attack: 10
+        health: 7
+52:
+  BottomWin:
+    minions:
+      - name: Tavern Tipper
+        attack: 4
+        health: 1
+      - name: Gusty Trumpeter
+        attack: 6
+        health: 3
+      - name: "Agamaggan, the Great Boar"
+        attack: 6
+        health: 6
+53:
+  BottomWin:
+    minions:
+      - name: Seafood Slinger
+        attack: 5
+        health: 3
+54:
+  BottomWin:
+    minions:
+      - name: Imposing Percussionist
+        attack: 8
+        health: 4
+      - name: Relentless Sentry
+        attack: 6
+        health: 1
+55:
+  TopWin:
+    minions:
+      - name: Pashmar the Vengeful
+        attack: 8
+        health: 4
+      - name: Peckish Feldrake
+        attack: 0
+        health: 1
+      - name: King Varian
+        attack: 9
+        health: 7
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 8
+56:
+  BottomWin:
+    minions:
+      - name: Waverider
+        attack: 4
+        health: 11
+      - name: Zesty Shaker
+        attack: 3
+        health: 3
+      - name: Groundshaker
+        attack: 6
+        health: 4
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 9
+57:
+  TopWin:
+    minions:
+      - name: General Drakkisath
+        attack: 4
+        health: 8
+58:
+  TopWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 8
+      - name: Eelbound Archer
+        attack: 8
+        health: 2
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+      - name: Rock Rock
+        attack: 8
+        health: 4
+59:
+  BottomWin:
+    minions:
+      - name: Menagerie Mug
+        attack: 4
+        health: 4
+60:
+  TopWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 10
+61:
+  BottomWin:
+    minions:
+      - name: Omega Buster
+        attack: 10
+        health: 7
+      - name: Possessive Banshee
+        attack: 2
+        health: 3
+      - name: Utility Drone
+        attack: 6
+        health: 5
+      - name: Majordomo Executus
+        attack: 12
+        health: 6
+      - name: Nathrezim Overseer
+        attack: 4
+        health: 7
+62:
+  TopWin:
+    minions:
+      - name: Treasure-Seeker Elise
+        attack: 10
+        health: 4
+      - name: Captain Flat Tusk
+        attack: 18
+        health: 3
+      - name: Mama Bear
+        attack: 8
+        health: 6
+      - name: Mama Bear
+        attack: 8
+        health: 4
+63:
+  TopWin:
+    minions:
+      - name: Stasis Elemental
+        attack: 8
+        health: 2
+      - name: Elemental of Surprise
+        attack: 16
+        health: 2
+64:
+  TopWin:
+    minions:
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 7
+      - name: First Mate Pip
+        attack: 10
+        health: 3
+      - name: "Lil' Rag"
+        attack: 12
+        health: 6
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 8
+65: Draw
+66:
+  TopWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 6
+      - name: Critter Wrangler
+        attack: 10
+        health: 6
+      - name: Silent Swimmer
+        attack: 10
+        health: 2
+67:
+  TopWin:
+    minions:
+      - name: Mannoroth
+        attack: 1
+        health: 4
+      - name: Champion of the Primus
+        attack: 2
+        health: 6
+      - name: "Malchezaar, Prince of Dance"
+        attack: 6
+        health: 1
+68:
+  TopWin:
+    minions:
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 4
+      - name: Shoal Commander
+        attack: 4
+        health: 1
+69:
+  TopWin:
+    minions:
+      - name: The Boogie Monster
+        attack: 6
+        health: 7
+      - name: Stormbringer
+        attack: 2
+        health: 13
+70:
+  BottomWin:
+    minions:
+      - name: Baron Rivendare
+        attack: 2
+        health: 11
+      - name: Bannerboar
+        attack: 6
+        health: 7
+      - name: Microbot
+        attack: 1
+        health: 1
+      - name: Stormbringer
+        attack: 1
+        health: 9
+71: Draw
+72:
+  TopWin:
+    minions:
+      - name: Peckish Feldrake
+        attack: 0
+        health: 1
+      - name: Scrap Scraper
+        attack: 8
+        health: 7
+      - name: Champion of Sargeras
+        attack: 20
+        health: 15
+73:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 2
+      - name: Tavern Tempest
+        attack: 8
+        health: 2
+      - name: Rusted Reggie
+        attack: 10
+        health: 2
+      - name: Manasaber
+        attack: 8
+        health: 2
+      - name: Dreadbeard
+        attack: 4
+        health: 4
+74:
+  TopWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 1
+      - name: Papa Bear
+        attack: 24
+        health: 7
+75:
+  TopWin:
+    minions:
+      - name: Mama Bear
+        attack: 8
+        health: 2
+76:
+  BottomWin:
+    minions:
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 3
+      - name: Felstomper
+        attack: 6
+        health: 8
+      - name: "Diablo, Lord of Terror"
+        attack: 8
+        health: 3
+      - name: Legion Overseer
+        attack: 4
+        health: 2
+77:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 6
+78: Draw
+79:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 8
+      - name: "Lil' Rag"
+        attack: 6
+        health: 1
+      - name: Zesty Shaker
+        attack: 6
+        health: 8
+80:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 2
+81:
+  BottomWin:
+    minions:
+      - name: Screwjank Clunker
+        attack: 2
+        health: 2
+      - name: Dazzling Lightspawn
+        attack: 2
+        health: 2
+      - name: Arm of the Empire
+        attack: 8
+        health: 2
+      - name: Robosaur
+        attack: 8
+        health: 1
+      - name: Backstage Security
+        attack: 4
+        health: 3
+82:
+  BottomWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 6
+      - name: Kaboom Bot
+        attack: 4
+        health: 4
+      - name: Eternal Knight
+        attack: 4
+        health: 1
+      - name: Pashmar the Vengeful
+        attack: 8
+        health: 8
+83:
+  TopWin:
+    minions:
+      - name: Bristleback Knight
+        attack: 12
+        health: 2
+84:
+  TopWin:
+    minions:
+      - name: Budding Greenthumb
+        attack: 2
+        health: 1
+      - name: Bristlebach
+        attack: 4
+        health: 11
+      - name: Cogwork Copter
+        attack: 2
+        health: 2
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 3
+85:
+  BottomWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 10
+86: Draw
+87:
+  BottomWin:
+    minions:
+      - name: Party Elemental
+        attack: 4
+        health: 8
+      - name: "Insatiable Ur'zul"
+        attack: 8
+        health: 7
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 3
+      - name: Drakkari Enchanter
+        attack: 1
+        health: 1
+      - name: Yo-Ho-Ogre
+        attack: 6
+        health: 5
+      - name: Moon-Bacon Jazzer
+        attack: 2
+        health: 1
+88:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 3
+        health: 5
+      - name: Sister Deathwhisper
+        attack: 4
+        health: 4
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 8
+      - name: Upbeat Duo
+        attack: 12
+        health: 1
+89:
+  TopWin:
+    minions:
+      - name: Grease Bot
+        attack: 2
+        health: 8
+90:
+  TopWin:
+    minions:
+      - name: Baron Rivendare
+        attack: 2
+        health: 4
+91:
+  TopWin:
+    minions:
+      - name: Murky
+        attack: 12
+        health: 6
+92:
+  TopWin:
+    minions:
+      - name: Stormscale Siren
+        attack: 6
+        health: 2
+      - name: Patient Scout
+        attack: 2
+        health: 1
+93: Draw
+94:
+  TopWin:
+    minions:
+      - name: Stormscale Siren
+        attack: 12
+        health: 5
+      - name: Titus Rivendare
+        attack: 2
+        health: 4
+      - name: Interrogator Whitemane
+        attack: 16
+        health: 5
+      - name: Devilsaur
+        attack: 16
+        health: 12
+95:
+  BottomWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 5
+        health: 1
+      - name: Crab
+        attack: 6
+        health: 2
+      - name: Champion of Sargeras
+        attack: 20
+        health: 1
+      - name: Warpwing
+        attack: 24
+        health: 3
+96:
+  BottomWin:
+    minions:
+      - name: Faceless Disciple
+        attack: 12
+        health: 2
+      - name: Eventide Brute
+        attack: 8
+        health: 2
+      - name: First Mate Pip
+        attack: 5
+        health: 4
+97:
+  BottomWin:
+    minions:
+      - name: Daggerspine Thrasher
+        attack: 6
+        health: 3
+      - name: Party Elemental
+        attack: 4
+        health: 8
+98: Draw
+99:
+  TopWin:
+    minions:
+      - name: Bristlebach
+        attack: 4
+        health: 3
+100:
+  BottomWin:
+    minions:
+      - name: Houndmaster
+        attack: 8
+        health: 3
+      - name: Amalgadon
+        attack: 12
+        health: 4
+      - name: Transmuted Bramblewitch
+        attack: 8
+        health: 8
+      - name: "Spawn of N'Zoth"
+        attack: 4
+        health: 4
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 10
+101:
+  BottomWin:
+    minions:
+      - name: Wildfire Elemental
+        attack: 14
+        health: 5
+      - name: "Orgozoa, the Tender"
+        attack: 3
+        health: 7
+102:
+  TopWin:
+    minions:
+      - name: Bannerboar
+        attack: 6
+        health: 2
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 10
+103:
+  TopWin:
+    minions:
+      - name: Sly Raptor
+        attack: 2
+        health: 5
+      - name: Menagerie Jug
+        attack: 6
+        health: 2
+104:
+  TopWin:
+    minions:
+      - name: Impatient Doomsayer
+        attack: 4
+        health: 2
+      - name: Mannoroth
+        attack: 1
+        health: 4
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 2
+105:
+  BottomWin:
+    minions:
+      - name: Ripsnarl Captain
+        attack: 2
+        health: 2
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 6
+      - name: Ghoul of the Feast
+        attack: 4
+        health: 1
+      - name: "Diablo, Lord of Terror"
+        attack: 8
+        health: 2
+106:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 9
+      - name: Baby Krush
+        attack: 6
+        health: 4
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 6
+107:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 8
+        health: 1
+108:
+  BottomWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 4
+109:
+  BottomWin:
+    minions:
+      - name: Roadboar
+        attack: 4
+        health: 5
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 11
+110:
+  BottomWin:
+    minions:
+      - name: "Agamaggan, the Great Boar"
+        attack: 6
+        health: 5
+111:
+  BottomWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 18
+112:
+  TopWin:
+    minions:
+      - name: First Mate Pip
+        attack: 10
+        health: 3
+      - name: Mind Muck
+        attack: 3
+        health: 2
+113:
+  BottomWin:
+    minions:
+      - name: Moon-Bacon Jazzer
+        attack: 4
+        health: 6
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 13
+      - name: Savannah Highmane
+        attack: 12
+        health: 8
+      - name: Reanimating Rattler
+        attack: 8
+        health: 3
+      - name: Hungry Snapjaw
+        attack: 10
+        health: 4
+      - name: Living Constellation
+        attack: 8
+        health: 4
+114:
+  BottomWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 2
+      - name: Colossus of the Sun
+        attack: 12
+        health: 4
+      - name: Champion of Sargeras
+        attack: 20
+        health: 18
+      - name: Banana Slamma
+        attack: 4
+        health: 7
+115:
+  BottomWin:
+    minions:
+      - name: "Diablo, Lord of Terror"
+        attack: 4
+        health: 2
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 6
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 2
+116: Draw
+117: Draw
+118:
+  BottomWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 3
+      - name: Soulsplitter
+        attack: 8
+        health: 2
+119:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 24
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+      - name: Elemental of Surprise
+        attack: 8
+        health: 8
+      - name: Holy Mecherel
+        attack: 6
+        health: 4
+120:
+  BottomWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 5
+        health: 2
+      - name: Young Murk-Eye
+        attack: 8
+        health: 5
+121:
+  TopWin:
+    minions:
+      - name: Wrath Weaver
+        attack: 1
+        health: 2
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 3
+      - name: Nosy Looter
+        attack: 9
+        health: 4
+      - name: Zapp Slywick
+        attack: 16
+        health: 26
+      - name: Necrolyte
+        attack: 6
+        health: 3
+      - name: Withered Spearhide
+        attack: 4
+        health: 2
+122:
+  BottomWin:
+    minions:
+      - name: Kooky Chemist
+        attack: 8
+        health: 7
+      - name: Mantid Queen
+        attack: 10
+        health: 4
+      - name: Seafood Slinger
+        attack: 10
+        health: 6
+      - name: "Goldrinn, the Great Wolf"
+        attack: 8
+        health: 8
+123:
+  TopWin:
+    minions:
+      - name: Charlga
+        attack: 8
+        health: 8
+124:
+  TopWin:
+    minions:
+      - name: Bejeweled Duelist
+        attack: 6
+        health: 1
+      - name: Charlga
+        attack: 4
+        health: 2
+      - name: Annoy-o-Troupe
+        attack: 6
+        health: 12
+125:
+  BottomWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 3
+        health: 2
+126:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 5
+127:
+  TopWin:
+    minions:
+      - name: Yrel
+        attack: 2
+        health: 2
+128: Draw
+129:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 9
+        health: 2
+      - name: Bassgill
+        attack: 12
+        health: 2
+      - name: Dazzling Lightspawn
+        attack: 2
+        health: 5
+130:
+  BottomWin:
+    minions:
+      - name: Maexxna
+        attack: 4
+        health: 6
+      - name: Nether Drake
+        attack: 1
+        health: 5
+131: Draw
+132:
+  BottomWin:
+    minions:
+      - name: Stormbringer
+        attack: 2
+        health: 6
+133:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 16
+134:
+  BottomWin:
+    minions:
+      - name: Pashmar the Vengeful
+        attack: 8
+        health: 5
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 2
+      - name: Papa Bear
+        attack: 12
+        health: 2
+      - name: Mantid Queen
+        attack: 5
+        health: 5
+      - name: Shoal Commander
+        attack: 2
+        health: 2
+135:
+  BottomWin:
+    minions:
+      - name: Captain Flat Tusk
+        attack: 9
+        health: 3
+      - name: Scrap Scraper
+        attack: 4
+        health: 5
+      - name: Menagerie Mug
+        attack: 2
+        health: 2
+136:
+  TopWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 12
+137:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 12
+138:
+  BottomWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 1
+139:
+  TopWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 2
+      - name: The Boogie Monster
+        attack: 3
+        health: 8
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+140:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 2
+      - name: Fiery Imp
+        attack: 6
+        health: 4
+141:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 6
+        health: 3
+      - name: Bristleback Knight
+        attack: 6
+        health: 5
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 3
+      - name: Imp Mama
+        attack: 6
+        health: 6
+      - name: Imp Mama
+        attack: 12
+        health: 20
+142:
+  TopWin:
+    minions:
+      - name: Chronormu
+        attack: 12
+        health: 4
+143:
+  BottomWin:
+    minions:
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 4
+144:
+  BottomWin:
+    minions:
+      - name: Cobalt Scalebane
+        attack: 5
+        health: 4
+145:
+  TopWin:
+    minions:
+      - name: Water Droplet
+        attack: 4
+        health: 3
+146:
+  TopWin:
+    minions:
+      - name: Papa Bear
+        attack: 12
+        health: 7
+      - name: Bongo Bopper
+        attack: 8
+        health: 4
+      - name: Ghastcoiler
+        attack: 7
+        health: 3
+      - name: Stormbringer
+        attack: 2
+        health: 15
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 7
+      - name: Chronormu
+        attack: 12
+        health: 7
+147:
+  TopWin:
+    minions:
+      - name: Record Smuggler
+        attack: 10
+        health: 2
+      - name: "Kathra'natir"
+        attack: 10
+        health: 6
+      - name: Selfless Hero
+        attack: 4
+        health: 2
+148:
+  TopWin:
+    minions:
+      - name: Flourishing Frostling
+        attack: 0
+        health: 12
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 6
+149: Draw
+150:
+  BottomWin:
+    minions:
+      - name: Murky
+        attack: 12
+        health: 5
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 2
+151:
+  BottomWin:
+    minions:
+      - name: King Varian
+        attack: 9
+        health: 1
+      - name: Maexxna
+        attack: 4
+        health: 6
+152:
+  TopWin:
+    minions:
+      - name: Roadboar
+        attack: 4
+        health: 6
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 8
+153:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 1
+        health: 1
+      - name: Mantid Queen
+        attack: 10
+        health: 8
+      - name: "Agamaggan, the Great Boar"
+        attack: 6
+        health: 4
+      - name: Southsea Captain
+        attack: 3
+        health: 2
+      - name: Mantid Queen
+        attack: 10
+        health: 8
+      - name: Accord-o-Tron
+        attack: 3
+        health: 3
+154:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 2
+      - name: Crab
+        attack: 6
+        health: 2
+      - name: Papa Bear
+        attack: 24
+        health: 14
+      - name: Iron Groundskeeper
+        attack: 5
+        health: 2
+155:
+  BottomWin:
+    minions:
+      - name: Faceless Disciple
+        attack: 6
+        health: 2
+156:
+  TopWin:
+    minions:
+      - name: Time Saver
+        attack: 4
+        health: 5
+157:
+  TopWin:
+    minions:
+      - name: Cogwork Copter
+        attack: 2
+        health: 2
+      - name: Atramedes
+        attack: 3
+        health: 6
+158:
+  BottomWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 6
+      - name: Elemental of Surprise
+        attack: 16
+        health: 10
+      - name: Elemental of Surprise
+        attack: 16
+        health: 14
+159:
+  TopWin:
+    minions:
+      - name: Grease Bot
+        attack: 2
+        health: 2
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 2
+160:
+  TopWin:
+    minions:
+      - name: King Bagurgle
+        attack: 12
+        health: 7
+161:
+  BottomWin:
+    minions:
+      - name: Razorfen Geomancer
+        attack: 3
+        health: 1
+162: Draw
+163: Draw
+164:
+  TopWin:
+    minions:
+      - name: Interrogator Whitemane
+        attack: 8
+        health: 2
+165:
+  TopWin:
+    minions:
+      - name: Pashmar the Vengeful
+        attack: 4
+        health: 4
+166:
+  TopWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 7
+167:
+  TopWin:
+    minions:
+      - name: Utility Drone
+        attack: 12
+        health: 4
+168:
+  BottomWin:
+    minions:
+      - name: The Walking Fort
+        attack: 8
+        health: 5
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 8
+169:
+  TopWin:
+    minions:
+      - name: Captain Flat Tusk
+        attack: 18
+        health: 9
+170:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 4
+      - name: Groundshaker
+        attack: 3
+        health: 2
+      - name: Imp Mama
+        attack: 6
+        health: 6
+      - name: Mantid Queen
+        attack: 10
+        health: 6
+171:
+  BottomWin:
+    minions:
+      - name: Archdruid Hamuul
+        attack: 8
+        health: 4
+      - name: Cave Hydra
+        attack: 4
+        health: 8
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+172:
+  TopWin:
+    minions:
+      - name: Granite Guardian
+        attack: 2
+        health: 4
+      - name: Evolving Chromawing
+        attack: 2
+        health: 2
+173:
+  BottomWin:
+    minions:
+      - name: Maexxna
+        attack: 2
+        health: 5
+      - name: Bristleback Knight
+        attack: 12
+        health: 9
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 10
+174:
+  TopWin:
+    minions:
+      - name: Choral Mrrrglr
+        attack: 12
+        health: 10
+      - name: Champion of Sargeras
+        attack: 20
+        health: 19
+175:
+  TopWin:
+    minions:
+      - name: Omega Buster
+        attack: 10
+        health: 6
+176:
+  TopWin:
+    minions:
+      - name: Corrupted Myrmidon
+        attack: 6
+        health: 1
+177:
+  TopWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 4
+178:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 24
+      - name: Bonker
+        attack: 6
+        health: 14
+      - name: The Boommobile
+        attack: 24
+        health: 14
+      - name: Baltharak
+        attack: 20
+        health: 2
+179:
+  BottomWin:
+    minions:
+      - name: Soul Juggler
+        attack: 6
+        health: 4
+180:
+  TopWin:
+    minions:
+      - name: Corrupted Myrmidon
+        attack: 6
+        health: 2
+      - name: Carbonic Copy
+        attack: 6
+        health: 2
+      - name: Reef Riffer
+        attack: 1
+        health: 2
+181:
+  BottomWin:
+    minions:
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 2
+      - name: Cave Hydra
+        attack: 4
+        health: 6
+      - name: Bristleback Brute
+        attack: 6
+        health: 4
+      - name: Utility Drone
+        attack: 12
+        health: 14
+182: Draw
+183:
+  TopWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 2
+      - name: Strongshell Scavenger
+        attack: 4
+        health: 1
+      - name: Ball of Minions
+        attack: 5
+        health: 4
+      - name: Imp
+        attack: 2
+        health: 1
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 14
+184:
+  BottomWin:
+    minions:
+      - name: Refreshing Anomaly
+        attack: 2
+        health: 2
+      - name: Majordomo Executus
+        attack: 6
+        health: 3
+185:
+  BottomWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 2
+      - name: Majordomo Executus
+        attack: 12
+        health: 2
+      - name: Bream Counter
+        attack: 10
+        health: 6
+186: Draw
+187:
+  BottomWin:
+    minions:
+      - name: Faceless Disciple
+        attack: 12
+        health: 6
+      - name: Disco Shuffler
+        attack: 8
+        health: 2
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 8
+      - name: Impulsive Trickster
+        attack: 4
+        health: 1
+      - name: Lovesick Balladist
+        attack: 6
+        health: 8
+      - name: Devilsaur
+        attack: 16
+        health: 16
+      - name: Recurring Nightmare
+        attack: 16
+        health: 6
+188:
+  BottomWin:
+    minions:
+      - name: Papa Bear
+        attack: 12
+        health: 6
+      - name: Friend of a Friend
+        attack: 10
+        health: 2
+189:
+  TopWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 3
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 8
+190:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+      - name: First Mate Pip
+        attack: 5
+        health: 1
+      - name: Tunnel Blaster
+        attack: 6
+        health: 1
+      - name: Lovesick Balladist
+        attack: 3
+        health: 4
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 8
+191: Draw
+192:
+  TopWin:
+    minions:
+      - name: Groundshaker
+        attack: 6
+        health: 10
+      - name: Sly Raptor
+        attack: 1
+        health: 3
+      - name: Whelp Smuggler
+        attack: 4
+        health: 4
+      - name: Tichondrius
+        attack: 8
+        health: 8
+193:
+  TopWin:
+    minions:
+      - name: Bristlemane Scrapsmith
+        attack: 4
+        health: 2
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 3
+      - name: Tony Two-Tusk
+        attack: 8
+        health: 8
+194:
+  BottomWin:
+    minions:
+      - name: Briarback Bookie
+        attack: 6
+        health: 5
+195:
+  BottomWin:
+    minions:
+      - name: Bonker
+        attack: 6
+        health: 4
+      - name: Soul Rewinder
+        attack: 3
+        health: 1
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 16
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 7
+196:
+  BottomWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 10
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 8
+      - name: Sun-Bacon Relaxer
+        attack: 1
+        health: 2
+197:
+  TopWin:
+    minions:
+      - name: Mistake
+        attack: 2
+        health: 2
+      - name: Ghastcoiler
+        attack: 14
+        health: 6
+      - name: Zapp Slywick
+        attack: 16
+        health: 22
+      - name: "Fish of N'Zoth"
+        attack: 4
+        health: 4
+198:
+  BottomWin:
+    minions:
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+199:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 15
+200:
+  TopWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 10
+      - name: Papa Bear
+        attack: 12
+        health: 4
+201:
+  BottomWin:
+    minions:
+      - name: The Walking Fort
+        attack: 8
+        health: 8
+202:
+  TopWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 4
+      - name: Bejeweled Duelist
+        attack: 6
+        health: 3
+203:
+  TopWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 2
+      - name: Emperor Cobra
+        attack: 4
+        health: 2
+      - name: "Relentless Mur'ghoul"
+        attack: 5
+        health: 1
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 4
+204:
+  TopWin:
+    minions:
+      - name: Invent-o-Matic
+        attack: 4
+        health: 3
+      - name: Tentacle of Octosari
+        attack: 4
+        health: 4
+      - name: "SI:Sefin"
+        attack: 4
+        health: 11
+205:
+  TopWin:
+    minions:
+      - name: Pufferquil
+        attack: 4
+        health: 2
+      - name: Granite Guardian
+        attack: 2
+        health: 44
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 12
+206:
+  TopWin:
+    minions:
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 3
+      - name: Ghastcoiler
+        attack: 14
+        health: 13
+      - name: Menagerie Jug
+        attack: 6
+        health: 6
+      - name: "Insatiable Ur'zul"
+        attack: 8
+        health: 3
+207:
+  BottomWin:
+    minions:
+      - name: Hungering Abomination
+        attack: 6
+        health: 6
+208:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 4
+      - name: Ball of Minions
+        attack: 10
+        health: 3
+      - name: Humming Bird
+        attack: 0
+        health: 5
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 4
+209:
+  BottomWin:
+    minions:
+      - name: Murozond
+        attack: 10
+        health: 4
+      - name: Amalgadon
+        attack: 12
+        health: 2
+      - name: Legion Overseer
+        attack: 8
+        health: 1
+      - name: "Razorgore, the Untamed"
+        attack: 4
+        health: 5
+      - name: Captain Sanders
+        attack: 14
+        health: 6
+      - name: Stormscale Siren
+        attack: 6
+        health: 5
+210:
+  BottomWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 5
+        health: 5
+      - name: Rusted Reggie
+        attack: 5
+        health: 3
+211:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 4
+      - name: Bristlebach
+        attack: 4
+        health: 10
+      - name: Bristlebach
+        attack: 4
+        health: 12
+212: Draw
+213:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 8
+      - name: Whelp Smuggler
+        attack: 4
+        health: 8
+      - name: Pufferquil
+        attack: 4
+        health: 4
+214:
+  TopWin:
+    minions:
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 3
+215:
+  BottomWin:
+    minions:
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 10
+216:
+  TopWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 9
+      - name: Devilsaur
+        attack: 8
+        health: 2
+217:
+  BottomWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 7
+      - name: Maexxna
+        attack: 2
+        health: 5
+      - name: Mechano-Egg
+        attack: 0
+        health: 4
+      - name: Obsidian Ravager
+        attack: 14
+        health: 11
+218:
+  TopWin:
+    minions:
+      - name: Mechanized Gift Horse
+        attack: 8
+        health: 6
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 6
+219:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 4
+220:
+  BottomWin:
+    minions:
+      - name: Mythrax the Unraveler
+        attack: 4
+        health: 3
+      - name: Soulsplitter
+        attack: 8
+        health: 2
+      - name: Sly Raptor
+        attack: 2
+        health: 2
+      - name: Groundshaker
+        attack: 3
+        health: 8
+221:
+  BottomWin:
+    minions:
+      - name: Backstage Security
+        attack: 8
+        health: 10
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 2
+222:
+  TopWin:
+    minions:
+      - name: Tough Tusk
+        attack: 10
+        health: 1
+      - name: Famished Felbat
+        attack: 16
+        health: 2
+      - name: Recurring Nightmare
+        attack: 16
+        health: 10
+      - name: Prized Promo-Drake
+        attack: 6
+        health: 6
+223:
+  BottomWin:
+    minions:
+      - name: Brann Bronzebeard
+        attack: 4
+        health: 4
+      - name: Seafood Slinger
+        attack: 5
+        health: 5
+224:
+  BottomWin:
+    minions:
+      - name: Briny Bootlegger
+        attack: 8
+        health: 7
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 2
+225:
+  BottomWin:
+    minions:
+      - name: Bristlebach
+        attack: 2
+        health: 6
+      - name: Baby Krush
+        attack: 12
+        health: 8
+226:
+  TopWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 6
+      - name: Bristlebach
+        attack: 4
+        health: 10
+      - name: Darkgaze Elder
+        attack: 12
+        health: 14
+227:
+  TopWin:
+    minions:
+      - name: Stone Elemental
+        attack: 2
+        health: 1
+      - name: Southsea Strongarm
+        attack: 8
+        health: 4
+      - name: Leapfrogger
+        attack: 3
+        health: 2
+      - name: "Lil' Rag"
+        attack: 6
+        health: 1
+      - name: Mama Bear
+        attack: 8
+        health: 6
+228: Draw
+229:
+  BottomWin:
+    minions:
+      - name: Tidemistress Athissa
+        attack: 6
+        health: 6
+230:
+  BottomWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 4
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 5
+231: Draw
+232:
+  TopWin:
+    minions:
+      - name: Annoy-o-Module
+        attack: 2
+        health: 4
+      - name: Cyborg Drake
+        attack: 6
+        health: 10
+233:
+  TopWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 2
+234:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 7
+      - name: Eventide Brute
+        attack: 4
+        health: 3
+235:
+  BottomWin:
+    minions:
+      - name: Harvest Golem
+        attack: 4
+        health: 3
+      - name: Operatic Belcher
+        attack: 10
+        health: 2
+236: Draw
+237:
+  TopWin:
+    minions:
+      - name: Grease Bot
+        attack: 1
+        health: 4
+      - name: Aggem Thorncurse
+        attack: 6
+        health: 4
+      - name: Water Droplet
+        attack: 4
+        health: 2
+      - name: Robosaur
+        attack: 16
+        health: 1
+238:
+  TopWin:
+    minions:
+      - name: Bristlemane Scrapsmith
+        attack: 8
+        health: 6
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 8
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 4
+239:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 3
+240: Draw
+241:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 7
+      - name: Friend of a Friend
+        attack: 10
+        health: 8
+      - name: Zapp Slywick
+        attack: 16
+        health: 12
+      - name: Titus Rivendare
+        attack: 1
+        health: 3
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 24
+242:
+  TopWin:
+    minions:
+      - name: Legion Overseer
+        attack: 8
+        health: 2
+      - name: Obsidian Ravager
+        attack: 7
+        health: 4
+243:
+  BottomWin:
+    minions:
+      - name: Sanguine Champion
+        attack: 36
+        health: 2
+      - name: Eelbound Archer
+        attack: 8
+        health: 5
+      - name: Cyborg Drake
+        attack: 6
+        health: 20
+      - name: Harvest Golem
+        attack: 4
+        health: 6
+      - name: Friend of a Friend
+        attack: 5
+        health: 6
+244:
+  BottomWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 8
+        health: 1
+245:
+  TopWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 14
+      - name: Obsidian Ravager
+        attack: 14
+        health: 5
+      - name: Imp Mama
+        attack: 6
+        health: 7
+246:
+  TopWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 5
+247:
+  TopWin:
+    minions:
+      - name: Waverider
+        attack: 4
+        health: 6
+      - name: Tough Tusk
+        attack: 5
+        health: 1
+248:
+  BottomWin:
+    minions:
+      - name: Impatient Doomsayer
+        attack: 4
+        health: 2
+249:
+  TopWin:
+    minions:
+      - name: Coldlight Seer
+        attack: 4
+        health: 4
+      - name: Moon-Bacon Jazzer
+        attack: 4
+        health: 1
+      - name: Screwjank Clunker
+        attack: 4
+        health: 1
+250:
+  TopWin:
+    minions:
+      - name: Treasure-Seeker Elise
+        attack: 10
+        health: 6
+251:
+  TopWin:
+    minions:
+      - name: Electric Synthesizer
+        attack: 6
+        health: 8
+252:
+  TopWin:
+    minions:
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+      - name: Choral Mrrrglr
+        attack: 6
+        health: 2
+253:
+  BottomWin:
+    minions:
+      - name: Silent Swimmer
+        attack: 10
+        health: 5
+      - name: Lullabot
+        attack: 4
+        health: 1
+      - name: Mama Bear
+        attack: 8
+        health: 7
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 9
+254:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 18
+      - name: Murozond
+        attack: 5
+        health: 1
+      - name: "Kangor's Apprentice"
+        attack: 3
+        health: 6
+255:
+  BottomWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 6
+256:
+  BottomWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 4
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 3
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 3
+257:
+  TopWin:
+    minions:
+      - name: Stasis Elemental
+        attack: 8
+        health: 6
+258:
+  BottomWin:
+    minions:
+      - name: Budding Greenthumb
+        attack: 2
+        health: 4
+      - name: Niuzao
+        attack: 12
+        health: 8
+      - name: Colossus of the Sun
+        attack: 12
+        health: 12
+259:
+  TopWin:
+    minions:
+      - name: Archdruid Hamuul
+        attack: 8
+        health: 1
+      - name: Ripsnarl Captain
+        attack: 2
+        health: 4
+      - name: Sanguine Champion
+        attack: 18
+        health: 3
+      - name: Crackling Cyclone
+        attack: 4
+        health: 1
+260: Draw
+261:
+  TopWin:
+    minions:
+      - name: Ripsnarl Captain
+        attack: 4
+        health: 4
+      - name: Utility Drone
+        attack: 12
+        health: 14
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 20
+262: Draw
+263:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 14
+      - name: Tea Master Theotar
+        attack: 6
+        health: 6
+264:
+  TopWin:
+    minions:
+      - name: Atramedes
+        attack: 6
+        health: 4
+265:
+  BottomWin:
+    minions:
+      - name: Granite Guardian
+        attack: 1
+        health: 2
+      - name: Rock Rock
+        attack: 4
+        health: 3
+266: Draw
+267:
+  BottomWin:
+    minions:
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 12
+      - name: Necrolyte
+        attack: 6
+        health: 2
+268:
+  BottomWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 1
+      - name: Jelly Belly
+        attack: 6
+        health: 9
+269:
+  TopWin:
+    minions:
+      - name: Tough Tusk
+        attack: 10
+        health: 4
+      - name: Nathrezim Overseer
+        attack: 4
+        health: 5
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 4
+270: Draw
+271: Draw
+272:
+  TopWin:
+    minions:
+      - name: Bream Counter
+        attack: 5
+        health: 4
+      - name: Bristlemane Scrapsmith
+        attack: 8
+        health: 2
+      - name: Felemental
+        attack: 3
+        health: 1
+273:
+  BottomWin:
+    minions:
+      - name: Replicating Menace
+        attack: 6
+        health: 4
+      - name: Elemental of Surprise
+        attack: 16
+        health: 13
+      - name: Champion of the Primus
+        attack: 4
+        health: 15
+      - name: Briarback Bookie
+        attack: 6
+        health: 8
+274:
+  BottomWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 12
+      - name: Possessive Banshee
+        attack: 4
+        health: 8
+      - name: Ghastcoiler
+        attack: 7
+        health: 3
+      - name: Rusted Reggie
+        attack: 10
+        health: 2
+275:
+  TopWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 10
+        health: 6
+      - name: Qiraji Harbinger
+        attack: 10
+        health: 9
+      - name: Crab
+        attack: 3
+        health: 2
+      - name: Mechano-Egg
+        attack: 0
+        health: 10
+276:
+  BottomWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 4
+277:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 2
+278:
+  BottomWin:
+    minions:
+      - name: The Boommobile
+        attack: 24
+        health: 12
+      - name: Electric Synthesizer
+        attack: 3
+        health: 5
+      - name: Chronormu
+        attack: 12
+        health: 9
+      - name: Harvest Golem
+        attack: 2
+        health: 3
+      - name: Charlga
+        attack: 8
+        health: 8
+      - name: Snake
+        attack: 2
+        health: 2
+      - name: Floating Watcher
+        attack: 8
+        health: 8
+279:
+  TopWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 4
+      - name: Tavern Tipper
+        attack: 4
+        health: 2
+280:
+  TopWin:
+    minions:
+      - name: Reef Explorer
+        attack: 6
+        health: 3
+      - name: Utility Drone
+        attack: 12
+        health: 10
+      - name: Mannoroth
+        attack: 1
+        health: 8
+      - name: Harvest Golem
+        attack: 4
+        health: 5
+      - name: Bristlemane Scrapsmith
+        attack: 8
+        health: 7
+      - name: Hungering Abomination
+        attack: 6
+        health: 8
+281:
+  TopWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 4
+      - name: "Champion of Y'Shaarj"
+        attack: 6
+        health: 1
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 2
+      - name: Keyboard Igniter
+        attack: 8
+        health: 2
+282:
+  BottomWin:
+    minions:
+      - name: Hungering Abomination
+        attack: 3
+        health: 4
+283:
+  TopWin:
+    minions:
+      - name: Metaltooth Leaper
+        attack: 3
+        health: 1
+284:
+  BottomWin:
+    minions:
+      - name: Saltscale Honcho
+        attack: 3
+        health: 2
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 1
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 6
+285:
+  TopWin:
+    minions:
+      - name: Emperor Cobra
+        attack: 4
+        health: 4
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 7
+      - name: Moon-Bacon Jazzer
+        attack: 2
+        health: 3
+      - name: Obsidian Ravager
+        attack: 14
+        health: 14
+      - name: Mind Muck
+        attack: 6
+        health: 3
+      - name: Papa Bear
+        attack: 24
+        health: 24
+286:
+  BottomWin:
+    minions:
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 4
+      - name: Bristlebach
+        attack: 4
+        health: 14
+287: Draw
+288:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 5
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 6
+      - name: Corrupted Myrmidon
+        attack: 3
+        health: 3
+289:
+  TopWin:
+    minions:
+      - name: Champion of Sargeras
+        attack: 10
+        health: 4
+      - name: Possessive Banshee
+        attack: 4
+        health: 2
+      - name: Crab
+        attack: 3
+        health: 2
+290:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 7
+        health: 1
+      - name: Salty Looter
+        attack: 4
+        health: 5
+291:
+  TopWin:
+    minions:
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 2
+      - name: Banana Slamma
+        attack: 4
+        health: 7
+      - name: Utility Drone
+        attack: 12
+        health: 6
+      - name: Mechanized Gift Horse
+        attack: 8
+        health: 3
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 3
+292:
+  BottomWin:
+    minions:
+      - name: Eelbound Archer
+        attack: 8
+        health: 4
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 4
+      - name: Seaborn Summoner
+        attack: 4
+        health: 5
+293:
+  TopWin:
+    minions:
+      - name: Tea Master Theotar
+        attack: 12
+        health: 10
+      - name: Sore Loser
+        attack: 4
+        health: 4
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 6
+294:
+  TopWin:
+    minions:
+      - name: Omega Buster
+        attack: 10
+        health: 3
+      - name: Ghoul of the Feast
+        attack: 4
+        health: 6
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 6
+295:
+  BottomWin:
+    minions:
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 2
+        health: 3
+296:
+  BottomWin:
+    minions:
+      - name: Papa Bear
+        attack: 12
+        health: 4
+      - name: King Bagurgle
+        attack: 12
+        health: 8
+      - name: Stone Elemental
+        attack: 2
+        health: 2
+      - name: Rockpool Hunter
+        attack: 2
+        health: 3
+297:
+  BottomWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 2
+      - name: Zapp Slywick
+        attack: 8
+        health: 6
+      - name: Savannah Highmane
+        attack: 12
+        health: 4
+298:
+  BottomWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 5
+        health: 1
+299:
+  BottomWin:
+    minions:
+      - name: Southsea Strongarm
+        attack: 8
+        health: 2
+300:
+  TopWin:
+    minions:
+      - name: Yrel
+        attack: 2
+        health: 1
+      - name: Cogwork Copter
+        attack: 2
+        health: 2
+301:
+  BottomWin:
+    minions:
+      - name: Southsea Strongarm
+        attack: 8
+        health: 5
+302:
+  TopWin:
+    minions:
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 4
+303:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 11
+304:
+  BottomWin:
+    minions:
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 2
+      - name: Daggerspine Thrasher
+        attack: 6
+        health: 1
+305:
+  TopWin:
+    minions:
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 6
+      - name: Arm of the Empire
+        attack: 8
+        health: 2
+306:
+  BottomWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 6
+307:
+  TopWin:
+    minions:
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+308:
+  BottomWin:
+    minions:
+      - name: Mantid Queen
+        attack: 10
+        health: 5
+      - name: Pufferquil
+        attack: 4
+        health: 8
+      - name: Ghastcoiler
+        attack: 14
+        health: 12
+      - name: Eelbound Archer
+        attack: 4
+        health: 4
+309:
+  BottomWin:
+    minions:
+      - name: Young Murk-Eye
+        attack: 16
+        health: 8
+      - name: Maexxna
+        attack: 4
+        health: 10
+      - name: Sly Raptor
+        attack: 2
+        health: 6
+      - name: Water Droplet
+        attack: 2
+        health: 2
+      - name: Nosy Looter
+        attack: 18
+        health: 16
+310:
+  TopWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 7
+311:
+  TopWin:
+    minions:
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 2
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 5
+      - name: Leeching Felhound
+        attack: 6
+        health: 1
+      - name: Champion of Sargeras
+        attack: 20
+        health: 14
+      - name: Mannoroth
+        attack: 1
+        health: 10
+      - name: Backstage Security
+        attack: 4
+        health: 6
+312:
+  TopWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 6
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 2
+313:
+  BottomWin:
+    minions:
+      - name: Gunpowder Courier
+        attack: 4
+        health: 3
+      - name: Utility Drone
+        attack: 6
+        health: 2
+      - name: Party Elemental
+        attack: 2
+        health: 1
+314:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 5
+      - name: Imp Mama
+        attack: 12
+        health: 14
+      - name: Dread Admiral Eliza
+        attack: 6
+        health: 3
+315:
+  TopWin:
+    minions:
+      - name: Murloc Warleader
+        attack: 6
+        health: 3
+      - name: Bonker
+        attack: 6
+        health: 6
+      - name: Wargear
+        attack: 6
+        health: 5
+316: Draw
+317:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 8
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 4
+      - name: "Fish of N'Zoth"
+        attack: 4
+        health: 4
+318:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 2
+      - name: Greta Gold-Gun
+        attack: 2
+        health: 2
+319:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Kooky Chemist
+        attack: 4
+        health: 4
+      - name: Mechano-Tank
+        attack: 5
+        health: 3
+320:
+  TopWin:
+    minions:
+      - name: Harvest Golem
+        attack: 4
+        health: 4
+      - name: Tentacle of Octosari
+        attack: 4
+        health: 4
+321:
+  TopWin:
+    minions:
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 7
+      - name: Daggerspine Thrasher
+        attack: 6
+        health: 2
+322:
+  BottomWin:
+    minions:
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+      - name: Bubblette
+        attack: 10
+        health: 5
+      - name: King Varian
+        attack: 18
+        health: 10
+      - name: Whelp Smuggler
+        attack: 2
+        health: 5
+323:
+  TopWin:
+    minions:
+      - name: Underhanded Dealer
+        attack: 8
+        health: 1
+      - name: Soul Devourer
+        attack: 6
+        health: 4
+      - name: First Mate Pip
+        attack: 10
+        health: 4
+      - name: Champion of Sargeras
+        attack: 20
+        health: 8
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 5
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 4
+324:
+  BottomWin:
+    minions:
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 2
+325: Draw
+326:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 8
+327:
+  TopWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 5
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 12
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 1
+      - name: Poetic Pen Pal
+        attack: 2
+        health: 4
+328:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 5
+329:
+  BottomWin:
+    minions:
+      - name: Maexxna
+        attack: 2
+        health: 1
+      - name: Tough Tusk
+        attack: 5
+        health: 2
+      - name: Deep-Sea Angler
+        attack: 2
+        health: 2
+330:
+  TopWin:
+    minions:
+      - name: Warden of Old
+        attack: 6
+        health: 2
+      - name: Poetic Pen Pal
+        attack: 4
+        health: 4
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 6
+331:
+  BottomWin:
+    minions:
+      - name: Banana Slamma
+        attack: 4
+        health: 4
+332:
+  BottomWin:
+    minions:
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 8
+333:
+  BottomWin:
+    minions:
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 3
+      - name: King Bagurgle
+        attack: 12
+        health: 1
+334:
+  BottomWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 1
+      - name: Blade Collector
+        attack: 6
+        health: 3
+      - name: Nosy Looter
+        attack: 18
+        health: 16
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 10
+335:
+  TopWin:
+    minions:
+      - name: Eelbound Archer
+        attack: 8
+        health: 2
+      - name: Tarecgosa
+        attack: 8
+        health: 1
+      - name: Roadboar
+        attack: 2
+        health: 4
+336:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 2
+337:
+  TopWin:
+    minions:
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 5
+      - name: Bristlebach
+        attack: 4
+        health: 15
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 2
+      - name: Lullabot
+        attack: 2
+        health: 2
+338: Draw
+339:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 4
+340:
+  BottomWin:
+    minions:
+      - name: Captain Sanders
+        attack: 14
+        health: 11
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 7
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 10
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 8
+      - name: Impulsive Trickster
+        attack: 4
+        health: 6
+341:
+  TopWin:
+    minions:
+      - name: Houndmaster
+        attack: 8
+        health: 2
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 11
+      - name: Omega Buster
+        attack: 5
+        health: 2
+      - name: Menagerie Jug
+        attack: 6
+        health: 3
+342:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 8
+        health: 7
+      - name: Murloc Warleader
+        attack: 3
+        health: 1
+      - name: Murky
+        attack: 8
+        health: 3
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 16
+      - name: Bongo Bopper
+        attack: 8
+        health: 3
+343:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 8
+      - name: Murky
+        attack: 12
+        health: 9
+      - name: Rock Rock
+        attack: 4
+        health: 3
+      - name: Piggyback Imp
+        attack: 8
+        health: 2
+344: Draw
+345:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 6
+      - name: Upbeat Duo
+        attack: 12
+        health: 3
+346: Draw
+347:
+  BottomWin:
+    minions:
+      - name: Incorporeal Corporal
+        attack: 5
+        health: 4
+      - name: Felstomper
+        attack: 6
+        health: 7
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 6
+      - name: Zapp Slywick
+        attack: 8
+        health: 16
+348:
+  TopWin:
+    minions:
+      - name: "Kathra'natir"
+        attack: 5
+        health: 4
+349:
+  TopWin:
+    minions:
+      - name: Record Smuggler
+        attack: 10
+        health: 4
+      - name: Water Droplet
+        attack: 4
+        health: 4
+350:
+  BottomWin:
+    minions:
+      - name: Faceless Disciple
+        attack: 12
+        health: 1
+351:
+  TopWin:
+    minions:
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 4
+352:
+  BottomWin:
+    minions:
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+      - name: Scallywag
+        attack: 3
+        health: 1
+353:
+  BottomWin:
+    minions:
+      - name: The Boommobile
+        attack: 24
+        health: 3
+      - name: Rat Pack
+        attack: 4
+        health: 1
+      - name: Bannerboar
+        attack: 6
+        health: 5
+      - name: Scallywag
+        attack: 6
+        health: 2
+      - name: Bristlebach
+        attack: 2
+        health: 10
+      - name: Nether Drake
+        attack: 1
+        health: 5
+      - name: Invent-o-Matic
+        attack: 4
+        health: 6
+354:
+  BottomWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 18
+      - name: Grease Bot
+        attack: 1
+        health: 4
+355:
+  TopWin:
+    minions:
+      - name: Mechano-Egg
+        attack: 0
+        health: 8
+      - name: Mannoroth
+        attack: 2
+        health: 8
+356:
+  BottomWin:
+    minions:
+      - name: "Malchezaar, Prince of Dance"
+        attack: 6
+        health: 3
+357:
+  TopWin:
+    minions:
+      - name: Darkgaze Elder
+        attack: 12
+        health: 3
+      - name: Sanguine Champion
+        attack: 36
+        health: 6
+358:
+  BottomWin:
+    minions:
+      - name: Salty Looter
+        attack: 8
+        health: 2
+359:
+  TopWin:
+    minions:
+      - name: Utility Drone
+        attack: 12
+        health: 7
+360:
+  BottomWin:
+    minions:
+      - name: Darkgaze Elder
+        attack: 6
+        health: 5
+      - name: Maexxna
+        attack: 2
+        health: 5
+      - name: Seafood Slinger
+        attack: 10
+        health: 4
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 11
+361:
+  BottomWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 3
+      - name: Captain Sanders
+        attack: 14
+        health: 1
+362:
+  TopWin:
+    minions:
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 2
+363:
+  TopWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 3
+        health: 8
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 10
+364: Draw
+365:
+  TopWin:
+    minions:
+      - name: Zesty Shaker
+        attack: 6
+        health: 8
+366: Draw
+367: Draw
+368:
+  BottomWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 4
+      - name: Rockpool Hunter
+        attack: 4
+        health: 1
+      - name: Mantid Queen
+        attack: 10
+        health: 7
+      - name: Iron Sensei
+        attack: 2
+        health: 2
+369:
+  BottomWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 1
+      - name: Bigfernal
+        attack: 12
+        health: 10
+370:
+  BottomWin:
+    minions:
+      - name: Murky
+        attack: 6
+        health: 1
+371:
+  TopWin:
+    minions:
+      - name: Reef Riffer
+        attack: 2
+        health: 2
+      - name: Friend of a Friend
+        attack: 10
+        health: 2
+      - name: Seafood Slinger
+        attack: 5
+        health: 1
+      - name: Nosy Looter
+        attack: 9
+        health: 3
+372:
+  TopWin:
+    minions:
+      - name: Maexxna
+        attack: 4
+        health: 3
+373:
+  TopWin:
+    minions:
+      - name: Warden of Old
+        attack: 3
+        health: 2
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+      - name: "Orgozoa, the Tender"
+        attack: 3
+        health: 7
+374:
+  TopWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 8
+375:
+  BottomWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 1
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 14
+      - name: Bristleback Knight
+        attack: 12
+        health: 4
+376:
+  BottomWin:
+    minions:
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 1
+      - name: Salty Looter
+        attack: 4
+        health: 1
+      - name: "Anub'arak, Nerubian King"
+        attack: 8
+        health: 2
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 11
+377:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 4
+      - name: Scrap Scraper
+        attack: 8
+        health: 10
+      - name: Backstage Security
+        attack: 4
+        health: 3
+378:
+  BottomWin:
+    minions:
+      - name: Razorfen Geomancer
+        attack: 6
+        health: 1
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 1
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 5
+379:
+  TopWin:
+    minions:
+      - name: Emergent Flame
+        attack: 10
+        health: 3
+      - name: Imposing Percussionist
+        attack: 8
+        health: 7
+      - name: Mannoroth
+        attack: 2
+        health: 12
+380:
+  TopWin:
+    minions:
+      - name: Menagerie Jug
+        attack: 6
+        health: 2
+      - name: Devilsaur
+        attack: 16
+        health: 15
+381:
+  TopWin:
+    minions:
+      - name: Gem Smuggler
+        attack: 6
+        health: 3
+382:
+  BottomWin:
+    minions:
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 9
+      - name: Cave Hydra
+        attack: 2
+        health: 4
+      - name: Rusted Reggie
+        attack: 5
+        health: 3
+      - name: Murky
+        attack: 12
+        health: 10
+      - name: Oozeling Gladiator
+        attack: 2
+        health: 4
+      - name: Smogger
+        attack: 3
+        health: 3
+383:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 2
+384:
+  BottomWin:
+    minions:
+      - name: Eelbound Archer
+        attack: 4
+        health: 2
+      - name: Mythrax the Unraveler
+        attack: 4
+        health: 4
+385:
+  TopWin:
+    minions:
+      - name: Holy Mecherel
+        attack: 12
+        health: 5
+      - name: Niuzao
+        attack: 12
+        health: 8
+      - name: "Diablo, Lord of Terror"
+        attack: 8
+        health: 2
+386: Draw
+387:
+  TopWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 8
+      - name: Moon-Bacon Jazzer
+        attack: 2
+        health: 3
+388:
+  TopWin:
+    minions:
+      - name: Sanctum Rester
+        attack: 10
+        health: 3
+      - name: Pupbot
+        attack: 4
+        health: 2
+389:
+  BottomWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 12
+      - name: Niuzao
+        attack: 12
+        health: 7
+390: Draw
+391:
+  BottomWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 11
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 6
+      - name: Choral Mrrrglr
+        attack: 6
+        health: 6
+392:
+  TopWin:
+    minions:
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+      - name: Zapp Slywick
+        attack: 16
+        health: 16
+393:
+  BottomWin:
+    minions:
+      - name: Bonker
+        attack: 3
+        health: 7
+      - name: Elemental of Surprise
+        attack: 16
+        health: 16
+394:
+  BottomWin:
+    minions:
+      - name: Tavern Tempest
+        attack: 8
+        health: 2
+      - name: Hungering Abomination
+        attack: 6
+        health: 2
+      - name: Mannoroth
+        attack: 2
+        health: 10
+      - name: Soul Juggler
+        attack: 6
+        health: 10
+      - name: The Boommobile
+        attack: 12
+        health: 1
+      - name: Ball of Minions
+        attack: 10
+        health: 10
+395:
+  BottomWin:
+    minions:
+      - name: Bream Counter
+        attack: 5
+        health: 3
+      - name: Baron Rivendare
+        attack: 1
+        health: 4
+      - name: Wargear
+        attack: 12
+        health: 10
+396: Draw
+397:
+  BottomWin:
+    minions:
+      - name: Flourishing Frostling
+        attack: 0
+        health: 2
+398:
+  TopWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 7
+      - name: Bonemare
+        attack: 10
+        health: 2
+      - name: Glyph Guardian
+        attack: 2
+        health: 4
+399:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 1
+      - name: Jelly Belly
+        attack: 6
+        health: 10
+      - name: "Lil' Rag"
+        attack: 12
+        health: 2
+      - name: The Boogie Monster
+        attack: 6
+        health: 4
+400: Draw
+401:
+  BottomWin:
+    minions:
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 9
+402:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 4
+      - name: Bannerboar
+        attack: 6
+        health: 4
+403:
+  TopWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 6
+404:
+  BottomWin:
+    minions:
+      - name: Time Saver
+        attack: 4
+        health: 2
+405:
+  TopWin:
+    minions:
+      - name: Flourishing Frostling
+        attack: 0
+        health: 12
+      - name: Warden of Old
+        attack: 6
+        health: 2
+      - name: Snake
+        attack: 1
+        health: 1
+      - name: "Prestor's Pyrospawn"
+        attack: 3
+        health: 3
+406:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 8
+407:
+  BottomWin:
+    minions:
+      - name: "Kathra'natir"
+        attack: 10
+        health: 2
+408:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 14
+409: Draw
+410: Draw
+411:
+  BottomWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 7
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 4
+412:
+  TopWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 2
+        health: 2
+      - name: Impatient Doomsayer
+        attack: 2
+        health: 3
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 4
+        health: 3
+      - name: Bristleback Knight
+        attack: 12
+        health: 13
+413:
+  TopWin:
+    minions:
+      - name: Micro Mummy
+        attack: 1
+        health: 2
+      - name: Ripsnarl Captain
+        attack: 2
+        health: 4
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 4
+      - name: Devilsaur
+        attack: 16
+        health: 16
+414:
+  BottomWin:
+    minions:
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 2
+      - name: Ghastcoiler
+        attack: 7
+        health: 3
+415:
+  BottomWin:
+    minions:
+      - name: "Diablo, Lord of Terror"
+        attack: 4
+        health: 3
+416:
+  BottomWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 5
+        health: 1
+      - name: "Sin'dorei Straight Shot"
+        attack: 3
+        health: 2
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 3
+      - name: Bonker
+        attack: 3
+        health: 7
+417:
+  TopWin:
+    minions:
+      - name: Disco Shuffler
+        attack: 8
+        health: 1
+418:
+  BottomWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 5
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+419:
+  TopWin:
+    minions:
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 10
+420:
+  TopWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 8
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 10
+      - name: Treasure-Seeker Elise
+        attack: 5
+        health: 5
+421:
+  BottomWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 7
+422:
+  TopWin:
+    minions:
+      - name: Gunpowder Courier
+        attack: 2
+        health: 2
+      - name: Transmuted Bramblewitch
+        attack: 8
+        health: 4
+423:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 2
+424:
+  BottomWin:
+    minions:
+      - name: Crackling Cyclone
+        attack: 8
+        health: 2
+      - name: Lullabot
+        attack: 4
+        health: 4
+425:
+  BottomWin:
+    minions:
+      - name: Corpse Refiner
+        attack: 2
+        health: 3
+      - name: Crab
+        attack: 6
+        health: 1
+426:
+  TopWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 12
+      - name: Bristleback Knight
+        attack: 12
+        health: 13
+      - name: Mama Bear
+        attack: 8
+        health: 4
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 8
+427: Draw
+428:
+  TopWin:
+    minions:
+      - name: Baron Rivendare
+        attack: 1
+        health: 3
+      - name: Ghastcoiler
+        attack: 14
+        health: 2
+      - name: Soulsplitter
+        attack: 8
+        health: 1
+429:
+  BottomWin:
+    minions:
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 4
+      - name: "Champion of Y'Shaarj"
+        attack: 6
+        health: 3
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 6
+430:
+  TopWin:
+    minions:
+      - name: Steward of Time
+        attack: 6
+        health: 4
+      - name: Imp Mama
+        attack: 6
+        health: 8
+      - name: Record Smuggler
+        attack: 10
+        health: 2
+      - name: Pupbot
+        attack: 4
+        health: 2
+      - name: The Boommobile
+        attack: 24
+        health: 5
+      - name: Corpse Refiner
+        attack: 4
+        health: 6
+431:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 8
+      - name: Lava Lurker
+        attack: 4
+        health: 7
+      - name: Zapp Slywick
+        attack: 8
+        health: 8
+      - name: Atramedes
+        attack: 3
+        health: 6
+      - name: Papa Bear
+        attack: 24
+        health: 24
+      - name: Annoy-o-Tron
+        attack: 1
+        health: 2
+432:
+  TopWin:
+    minions:
+      - name: Free-Flying Feathermane
+        attack: 5
+        health: 3
+      - name: Titus Rivendare
+        attack: 2
+        health: 4
+      - name: Maexxna
+        attack: 4
+        health: 16
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 10
+433:
+  TopWin:
+    minions:
+      - name: Baron Rivendare
+        attack: 2
+        health: 10
+434:
+  BottomWin:
+    minions:
+      - name: Whelp Smuggler
+        attack: 4
+        health: 6
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 10
+435:
+  BottomWin:
+    minions:
+      - name: Blade Collector
+        attack: 6
+        health: 4
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 8
+436:
+  BottomWin:
+    minions:
+      - name: Vanessa VanCleef
+        attack: 6
+        health: 10
+      - name: Bonker
+        attack: 6
+        health: 10
+      - name: Lava Lurker
+        attack: 4
+        health: 5
+      - name: Charlga
+        attack: 8
+        health: 3
+437:
+  BottomWin:
+    minions:
+      - name: Bonker
+        attack: 3
+        health: 3
+      - name: Steward of Time
+        attack: 6
+        health: 6
+      - name: Qiraji Harbinger
+        attack: 10
+        health: 10
+438:
+  TopWin:
+    minions:
+      - name: "Sea Witch Zar'jira"
+        attack: 4
+        health: 1
+      - name: Tavern Tempest
+        attack: 8
+        health: 8
+439:
+  BottomWin:
+    minions:
+      - name: Utility Drone
+        attack: 12
+        health: 10
+440:
+  TopWin:
+    minions:
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 8
+      - name: Upbeat Duo
+        attack: 12
+        health: 8
+      - name: Rock Rock
+        attack: 4
+        health: 4
+      - name: Lieutenant Garr
+        attack: 16
+        health: 7
+      - name: Master of Realities
+        attack: 8
+        health: 4
+441:
+  BottomWin:
+    minions:
+      - name: Lovesick Balladist
+        attack: 6
+        health: 2
+      - name: "Malchezaar, Prince of Dance"
+        attack: 6
+        health: 1
+442:
+  TopWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 7
+443:
+  TopWin:
+    minions:
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 3
+      - name: Bream Counter
+        attack: 10
+        health: 8
+444:
+  BottomWin:
+    minions:
+      - name: Granite Guardian
+        attack: 2
+        health: 11
+      - name: Upbeat Duo
+        attack: 6
+        health: 3
+445:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 2
+      - name: Niuzao
+        attack: 12
+        health: 5
+446:
+  TopWin:
+    minions:
+      - name: Papa Bear
+        attack: 24
+        health: 3
+      - name: Mechano-Tank
+        attack: 10
+        health: 3
+447:
+  BottomWin:
+    minions:
+      - name: Captain Flat Tusk
+        attack: 9
+        health: 2
+      - name: Ghastcoiler
+        attack: 14
+        health: 1
+448:
+  TopWin:
+    minions:
+      - name: Mama Bear
+        attack: 8
+        health: 6
+      - name: The Boogie Monster
+        attack: 6
+        health: 10
+449:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 3
+      - name: Baby Krush
+        attack: 12
+        health: 6
+450: Draw
+451:
+  BottomWin:
+    minions:
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 8
+452:
+  BottomWin:
+    minions:
+      - name: Scrap Scraper
+        attack: 8
+        health: 8
+      - name: Accord-o-Tron
+        attack: 6
+        health: 3
+      - name: "SI:Sefin"
+        attack: 2
+        health: 6
+      - name: Chronormu
+        attack: 12
+        health: 4
+453:
+  TopWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 7
+      - name: Sister Deathwhisper
+        attack: 4
+        health: 3
+      - name: Bonker
+        attack: 6
+        health: 14
+      - name: Murky
+        attack: 12
+        health: 2
+      - name: Bristleback Brute
+        attack: 6
+        health: 6
+454:
+  TopWin:
+    minions:
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 7
+      - name: Tarecgosa
+        attack: 8
+        health: 2
+455:
+  TopWin:
+    minions:
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 4
+456:
+  BottomWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 3
+        health: 1
+      - name: Poetic Pen Pal
+        attack: 4
+        health: 1
+      - name: Captain Sanders
+        attack: 14
+        health: 13
+      - name: Bannerboar
+        attack: 6
+        health: 6
+457:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 4
+458:
+  BottomWin:
+    minions:
+      - name: Ball of Minions
+        attack: 10
+        health: 9
+      - name: Stormbringer
+        attack: 1
+        health: 3
+      - name: Screwjank Clunker
+        attack: 2
+        health: 2
+      - name: Chronormu
+        attack: 6
+        health: 5
+459:
+  TopWin:
+    minions:
+      - name: Damaged Golem
+        attack: 2
+        health: 1
+460:
+  TopWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 10
+      - name: Upbeat Flutist
+        attack: 4
+        health: 8
+461:
+  TopWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 4
+      - name: Wargear
+        attack: 12
+        health: 2
+      - name: Upbeat Duo
+        attack: 12
+        health: 11
+      - name: Hungering Abomination
+        attack: 6
+        health: 2
+462:
+  BottomWin:
+    minions:
+      - name: Rot Hide Gnoll
+        attack: 2
+        health: 3
+463:
+  TopWin:
+    minions:
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 4
+464:
+  BottomWin:
+    minions:
+      - name: "Anub'arak, Nerubian King"
+        attack: 8
+        health: 2
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 11
+      - name: Rockpool Hunter
+        attack: 4
+        health: 6
+      - name: Bream Counter
+        attack: 5
+        health: 5
+465:
+  BottomWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 2
+466:
+  BottomWin:
+    minions:
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 9
+      - name: Time Saver
+        attack: 4
+        health: 4
+467:
+  TopWin:
+    minions:
+      - name: Ball of Minions
+        attack: 10
+        health: 5
+468:
+  BottomWin:
+    minions:
+      - name: The Walking Fort
+        attack: 8
+        health: 10
+469:
+  BottomWin:
+    minions:
+      - name: Bristlebach
+        attack: 4
+        health: 10
+470:
+  BottomWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 6
+471:
+  BottomWin:
+    minions:
+      - name: Bristlebach
+        attack: 4
+        health: 3
+472:
+  TopWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 2
+473:
+  BottomWin:
+    minions:
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 5
+      - name: Annoy-o-Module
+        attack: 4
+        health: 5
+      - name: Transmuted Bramblewitch
+        attack: 4
+        health: 1
+      - name: Colossus of the Sun
+        attack: 12
+        health: 12
+      - name: Recurring Nightmare
+        attack: 8
+        health: 5
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 8
+474: Draw
+475:
+  TopWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 7
+        health: 3
+      - name: Mantid Queen
+        attack: 10
+        health: 2
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 1
+476:
+  BottomWin:
+    minions:
+      - name: Blazing Skyfin
+        attack: 2
+        health: 2
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 12
+477:
+  TopWin:
+    minions:
+      - name: Savannah Highmane
+        attack: 12
+        health: 2
+478:
+  BottomWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 7
+        health: 4
+      - name: Lightfang Enforcer
+        attack: 8
+        health: 3
+      - name: Holy Mecherel
+        attack: 12
+        health: 7
+479:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 3
+480:
+  TopWin:
+    minions:
+      - name: "Goldrinn, the Great Wolf"
+        attack: 8
+        health: 3
+      - name: Possessive Banshee
+        attack: 2
+        health: 5
+481:
+  TopWin:
+    minions:
+      - name: Ripsnarl Captain
+        attack: 4
+        health: 6
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 14
+      - name: Soulsplitter
+        attack: 8
+        health: 2
+482:
+  TopWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 8
+483:
+  BottomWin:
+    minions:
+      - name: Interrogator Whitemane
+        attack: 16
+        health: 5
+      - name: "Diablo, Lord of Terror"
+        attack: 8
+        health: 7
+484:
+  BottomWin:
+    minions:
+      - name: Goldgrubber
+        attack: 8
+        health: 2
+485:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 8
+        health: 4
+      - name: The Boommobile
+        attack: 12
+        health: 2
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 14
+      - name: Onyxian Whelp
+        attack: 4
+        health: 2
+486:
+  BottomWin:
+    minions:
+      - name: The Walking Fort
+        attack: 8
+        health: 2
+      - name: Bream Counter
+        attack: 10
+        health: 7
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 6
+487:
+  TopWin:
+    minions:
+      - name: "Razorgore, the Untamed"
+        attack: 4
+        health: 1
+      - name: Bristlebach
+        attack: 4
+        health: 10
+      - name: Sore Loser
+        attack: 2
+        health: 2
+488:
+  TopWin:
+    minions:
+      - name: Soul Juggler
+        attack: 3
+        health: 3
+      - name: Friend of a Friend
+        attack: 10
+        health: 9
+      - name: Bristleback Knight
+        attack: 12
+        health: 6
+      - name: Murloc Warleader
+        attack: 6
+        health: 3
+      - name: Southsea Busker
+        attack: 3
+        health: 1
+489: Draw
+490:
+  TopWin:
+    minions:
+      - name: Stasis Elemental
+        attack: 8
+        health: 7
+      - name: Champion of the Primus
+        attack: 4
+        health: 3
+      - name: Charlga
+        attack: 4
+        health: 1
+491:
+  TopWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 10
+      - name: Smogger
+        attack: 6
+        health: 6
+492:
+  BottomWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 9
+      - name: Leapfrogger
+        attack: 6
+        health: 2
+      - name: Fairy Tale Caroler
+        attack: 4
+        health: 3
+493:
+  TopWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 19
+      - name: Champion of Sargeras
+        attack: 20
+        health: 10
+494:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 27
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 6
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 8
+495:
+  TopWin:
+    minions:
+      - name: Mechano-Egg
+        attack: 0
+        health: 2
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 28
+      - name: Primalfin Lookout
+        attack: 3
+        health: 2
+496:
+  BottomWin:
+    minions:
+      - name: Yrel
+        attack: 2
+        health: 2
+      - name: Stasis Elemental
+        attack: 4
+        health: 2
+497:
+  TopWin:
+    minions:
+      - name: Zesty Shaker
+        attack: 3
+        health: 2
+498:
+  BottomWin:
+    minions:
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 5
+      - name: Utility Drone
+        attack: 12
+        health: 10
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+      - name: Soul Devourer
+        attack: 3
+        health: 3
+499:
+  TopWin:
+    minions:
+      - name: Cave Hydra
+        attack: 4
+        health: 1
+      - name: Papa Bear
+        attack: 24
+        health: 17
+500: Draw
+501:
+  TopWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 5
+      - name: Greta Gold-Gun
+        attack: 2
+        health: 3
+      - name: Savannah Highmane
+        attack: 6
+        health: 2
+502:
+  BottomWin:
+    minions:
+      - name: Felemental
+        attack: 6
+        health: 1
+      - name: Palescale Crocolisk
+        attack: 4
+        health: 4
+      - name: Ripsnarl Captain
+        attack: 2
+        health: 1
+      - name: Colossus of the Sun
+        attack: 12
+        health: 12
+      - name: Disco Shuffler
+        attack: 8
+        health: 6
+503:
+  TopWin:
+    minions:
+      - name: Salty Looter
+        attack: 8
+        health: 6
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 10
+      - name: Darkgaze Elder
+        attack: 12
+        health: 10
+504:
+  BottomWin:
+    minions:
+      - name: Poetic Pen Pal
+        attack: 2
+        health: 2
+      - name: Rockpool Hunter
+        attack: 2
+        health: 1
+505:
+  BottomWin:
+    minions:
+      - name: "Champion of Y'Shaarj"
+        attack: 6
+        health: 6
+506:
+  TopWin:
+    minions:
+      - name: Felfin Navigator
+        attack: 8
+        health: 1
+      - name: Defender of Argus
+        attack: 3
+        health: 1
+507:
+  BottomWin:
+    minions:
+      - name: Tad
+        attack: 4
+        health: 3
+      - name: Greta Gold-Gun
+        attack: 2
+        health: 5
+      - name: Savannah Highmane
+        attack: 6
+        health: 3
+508:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 10
+      - name: Colossus of the Sun
+        attack: 12
+        health: 12
+      - name: Tea Master Theotar
+        attack: 12
+        health: 8
+      - name: Scrap Scraper
+        attack: 8
+        health: 14
+      - name: Granite Guardian
+        attack: 2
+        health: 30
+509:
+  TopWin:
+    minions:
+      - name: Seafood Slinger
+        attack: 10
+        health: 6
+      - name: Imp Mama
+        attack: 6
+        health: 8
+510:
+  BottomWin:
+    minions:
+      - name: Screwjank Clunker
+        attack: 4
+        health: 9
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 1
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 7
+      - name: Colossus of the Sun
+        attack: 12
+        health: 12
+      - name: Living Constellation
+        attack: 8
+        health: 4
+      - name: Wargear
+        attack: 6
+        health: 5
+511:
+  TopWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 1
+      - name: Fairy Tale Caroler
+        attack: 4
+        health: 1
+512: Draw
+513:
+  BottomWin:
+    minions:
+      - name: Baby Krush
+        attack: 12
+        health: 9
+      - name: Baby Krush
+        attack: 6
+        health: 1
+      - name: Bream Counter
+        attack: 5
+        health: 1
+      - name: Shoal Commander
+        attack: 2
+        health: 2
+514:
+  BottomWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 8
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 2
+515:
+  BottomWin:
+    minions:
+      - name: Bonemare
+        attack: 10
+        health: 6
+      - name: Tavern Tempest
+        attack: 8
+        health: 2
+      - name: Lieutenant Garr
+        attack: 16
+        health: 2
+      - name: Tough Tusk
+        attack: 5
+        health: 3
+516:
+  BottomWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 10
+517:
+  TopWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 8
+518:
+  TopWin:
+    minions:
+      - name: Amalgam
+        attack: 4
+        health: 2
+      - name: Eelbound Archer
+        attack: 8
+        health: 5
+519:
+  TopWin:
+    minions:
+      - name: Cobalt Scalebane
+        attack: 5
+        health: 1
+      - name: "Diablo, Lord of Terror"
+        attack: 4
+        health: 4
+520:
+  TopWin:
+    minions:
+      - name: Briarback Bookie
+        attack: 3
+        health: 1
+      - name: Dazzling Lightspawn
+        attack: 2
+        health: 3
+      - name: Imp Mama
+        attack: 12
+        health: 16
+      - name: Thorncaller
+        attack: 3
+        health: 2
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+      - name: Dynamic Duo
+        attack: 10
+        health: 6
+521:
+  BottomWin:
+    minions:
+      - name: Tea Master Theotar
+        attack: 12
+        health: 8
+      - name: "Lil' Rag"
+        attack: 12
+        health: 1
+      - name: Toxfin
+        attack: 1
+        health: 2
+      - name: Living Constellation
+        attack: 4
+        health: 2
+      - name: Fiery Imp
+        attack: 3
+        health: 2
+      - name: General Drakkisath
+        attack: 4
+        health: 16
+522:
+  TopWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 16
+      - name: Utility Drone
+        attack: 12
+        health: 8
+523: Draw
+524:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 2
+525:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 24
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 4
+      - name: Captain Flat Tusk
+        attack: 18
+        health: 12
+      - name: Scrap Scraper
+        attack: 4
+        health: 7
+526:
+  BottomWin:
+    minions:
+      - name: Impatient Doomsayer
+        attack: 4
+        health: 10
+      - name: Interrogator Whitemane
+        attack: 16
+        health: 10
+527:
+  TopWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 3
+        health: 2
+      - name: Bristlebach
+        attack: 4
+        health: 8
+      - name: Tad
+        attack: 2
+        health: 2
+      - name: Invent-o-Matic
+        attack: 4
+        health: 6
+528:
+  BottomWin:
+    minions:
+      - name: Ball of Minions
+        attack: 10
+        health: 6
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 7
+529:
+  TopWin:
+    minions:
+      - name: Atramedes
+        attack: 3
+        health: 6
+      - name: Lovesick Balladist
+        attack: 6
+        health: 5
+      - name: Warpwing
+        attack: 12
+        health: 4
+      - name: Tortollan Blue Shell
+        attack: 4
+        health: 7
+530:
+  BottomWin:
+    minions:
+      - name: Tarecgosa
+        attack: 8
+        health: 4
+      - name: Mannoroth
+        attack: 1
+        health: 5
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 3
+      - name: Felfin Navigator
+        attack: 8
+        health: 8
+531:
+  TopWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 14
+532:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 10
+533:
+  BottomWin:
+    minions:
+      - name: Roadboar
+        attack: 4
+        health: 5
+534:
+  BottomWin:
+    minions:
+      - name: Vanessa VanCleef
+        attack: 6
+        health: 3
+      - name: Corrupted Myrmidon
+        attack: 6
+        health: 2
+      - name: Omega Buster
+        attack: 10
+        health: 2
+      - name: Bristleback Knight
+        attack: 12
+        health: 18
+      - name: Tavern Tempest
+        attack: 8
+        health: 8
+      - name: "Prestor's Pyrospawn"
+        attack: 3
+        health: 3
+535:
+  BottomWin:
+    minions:
+      - name: The Boommobile
+        attack: 24
+        health: 5
+      - name: Coldlight Seer
+        attack: 4
+        health: 6
+      - name: Leeroy the Reckless
+        attack: 12
+        health: 4
+536:
+  BottomWin:
+    minions:
+      - name: Recurring Nightmare
+        attack: 16
+        health: 2
+      - name: Tad
+        attack: 4
+        health: 2
+      - name: Peggy Brittlebone
+        attack: 6
+        health: 2
+      - name: Piggyback Imp
+        attack: 8
+        health: 2
+      - name: Bristlebach
+        attack: 4
+        health: 8
+537: Draw
+538:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 13
+539:
+  BottomWin:
+    minions:
+      - name: "Sin'dorei Straight Shot"
+        attack: 3
+        health: 4
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 14
+540:
+  TopWin:
+    minions:
+      - name: Baby Krush
+        attack: 12
+        health: 8
+      - name: Tony Two-Tusk
+        attack: 4
+        health: 2
+      - name: Party Elemental
+        attack: 4
+        health: 7
+      - name: Imp
+        attack: 2
+        health: 1
+541:
+  BottomWin:
+    minions:
+      - name: Salty Looter
+        attack: 8
+        health: 5
+      - name: Nether Drake
+        attack: 2
+        health: 2
+      - name: Baron Rivendare
+        attack: 2
+        health: 2
+      - name: The Boogie Monster
+        attack: 6
+        health: 10
+542:
+  TopWin:
+    minions:
+      - name: Party Elemental
+        attack: 4
+        health: 7
+      - name: Bristlemane Scrapsmith
+        attack: 8
+        health: 6
+      - name: Critter Wrangler
+        attack: 10
+        health: 2
+543:
+  BottomWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 11
+      - name: Invent-o-Matic
+        attack: 4
+        health: 6
+544:
+  BottomWin:
+    minions:
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 1
+545:
+  BottomWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 8
+        health: 1
+546:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 3
+      - name: Famished Felbat
+        attack: 8
+        health: 5
+      - name: Tidemistress Athissa
+        attack: 6
+        health: 6
+547:
+  TopWin:
+    minions:
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 2
+      - name: Thorncaptain
+        attack: 8
+        health: 2
+      - name: Iron Groundskeeper
+        attack: 5
+        health: 1
+      - name: Wildfire Elemental
+        attack: 14
+        health: 6
+548:
+  BottomWin:
+    minions:
+      - name: Groundshaker
+        attack: 6
+        health: 5
+      - name: Baron Rivendare
+        attack: 2
+        health: 14
+      - name: The Glad-iator
+        attack: 1
+        health: 1
+549:
+  BottomWin:
+    minions:
+      - name: Robosaur
+        attack: 8
+        health: 2
+      - name: Captain Sanders
+        attack: 7
+        health: 7
+      - name: Replicating Menace
+        attack: 6
+        health: 1
+550:
+  BottomWin:
+    minions:
+      - name: Wildfire Elemental
+        attack: 14
+        health: 4
+      - name: Colossus of the Sun
+        attack: 6
+        health: 4
+551: Draw
+552:
+  TopWin:
+    minions:
+      - name: Evolving Chromawing
+        attack: 2
+        health: 2
+      - name: Robosaur
+        attack: 16
+        health: 13
+      - name: Cyborg Drake
+        attack: 3
+        health: 10
+553:
+  TopWin:
+    minions:
+      - name: Bristleback Knight
+        attack: 12
+        health: 7
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 2
+      - name: Briny Bootlegger
+        attack: 8
+        health: 8
+554:
+  TopWin:
+    minions:
+      - name: Arm of the Empire
+        attack: 4
+        health: 1
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 16
+555:
+  TopWin:
+    minions:
+      - name: Zesty Shaker
+        attack: 6
+        health: 6
+      - name: Carbonic Copy
+        attack: 6
+        health: 6
+      - name: Nosy Looter
+        attack: 9
+        health: 8
+556:
+  TopWin:
+    minions:
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 3
+      - name: Tavern Tempest
+        attack: 8
+        health: 7
+      - name: Tea Master Theotar
+        attack: 6
+        health: 4
+      - name: Titus Rivendare
+        attack: 2
+        health: 8
+557: Draw
+558:
+  TopWin:
+    minions:
+      - name: Cobalt Scalebane
+        attack: 5
+        health: 2
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 9
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 2
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 12
+      - name: Nether Drake
+        attack: 2
+        health: 10
+      - name: Ghastcoiler
+        attack: 7
+        health: 1
+559:
+  BottomWin:
+    minions:
+      - name: Peckish Feldrake
+        attack: 0
+        health: 2
+      - name: Zesty Shaker
+        attack: 3
+        health: 1
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 12
+560:
+  TopWin:
+    minions:
+      - name: Incorporeal Corporal
+        attack: 10
+        health: 4
+561:
+  TopWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 8
+      - name: Bristleback Knight
+        attack: 12
+        health: 5
+562:
+  TopWin:
+    minions:
+      - name: Bristleback Knight
+        attack: 12
+        health: 17
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 8
+      - name: Helping Hand
+        attack: 4
+        health: 1
+      - name: Blade Collector
+        attack: 3
+        health: 2
+563:
+  BottomWin:
+    minions:
+      - name: Lovesick Balladist
+        attack: 6
+        health: 6
+      - name: Transmuted Bramblewitch
+        attack: 4
+        health: 3
+564:
+  TopWin:
+    minions:
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 15
+      - name: The Boogie Monster
+        attack: 6
+        health: 10
+      - name: Ghastcoiler
+        attack: 14
+        health: 14
+      - name: Blazing Skyfin
+        attack: 2
+        health: 2
+565:
+  TopWin:
+    minions:
+      - name: Bristleback Knight
+        attack: 12
+        health: 6
+566:
+  TopWin:
+    minions:
+      - name: Record Smuggler
+        attack: 5
+        health: 1
+      - name: Stormbringer
+        attack: 2
+        health: 14
+      - name: Yrel
+        attack: 1
+        health: 2
+      - name: Voidlord
+        attack: 6
+        health: 4
+      - name: Wrath Weaver
+        attack: 1
+        health: 4
+567:
+  BottomWin:
+    minions:
+      - name: Transmuted Bramblewitch
+        attack: 8
+        health: 3
+      - name: Zapp Slywick
+        attack: 8
+        health: 2
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 10
+      - name: Ghoul of the Feast
+        attack: 4
+        health: 10
+568:
+  BottomWin:
+    minions:
+      - name: Legion Overseer
+        attack: 8
+        health: 2
+      - name: Wrath Weaver
+        attack: 2
+        health: 6
+      - name: Titus Rivendare
+        attack: 2
+        health: 5
+      - name: Leeroy the Reckless
+        attack: 12
+        health: 3
+      - name: General Drakkisath
+        attack: 4
+        health: 8
+569:
+  BottomWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 5
+570:
+  BottomWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 11
+      - name: Mannoroth
+        attack: 1
+        health: 4
+      - name: Young Murk-Eye
+        attack: 16
+        health: 1
+571:
+  BottomWin:
+    minions:
+      - name: Tidemistress Athissa
+        attack: 6
+        health: 1
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 12
+572:
+  TopWin:
+    minions:
+      - name: Lava Lurker
+        attack: 2
+        health: 3
+      - name: Bream Counter
+        attack: 10
+        health: 10
+573:
+  BottomWin:
+    minions:
+      - name: Bristlebach
+        attack: 4
+        health: 2
+574:
+  BottomWin:
+    minions:
+      - name: Mythrax the Unraveler
+        attack: 4
+        health: 1
+      - name: Leeroy the Reckless
+        attack: 6
+        health: 2
+575:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 18
+      - name: Cyborg Drake
+        attack: 6
+        health: 13
+576:
+  BottomWin:
+    minions:
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 5
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 2
+577:
+  BottomWin:
+    minions:
+      - name: Tea Master Theotar
+        attack: 6
+        health: 1
+578:
+  BottomWin:
+    minions:
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 6
+579:
+  BottomWin:
+    minions:
+      - name: Sore Loser
+        attack: 2
+        health: 2
+      - name: Salty Looter
+        attack: 8
+        health: 4
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 3
+      - name: Stormbringer
+        attack: 2
+        health: 12
+580:
+  BottomWin:
+    minions:
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 8
+      - name: "Orgozoa, the Tender"
+        attack: 3
+        health: 3
+      - name: Peckish Feldrake
+        attack: 0
+        health: 2
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+      - name: Bird Buddy
+        attack: 4
+        health: 4
+581:
+  TopWin:
+    minions:
+      - name: Omega Buster
+        attack: 10
+        health: 2
+      - name: Scourfin
+        attack: 6
+        health: 4
+      - name: Famished Felbat
+        attack: 16
+        health: 8
+      - name: Strongshell Scavenger
+        attack: 4
+        health: 2
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 27
+582:
+  BottomWin:
+    minions:
+      - name: Archdruid Hamuul
+        attack: 4
+        health: 4
+      - name: Bristleback Knight
+        attack: 6
+        health: 5
+      - name: Menagerie Mug
+        attack: 4
+        health: 4
+583:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 4
+584: Draw
+585:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 7
+586:
+  BottomWin:
+    minions:
+      - name: Zesty Shaker
+        attack: 3
+        health: 4
+      - name: Bannerboar
+        attack: 6
+        health: 10
+587:
+  BottomWin:
+    minions:
+      - name: Gemsplitter
+        attack: 4
+        health: 7
+      - name: Mechano-Egg
+        attack: 0
+        health: 5
+      - name: Lava Lurker
+        attack: 4
+        health: 4
+      - name: Wargear
+        attack: 12
+        health: 6
+588:
+  TopWin:
+    minions:
+      - name: Invent-o-Matic
+        attack: 4
+        health: 2
+      - name: First Mate Pip
+        attack: 10
+        health: 2
+      - name: Replicating Menace
+        attack: 6
+        health: 4
+      - name: Interrogator Whitemane
+        attack: 8
+        health: 5
+589:
+  BottomWin:
+    minions:
+      - name: Bonemare
+        attack: 10
+        health: 8
+      - name: The Glad-iator
+        attack: 1
+        health: 1
+      - name: Damaged Golem
+        attack: 4
+        health: 2
+590: Draw
+591:
+  TopWin:
+    minions:
+      - name: Pufferquil
+        attack: 4
+        health: 3
+      - name: Scourfin
+        attack: 3
+        health: 3
+592: Draw
+593:
+  TopWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 5
+        health: 2
+594:
+  TopWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 2
+595:
+  BottomWin:
+    minions:
+      - name: Rabid Saurolisk
+        attack: 3
+        health: 2
+596:
+  TopWin:
+    minions:
+      - name: Choral Mrrrglr
+        attack: 12
+        health: 8
+      - name: Fleet Admiral Tethys
+        attack: 5
+        health: 3
+597:
+  TopWin:
+    minions:
+      - name: Savannah Highmane
+        attack: 12
+        health: 1
+      - name: Leeching Felhound
+        attack: 6
+        health: 4
+598:
+  TopWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 1
+599:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+600:
+  TopWin:
+    minions:
+      - name: Pupbot
+        attack: 4
+        health: 2
+      - name: Stormbringer
+        attack: 1
+        health: 5
+      - name: Granite Guardian
+        attack: 2
+        health: 24
+601:
+  BottomWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 8
+602:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 1
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 4
+      - name: Stormbringer
+        attack: 2
+        health: 10
+      - name: Lightfang Enforcer
+        attack: 4
+        health: 4
+603:
+  BottomWin:
+    minions:
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 4
+      - name: Murcules
+        attack: 5
+        health: 1
+      - name: Ball of Minions
+        attack: 5
+        health: 5
+604: Draw
+605:
+  BottomWin:
+    minions:
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 3
+      - name: Champion of Sargeras
+        attack: 20
+        health: 14
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 6
+      - name: Papa Bear
+        attack: 12
+        health: 9
+606:
+  TopWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 11
+      - name: Young Murk-Eye
+        attack: 8
+        health: 5
+607:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 6
+      - name: Mantid Queen
+        attack: 5
+        health: 5
+608:
+  TopWin:
+    minions:
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 3
+      - name: Prized Promo-Drake
+        attack: 6
+        health: 3
+      - name: Deck Swabbie
+        attack: 4
+        health: 4
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 7
+609:
+  BottomWin:
+    minions:
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 3
+      - name: Upbeat Flutist
+        attack: 4
+        health: 9
+      - name: Mechano-Tank
+        attack: 10
+        health: 1
+      - name: Operatic Belcher
+        attack: 10
+        health: 4
+610:
+  TopWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 11
+611:
+  BottomWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 2
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 1
+612:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 2
+613:
+  TopWin:
+    minions:
+      - name: Tarecgosa
+        attack: 8
+        health: 2
+614:
+  TopWin:
+    minions:
+      - name: Operatic Belcher
+        attack: 10
+        health: 3
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 4
+615:
+  TopWin:
+    minions:
+      - name: Interrogator Whitemane
+        attack: 16
+        health: 3
+616:
+  BottomWin:
+    minions:
+      - name: Mistake
+        attack: 1
+        health: 1
+      - name: Scrap Scraper
+        attack: 8
+        health: 1
+617:
+  TopWin:
+    minions:
+      - name: Salty Looter
+        attack: 4
+        health: 1
+618:
+  TopWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 8
+        health: 8
+      - name: Chronormu
+        attack: 12
+        health: 7
+619: Draw
+620:
+  TopWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 4
+      - name: Sore Loser
+        attack: 2
+        health: 4
+621:
+  BottomWin:
+    minions:
+      - name: The Boogie Monster
+        attack: 6
+        health: 14
+      - name: Darkgaze Elder
+        attack: 12
+        health: 9
+      - name: Poetic Pen Pal
+        attack: 4
+        health: 8
+      - name: Gunpowder Courier
+        attack: 4
+        health: 8
+622:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 2
+      - name: Reef Riffer
+        attack: 2
+        health: 3
+623:
+  TopWin:
+    minions:
+      - name: Annihilan Battlemaster
+        attack: 6
+        health: 1
+      - name: Jelly Belly
+        attack: 3
+        health: 1
+      - name: Bird Buddy
+        attack: 2
+        health: 4
+624:
+  TopWin:
+    minions:
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 2
+      - name: Silent Swimmer
+        attack: 5
+        health: 1
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 8
+625:
+  BottomWin:
+    minions:
+      - name: Captain Flat Tusk
+        attack: 18
+        health: 1
+626:
+  BottomWin:
+    minions:
+      - name: Hungering Abomination
+        attack: 6
+        health: 2
+      - name: Chronormu
+        attack: 12
+        health: 2
+627: Draw
+628:
+  BottomWin:
+    minions:
+      - name: Bubblette
+        attack: 10
+        health: 2
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 8
+      - name: Rock Rock
+        attack: 8
+        health: 8
+629:
+  TopWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 11
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 5
+630:
+  TopWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 14
+        health: 3
+631:
+  TopWin:
+    minions:
+      - name: Vigilant Stoneborn
+        attack: 2
+        health: 3
+      - name: Roadboar
+        attack: 2
+        health: 3
+632:
+  BottomWin:
+    minions:
+      - name: Robosaur
+        attack: 16
+        health: 6
+633: Draw
+634:
+  BottomWin:
+    minions:
+      - name: Baby Krush
+        attack: 12
+        health: 8
+      - name: Emergent Flame
+        attack: 10
+        health: 2
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 6
+      - name: Stormbringer
+        attack: 2
+        health: 18
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 2
+        health: 8
+635:
+  TopWin:
+    minions:
+      - name: "Octosari, Wrap God"
+        attack: 6
+        health: 7
+      - name: Khadgar
+        attack: 4
+        health: 4
+636:
+  TopWin:
+    minions:
+      - name: Choral Mrrrglr
+        attack: 12
+        health: 9
+      - name: Cave Hydra
+        attack: 4
+        health: 2
+      - name: Mannoroth
+        attack: 2
+        health: 5
+637:
+  BottomWin:
+    minions:
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 7
+      - name: Humming Bird
+        attack: 0
+        health: 10
+      - name: Salty Looter
+        attack: 4
+        health: 1
+      - name: "Octosari, Wrap God"
+        attack: 6
+        health: 3
+      - name: Glyph Guardian
+        attack: 4
+        health: 6
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 14
+638:
+  BottomWin:
+    minions:
+      - name: Soul Devourer
+        attack: 3
+        health: 1
+639: Draw
+640:
+  TopWin:
+    minions:
+      - name: Possessive Banshee
+        attack: 4
+        health: 9
+      - name: Smogger
+        attack: 6
+        health: 6
+      - name: Carbonic Copy
+        attack: 6
+        health: 6
+641:
+  TopWin:
+    minions:
+      - name: Soul Juggler
+        attack: 3
+        health: 1
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+      - name: Moira Bronzebeard
+        attack: 3
+        health: 7
+642:
+  BottomWin:
+    minions:
+      - name: Mama Bear
+        attack: 8
+        health: 6
+643:
+  TopWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 12
+644:
+  TopWin:
+    minions:
+      - name: Rock Rock
+        attack: 8
+        health: 6
+645:
+  TopWin:
+    minions:
+      - name: "Fish of N'Zoth"
+        attack: 4
+        health: 1
+      - name: Operatic Belcher
+        attack: 10
+        health: 1
+646:
+  TopWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 7
+      - name: Bloodsail Cannoneer
+        attack: 4
+        health: 3
+647:
+  TopWin:
+    minions:
+      - name: Ball of Minions
+        attack: 10
+        health: 4
+648:
+  BottomWin:
+    minions:
+      - name: Scrap Scraper
+        attack: 8
+        health: 1
+      - name: Nether Drake
+        attack: 2
+        health: 7
+649: Draw
+650:
+  BottomWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 6
+      - name: Imp Mama
+        attack: 12
+        health: 2
+      - name: "Spawn of N'Zoth"
+        attack: 4
+        health: 4
+      - name: The Boogie Monster
+        attack: 6
+        health: 16
+      - name: Colossus of the Sun
+        attack: 6
+        health: 6
+651:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 10
+      - name: Soulsplitter
+        attack: 4
+        health: 2
+      - name: Deadly Spore
+        attack: 1
+        health: 1
+652: Draw
+653:
+  TopWin:
+    minions:
+      - name: Stasis Elemental
+        attack: 8
+        health: 2
+654:
+  BottomWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 15
+      - name: Amber Guardian
+        attack: 6
+        health: 1
+      - name: General Drakkisath
+        attack: 4
+        health: 16
+      - name: Incorporeal Corporal
+        attack: 10
+        health: 6
+      - name: Backstage Security
+        attack: 4
+        health: 5
+655: Draw
+656:
+  TopWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 10
+        health: 2
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 7
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 6
+      - name: Evolving Chromawing
+        attack: 1
+        health: 4
+657:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 17
+      - name: Felemental
+        attack: 3
+        health: 1
+      - name: Interrogator Whitemane
+        attack: 16
+        health: 10
+658: Draw
+659:
+  TopWin:
+    minions:
+      - name: Sanctum Rester
+        attack: 5
+        health: 1
+      - name: Sore Loser
+        attack: 4
+        health: 1
+      - name: Withered Spearhide
+        attack: 4
+        health: 4
+      - name: "Sin'dorei Straight Shot"
+        attack: 3
+        health: 4
+660:
+  TopWin:
+    minions:
+      - name: Chronormu
+        attack: 12
+        health: 6
+      - name: Qiraji Harbinger
+        attack: 10
+        health: 6
+661:
+  BottomWin:
+    minions:
+      - name: Bird Buddy
+        attack: 2
+        health: 3
+      - name: Tidemistress Athissa
+        attack: 6
+        health: 7
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 8
+      - name: Charlga
+        attack: 8
+        health: 5
+      - name: Annoy-o-Troupe
+        attack: 6
+        health: 1
+662:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+      - name: Bonemare
+        attack: 10
+        health: 5
+663:
+  BottomWin:
+    minions:
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 3
+      - name: Southsea Captain
+        attack: 3
+        health: 1
+      - name: Groundshaker
+        attack: 6
+        health: 4
+664:
+  BottomWin:
+    minions:
+      - name: "Agamaggan, the Great Boar"
+        attack: 6
+        health: 2
+      - name: Tide Oracle Morgl
+        attack: 1
+        health: 1
+      - name: Magmaloc
+        attack: 2
+        health: 2
+665:
+  BottomWin:
+    minions:
+      - name: Leeroy the Reckless
+        attack: 12
+        health: 2
+      - name: Backstage Security
+        attack: 8
+        health: 2
+      - name: Eternal Summoner
+        attack: 8
+        health: 1
+666:
+  TopWin:
+    minions:
+      - name: Jelly Belly
+        attack: 6
+        health: 2
+667:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 16
+      - name: Disco Shuffler
+        attack: 4
+        health: 2
+      - name: Mantid Queen
+        attack: 10
+        health: 2
+      - name: Reef Riffer
+        attack: 1
+        health: 2
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 12
+668:
+  TopWin:
+    minions:
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 1
+      - name: Peggy Sturdybone
+        attack: 8
+        health: 3
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 10
+669:
+  TopWin:
+    minions:
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 1
+      - name: Hungering Abomination
+        attack: 6
+        health: 4
+      - name: Cave Hydra
+        attack: 4
+        health: 4
+      - name: Amber Guardian
+        attack: 6
+        health: 4
+      - name: Dr. Boombox
+        attack: 14
+        health: 2
+670:
+  TopWin:
+    minions:
+      - name: First Mate Pip
+        attack: 10
+        health: 2
+      - name: Rabid Saurolisk
+        attack: 3
+        health: 2
+671:
+  BottomWin:
+    minions:
+      - name: Nathrezim Overseer
+        attack: 4
+        health: 7
+      - name: The Boogie Monster
+        attack: 3
+        health: 5
+      - name: Oozeling Gladiator
+        attack: 2
+        health: 2
+      - name: Uther the Lightbringer
+        attack: 5
+        health: 6
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 14
+      - name: Tarecgosa
+        attack: 4
+        health: 4
+672: Draw
+673:
+  BottomWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 8
+674:
+  TopWin:
+    minions:
+      - name: Glyph Guardian
+        attack: 4
+        health: 2
+675:
+  BottomWin:
+    minions:
+      - name: Glyph Guardian
+        attack: 2
+        health: 3
+676:
+  BottomWin:
+    minions:
+      - name: Felfin Navigator
+        attack: 8
+        health: 2
+677:
+  TopWin:
+    minions:
+      - name: Mechano-Egg
+        attack: 0
+        health: 1
+678:
+  BottomWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 10
+        health: 6
+679:
+  BottomWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 7
+680:
+  BottomWin:
+    minions:
+      - name: Friend of a Friend
+        attack: 10
+        health: 6
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Roadboar
+        attack: 4
+        health: 6
+      - name: "SI:Sefin"
+        attack: 4
+        health: 12
+      - name: The Boommobile
+        attack: 24
+        health: 2
+681:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 4
+        health: 1
+      - name: Stasis Elemental
+        attack: 8
+        health: 6
+      - name: Fiery Imp
+        attack: 6
+        health: 2
+      - name: Nadina the Red
+        attack: 16
+        health: 4
+      - name: Screwjank Clunker
+        attack: 4
+        health: 6
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 14
+682:
+  BottomWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 20
+      - name: First Mate Pip
+        attack: 10
+        health: 5
+      - name: Party Elemental
+        attack: 4
+        health: 4
+      - name: Ghastcoiler
+        attack: 7
+        health: 7
+683:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 13
+      - name: Sanctum Rester
+        attack: 10
+        health: 6
+      - name: Colossus of the Sun
+        attack: 6
+        health: 2
+684:
+  TopWin:
+    minions:
+      - name: Bristleback Knight
+        attack: 6
+        health: 1
+      - name: Screwjank Clunker
+        attack: 4
+        health: 4
+685:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 18
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 17
+      - name: Annoy-o-Module
+        attack: 4
+        health: 8
+686:
+  TopWin:
+    minions:
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 12
+687:
+  BottomWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 4
+      - name: Drakkari Enchanter
+        attack: 1
+        health: 1
+688:
+  BottomWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 27
+      - name: Moon-Bacon Jazzer
+        attack: 4
+        health: 4
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 9
+      - name: Hungry Snapjaw
+        attack: 10
+        health: 4
+689: Draw
+690:
+  BottomWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 10
+      - name: Humming Bird
+        attack: 0
+        health: 6
+691:
+  BottomWin:
+    minions:
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 2
+      - name: Bird Buddy
+        attack: 4
+        health: 6
+692:
+  TopWin:
+    minions:
+      - name: Robosaur
+        attack: 16
+        health: 6
+      - name: Utility Drone
+        attack: 12
+        health: 4
+      - name: Maexxna
+        attack: 4
+        health: 12
+693:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 9
+694:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 4
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 12
+695:
+  TopWin:
+    minions:
+      - name: Maexxna
+        attack: 4
+        health: 2
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 8
+      - name: Mama Bear
+        attack: 4
+        health: 4
+696:
+  TopWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 5
+        health: 4
+      - name: "Lil' Rag"
+        attack: 12
+        health: 6
+697:
+  TopWin:
+    minions:
+      - name: Captain Sanders
+        attack: 7
+        health: 5
+698:
+  TopWin:
+    minions:
+      - name: Friend of a Friend
+        attack: 10
+        health: 8
+699:
+  TopWin:
+    minions:
+      - name: Ghoul of the Feast
+        attack: 2
+        health: 5
+      - name: Tony Two-Tusk
+        attack: 8
+        health: 4
+      - name: Voidlord
+        attack: 6
+        health: 1
+      - name: Interrogator Whitemane
+        attack: 8
+        health: 5
+700:
+  BottomWin:
+    minions:
+      - name: Cave Hydra
+        attack: 4
+        health: 7
+      - name: Darkgaze Elder
+        attack: 6
+        health: 4
+      - name: Tortollan Blue Shell
+        attack: 4
+        health: 7
+      - name: First Mate Pip
+        attack: 5
+        health: 4
+701:
+  TopWin:
+    minions:
+      - name: Mantid Queen
+        attack: 10
+        health: 2
+      - name: Ripsnarl Captain
+        attack: 2
+        health: 2
+702:
+  BottomWin:
+    minions:
+      - name: Emperor Cobra
+        attack: 4
+        health: 2
+703: Draw
+704:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 3
+        health: 2
+      - name: Bristlebach
+        attack: 2
+        health: 10
+      - name: Bloodsail Cannoneer
+        attack: 8
+        health: 6
+705:
+  TopWin:
+    minions:
+      - name: Fairy Tale Caroler
+        attack: 4
+        health: 6
+      - name: Darkgaze Elder
+        attack: 12
+        health: 14
+706:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 2
+      - name: Lovesick Balladist
+        attack: 3
+        health: 3
+707: Draw
+708:
+  BottomWin:
+    minions:
+      - name: Brann Bronzebeard
+        attack: 2
+        health: 4
+709:
+  BottomWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 9
+710:
+  BottomWin:
+    minions:
+      - name: Young Murk-Eye
+        attack: 16
+        health: 10
+      - name: Devilsaur
+        attack: 16
+        health: 4
+      - name: Chronormu
+        attack: 12
+        health: 9
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 7
+      - name: Icky Imp
+        attack: 1
+        health: 1
+711:
+  TopWin:
+    minions:
+      - name: Arm of the Empire
+        attack: 8
+        health: 4
+      - name: Humming Bird
+        attack: 0
+        health: 10
+      - name: Sky Pirate
+        attack: 2
+        health: 2
+712:
+  TopWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 2
+        health: 3
+713:
+  TopWin:
+    minions:
+      - name: Handless Forsaken
+        attack: 4
+        health: 2
+714:
+  BottomWin:
+    minions:
+      - name: Seaborn Summoner
+        attack: 4
+        health: 5
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 15
+      - name: Strongshell Scavenger
+        attack: 4
+        health: 6
+715:
+  BottomWin:
+    minions:
+      - name: Maexxna
+        attack: 4
+        health: 10
+      - name: Nightmare Amalgam
+        attack: 3
+        health: 4
+716:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 3
+      - name: Cobalt Scalebane
+        attack: 5
+        health: 2
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 4
+      - name: Low-Flier
+        attack: 6
+        health: 4
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 10
+717:
+  TopWin:
+    minions:
+      - name: Nathrezim Overseer
+        attack: 2
+        health: 2
+      - name: Charlga
+        attack: 4
+        health: 4
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 2
+      - name: "Spawn of N'Zoth"
+        attack: 2
+        health: 2
+      - name: Sellemental
+        attack: 4
+        health: 2
+      - name: The Boogie Monster
+        attack: 6
+        health: 16
+718:
+  TopWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 9
+      - name: Yrel
+        attack: 2
+        health: 7
+719:
+  BottomWin:
+    minions:
+      - name: Tidemistress Athissa
+        attack: 6
+        health: 8
+      - name: Gentle Djinni
+        attack: 8
+        health: 2
+      - name: Eelbound Archer
+        attack: 4
+        health: 2
+      - name: Felstomper
+        attack: 6
+        health: 12
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 8
+720:
+  BottomWin:
+    minions:
+      - name: Deflect-o-Bot
+        attack: 3
+        health: 2
+      - name: Transmuted Bramblewitch
+        attack: 4
+        health: 4
+      - name: "Kathra'natir"
+        attack: 10
+        health: 6
+721:
+  BottomWin:
+    minions:
+      - name: Seafood Slinger
+        attack: 10
+        health: 8
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 7
+      - name: Mechorse
+        attack: 4
+        health: 4
+722:
+  TopWin:
+    minions:
+      - name: Famished Felbat
+        attack: 16
+        health: 5
+      - name: King Varian
+        attack: 9
+        health: 4
+723:
+  BottomWin:
+    minions:
+      - name: Rabid Saurolisk
+        attack: 6
+        health: 2
+      - name: Leapfrogger
+        attack: 6
+        health: 4
+724:
+  BottomWin:
+    minions:
+      - name: Iron Groundskeeper
+        attack: 10
+        health: 6
+      - name: Yrel
+        attack: 2
+        health: 2
+725:
+  BottomWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 9
+      - name: Seaborn Summoner
+        attack: 4
+        health: 5
+726:
+  TopWin:
+    minions:
+      - name: Electric Synthesizer
+        attack: 6
+        health: 6
+727:
+  BottomWin:
+    minions:
+      - name: Tad
+        attack: 2
+        health: 2
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 10
+728:
+  BottomWin:
+    minions:
+      - name: Sanctum Rester
+        attack: 10
+        health: 6
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 5
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 10
+      - name: Alleycat
+        attack: 2
+        health: 2
+729:
+  TopWin:
+    minions:
+      - name: Dreadbeard
+        attack: 4
+        health: 3
+      - name: "Champion of Y'Shaarj"
+        attack: 6
+        health: 2
+730:
+  TopWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 11
+731:
+  TopWin:
+    minions:
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 1
+732:
+  BottomWin:
+    minions:
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+      - name: Dreadbeard
+        attack: 4
+        health: 4
+733:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 8
+        health: 4
+      - name: Maexxna
+        attack: 2
+        health: 2
+      - name: Glyph Guardian
+        attack: 4
+        health: 7
+734:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 6
+735:
+  BottomWin:
+    minions:
+      - name: Recurring Nightmare
+        attack: 16
+        health: 1
+      - name: Stormbringer
+        attack: 1
+        health: 1
+736:
+  BottomWin:
+    minions:
+      - name: Iron Groundskeeper
+        attack: 5
+        health: 2
+      - name: Bristlebach
+        attack: 2
+        health: 8
+      - name: Robosaur
+        attack: 16
+        health: 12
+      - name: Magtheridon Prime
+        attack: 2
+        health: 7
+      - name: Captain Sanders
+        attack: 7
+        health: 7
+737:
+  BottomWin:
+    minions:
+      - name: Captain Sanders
+        attack: 14
+        health: 11
+      - name: Houndmaster
+        attack: 4
+        health: 3
+738:
+  TopWin:
+    minions:
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 2
+739:
+  BottomWin:
+    minions:
+      - name: Utility Drone
+        attack: 6
+        health: 5
+      - name: Ghastcoiler
+        attack: 14
+        health: 11
+      - name: Gunpowder Courier
+        attack: 2
+        health: 4
+      - name: Deep Blue Crooner
+        attack: 4
+        health: 4
+740:
+  BottomWin:
+    minions:
+      - name: Upbeat Impressionist
+        attack: 16
+        health: 3
+741:
+  BottomWin:
+    minions:
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 7
+742:
+  TopWin:
+    minions:
+      - name: Mechano-Egg
+        attack: 0
+        health: 5
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 6
+743:
+  BottomWin:
+    minions:
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 1
+      - name: "Goldrinn, the Great Wolf"
+        attack: 8
+        health: 6
+      - name: Eternal Knight
+        attack: 4
+        health: 1
+      - name: Prized Promo-Drake
+        attack: 6
+        health: 2
+744:
+  TopWin:
+    minions:
+      - name: The Boogie Monster
+        attack: 6
+        health: 12
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+      - name: Critter Wrangler
+        attack: 10
+        health: 14
+745:
+  TopWin:
+    minions:
+      - name: Goldgrubber
+        attack: 8
+        health: 4
+746:
+  BottomWin:
+    minions:
+      - name: Papa Bear
+        attack: 24
+        health: 12
+747:
+  TopWin:
+    minions:
+      - name: "Lil' Rag"
+        attack: 12
+        health: 2
+748: Draw
+749:
+  TopWin:
+    minions:
+      - name: Scrap Scraper
+        attack: 4
+        health: 2
+      - name: Snake
+        attack: 2
+        health: 2
+      - name: Picky Eater
+        attack: 2
+        health: 2
+750:
+  BottomWin:
+    minions:
+      - name: Record Smuggler
+        attack: 10
+        health: 1
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 2
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 7
+751:
+  BottomWin:
+    minions:
+      - name: "Relentless Mur'ghoul"
+        attack: 10
+        health: 5
+752:
+  TopWin:
+    minions:
+      - name: Defender of Argus
+        attack: 3
+        health: 1
+      - name: Refreshing Anomaly
+        attack: 2
+        health: 7
+      - name: Atramedes
+        attack: 6
+        health: 4
+      - name: Thorncaller
+        attack: 6
+        health: 2
+753:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 8
+      - name: Bristlebach
+        attack: 4
+        health: 14
+754:
+  BottomWin:
+    minions:
+      - name: Sewer Rat
+        attack: 6
+        health: 2
+      - name: Tunnel Blaster
+        attack: 6
+        health: 5
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 4
+      - name: Qiraji Harbinger
+        attack: 10
+        health: 6
+755:
+  TopWin:
+    minions:
+      - name: Champion of Sargeras
+        attack: 20
+        health: 8
+756: Draw
+757:
+  TopWin:
+    minions:
+      - name: Coldlight Seer
+        attack: 4
+        health: 5
+      - name: Floating Watcher
+        attack: 8
+        health: 5
+      - name: Darkgaze Elder
+        attack: 6
+        health: 2
+      - name: Seafood Slinger
+        attack: 10
+        health: 2
+758:
+  BottomWin:
+    minions:
+      - name: Rockpool Hunter
+        attack: 4
+        health: 2
+759:
+  BottomWin:
+    minions:
+      - name: Gem Smuggler
+        attack: 3
+        health: 1
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Vigilant Stoneborn
+        attack: 4
+        health: 6
+760:
+  BottomWin:
+    minions:
+      - name: Lovesick Balladist
+        attack: 3
+        health: 3
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 10
+      - name: Champion of Sargeras
+        attack: 10
+        health: 4
+      - name: Operatic Belcher
+        attack: 5
+        health: 2
+      - name: Rat Pack
+        attack: 2
+        health: 2
+761:
+  TopWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 5
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 12
+      - name: Utility Drone
+        attack: 12
+        health: 14
+      - name: Emperor Cobra
+        attack: 2
+        health: 3
+762:
+  TopWin:
+    minions:
+      - name: Damaged Golem
+        attack: 2
+        health: 1
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 26
+      - name: Nightmare Amalgam
+        attack: 3
+        health: 2
+763:
+  BottomWin:
+    minions:
+      - name: Deep Blue Crooner
+        attack: 4
+        health: 2
+      - name: Mannoroth
+        attack: 2
+        health: 3
+764:
+  BottomWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 7
+        health: 1
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 4
+765:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 12
+      - name: Deadly Spore
+        attack: 2
+        health: 1
+766:
+  TopWin:
+    minions:
+      - name: Backstage Security
+        attack: 8
+        health: 5
+      - name: Ghastcoiler
+        attack: 7
+        health: 4
+      - name: Wargear
+        attack: 6
+        health: 3
+      - name: Murloc Warleader
+        attack: 3
+        health: 1
+767: Draw
+768:
+  BottomWin:
+    minions:
+      - name: Murloc Warleader
+        attack: 6
+        health: 1
+769:
+  TopWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 3
+        health: 4
+      - name: Swampstriker
+        attack: 2
+        health: 5
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 7
+770:
+  BottomWin:
+    minions:
+      - name: Party Elemental
+        attack: 4
+        health: 8
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 16
+771:
+  TopWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 16
+      - name: Mantid Queen
+        attack: 5
+        health: 1
+      - name: Imp Mama
+        attack: 12
+        health: 14
+772:
+  BottomWin:
+    minions:
+      - name: Carbonic Copy
+        attack: 6
+        health: 3
+773:
+  TopWin:
+    minions:
+      - name: Sly Raptor
+        attack: 2
+        health: 3
+      - name: Elemental of Surprise
+        attack: 16
+        health: 10
+774:
+  BottomWin:
+    minions:
+      - name: Tortollan Blue Shell
+        attack: 4
+        health: 3
+      - name: "Kathra'natir"
+        attack: 10
+        health: 4
+775:
+  TopWin:
+    minions:
+      - name: Whelp Smuggler
+        attack: 4
+        health: 2
+      - name: Scrap Scraper
+        attack: 8
+        health: 8
+776: Draw
+777:
+  BottomWin:
+    minions:
+      - name: Scarlet Skull
+        attack: 4
+        health: 1
+      - name: Champion of the Primus
+        attack: 4
+        health: 15
+      - name: Silent Swimmer
+        attack: 10
+        health: 3
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 6
+778:
+  BottomWin:
+    minions:
+      - name: Soul Juggler
+        attack: 6
+        health: 8
+      - name: Amalgam
+        attack: 4
+        health: 4
+      - name: Bristlebach
+        attack: 4
+        health: 12
+779:
+  BottomWin:
+    minions:
+      - name: Ghastcoiler
+        attack: 7
+        health: 5
+      - name: Nadina the Red
+        attack: 16
+        health: 4
+780:
+  BottomWin:
+    minions:
+      - name: Soul Juggler
+        attack: 3
+        health: 2
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 6
+      - name: Champion of Sargeras
+        attack: 10
+        health: 7
+781:
+  BottomWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 6
+      - name: Ghastcoiler
+        attack: 7
+        health: 3
+      - name: Lightfang Enforcer
+        attack: 8
+        health: 8
+      - name: Colossus of the Sun
+        attack: 6
+        health: 6
+782: Draw
+783:
+  BottomWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 14
+        health: 6
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 2
+      - name: Groundshaker
+        attack: 6
+        health: 7
+      - name: Tentacle of Octosari
+        attack: 2
+        health: 2
+784:
+  BottomWin:
+    minions:
+      - name: Sanguine Champion
+        attack: 36
+        health: 3
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 2
+785:
+  BottomWin:
+    minions:
+      - name: Tony Two-Tusk
+        attack: 8
+        health: 3
+786:
+  TopWin:
+    minions:
+      - name: Imp Mama
+        attack: 12
+        health: 16
+787:
+  BottomWin:
+    minions:
+      - name: Bigfernal
+        attack: 6
+        health: 2
+      - name: Kooky Chemist
+        attack: 8
+        health: 5
+      - name: Goldgrubber
+        attack: 8
+        health: 8
+788:
+  TopWin:
+    minions:
+      - name: Tough Tusk
+        attack: 10
+        health: 1
+      - name: Bream Counter
+        attack: 10
+        health: 6
+789:
+  BottomWin:
+    minions:
+      - name: Mechanized Gift Horse
+        attack: 4
+        health: 2
+      - name: Bristlebach
+        attack: 4
+        health: 4
+790:
+  TopWin:
+    minions:
+      - name: Southsea Captain
+        attack: 6
+        health: 4
+      - name: Robosaur
+        attack: 8
+        health: 6
+      - name: Humming Bird
+        attack: 0
+        health: 10
+      - name: Whelp Smuggler
+        attack: 4
+        health: 5
+791:
+  TopWin:
+    minions:
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 2
+      - name: Goldgrubber
+        attack: 4
+        health: 1
+      - name: Gem Smuggler
+        attack: 6
+        health: 8
+792:
+  TopWin:
+    minions:
+      - name: Groundshaker
+        attack: 6
+        health: 8
+      - name: Bristlebach
+        attack: 4
+        health: 11
+793:
+  TopWin:
+    minions:
+      - name: Grease Bot
+        attack: 1
+        health: 3
+      - name: Felfin Navigator
+        attack: 8
+        health: 1
+      - name: King Varian
+        attack: 18
+        health: 5
+794:
+  TopWin:
+    minions:
+      - name: Warden of Old
+        attack: 3
+        health: 1
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 4
+795:
+  BottomWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 6
+        health: 5
+      - name: Backstage Security
+        attack: 4
+        health: 2
+      - name: Captain Flat Tusk
+        attack: 9
+        health: 1
+      - name: Seafood Slinger
+        attack: 10
+        health: 7
+796:
+  BottomWin:
+    minions:
+      - name: Iron Groundskeeper
+        attack: 5
+        health: 3
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 7
+797:
+  TopWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 6
+798: Draw
+799: Draw
+800: Draw
+801:
+  BottomWin:
+    minions:
+      - name: Bigfernal
+        attack: 12
+        health: 1
+      - name: Transmuted Bramblewitch
+        attack: 8
+        health: 2
+802:
+  TopWin:
+    minions:
+      - name: Glyph Guardian
+        attack: 4
+        health: 5
+      - name: The Boogie Monster
+        attack: 6
+        health: 7
+      - name: Sky Pirate
+        attack: 2
+        health: 2
+803:
+  BottomWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 1
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 13
+      - name: Arm of the Empire
+        attack: 8
+        health: 4
+804:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 2
+805:
+  BottomWin:
+    minions:
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 2
+806:
+  BottomWin:
+    minions:
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 8
+      - name: Atramedes
+        attack: 3
+        health: 5
+      - name: Colossus of the Sun
+        attack: 6
+        health: 6
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 2
+      - name: Banana Slamma
+        attack: 4
+        health: 8
+      - name: Dread Admiral Eliza
+        attack: 6
+        health: 7
+807:
+  TopWin:
+    minions:
+      - name: Underhanded Dealer
+        attack: 8
+        health: 2
+      - name: Kooky Chemist
+        attack: 8
+        health: 5
+808:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 12
+      - name: Imp Mama
+        attack: 6
+        health: 3
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 3
+809:
+  BottomWin:
+    minions:
+      - name: Reef Riffer
+        attack: 2
+        health: 2
+      - name: Rockpool Hunter
+        attack: 4
+        health: 3
+      - name: Mama Bear
+        attack: 4
+        health: 4
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 5
+810:
+  TopWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 7
+811: Draw
+812:
+  TopWin:
+    minions:
+      - name: Mechano-Tank
+        attack: 5
+        health: 1
+813:
+  TopWin:
+    minions:
+      - name: Houndmaster
+        attack: 8
+        health: 2
+      - name: Warpwing
+        attack: 24
+        health: 6
+      - name: Bristlebach
+        attack: 2
+        health: 10
+      - name: Waverider
+        attack: 4
+        health: 16
+814:
+  BottomWin:
+    minions:
+      - name: Jelly Belly
+        attack: 6
+        health: 4
+815:
+  BottomWin:
+    minions:
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 12
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 2
+816:
+  TopWin:
+    minions:
+      - name: King Varian
+        attack: 9
+        health: 7
+      - name: Strongshell Scavenger
+        attack: 2
+        health: 2
+      - name: Annoy-o-Module
+        attack: 2
+        health: 4
+817:
+  BottomWin:
+    minions:
+      - name: The Glad-iator
+        attack: 2
+        health: 2
+      - name: Crab
+        attack: 3
+        health: 2
+818:
+  TopWin:
+    minions:
+      - name: Possessive Banshee
+        attack: 4
+        health: 7
+      - name: Omega Buster
+        attack: 5
+        health: 1
+      - name: Sellemental
+        attack: 4
+        health: 4
+      - name: Impatient Doomsayer
+        attack: 4
+        health: 10
+819: Draw
+820:
+  TopWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 10
+821:
+  TopWin:
+    minions:
+      - name: Rendle the Mistermind
+        attack: 8
+        health: 3
+      - name: Moon-Bacon Jazzer
+        attack: 4
+        health: 4
+822:
+  TopWin:
+    minions:
+      - name: "Insatiable Ur'zul"
+        attack: 8
+        health: 6
+      - name: The Boommobile
+        attack: 12
+        health: 5
+      - name: Omega Buster
+        attack: 10
+        health: 2
+      - name: Drakkari Enchanter
+        attack: 2
+        health: 9
+      - name: Oozeling Gladiator
+        attack: 1
+        health: 2
+823: Draw
+824:
+  BottomWin:
+    minions:
+      - name: Free-Flying Feathermane
+        attack: 10
+        health: 5
+      - name: Briny Bootlegger
+        attack: 8
+        health: 4
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 13
+      - name: Darkgaze Elder
+        attack: 12
+        health: 2
+825:
+  TopWin:
+    minions:
+      - name: Warpwing
+        attack: 12
+        health: 1
+      - name: Record Smuggler
+        attack: 10
+        health: 2
+      - name: King Bagurgle
+        attack: 6
+        health: 1
+826:
+  TopWin:
+    minions:
+      - name: "Lil' Rag"
+        attack: 12
+        health: 9
+      - name: Dancing Barnstormer
+        attack: 6
+        health: 1
+      - name: Glyph Guardian
+        attack: 2
+        health: 1
+      - name: Nosy Looter
+        attack: 18
+        health: 15
+      - name: Nightmare Amalgam
+        attack: 6
+        health: 5
+827:
+  BottomWin:
+    minions:
+      - name: Soulsplitter
+        attack: 4
+        health: 1
+      - name: Ghoul of the Feast
+        attack: 4
+        health: 2
+      - name: Arm of the Empire
+        attack: 8
+        health: 4
+828:
+  BottomWin:
+    minions:
+      - name: Operatic Belcher
+        attack: 10
+        health: 2
+      - name: Moon-Bacon Jazzer
+        attack: 4
+        health: 5
+      - name: Rusted Reggie
+        attack: 10
+        health: 8
+      - name: Felstomper
+        attack: 6
+        health: 12
+829: Draw
+830: Draw
+831:
+  BottomWin:
+    minions:
+      - name: The Boogie Monster
+        attack: 6
+        health: 3
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 16
+      - name: Bigfernal
+        attack: 12
+        health: 2
+      - name: Nosy Looter
+        attack: 9
+        health: 4
+      - name: Papa Bear
+        attack: 12
+        health: 10
+832:
+  TopWin:
+    minions:
+      - name: Pufferquil
+        attack: 4
+        health: 8
+      - name: Underhanded Dealer
+        attack: 8
+        health: 6
+      - name: Murcules
+        attack: 10
+        health: 1
+      - name: Polarizing Beatboxer
+        attack: 10
+        health: 16
+      - name: Imposing Percussionist
+        attack: 4
+        health: 1
+833:
+  BottomWin:
+    minions:
+      - name: Omega Buster
+        attack: 10
+        health: 5
+      - name: Nadina the Red
+        attack: 16
+        health: 2
+      - name: Amalgam
+        attack: 4
+        health: 4
+      - name: Murcules
+        attack: 5
+        health: 2
+834:
+  TopWin:
+    minions:
+      - name: Murloc Warleader
+        attack: 6
+        health: 2
+      - name: Tide Oracle Morgl
+        attack: 6
+        health: 14
+835:
+  TopWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 8
+836:
+  BottomWin:
+    minions:
+      - name: Papa Bear
+        attack: 12
+        health: 5
+      - name: Wrath Weaver
+        attack: 2
+        health: 4
+      - name: Mythrax the Unraveler
+        attack: 4
+        health: 1
+      - name: General Drakkisath
+        attack: 4
+        health: 11
+837:
+  BottomWin:
+    minions:
+      - name: Scourfin
+        attack: 3
+        health: 3
+838:
+  BottomWin:
+    minions:
+      - name: Murky
+        attack: 12
+        health: 5
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 4
+      - name: Arm of the Empire
+        attack: 8
+        health: 5
+839:
+  TopWin:
+    minions:
+      - name: Mistake
+        attack: 1
+        health: 3
+      - name: Reef Explorer
+        attack: 6
+        health: 2
+840:
+  TopWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 8
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Kooky Chemist
+        attack: 4
+        health: 2
+      - name: The Boommobile
+        attack: 24
+        health: 10
+      - name: Mind Muck
+        attack: 3
+        health: 2
+841:
+  TopWin:
+    minions:
+      - name: Daggerspine Thrasher
+        attack: 6
+        health: 3
+      - name: Disco Shuffler
+        attack: 4
+        health: 3
+      - name: Utility Drone
+        attack: 12
+        health: 8
+842:
+  TopWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 12
+      - name: Sanctum Rester
+        attack: 5
+        health: 5
+843:
+  BottomWin:
+    minions:
+      - name: Tony Two-Tusk
+        attack: 8
+        health: 7
+      - name: Mechano-Egg
+        attack: 0
+        health: 8
+      - name: Seafood Slinger
+        attack: 5
+        health: 1
+      - name: Fireworks Fanatic
+        attack: 8
+        health: 1
+      - name: Tentacle of Octosari
+        attack: 4
+        health: 4
+844: Draw
+845: Draw
+846:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Glyph Guardian
+        attack: 2
+        health: 1
+      - name: Emergent Flame
+        attack: 10
+        health: 1
+      - name: Rot Hide Gnoll
+        attack: 2
+        health: 8
+      - name: Obsidian Ravager
+        attack: 14
+        health: 7
+847:
+  TopWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 4
+848:
+  BottomWin:
+    minions:
+      - name: Devilsaur
+        attack: 16
+        health: 2
+849:
+  TopWin:
+    minions:
+      - name: Ball of Minions
+        attack: 5
+        health: 1
+      - name: Saltscale Honcho
+        attack: 3
+        health: 1
+850:
+  BottomWin:
+    minions:
+      - name: Backstage Security
+        attack: 4
+        health: 4
+      - name: Jelly Belly
+        attack: 3
+        health: 1
+      - name: Bristlemane Scrapsmith
+        attack: 4
+        health: 2
+      - name: Famished Felbat
+        attack: 16
+        health: 6
+851:
+  TopWin:
+    minions:
+      - name: Moira Bronzebeard
+        attack: 3
+        health: 8
+      - name: Titus Rivendare
+        attack: 1
+        health: 3
+852:
+  BottomWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 7
+      - name: Wildfire Elemental
+        attack: 14
+        health: 6
+      - name: Sinrunner Blanchy
+        attack: 6
+        health: 4
+853:
+  BottomWin:
+    minions:
+      - name: Bronze Warden
+        attack: 2
+        health: 1
+854:
+  TopWin:
+    minions:
+      - name: Possessive Banshee
+        attack: 4
+        health: 5
+855:
+  TopWin:
+    minions:
+      - name: Zapp Slywick
+        attack: 16
+        health: 10
+      - name: Choral Mrrrglr
+        attack: 12
+        health: 8
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 2
+        health: 4
+      - name: Tavern Tipper
+        attack: 2
+        health: 2
+856: Draw
+857:
+  TopWin:
+    minions:
+      - name: Robosaur
+        attack: 16
+        health: 10
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 10
+858:
+  BottomWin:
+    minions:
+      - name: Lava Lurker
+        attack: 4
+        health: 6
+      - name: Champion of the Primus
+        attack: 4
+        health: 4
+859:
+  TopWin:
+    minions:
+      - name: Bassgill
+        attack: 12
+        health: 2
+860:
+  BottomWin:
+    minions:
+      - name: "Orgozoa, the Tender"
+        attack: 6
+        health: 11
+      - name: Banana Slamma
+        attack: 4
+        health: 7
+861:
+  BottomWin:
+    minions:
+      - name: Flourishing Frostling
+        attack: 0
+        health: 4
+      - name: "Prestor's Pyrospawn"
+        attack: 3
+        health: 2
+862:
+  BottomWin:
+    minions:
+      - name: Tichondrius
+        attack: 8
+        health: 1
+      - name: Zapp Slywick
+        attack: 8
+        health: 16
+863:
+  BottomWin:
+    minions:
+      - name: Transmuted Bramblewitch
+        attack: 4
+        health: 1
+      - name: Robosaur
+        attack: 16
+        health: 14
+      - name: Colossus of the Sun
+        attack: 6
+        health: 6
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 4
+      - name: Plagued Tidewalker
+        attack: 2
+        health: 6
+864:
+  BottomWin:
+    minions:
+      - name: Nosy Looter
+        attack: 18
+        health: 9
+      - name: Freedealing Gambler
+        attack: 6
+        health: 2
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 6
+      - name: "Diablo, Lord of Terror"
+        attack: 8
+        health: 7
+      - name: Keyboard Igniter
+        attack: 4
+        health: 1
+865:
+  TopWin:
+    minions:
+      - name: Reanimating Rattler
+        attack: 8
+        health: 4
+      - name: Robosaur
+        attack: 16
+        health: 16
+866:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 6
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 10
+867:
+  BottomWin:
+    minions:
+      - name: Tough Tusk
+        attack: 5
+        health: 1
+      - name: Granite Guardian
+        attack: 2
+        health: 37
+      - name: "Orgozoa, the Tender"
+        attack: 3
+        health: 4
+      - name: Amalgadon
+        attack: 6
+        health: 2
+868:
+  TopWin:
+    minions:
+      - name: Seaborn Summoner
+        attack: 4
+        health: 2
+869:
+  BottomWin:
+    minions:
+      - name: Reef Explorer
+        attack: 6
+        health: 5
+870:
+  TopWin:
+    minions:
+      - name: Bongo Bopper
+        attack: 8
+        health: 3
+      - name: Incorporeal Corporal
+        attack: 5
+        health: 4
+      - name: Bristleback Knight
+        attack: 6
+        health: 4
+871:
+  TopWin:
+    minions:
+      - name: Archdruid Hamuul
+        attack: 8
+        health: 4
+      - name: The Boommobile
+        attack: 24
+        health: 10
+      - name: Khadgar
+        attack: 4
+        health: 4
+      - name: Lieutenant Garr
+        attack: 8
+        health: 2
+      - name: Magmaloc
+        attack: 1
+        health: 1
+      - name: Deck Swabbie
+        attack: 2
+        health: 2
+872:
+  BottomWin:
+    minions:
+      - name: Imp Mama
+        attack: 6
+        health: 4
+873:
+  BottomWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 4
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 12
+874:
+  TopWin:
+    minions:
+      - name: Mecha-Jaraxxus
+        attack: 3
+        health: 9
+      - name: Mannoroth
+        attack: 2
+        health: 8
+      - name: Emergent Flame
+        attack: 10
+        health: 2
+875:
+  BottomWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 10
+876:
+  TopWin:
+    minions:
+      - name: Uther the Lightbringer
+        attack: 10
+        health: 7
+877:
+  TopWin:
+    minions:
+      - name: Qiraji Harbinger
+        attack: 5
+        health: 5
+878:
+  TopWin:
+    minions:
+      - name: Bonemare
+        attack: 10
+        health: 4
+      - name: Arm of the Empire
+        attack: 8
+        health: 4
+879:
+  TopWin:
+    minions:
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 16
+      - name: "Sea Witch Zar'jira"
+        attack: 4
+        health: 2
+880:
+  BottomWin:
+    minions:
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 4
+      - name: Swampstriker
+        attack: 2
+        health: 4
+881:
+  BottomWin:
+    minions:
+      - name: Felstomper
+        attack: 6
+        health: 3
+882:
+  BottomWin:
+    minions:
+      - name: Upbeat Flutist
+        attack: 4
+        health: 6
+883:
+  BottomWin:
+    minions:
+      - name: Felstomper
+        attack: 3
+        health: 3
+      - name: Blazing Skyfin
+        attack: 1
+        health: 3
+884:
+  BottomWin:
+    minions:
+      - name: Briarback Bookie
+        attack: 6
+        health: 3
+885:
+  TopWin:
+    minions:
+      - name: Sinrunner Blanchy
+        attack: 6
+        health: 2
+      - name: Grease Bot
+        attack: 1
+        health: 4
+      - name: The Walking Fort
+        attack: 8
+        health: 3
+886:
+  BottomWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 4
+      - name: Defender of Argus
+        attack: 6
+        health: 4
+      - name: Imp Mama
+        attack: 6
+        health: 6
+887:
+  BottomWin:
+    minions:
+      - name: Wildfire Elemental
+        attack: 14
+        health: 2
+      - name: Imposing Percussionist
+        attack: 8
+        health: 3
+      - name: Stormscale Siren
+        attack: 12
+        health: 10
+888:
+  BottomWin:
+    minions:
+      - name: Bigfernal
+        attack: 12
+        health: 8
+889:
+  BottomWin:
+    minions:
+      - name: Titus Rivendare
+        attack: 2
+        health: 13
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+890:
+  BottomWin:
+    minions:
+      - name: "Malchezaar, Prince of Dance"
+        attack: 6
+        health: 1
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 2
+      - name: Southsea Busker
+        attack: 3
+        health: 1
+891:
+  BottomWin:
+    minions:
+      - name: Drakonid Enforcer
+        attack: 6
+        health: 12
+892:
+  TopWin:
+    minions:
+      - name: Toxfin
+        attack: 2
+        health: 1
+893:
+  TopWin:
+    minions:
+      - name: Cogwork Copter
+        attack: 2
+        health: 2
+      - name: Gusty Trumpeter
+        attack: 6
+        health: 3
+      - name: Famished Felbat
+        attack: 16
+        health: 8
+      - name: Ghoul of the Feast
+        attack: 2
+        health: 5
+894:
+  TopWin:
+    minions:
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 10
+      - name: Darkgaze Elder
+        attack: 12
+        health: 10
+895:
+  BottomWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 10
+      - name: Wrath Weaver
+        attack: 2
+        health: 1
+      - name: Bonemare
+        attack: 10
+        health: 2
+896:
+  TopWin:
+    minions:
+      - name: Critter Wrangler
+        attack: 5
+        health: 5
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 10
+897:
+  TopWin:
+    minions:
+      - name: Gem Smuggler
+        attack: 6
+        health: 8
+      - name: Papa Bear
+        attack: 24
+        health: 22
+      - name: Imp Mama
+        attack: 12
+        health: 13
+      - name: King Varian
+        attack: 9
+        health: 3
+898:
+  BottomWin:
+    minions:
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 1
+      - name: Bristlemane Scrapsmith
+        attack: 4
+        health: 1
+      - name: Champion of the Primus
+        attack: 2
+        health: 5
+899:
+  BottomWin:
+    minions:
+      - name: Possessive Banshee
+        attack: 4
+        health: 3
+900:
+  BottomWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 2
+901:
+  BottomWin:
+    minions:
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 2
+902:
+  BottomWin:
+    minions:
+      - name: Nathrezim Overseer
+        attack: 4
+        health: 4
+903:
+  TopWin:
+    minions:
+      - name: Bristlebach
+        attack: 2
+        health: 1
+904:
+  BottomWin:
+    minions:
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 3
+      - name: Titus Rivendare
+        attack: 2
+        health: 8
+      - name: "Kalecgos, Arcane Aspect"
+        attack: 4
+        health: 11
+      - name: Tavern Tempest
+        attack: 8
+        health: 2
+905:
+  TopWin:
+    minions:
+      - name: Amalgadon
+        attack: 12
+        health: 8
+      - name: Young Murk-Eye
+        attack: 8
+        health: 1
+      - name: The Boommobile
+        attack: 24
+        health: 18
+      - name: Bubblette
+        attack: 5
+        health: 4
+      - name: Icky Imp
+        attack: 1
+        health: 1
+906:
+  TopWin:
+    minions:
+      - name: Palescale Crocolisk
+        attack: 8
+        health: 1
+907:
+  TopWin:
+    minions:
+      - name: Possessive Banshee
+        attack: 4
+        health: 10
+      - name: Nadina the Red
+        attack: 16
+        health: 5
+908:
+  TopWin:
+    minions:
+      - name: Southsea Captain
+        attack: 3
+        health: 3
+      - name: Champion of the Primus
+        attack: 4
+        health: 18
+      - name: Salty Looter
+        attack: 8
+        health: 10
+      - name: Soulsplitter
+        attack: 4
+        health: 2
+      - name: "Sin'dorei Straight Shot"
+        attack: 3
+        health: 4
+909:
+  TopWin:
+    minions:
+      - name: Elemental of Surprise
+        attack: 16
+        health: 11
+      - name: Stormbringer
+        attack: 2
+        health: 16
+      - name: Elemental of Surprise
+        attack: 16
+        health: 5
+910: Draw
+911:
+  TopWin:
+    minions:
+      - name: Wildfire Elemental
+        attack: 14
+        health: 6
+912:
+  BottomWin:
+    minions:
+      - name: "Nomi, Kitchen Nightmare"
+        attack: 8
+        health: 8
+      - name: Rusted Reggie
+        attack: 5
+        health: 5
+      - name: Scrap Scraper
+        attack: 8
+        health: 14
+913:
+  BottomWin:
+    minions:
+      - name: General Drakkisath
+        attack: 4
+        health: 2
+      - name: Murloc Warleader
+        attack: 6
+        health: 2
+      - name: Pufferquil
+        attack: 4
+        health: 10
+      - name: Eternal Summoner
+        attack: 16
+        health: 2
+      - name: Gusty Trumpeter
+        attack: 12
+        health: 7
+      - name: Ripsnarl Captain
+        attack: 4
+        health: 8
+914:
+  TopWin:
+    minions:
+      - name: "Malchezaar, Prince of Dance"
+        attack: 12
+        health: 4
+915:
+  TopWin:
+    minions:
+      - name: Nathrezim Overseer
+        attack: 4
+        health: 3
+      - name: Impulsive Trickster
+        attack: 4
+        health: 4
+      - name: Flourishing Frostling
+        attack: 0
+        health: 6
+      - name: Bristlebach
+        attack: 4
+        health: 17
+916:
+  BottomWin:
+    minions:
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 4
+      - name: Operatic Belcher
+        attack: 10
+        health: 2
+917:
+  TopWin:
+    minions:
+      - name: Champion of Sargeras
+        attack: 20
+        health: 5
+918:
+  BottomWin:
+    minions:
+      - name: Rusted Reggie
+        attack: 10
+        health: 4
+      - name: Mechorse
+        attack: 2
+        health: 2
+      - name: Zapp Slywick
+        attack: 8
+        health: 16
+      - name: "Relentless Mur'ghoul"
+        attack: 5
+        health: 4
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 10
+919:
+  TopWin:
+    minions:
+      - name: Waverider
+        attack: 2
+        health: 4
+      - name: Soulsplitter
+        attack: 4
+        health: 1
+      - name: Chronormu
+        attack: 12
+        health: 4
+      - name: Sly Raptor
+        attack: 2
+        health: 4
+920:
+  TopWin:
+    minions:
+      - name: General Drakkisath
+        attack: 4
+        health: 1
+      - name: Southsea Captain
+        attack: 3
+        health: 3
+      - name: Goldgrubber
+        attack: 8
+        health: 8
+      - name: "Spawn of N'Zoth"
+        attack: 2
+        health: 2
+921:
+  TopWin:
+    minions:
+      - name: Hungry Snapjaw
+        attack: 5
+        health: 1
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 4
+      - name: Coldlight Seer
+        attack: 2
+        health: 3
+      - name: Arm of the Empire
+        attack: 4
+        health: 4
+      - name: Felstomper
+        attack: 6
+        health: 11
+922:
+  BottomWin:
+    minions:
+      - name: Lightfang Enforcer
+        attack: 4
+        health: 1
+      - name: Tarecgosa
+        attack: 8
+        health: 6
+      - name: Crackling Cyclone
+        attack: 8
+        health: 1
+      - name: Soul Rewinder
+        attack: 3
+        health: 1
+      - name: Tony Two-Tusk
+        attack: 4
+        health: 6
+923:
+  BottomWin:
+    minions:
+      - name: Groundshaker
+        attack: 3
+        health: 6
+      - name: Atramedes
+        attack: 6
+        health: 8
+924:
+  TopWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 2
+925:
+  BottomWin:
+    minions:
+      - name: "Sin'dorei Straight Shot"
+        attack: 6
+        health: 6
+      - name: Ghastcoiler
+        attack: 14
+        health: 1
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 12
+      - name: Daggerspine Thrasher
+        attack: 6
+        health: 10
+      - name: Mechano-Egg
+        attack: 0
+        health: 5
+926:
+  TopWin:
+    minions:
+      - name: Voidlord
+        attack: 6
+        health: 6
+      - name: Yo-Ho-Ogre
+        attack: 6
+        health: 2
+      - name: Selfless Hero
+        attack: 4
+        health: 2
+927:
+  BottomWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 3
+      - name: Tortollan Blue Shell
+        attack: 8
+        health: 10
+      - name: King Bagurgle
+        attack: 12
+        health: 2
+928: Draw
+929:
+  BottomWin:
+    minions:
+      - name: Baby Krush
+        attack: 6
+        health: 3
+      - name: Bonker
+        attack: 3
+        health: 2
+930:
+  TopWin:
+    minions:
+      - name: Robosaur
+        attack: 16
+        health: 4
+931:
+  BottomWin:
+    minions:
+      - name: Dread Admiral Eliza
+        attack: 12
+        health: 4
+932:
+  BottomWin:
+    minions:
+      - name: Houndmaster
+        attack: 4
+        health: 3
+933:
+  BottomWin:
+    minions:
+      - name: Treasure-Seeker Elise
+        attack: 10
+        health: 2
+934: Draw
+935:
+  TopWin:
+    minions:
+      - name: Felstomper
+        attack: 3
+        health: 3
+      - name: Kooky Chemist
+        attack: 4
+        health: 1
+936: Draw
+937:
+  BottomWin:
+    minions:
+      - name: Warden of Old
+        attack: 6
+        health: 1
+938:
+  BottomWin:
+    minions:
+      - name: Sister Deathwhisper
+        attack: 8
+        health: 18
+      - name: Recycling Wraith
+        attack: 8
+        health: 1
+939:
+  BottomWin:
+    minions:
+      - name: Soul Juggler
+        attack: 6
+        health: 5
+940:
+  TopWin:
+    minions:
+      - name: Disco Shuffler
+        attack: 8
+        health: 4
+      - name: Devilsaur
+        attack: 8
+        health: 8
+      - name: Rabid Saurolisk
+        attack: 6
+        health: 4
+      - name: Necrolyte
+        attack: 3
+        health: 3
+941:
+  BottomWin:
+    minions:
+      - name: Warpwing
+        attack: 24
+        health: 2
+      - name: Reanimating Rattler
+        attack: 8
+        health: 6
+942:
+  TopWin:
+    minions:
+      - name: Living Constellation
+        attack: 8
+        health: 1
+943:
+  BottomWin:
+    minions:
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 2
+      - name: Bristleback Knight
+        attack: 6
+        health: 9
+944:
+  BottomWin:
+    minions:
+      - name: Young Murk-Eye
+        attack: 8
+        health: 1
+      - name: Chronormu
+        attack: 12
+        health: 9
+      - name: Maexxna
+        attack: 4
+        health: 2
+      - name: Bird Buddy
+        attack: 4
+        health: 4
+945:
+  TopWin:
+    minions:
+      - name: Chronormu
+        attack: 12
+        health: 6
+      - name: Witchwing Nestmatron
+        attack: 6
+        health: 10
+946:
+  TopWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 4
+        health: 16
+      - name: Jelly Belly
+        attack: 6
+        health: 8
+      - name: Mythrax the Unraveler
+        attack: 8
+        health: 6
+      - name: "Surf n' Surf"
+        attack: 2
+        health: 2
+      - name: Khadgar
+        attack: 4
+        health: 3
+947:
+  BottomWin:
+    minions:
+      - name: Mechanized Gift Horse
+        attack: 8
+        health: 4
+      - name: First Mate Pip
+        attack: 5
+        health: 3
+      - name: Mecha-Jaraxxus
+        attack: 6
+        health: 11
+948:
+  TopWin:
+    minions:
+      - name: Voidlord
+        attack: 6
+        health: 5
+      - name: Party Elemental
+        attack: 2
+        health: 2
+      - name: Dynamic Duo
+        attack: 10
+        health: 5
+      - name: Annoy-o-Spawn
+        attack: 1
+        health: 2
+      - name: Voidlord
+        attack: 6
+        health: 4
+949:
+  TopWin:
+    minions:
+      - name: "SI:Sefin"
+        attack: 4
+        health: 8
+950:
+  TopWin:
+    minions:
+      - name: Blazing Skyfin
+        attack: 2
+        health: 5
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 6
+      - name: Baby Krush
+        attack: 12
+        health: 8
+      - name: Sun-Bacon Relaxer
+        attack: 1
+        health: 1
+951:
+  TopWin:
+    minions:
+      - name: Bigfernal
+        attack: 12
+        health: 4
+952:
+  BottomWin:
+    minions:
+      - name: Tide Oracle Morgl
+        attack: 2
+        health: 8
+      - name: Bristlebach
+        attack: 2
+        health: 6
+      - name: Aggem Thorncurse
+        attack: 3
+        health: 2
+      - name: The Boogie Monster
+        attack: 6
+        health: 2
+953:
+  BottomWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 5
+      - name: King Varian
+        attack: 18
+        health: 5
+      - name: Colossus of the Sun
+        attack: 12
+        health: 2
+      - name: "Octosari, Wrap God"
+        attack: 12
+        health: 10
+954:
+  TopWin:
+    minions:
+      - name: Champion of the Primus
+        attack: 4
+        health: 8
+      - name: Maexxna
+        attack: 4
+        health: 14
+      - name: Tidemistress Athissa
+        attack: 12
+        health: 6
+      - name: Crab
+        attack: 3
+        health: 2
+      - name: Handless Forsaken
+        attack: 4
+        health: 2
+955:
+  TopWin:
+    minions:
+      - name: Hunter of Gatherers
+        attack: 6
+        health: 9
+      - name: Wargear
+        attack: 12
+        health: 3
+      - name: Groundshaker
+        attack: 6
+        health: 9
+      - name: Floating Watcher
+        attack: 4
+        health: 1
+956:
+  BottomWin:
+    minions:
+      - name: Faceless Disciple
+        attack: 6
+        health: 2
+      - name: Tony Two-Tusk
+        attack: 4
+        health: 4
+      - name: Warden of Old
+        attack: 3
+        health: 1
+      - name: Party Elemental
+        attack: 4
+        health: 2
+957:
+  BottomWin:
+    minions:
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 2
+958: Draw
+959:
+  BottomWin:
+    minions:
+      - name: "Fish of N'Zoth"
+        attack: 4
+        health: 1
+      - name: Baltharak
+        attack: 10
+        health: 1
+      - name: Daggerspine Thrasher
+        attack: 3
+        health: 5
+960:
+  TopWin:
+    minions:
+      - name: Cyborg Drake
+        attack: 6
+        health: 15
+      - name: Champion of the Primus
+        attack: 4
+        health: 2
+      - name: Chronormu
+        attack: 12
+        health: 2
+961:
+  TopWin:
+    minions:
+      - name: "Agamaggan, the Great Boar"
+        attack: 12
+        health: 2
+      - name: Zapp Slywick
+        attack: 16
+        health: 7
+      - name: Tavern Tempest
+        attack: 8
+        health: 4
+962:
+  BottomWin:
+    minions:
+      - name: Cogwork Copter
+        attack: 1
+        health: 1
+      - name: Wargear
+        attack: 12
+        health: 2
+      - name: Bronze Warden
+        attack: 4
+        health: 2
+      - name: Selfless Hero
+        attack: 4
+        health: 2
+963:
+  BottomWin:
+    minions:
+      - name: Humming Bird
+        attack: 0
+        health: 10
+      - name: Darkgaze Elder
+        attack: 12
+        health: 2
+      - name: Papa Bear
+        attack: 12
+        health: 8
+964:
+  BottomWin:
+    minions:
+      - name: Warpwing
+        attack: 24
+        health: 4
+965:
+  BottomWin:
+    minions:
+      - name: Greta Gold-Gun
+        attack: 2
+        health: 7
+      - name: Zapp Slywick
+        attack: 8
+        health: 12
+966: Draw
+967:
+  BottomWin:
+    minions:
+      - name: Reanimating Rattler
+        attack: 8
+        health: 2
+      - name: Helping Hand
+        attack: 4
+        health: 1
+      - name: Vanessa VanCleef
+        attack: 3
+        health: 3
+968:
+  TopWin:
+    minions:
+      - name: Grease Bot
+        attack: 2
+        health: 8
+      - name: Time Saver
+        attack: 4
+        health: 2
+969:
+  TopWin:
+    minions:
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 2
+970: Draw
+971: Draw
+972:
+  BottomWin:
+    minions:
+      - name: Vanessa VanCleef
+        attack: 6
+        health: 2
+973:
+  BottomWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 5
+        health: 3
+      - name: Refreshing Anomaly
+        attack: 2
+        health: 5
+      - name: Bristleback Knight
+        attack: 12
+        health: 16
+      - name: Plagued Tidewalker
+        attack: 4
+        health: 11
+      - name: Polarizing Beatboxer
+        attack: 5
+        health: 10
+974:
+  TopWin:
+    minions:
+      - name: Bristlebach
+        attack: 2
+        health: 4
+      - name: Warden of Old
+        attack: 6
+        health: 6
+975:
+  TopWin:
+    minions:
+      - name: Mannoroth
+        attack: 2
+        health: 12
+      - name: Metaltooth Leaper
+        attack: 6
+        health: 1
+      - name: "SI:Sefin"
+        attack: 4
+        health: 10
+976:
+  BottomWin:
+    minions:
+      - name: King Varian
+        attack: 18
+        health: 14
+977:
+  BottomWin:
+    minions:
+      - name: Colossus of the Sun
+        attack: 12
+        health: 7
+      - name: Ghoul of the Feast
+        attack: 4
+        health: 1
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 6
+978:
+  TopWin:
+    minions:
+      - name: Obsidian Ravager
+        attack: 7
+        health: 1
+      - name: Cobalt Scalebane
+        attack: 10
+        health: 3
+      - name: Saltscale Honcho
+        attack: 6
+        health: 2
+      - name: First Mate Pip
+        attack: 5
+        health: 2
+979:
+  TopWin:
+    minions:
+      - name: Banana Slamma
+        attack: 4
+        health: 6
+      - name: Yo-Ho-Ogre
+        attack: 6
+        health: 7
+      - name: Possessive Banshee
+        attack: 2
+        health: 3
+      - name: The Boommobile
+        attack: 24
+        health: 13
+      - name: Recycling Wraith
+        attack: 4
+        health: 2
+      - name: Thorncaller
+        attack: 6
+        health: 4
+980:
+  BottomWin:
+    minions:
+      - name: "Prestor's Pyrospawn"
+        attack: 6
+        health: 8
+      - name: Menagerie Mug
+        attack: 2
+        health: 2
+      - name: "Kathra'natir"
+        attack: 10
+        health: 8
+      - name: Peggy Brittlebone
+        attack: 12
+        health: 6
+      - name: Archdruid Hamuul
+        attack: 4
+        health: 2
+981:
+  TopWin:
+    minions:
+      - name: Stormbringer
+        attack: 1
+        health: 7
+      - name: General Drakkisath
+        attack: 4
+        health: 2
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 2
+982:
+  TopWin:
+    minions:
+      - name: "Lil' Rag"
+        attack: 12
+        health: 6
+      - name: Warpwing
+        attack: 24
+        health: 4
+      - name: Reef Riffer
+        attack: 2
+        health: 2
+      - name: "Prestor's Pyrospawn"
+        attack: 3
+        health: 5
+      - name: Jelly Belly
+        attack: 6
+        health: 12
+983:
+  BottomWin:
+    minions:
+      - name: Accord-o-Tron
+        attack: 6
+        health: 1
+      - name: Soul Juggler
+        attack: 3
+        health: 4
+984:
+  BottomWin:
+    minions:
+      - name: Mechanized Gift Horse
+        attack: 8
+        health: 1
+      - name: Baltharak
+        attack: 20
+        health: 2
+      - name: Dazzling Lightspawn
+        attack: 4
+        health: 3
+      - name: Baron Rivendare
+        attack: 2
+        health: 3
+985:
+  TopWin:
+    minions:
+      - name: Deflect-o-Bot
+        attack: 6
+        health: 4
+      - name: The Boommobile
+        attack: 24
+        health: 7
+986:
+  TopWin:
+    minions:
+      - name: Arm of the Empire
+        attack: 4
+        health: 2
+      - name: Stormscale Siren
+        attack: 6
+        health: 3
+      - name: Waverider
+        attack: 2
+        health: 8
+      - name: Shoal Commander
+        attack: 4
+        health: 4
+987:
+  BottomWin:
+    minions:
+      - name: Granite Guardian
+        attack: 2
+        health: 7
+      - name: "Kangor's Apprentice"
+        attack: 6
+        health: 8
+      - name: "Razorgore, the Untamed"
+        attack: 8
+        health: 6
+988:
+  TopWin:
+    minions:
+      - name: Goldgrubber
+        attack: 8
+        health: 2
+989:
+  BottomWin:
+    minions:
+      - name: "Cap'n Hoggarr"
+        attack: 12
+        health: 8
+      - name: Replicating Menace
+        attack: 6
+        health: 2
+      - name: Backstage Security
+        attack: 4
+        health: 3
+      - name: Mannoroth
+        attack: 1
+        health: 7
+      - name: Qiraji Harbinger
+        attack: 10
+        health: 10
+990:
+  TopWin:
+    minions:
+      - name: The Boommobile
+        attack: 24
+        health: 4
+      - name: "Sea Witch Zar'jira"
+        attack: 8
+        health: 6
+      - name: Briarback Bookie
+        attack: 6
+        health: 4
+      - name: General Drakkisath
+        attack: 4
+        health: 16
+      - name: Moira Bronzebeard
+        attack: 6
+        health: 18
+991:
+  TopWin:
+    minions:
+      - name: Waverider
+        attack: 4
+        health: 7
+      - name: Leeroy the Reckless
+        attack: 12
+        health: 3
+992:
+  BottomWin:
+    minions:
+      - name: Maexxna
+        attack: 4
+        health: 1
+      - name: Evolving Chromawing
+        attack: 2
+        health: 1
+      - name: Seaborn Summoner
+        attack: 4
+        health: 4
+      - name: Bird Buddy
+        attack: 2
+        health: 4
+993:
+  TopWin:
+    minions:
+      - name: Foe Reaper 4000
+        attack: 12
+        health: 2
+      - name: Murozond
+        attack: 5
+        health: 3
+      - name: Razorfen Geomancer
+        attack: 3
+        health: 1
+994:
+  BottomWin:
+    minions:
+      - name: Bonemare
+        attack: 10
+        health: 3
+995:
+  TopWin:
+    minions:
+      - name: Fleet Admiral Tethys
+        attack: 10
+        health: 4
+996:
+  BottomWin:
+    minions:
+      - name: Mantid Queen
+        attack: 10
+        health: 2
+      - name: Poetic Pen Pal
+        attack: 4
+        health: 8
+997:
+  BottomWin:
+    minions:
+      - name: Chronormu
+        attack: 6
+        health: 3
+      - name: Rock Rock
+        attack: 8
+        health: 2
+998:
+  BottomWin:
+    minions:
+      - name: Captain Sanders
+        attack: 14
+        health: 2
+999:
+  TopWin:
+    minions:
+      - name: Bannerboar
+        attack: 6
+        health: 4
+      - name: "Kathra'natir"
+        attack: 10
+        health: 4
+      - name: Scarlet Skull
+        attack: 4
+        health: 2
+      - name: Electric Synthesizer
+        attack: 6
+        health: 12
+

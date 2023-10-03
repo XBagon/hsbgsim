@@ -8,6 +8,7 @@ pub struct Player {
     pub board: Board,
     pub next_attack_position: u8,
     pub last_attacking_minion: MinionInstanceId,
+    pub extra_deathrattle_count: u8,
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
@@ -33,6 +34,7 @@ impl Player {
             board,
             next_attack_position: 0,
             last_attacking_minion: MinionInstanceId::default(),
+            extra_deathrattle_count: 0,
         }
     }
 }

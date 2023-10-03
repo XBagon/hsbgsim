@@ -41,7 +41,7 @@ pub fn deathrattle(this: MinionInstanceId, death: Death, game: &mut Game) {
             .iter()
             .filter(|&&minion| {
                 let minion = game.minion_instances.get(minion).unwrap();
-                !minion.pending_destroy && minion.health > 0
+                !minion.pending_destroy && minion.health() > 0
             })
             .collect();
         if let Some(&&minion) = pool.choose(&mut game.rng) {

@@ -15,8 +15,8 @@ fn main() {
         }
     }
 
-    let mut bottom_minion = parse_name(&bottom_minion_name);
-    let mut top_minion = top_minion_name.map(|name| parse_name(&name)).unwrap_or(bottom_minion);
+    let bottom_minion = parse_name(&bottom_minion_name);
+    let top_minion = top_minion_name.map(|name| parse_name(&name)).unwrap_or(bottom_minion);
 
     let mut game = Game::default();
 
