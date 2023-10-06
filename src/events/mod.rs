@@ -39,7 +39,7 @@ pub trait EventTrait: Clone {
 
 #[derive(Default)]
 pub struct Events {
-    queue: Vec<Event>,
+    pub queue: Vec<Event>,
 }
 
 #[derive(Debug, Clone, Copy, Serialize, Deserialize)]
@@ -137,7 +137,7 @@ macro_rules! event_variants {
                }
             }
 
-            #[derive(Default)]
+            #[derive(Default, Debug, Clone, PartialEq, Eq)]
             pub struct EventHandlers {
                 pub implemented: bool,
                 $(pub [<$vars:snake>]: Option<fn(MinionInstanceId, $vars, &mut Game)>),*

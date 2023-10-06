@@ -2,7 +2,7 @@ use tinyvec::ArrayVec;
 
 use crate::MinionInstance;
 
-#[derive(Default)]
+#[derive(Default, Clone)]
 pub struct Hand {
     minions: ArrayVec<[MinionInstance; 10]>,
 }

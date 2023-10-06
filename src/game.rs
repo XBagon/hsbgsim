@@ -14,9 +14,11 @@ use slotmap::{Key, SecondaryMap, SlotMap};
 use thiserror::Error;
 use tinyvec::ArrayVec;
 
+type MinionInstances = SlotMap<MinionInstanceId, MinionInstance>;
+
 pub struct Game {
     pub battleground: Battleground,
-    pub minion_instances: SlotMap<MinionInstanceId, MinionInstance>,
+    pub minion_instances: MinionInstances,
     //TODO: minion_datas: SecondarySlotMap<MinionInstanceId, MinionData>,
     minion_summon_shift: SecondaryMap<MinionInstanceId, u8>,
     attacking_player: Option<PlayerId>,
@@ -66,6 +68,21 @@ impl Game {
         }
     }
 
+    // use `replay_step` instead of step to advance replay
+    pub fn from_replay(replay: Replay) -> Self {
+        Self {
+            battleground: replay.initial_game_snapshot.initial_battleground,
+            minion_instances: replay.initial_game_snapshot.minions,
+            minion_summon_shift: SecondaryMap::new(),
+            attacking_player: None,
+            last_attacker: MinionInstanceId::default(),
+            additional_attacks: 0,
+            events: replay.events,
+            event_handler_manager: EventHandlerManager::default(),
+            rng: Xoshiro256PlusPlus::from_entropy(),
+        }
+    }
+
     ///Needs to be run once before [`Self::step`] is called
     pub fn initialize(&mut self) {
         let bottom_minion_count = self.battleground.player(PlayerId::Bottom).board.minions.len();
@@ -97,13 +114,25 @@ impl Game {
         mi_id
     }
 
+    #[inline]
     pub fn step(&mut self) -> Event {
+        self.simulate_step::<false>()
+    }
+
+    #[inline]
+    pub fn replay_step(&mut self) -> Event {
+        self.simulate_step::<true>()
+    }
+
+    fn simulate_step<const REPLAY: bool>(&mut self) -> Event {
         #[cfg(any(debug_assertions, test))]
         self.assert_all_positions_are_correct();
 
         let next_event = self.events.next();
         let next_event = if let Some(next_event) = next_event {
             next_event
+        } else if REPLAY {
+            return Event::Invalid;
         } else {
             //Check if game is over
             let bottom_empty = self.battleground.player(PlayerId::Bottom).board.minions.is_empty();
@@ -347,18 +376,39 @@ impl Game {
         }
     }
 
-    pub fn run_and_record_events(&mut self) -> Vec<Event> {
-        let mut recording = Vec::new();
+    pub fn game_snapshot(&mut self) -> GameSnapshot {
+        GameSnapshot::new(self.minion_instances.clone(), self.battleground.clone())
+    }
+
+    pub fn board_snapshot(&mut self) -> BoardSnapshot {
+        let mut bottom_board = ArrayVec::new();
+        for mi_id in self.battleground.player(PlayerId::Bottom).board.minions {
+            let minion = self.minion_instances.get(mi_id).unwrap();
+            bottom_board.push(minion.clone());
+        }
+
+        let mut top_board = ArrayVec::new();
+        for mi_id in self.battleground.player(PlayerId::Top).board.minions {
+            let minion = self.minion_instances.get(mi_id).unwrap();
+            top_board.push(minion.clone());
+        }
+
+        BoardSnapshot::new(bottom_board, top_board)
+    }
+
+    pub fn run_and_record(&mut self) -> Replay {
+        let game_snapshot = self.game_snapshot();
+        let mut events = Vec::new();
 
         loop {
             let current_event = self.step();
 
             if let Event::End(_) = current_event {
-                recording.push(current_event);
-                return recording;
+                events.push(current_event);
+                return Replay::new(game_snapshot, events);
             }
 
-            recording.push(current_event);
+            events.push(current_event);
         }
     }
 
@@ -566,6 +616,51 @@ impl Game {
     }
 }
 
+pub struct Replay {
+    pub initial_game_snapshot: GameSnapshot,
+    pub events: Events,
+}
+
+impl Replay {
+    pub fn new(initial_game_snapshot: GameSnapshot, events: Vec<Event>) -> Self {
+        Self {
+            initial_game_snapshot,
+            events: Events {
+                queue: events,
+            },
+        }
+    }
+}
+
+pub struct GameSnapshot {
+    pub minions: MinionInstances,
+    pub initial_battleground: Battleground,
+}
+
+impl GameSnapshot {
+    pub fn new(minions: MinionInstances, initial_battleground: Battleground) -> Self {
+        Self {
+            minions,
+            initial_battleground,
+        }
+    }
+}
+
+#[derive(Debug, PartialEq, Eq)]
+pub struct BoardSnapshot {
+    pub bottom: ArrayVec<[MinionInstance; 7]>,
+    pub top: ArrayVec<[MinionInstance; 7]>,
+}
+
+impl BoardSnapshot {
+    pub fn new(bottom: ArrayVec<[MinionInstance; 7]>, top: ArrayVec<[MinionInstance; 7]>) -> Self {
+        Self {
+            bottom,
+            top,
+        }
+    }
+}
+
 #[derive(Error, Debug)]
 pub enum Error {
     #[error("Tried to add minion to full board.")]
@@ -576,6 +671,8 @@ pub enum Error {
 
 #[cfg(test)]
 mod test {
+    use std::collections::VecDeque;
+
     use super::*;
 
     #[test]
@@ -595,5 +692,48 @@ mod test {
         game.initialize();
 
         game.run();
+    }
+
+    #[test]
+    fn replay_simulated_game() {
+        let mut game = Game::default();
+        let mut rng = thread_rng();
+        for _ in 0..7 {
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), false);
+            game.position_minion(minion, PlayerId::Bottom).unwrap();
+        }
+        for _ in 0..7 {
+            let minion = game.instantiate_minion(MinionVariant::random(&mut rng), false);
+            game.position_minion(minion, PlayerId::Top).unwrap();
+        }
+        game.initialize();
+
+        let mut game_board_snapshots = VecDeque::new();
+        let replay = {
+            let game_snapshot = game.game_snapshot();
+            let mut events = Vec::new();
+            loop {
+                game_board_snapshots.push_back(game.board_snapshot());
+
+                let current_event = game.step();
+                if let Event::End(_) = current_event {
+                    events.push(current_event);
+                    break Replay::new(game_snapshot, events);
+                }
+                events.push(current_event);
+            }
+        };
+
+        let mut game_replayer = Game::from_replay(replay);
+
+        loop {
+            assert_eq!(game_replayer.board_snapshot(), game_board_snapshots.pop_front().unwrap());
+
+            match game_replayer.replay_step() {
+                Event::End(_) => break,
+                Event::Invalid => panic!("Incomplete replay"),
+                _ => (),
+            }
+        }
     }
 }

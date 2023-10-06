@@ -3,7 +3,7 @@ use crate::{
     player::{Player, PlayerId},
 };
 
-#[derive(Default)]
+#[derive(Default, Clone)]
 pub struct Battleground {
     bottom_player: Player,
     top_player: Player,

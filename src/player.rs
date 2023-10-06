@@ -1,7 +1,7 @@
 use crate::{board::Board, hand::Hand, hero::Hero, MinionInstanceId};
 use serde::{Deserialize, Serialize};
 
-#[derive(Default)]
+#[derive(Default, Clone)]
 pub struct Player {
     hero: Hero,
     hand: Hand,

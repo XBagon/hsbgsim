@@ -429,6 +429,7 @@ impl MinionVariant {
     Clone,
     Copy,
     Default,
+    Debug,
     PartialEq,
     Eq,
     PartialOrd,

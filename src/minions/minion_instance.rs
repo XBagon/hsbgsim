@@ -7,7 +7,7 @@ new_key_type! {
     pub struct MinionInstanceId;
 }
 
-#[derive(Default)]
+#[derive(Default, Debug, Clone, PartialEq, Eq)]
 pub struct MinionInstance {
     pub variant: MinionVariant,
     pub golden: bool,
@@ -53,7 +53,7 @@ impl MinionInstance {
     }
 }
 
-#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct BoardPosition {
     pub player_id: PlayerId,
     pub index: u8,
@@ -68,7 +68,7 @@ impl BoardPosition {
     }
 }
 
-#[derive(Clone, Copy, Debug, Serialize, Deserialize)]
+#[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub enum Position {
     BoardPosition(BoardPosition),
     LastPosition(Option<BoardPosition>),

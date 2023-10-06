@@ -25,7 +25,7 @@ pub fn random_board_snapshot(seed: u64) {
 
     game.initialize();
 
-    let recording = game.run_and_record_events();
+    let recording = game.run_and_record();
     let minions: BTreeMap<_, _> = game
         .minion_instances
         .iter()
@@ -42,7 +42,10 @@ pub fn random_board_snapshot(seed: u64) {
         .collect();
 
     //TODO: better replay format
-    assert_yaml_snapshot!(format!("random_board_snapshot_{}", seed), (minions, recording));
+    assert_yaml_snapshot!(
+        format!("random_board_snapshot_{}", seed),
+        (minions, recording.events.queue)
+    );
 }
 
 #[test]

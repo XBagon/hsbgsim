@@ -265,6 +265,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             Clone,
             Copy,
             Default,
+            Debug,
             PartialEq,
             Eq,
             PartialOrd,

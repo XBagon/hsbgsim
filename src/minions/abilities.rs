@@ -1,6 +1,6 @@
 use bitmaps::Bitmap;
 
-#[derive(Default)]
+#[derive(Default, Debug, Clone, PartialEq, Eq)]
 pub struct Abilities {
     pub(crate) bitmap: Bitmap<11>,
 }

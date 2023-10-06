@@ -1,3 +1,4 @@
+#[derive(Clone)]
 pub struct Hero {
     health: u16,
     armor: u16,
