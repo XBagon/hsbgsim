@@ -2,7 +2,7 @@ use crate::minions::MinionInstanceId;
 
 use tinyvec::ArrayVec;
 
-#[derive(Default, Clone)]
+#[derive(Default, Debug, Clone)]
 pub struct Board {
     pub minions: ArrayVec<[MinionInstanceId; 7]>,
 }

@@ -3,7 +3,7 @@ use std::{env, str::FromStr};
 use hsbgsim::*;
 
 fn main() {
-    let mut args = env::args().skip(1);
+    let args = env::args().skip(1);
 
     fn parse_name(name: &str) -> (MinionVariant, bool) {
         if let Some(name) = name.strip_prefix("G-") {

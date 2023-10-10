@@ -37,7 +37,7 @@ pub trait EventTrait: Clone {
     type Handler: Fn(MinionInstanceId, Self, &mut Game) + Debug + Clone;
 }
 
-#[derive(Default)]
+#[derive(Default, Debug)]
 pub struct Events {
     pub queue: Vec<Event>,
 }

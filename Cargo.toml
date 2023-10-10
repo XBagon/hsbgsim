@@ -24,3 +24,4 @@ serde = { version = "1.0", features = ["derive"] }
 [dev-dependencies]
 insta = { version = "1.31.0", features = ["yaml"] }
 test-case = "3.2.1"
+pretty_assertions = "1.4.0"

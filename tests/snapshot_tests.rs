@@ -41,11 +41,8 @@ pub fn random_board_snapshot(seed: u64) {
         })
         .collect();
 
-    //TODO: better replay format
-    assert_yaml_snapshot!(
-        format!("random_board_snapshot_{}", seed),
-        (minions, recording.events.queue)
-    );
+    //TODO: better replay formaty
+    assert_yaml_snapshot!(format!("random_board_snapshot_{}", seed), (minions, recording.events));
 }
 
 #[test]
